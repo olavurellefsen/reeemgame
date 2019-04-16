@@ -8,9 +8,9 @@ import { MainContent } from "./MainContent/MainContent";
 export const ContentContainer = () => (
   <Router>
     <Switch>
-      <Route path="/" component={MainContent} />
       <Route path="/score" component={Score} />
       <Route path="/about" component={About} />
+      <Route path="/" component={MainContent} />
     </Switch>
   </Router>
 );
