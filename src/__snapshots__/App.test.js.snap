@@ -32,16 +32,16 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-bZQynM ieVDlO"
+        class="sc-bZQynM gWTKbC"
       >
         <a
-          class="sc-gzVnrw iZOwCr"
+          class="sc-gzVnrw bHlUnu"
           href="/about"
         >
           About
         </a>
         <a
-          class="sc-gzVnrw iZOwCr"
+          class="sc-gzVnrw bHlUnu"
           href="/score"
         >
           Score
@@ -62,7 +62,9 @@ exports[`should render correctly 1`] = `
         <div
           class="sc-gqjmRU iRDvLn"
         >
-          Decision Container
+          <p>
+            Loading.. Please have patience
+          </p>
         </div>
         <div
           class="sc-VigVT bcoFxe"
