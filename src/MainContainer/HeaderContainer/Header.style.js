@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -44,4 +45,18 @@ export const HeaderMenuItem = styled.button`
 export const HeaderMenu = styled.div`
   display: flex;
   margin-right: 20px;
+`;
+
+export const HeaderMenuItemLink = styled(Link)`
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: Transparent;
+  border: none;
+  color: white;
+  :hover {
+    cursor: pointer;
+  }
 `;

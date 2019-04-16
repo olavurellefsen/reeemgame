@@ -5,6 +5,7 @@ import {
   LogoContainer,
   HeaderMenu,
   HeaderMenuItem,
+  HeaderMenuItemLink,
   TextContainer
 } from "./Header.style";
 import logo from "./REEEMlogo.transparent.1.svg";
@@ -18,8 +19,8 @@ export const Header = () => (
       <TextContainer>Game</TextContainer>
     </TitleContainer>
     <HeaderMenu>
-      <HeaderMenuItem>About</HeaderMenuItem>
-      <HeaderMenuItem>Score</HeaderMenuItem>
+      <HeaderMenuItemLink to="/about">About</HeaderMenuItemLink>
+      <HeaderMenuItemLink to="/score">Score</HeaderMenuItemLink>
       <HeaderMenuItem>Share</HeaderMenuItem>
     </HeaderMenu>
   </Container>
