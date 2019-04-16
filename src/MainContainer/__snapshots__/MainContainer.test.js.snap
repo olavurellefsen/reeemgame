@@ -57,6 +57,40 @@ exports[`should render correctly 1`] = `
       class="sc-iwsKbI cslhIm"
     >
       <div
+        class="sc-fjdhpX iFBnxa"
+      >
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Electricity demands
+        </div>
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Demand Profile
+        </div>
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Technology Performance
+        </div>
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Technology Cost
+        </div>
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Generation constraints
+        </div>
+        <div
+          class="sc-jzJRlG leRkWa"
+        >
+          Emission constraints
+        </div>
+      </div>
+      <div
         class="sc-gZMcBi crAViM"
       >
         <div
