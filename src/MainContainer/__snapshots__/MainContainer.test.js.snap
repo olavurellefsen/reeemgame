@@ -30,16 +30,18 @@ exports[`should render correctly 1`] = `
       <div
         class="sc-bZQynM ieVDlO"
       >
-        <button
-          class="sc-EHOje efNnvT"
+        <a
+          class="sc-gzVnrw iZOwCr"
+          href="/about"
         >
           About
-        </button>
-        <button
-          class="sc-EHOje efNnvT"
+        </a>
+        <a
+          class="sc-gzVnrw iZOwCr"
+          href="/score"
         >
           Score
-        </button>
+        </a>
         <button
           class="sc-EHOje efNnvT"
         >
@@ -48,7 +50,7 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-dnqmqq iFsitv"
+      class="sc-iwsKbI cslhIm"
     >
       Main Container
     </div>
