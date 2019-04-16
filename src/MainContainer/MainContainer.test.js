@@ -1,9 +1,9 @@
 import React from "react";
 import { render, cleanup } from "test-utils";
-import App from "./App";
+import { MainContainer } from "./MainContainer";
 afterEach(cleanup);
 
 it("should render correctly", () => {
-  const { container } = render(<App />);
+  const { container } = render(<MainContainer />);
   expect(container).toMatchSnapshot();
 });
