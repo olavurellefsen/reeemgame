@@ -2,12 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { render } from "react-testing-library";
 //import { ApolloProvider } from "react-apollo";
-//import ContextStore from "../Context/ContextStore";
+import ContextStore from "../Context/ContextStore";
 //import client from "../reeemApolloClient";
 import { BrowserRouter } from "react-router-dom";
 
 const AllTheProviders = ({ children }) => (
-  <BrowserRouter>{children}</BrowserRouter>
+  <ContextStore>
+    <BrowserRouter>{children}</BrowserRouter>
+  </ContextStore>
 );
 
 const customRender = (ui, options) =>
