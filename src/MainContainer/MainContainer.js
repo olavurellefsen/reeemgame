@@ -1,2 +1,11 @@
 import React from "react";
-export const MainContainer = () => <div>Hello world!</div>;
+import { Container } from "./MainContainer.style";
+import { Header } from "./HeaderContainer/Header";
+import { ContentContainer } from "./ContentContainer/ContentContainer";
+
+export const MainContainer = () => (
+  <Container>
+    <Header />
+    <ContentContainer />
+  </Container>
+);

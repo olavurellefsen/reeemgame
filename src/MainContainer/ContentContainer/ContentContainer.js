@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Switch, Route, Router } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Score } from "./Score";
 import { About } from "./About";
 import { MainContent } from "./MainContent/MainContent";
 
-export const CenterContainer = () => (
+export const ContentContainer = () => (
   <Router>
     <Switch>
       <Route path="/" component={MainContent} />
