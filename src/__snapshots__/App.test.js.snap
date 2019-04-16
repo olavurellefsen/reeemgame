@@ -3,32 +3,75 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="App"
+    class="sc-bdVaJa bPGLpq"
   >
-    <header
-      class="App-header"
+    <div
+      class="sc-bwzfXH lcjIRE"
     >
-      <img
-        alt="logo"
-        class="App-logo"
-        src="logo.svg"
-      />
-      <p>
-        Edit 
-        <code>
-          src/App.js
-        </code>
-         and save to reload.
-      </p>
-      <a
-        class="App-link"
-        href="https://reactjs.org"
-        rel="noopener noreferrer"
-        target="_blank"
+      <div
+        class="sc-htpNat dAdwuX"
       >
-        Learn React
-      </a>
-    </header>
+        <div
+          class="sc-ifAKCX hrWLvt"
+        >
+          <img
+            alt="logo"
+            height="40"
+            src="REEEMlogo.transparent.1.svg"
+            width="200"
+          />
+        </div>
+        <div
+          class="sc-bxivhb bckFsn"
+        >
+          Game
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM ieVDlO"
+      >
+        <a
+          class="sc-gzVnrw iZOwCr"
+          href="/about"
+        >
+          About
+        </a>
+        <a
+          class="sc-gzVnrw iZOwCr"
+          href="/score"
+        >
+          Score
+        </a>
+        <button
+          class="sc-EHOje efNnvT"
+        >
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-iwsKbI cslhIm"
+    >
+      <div
+        class="sc-gZMcBi crAViM"
+      >
+        <div
+          class="sc-gqjmRU iRDvLn"
+        >
+          Decision Container
+        </div>
+        <div
+          class="sc-VigVT bcoFxe"
+        >
+          Goal Container
+        </div>
+      </div>
+      <div
+        class="sc-jTzLTM eoQMeB"
+      >
+        Map Container
+      </div>
+    </div>
   </div>
 </div>
 `;

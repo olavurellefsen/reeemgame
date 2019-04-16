@@ -21,7 +21,7 @@ export const LeftMenuItem = styled.div`
   padding: 0px 0px 0px 16px;
   cursor: pointer;
   transition: color 300ms ease-in;
-  margin: 2px;
+  margin: 2px 2px 2px 0px;
   display: flex;
   align-items: center;
 
