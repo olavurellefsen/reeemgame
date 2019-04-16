@@ -3,18 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link": "^1.2.9",
+    "apollo-link-error": "^1.1.8",
+    "apollo-link-http": "^1.5.12",
+    "apollo-link-ws": "^1.0.15",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-ga": "^2.5.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.1.1",
+    "subscriptions-transport-ws": "^0.9.15"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "u": "jest -u"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "react-testing-library": "^6.1.2"
   },
   "browserslist": [
     ">0.2%",
