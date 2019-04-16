@@ -45,6 +45,7 @@ export const HeaderMenuItem = styled.button`
 export const HeaderMenu = styled.div`
   display: flex;
   margin-right: 20px;
+  align-items: center;
 `;
 
 export const HeaderMenuItemLink = styled(Link)`
@@ -56,6 +57,7 @@ export const HeaderMenuItemLink = styled(Link)`
   background-color: Transparent;
   border: none;
   color: white;
+  text-decoration: none;
   :hover {
     cursor: pointer;
   }
