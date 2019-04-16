@@ -7,11 +7,7 @@ import { render } from "react-testing-library";
 import { BrowserRouter } from "react-router-dom";
 
 const AllTheProviders = ({ children }) => (
-  // <ApolloProvider client={client}>
-  //  <ContextStore>
   <BrowserRouter>{children}</BrowserRouter>
-  //  </ContextStore>
-  //</ApolloProvider>
 );
 
 const customRender = (ui, options) =>
