@@ -2,8 +2,56 @@
 
 exports[`should render correctly 1`] = `
 <div>
-  <div>
-    Hello world!
+  <div
+    class="sc-bdVaJa bPGLpq"
+  >
+    <div
+      class="sc-bwzfXH lcjIRE"
+    >
+      <div
+        class="sc-htpNat dAdwuX"
+      >
+        <div
+          class="sc-ifAKCX hrWLvt"
+        >
+          <img
+            alt="logo"
+            height="40"
+            src="REEEMlogo.transparent.1.svg"
+            width="200"
+          />
+        </div>
+        <div
+          class="sc-bxivhb bckFsn"
+        >
+          Game
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM ieVDlO"
+      >
+        <button
+          class="sc-EHOje efNnvT"
+        >
+          About
+        </button>
+        <button
+          class="sc-EHOje efNnvT"
+        >
+          Score
+        </button>
+        <button
+          class="sc-EHOje efNnvT"
+        >
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-dnqmqq iFsitv"
+    >
+      Main Container
+    </div>
   </div>
 </div>
 `;
