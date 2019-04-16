@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react";
 
-import { withRouter, Switch, Route, Redirect, Router } from 'react-router-dom';
+import { withRouter, Switch, Route, Redirect, Router } from "react-router-dom";
 
-export const CenterContainer = () => (
-<Router>
-</Router>
-)
+export const CenterContainer = () => <Router />;
