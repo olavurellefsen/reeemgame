@@ -57,17 +57,21 @@ exports[`should render correctly 1`] = `
       class="sc-iwsKbI cslhIm"
     >
       <div
-        class="sc-gZMcBi koPbPx"
+        class="sc-gZMcBi crAViM"
       >
-        Decision Container
+        <div
+          class="sc-gqjmRU iRDvLn"
+        >
+          Decision Container
+        </div>
+        <div
+          class="sc-VigVT bcoFxe"
+        >
+          Goal Container
+        </div>
       </div>
       <div
-        class="sc-gqjmRU iRDvLn"
-      >
-        Goal Container
-      </div>
-      <div
-        class="sc-VigVT bcoFxe"
+        class="sc-jTzLTM eoQMeB"
       >
         Map Container
       </div>
