@@ -9,7 +9,7 @@ exports[`should render correctly 1`] = `
       class="sc-bwzfXH gkOoBg"
     >
       <div
-        class="row"
+        class="row no-gutters"
       >
         <div
           class="col"
@@ -42,7 +42,7 @@ exports[`should render correctly 1`] = `
           class="col-lg-auto"
         >
           <div
-            class="sc-bZQynM bqUOMP"
+            class="sc-bZQynM eHHkRo"
           >
             <a
               class="sc-gzVnrw iPHUbZ"
@@ -66,7 +66,7 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="row"
+      class="row no-gutters"
     >
       <div
         class="col-lg-auto"

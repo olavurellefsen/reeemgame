@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
 export const MainContent = () => (
-  <Row>
+  <Row noGutters="true">
     <Col lg="auto">
       <LeftContainer />
     </Col>

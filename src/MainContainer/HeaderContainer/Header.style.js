@@ -40,7 +40,7 @@ export const HeaderMenuItem = styled.button`
 
 export const HeaderMenu = styled.div`
   display: flex;
-  margin: 20px;
+  padding: 20px 0px;
   align-items: center;
 `
 

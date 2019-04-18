@@ -15,7 +15,7 @@ import Row from 'react-bootstrap/Row'
 
 export const Header = () => (
   <HeaderStyle>
-    <Row>
+    <Row noGutters="true">
       <Col>
         <TitleContainer>
           <Link to="/">
