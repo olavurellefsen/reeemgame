@@ -139,7 +139,7 @@ exports[`should render correctly 1`] = `
           <img
             alt="eu-flag"
             class="sc-fjdhpX dkLfWB"
-            src="/EU-flag.png"
+            src="/eu-flag.png"
           />
           <div
             class="sc-jTzLTM bwyeWm"
