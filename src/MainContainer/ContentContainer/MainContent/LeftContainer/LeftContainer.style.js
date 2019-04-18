@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
   width: 300px;
   flex-direction: column;
-`;
+`
 
 export const LeftMenuItem = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
-  font-family: "Montserrat", sans-serif;
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   height: 40px;
   width: 200px;
