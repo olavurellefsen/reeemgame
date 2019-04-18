@@ -396,10 +396,32 @@ exports[`should render correctly 1`] = `
         <div
           class="sc-jzJRlG dPOBZH"
         >
-          <img
-            alt="Europe"
-            src="europe.svg"
-          />
+          <div
+            class="row no-gutters"
+          >
+            <img
+              alt="Europe"
+              src="europe.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-dxgOiQ fhkfld"
+        >
+          <div
+            class="progress"
+          >
+            <div
+              aria-valuemax="2050"
+              aria-valuemin="2015"
+              aria-valuenow="2019"
+              class="progress-bar"
+              role="progressbar"
+              style="width: 11.429%;"
+            >
+              2019
+            </div>
+          </div>
         </div>
       </div>
     </div>
