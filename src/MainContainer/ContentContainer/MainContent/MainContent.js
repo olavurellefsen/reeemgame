@@ -18,7 +18,7 @@ export const MainContent = () => (
       <GoalContainer />
       <DecisionContainer />
     </Col>
-    <Col lg="auto">
+    <Col lg="7">
       <MapContainer />
       <TimelineContainer />
     </Col>
