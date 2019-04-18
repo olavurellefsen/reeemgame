@@ -1,8 +1,9 @@
 import React from 'react'
+import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
+import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { DecisionContainer } from './DecisionContainer/DecisionContainer'
 import { GoalContainer } from './GoalContainer/GoalContainer'
 import { MapContainer } from './MapContainer/MapContainer'
-import { LeftContainer } from './LeftContainer/LeftContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -10,7 +11,8 @@ import Row from 'react-bootstrap/Row'
 export const MainContent = () => (
   <Row noGutters="true">
     <Col lg="auto">
-      <LeftContainer />
+      <IndicatorContainer />
+      <EUacknowledgement />
     </Col>
     <Col>
       <GoalContainer />

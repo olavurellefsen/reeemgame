@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Flag, Text } from './EUFlag.style'
+import { Container, Flag, Text } from './EUacknowledgement.style'
 
-export const EUflag = () => {
+export const EUacknowledgement = () => {
   return (
     <Container>
       <Flag src="/EU-flag.png" alt="eu-flag" />

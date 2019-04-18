@@ -72,7 +72,7 @@ exports[`should render correctly 1`] = `
         class="col-lg-auto"
       >
         <div
-          class="sc-kgoBCf YejCR"
+          class="sc-iwsKbI gRKeIA"
         >
           <div
             class="col"
@@ -81,7 +81,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Electricity demands
               </div>
@@ -90,7 +90,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Demand Profile
               </div>
@@ -99,7 +99,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Technology Performance
               </div>
@@ -108,7 +108,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Technology Cost
               </div>
@@ -117,7 +117,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Generation constraints
               </div>
@@ -126,33 +126,25 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-kGXeez ljwDcV"
+                class="sc-gZMcBi DcDyO"
               >
                 Emission constraints
               </div>
             </div>
-            <div
-              class="row"
-            >
-              <div
-                class="sc-kpOJdX bSlYGp"
-              >
-                <div
-                  class="sc-cSHVUG isuxya"
-                >
-                  <img
-                    alt="eu-flag"
-                    class="sc-chPdSV bQdiiA"
-                    src="/EU-flag.png"
-                  />
-                  <div
-                    class="sc-kAzzGY dceIAl"
-                  >
-                    This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div
+          class="sc-VigVT cXgrjz"
+        >
+          <img
+            alt="eu-flag"
+            class="sc-fjdhpX dkLfWB"
+            src="/EU-flag.png"
+          />
+          <div
+            class="sc-jTzLTM bwyeWm"
+          >
+            This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
           </div>
         </div>
       </div>
@@ -160,18 +152,18 @@ exports[`should render correctly 1`] = `
         class="col"
       >
         <div
-          class="sc-VigVT fJOcCO"
+          class="sc-chPdSV jrQqqr"
         >
           <div
             class="col"
           >
             <h1
-              class="sc-jTzLTM gjMEoS"
+              class="sc-kgoBCf fXFYCN"
             >
               Goal
             </h1>
             <div
-              class="sc-fjdhpX OqFYp"
+              class="sc-kGXeez bMDHZO"
             >
               Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
             </div>
@@ -256,18 +248,18 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-iwsKbI istRUX"
+          class="sc-jzJRlG ctDSzB"
         >
           <div
             class="col"
           >
             <h1
-              class="sc-gZMcBi pUXdS"
+              class="sc-cSHVUG cVLVRZ"
             >
               Decisions in 2020
             </h1>
             <div
-              class="sc-gqjmRU fAMbXr"
+              class="sc-kAzzGY hjahid"
             >
               Which decisions do you want to make in order to reach your goal?
             </div>
@@ -394,7 +386,7 @@ exports[`should render correctly 1`] = `
         class="col-lg-auto"
       >
         <div
-          class="sc-jzJRlG dPOBZH"
+          class="sc-kpOJdX ieBFuD"
         >
           <div
             class="row no-gutters"
