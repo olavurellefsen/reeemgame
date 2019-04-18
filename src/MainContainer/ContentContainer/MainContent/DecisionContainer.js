@@ -1,7 +1,8 @@
-import React from "react";
-import { Subscription } from "react-apollo";
-import gql from "graphql-tag";
-import { Container } from "./DecisionContainer.style";
+import React from 'react'
+import { Subscription } from 'react-apollo'
+import gql from 'graphql-tag'
+import { Container } from './DecisionContainer.style'
+import Button from 'react-bootstrap/Button'
 
 export const Subscription_Get_Groupings = gql`
   subscription game_decision($year: Int) {
@@ -12,7 +13,7 @@ export const Subscription_Get_Groupings = gql`
       }
     }
   }
-`;
+`
 
 export const DecisionContainer = () => (
   <Container>
@@ -21,13 +22,13 @@ export const DecisionContainer = () => (
       variables={{ year: 2020 }}
     >
       {sub => {
-        if (sub.loading) return <p>Loading.. Please have patience</p>;
-        const decisions = sub.data.game_decision_year;
-        console.log(decisions);
+        if (sub.loading) return <p>Loading.. Please have patience</p>
+        const decisions = sub.data.game_decision_year
         if (decisions.length > 0) {
-          return decisions[0].decision_intro_text;
+          return decisions[0].decision_intro_text
         }
       }}
     </Subscription>
+    <Button>Submit decision</Button>
   </Container>
-);
+)

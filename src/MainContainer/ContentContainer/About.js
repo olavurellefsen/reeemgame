@@ -1,4 +1,4 @@
-import React from "react";
-import { Container } from "./About.style";
+import React from 'react'
+import { Container } from './About.style'
 
-export const About = () => <Container>ABOUT</Container>;
+export const About = () => <Container>ABOUT</Container>

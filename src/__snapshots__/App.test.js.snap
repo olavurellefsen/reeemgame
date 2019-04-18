@@ -26,7 +26,7 @@ exports[`should render correctly 1`] = `
           </div>
         </a>
         <div
-          class="sc-bxivhb bckFsn"
+          class="sc-bxivhb cfasLa"
         >
           Game
         </div>
@@ -35,19 +35,19 @@ exports[`should render correctly 1`] = `
         class="sc-bZQynM gWTKbC"
       >
         <a
-          class="sc-gzVnrw bHlUnu"
+          class="sc-gzVnrw iPHUbZ"
           href="/about"
         >
           About
         </a>
         <a
-          class="sc-gzVnrw bHlUnu"
+          class="sc-gzVnrw iPHUbZ"
           href="/score"
         >
           Score
         </a>
         <button
-          class="sc-EHOje efNnvT"
+          class="sc-EHOje bbZGQD"
         >
           Share
         </button>
@@ -99,6 +99,12 @@ exports[`should render correctly 1`] = `
           <p>
             Loading.. Please have patience
           </p>
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Submit decision
+          </button>
         </div>
         <div
           class="sc-VigVT bcoFxe"

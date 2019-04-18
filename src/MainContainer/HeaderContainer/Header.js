@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   TitleContainer,
@@ -6,10 +6,10 @@ import {
   HeaderMenu,
   HeaderMenuItem,
   HeaderMenuItemLink,
-  TextContainer
-} from "./Header.style";
-import { Link } from "react-router-dom";
-import logo from "./REEEMlogo.transparent.1.svg";
+  TextContainer,
+} from './Header.style'
+import { Link } from 'react-router-dom'
+import logo from './REEEMlogo.transparent.1.svg'
 
 export const Header = () => (
   <Container>
@@ -27,4 +27,4 @@ export const Header = () => (
       <HeaderMenuItem>Share</HeaderMenuItem>
     </HeaderMenu>
   </Container>
-);
+)

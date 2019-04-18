@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   display: flex;
@@ -8,29 +8,29 @@ export const Container = styled.div`
   background-image: linear-gradient(gray, black);
   justify-content: space-between;
   min-height: 80px;
-`;
+`
 
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px;
   align-items: center;
-`;
+`
 export const TextContainer = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
-  font-family: "Montserrat", sans-serif;
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   display: flex;
   padding: 10px;
   color: white;
-`;
+`
 
 export const LogoContainer = styled.div`
   color: white;
-`;
+`
 export const HeaderMenuItem = styled.button`
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
-  font-family: "Montserrat", sans-serif;
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   padding: 8px;
   margin-right: 10px;
@@ -40,17 +40,17 @@ export const HeaderMenuItem = styled.button`
   :hover {
     cursor: pointer;
   }
-`;
+`
 
 export const HeaderMenu = styled.div`
   display: flex;
   margin-right: 20px;
   align-items: center;
-`;
+`
 
 export const HeaderMenuItemLink = styled(Link)`
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
-  font-family: "Montserrat", sans-serif;
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   padding: 8px;
   margin-right: 10px;
@@ -61,4 +61,4 @@ export const HeaderMenuItemLink = styled(Link)`
   :hover {
     cursor: pointer;
   }
-`;
+`

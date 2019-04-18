@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { MainContainer } from "./MainContainer/MainContainer";
+import React, { Component } from 'react'
+import { MainContainer } from './MainContainer/MainContainer'
 
 class App extends Component {
   render() {
-    return <MainContainer />;
+    return <MainContainer />
   }
 }
 
-export default App;
+export default App
