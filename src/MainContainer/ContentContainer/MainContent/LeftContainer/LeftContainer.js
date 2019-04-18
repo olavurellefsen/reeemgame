@@ -1,13 +1,37 @@
-import React from "react";
-import { Container, LeftMenuItem } from "./LeftContainer.style";
+import React from 'react'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import { EUflag } from './EUflag/EUFlag'
+import { Container, LeftMenuItem, EUflagContainer } from './LeftContainer.style'
 
 export const LeftContainer = () => (
-  <Container>
-    <LeftMenuItem>Electricity demands</LeftMenuItem>
-    <LeftMenuItem>Demand Profile</LeftMenuItem>
-    <LeftMenuItem>Technology Performance</LeftMenuItem>
-    <LeftMenuItem>Technology Cost</LeftMenuItem>
-    <LeftMenuItem>Generation constraints</LeftMenuItem>
-    <LeftMenuItem>Emission constraints</LeftMenuItem>
-  </Container>
-);
+  <>
+    <Container>
+      <Col>
+        <Row>
+          <LeftMenuItem>Electricity demands</LeftMenuItem>
+        </Row>
+        <Row>
+          <LeftMenuItem>Demand Profile</LeftMenuItem>
+        </Row>
+        <Row>
+          <LeftMenuItem>Technology Performance</LeftMenuItem>
+        </Row>
+        <Row>
+          <LeftMenuItem>Technology Cost</LeftMenuItem>
+        </Row>
+        <Row>
+          <LeftMenuItem>Generation constraints</LeftMenuItem>
+        </Row>
+        <Row>
+          <LeftMenuItem>Emission constraints</LeftMenuItem>
+        </Row>
+        <Row>
+          <EUflagContainer>
+            <EUflag />
+          </EUflagContainer>
+        </Row>
+      </Col>
+    </Container>
+  </>
+)

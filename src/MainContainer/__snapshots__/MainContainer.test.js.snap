@@ -6,116 +6,401 @@ exports[`should render correctly 1`] = `
     class="sc-bdVaJa bPGLpq"
   >
     <div
-      class="sc-bwzfXH lcjIRE"
+      class="sc-bwzfXH gkOoBg"
     >
       <div
-        class="sc-htpNat dAdwuX"
+        class="row"
       >
-        <a
-          href="/"
+        <div
+          class="col"
         >
           <div
-            class="sc-ifAKCX hrWLvt"
+            class="sc-htpNat ktXyzA"
           >
-            <img
-              alt="logo"
-              height="40"
-              src="REEEMlogo.transparent.1.svg"
-              width="200"
-            />
+            <a
+              href="/"
+            >
+              <div
+                class="sc-ifAKCX hrWLvt"
+              >
+                <img
+                  alt="logo"
+                  height="40"
+                  src="REEEMlogo.transparent.1.svg"
+                  width="200"
+                />
+              </div>
+            </a>
+            <div
+              class="sc-bxivhb bAImMG"
+            >
+              game
+            </div>
           </div>
-        </a>
-        <div
-          class="sc-bxivhb cfasLa"
-        >
-          Game
         </div>
-      </div>
-      <div
-        class="sc-bZQynM gWTKbC"
-      >
-        <a
-          class="sc-gzVnrw iPHUbZ"
-          href="/about"
+        <div
+          class="col-lg-auto"
         >
-          About
-        </a>
-        <a
-          class="sc-gzVnrw iPHUbZ"
-          href="/score"
-        >
-          Score
-        </a>
-        <button
-          class="sc-EHOje bbZGQD"
-        >
-          Share
-        </button>
+          <div
+            class="sc-bZQynM bqUOMP"
+          >
+            <a
+              class="sc-gzVnrw iPHUbZ"
+              href="/about"
+            >
+              About
+            </a>
+            <a
+              class="sc-gzVnrw iPHUbZ"
+              href="/score"
+            >
+              Score
+            </a>
+            <button
+              class="sc-EHOje bbZGQD"
+            >
+              Share
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="sc-iwsKbI cslhIm"
+      class="row"
     >
       <div
-        class="sc-fjdhpX iFBnxa"
+        class="col-lg-auto"
       >
         <div
-          class="sc-jzJRlG fHMJdp"
+          class="sc-kgoBCf YejCR"
         >
-          Electricity demands
-        </div>
-        <div
-          class="sc-jzJRlG fHMJdp"
-        >
-          Demand Profile
-        </div>
-        <div
-          class="sc-jzJRlG fHMJdp"
-        >
-          Technology Performance
-        </div>
-        <div
-          class="sc-jzJRlG fHMJdp"
-        >
-          Technology Cost
-        </div>
-        <div
-          class="sc-jzJRlG fHMJdp"
-        >
-          Generation constraints
-        </div>
-        <div
-          class="sc-jzJRlG fHMJdp"
-        >
-          Emission constraints
-        </div>
-      </div>
-      <div
-        class="sc-gZMcBi crAViM"
-      >
-        <div
-          class="sc-gqjmRU iRDvLn"
-        >
-          <p>
-            Loading.. Please have patience
-          </p>
-          <button
-            class="btn btn-primary"
-            type="button"
+          <div
+            class="col"
           >
-            Submit decision
-          </button>
-        </div>
-        <div
-          class="sc-VigVT bcoFxe"
-        >
-          Goal Container
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Electricity demands
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Demand Profile
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Technology Performance
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Technology Cost
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Generation constraints
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kGXeez ljwDcV"
+              >
+                Emission constraints
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-kpOJdX bSlYGp"
+              >
+                <div
+                  class="sc-cSHVUG isuxya"
+                >
+                  <img
+                    alt="eu-flag"
+                    class="sc-chPdSV bQdiiA"
+                    src="/EU-flag.png"
+                  />
+                  <div
+                    class="sc-kAzzGY dceIAl"
+                  >
+                    This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="sc-jTzLTM eoQMeB"
+        class="col"
       >
-        Map Container
+        <div
+          class="sc-VigVT fJOcCO"
+        >
+          <div
+            class="col"
+          >
+            <h1
+              class="sc-jTzLTM gjMEoS"
+            >
+              Goal
+            </h1>
+            <div
+              class="sc-fjdhpX OqFYp"
+            >
+              Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="row"
+              >
+                <div
+                  class="col"
+                />
+                <div
+                  class="col"
+                >
+                  Weight
+                </div>
+                <div
+                  class="col"
+                >
+                  Score
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col"
+                >
+                  Economic
+                </div>
+                <div
+                  class="col"
+                >
+                  21%
+                </div>
+                <div
+                  class="col"
+                >
+                  OOOOOOOOOOOO
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col"
+                >
+                  Social
+                </div>
+                <div
+                  class="col"
+                >
+                  38%
+                </div>
+                <div
+                  class="col"
+                >
+                  OOOOO
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col"
+                >
+                  Envionmental
+                </div>
+                <div
+                  class="col"
+                >
+                  41%
+                </div>
+                <div
+                  class="col"
+                >
+                  OOOOOOOO
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-iwsKbI istRUX"
+        >
+          <div
+            class="col"
+          >
+            <h1
+              class="sc-gZMcBi pUXdS"
+            >
+              Decisions in 2020
+            </h1>
+            <div
+              class="sc-gqjmRU fAMbXr"
+            >
+              Which decisions do you want to make in order to reach your goal?
+            </div>
+            <form
+              class=""
+            >
+              <div
+                class="form-group"
+              >
+                <div>
+                  Spending on energy technology (R
+                  &
+                  D)?
+                </div>
+                <div
+                  class="form-check"
+                >
+                  <input
+                    class="form-check-input"
+                    id="high"
+                    name="research"
+                    type="radio"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="high"
+                    title=""
+                    type="checkbox"
+                  >
+                    High
+                  </label>
+                </div>
+                <div
+                  class="form-check"
+                >
+                  <input
+                    class="form-check-input"
+                    id="low"
+                    name="research"
+                    type="radio"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="low"
+                    title=""
+                    type="checkbox"
+                  >
+                    Low
+                  </label>
+                </div>
+              </div>
+              <div
+                class="form-group"
+              >
+                <div>
+                  Emission restrictions?
+                </div>
+                <div
+                  class="form-check"
+                >
+                  <input
+                    class="form-check-input"
+                    id="high"
+                    name="emissions"
+                    type="radio"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="high"
+                    title=""
+                    type="checkbox"
+                  >
+                    High
+                  </label>
+                </div>
+                <div
+                  class="form-check"
+                >
+                  <input
+                    class="form-check-input"
+                    id="med"
+                    name="emissions"
+                    type="radio"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="med"
+                    title=""
+                    type="checkbox"
+                  >
+                    Medium
+                  </label>
+                </div>
+                <div
+                  class="form-check"
+                >
+                  <input
+                    class="form-check-input"
+                    id="low"
+                    name="emissions"
+                    type="radio"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="low"
+                    title=""
+                    type="checkbox"
+                  >
+                    Low
+                  </label>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+              >
+                Submit decisions
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-auto"
+      >
+        <div
+          class="sc-jzJRlG dPOBZH"
+        >
+          <img
+            alt="Europe"
+            src="europe.svg"
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -1,17 +1,22 @@
 import React from 'react'
-import { Container, VerticalGroup } from './MainContent.style'
-import { DecisionContainer } from './DecisionContainer'
-import { GoalContainer } from './GoalContainer'
-import { MapContainer } from './MapContainer'
+import { DecisionContainer } from './DecisionContainer/DecisionContainer'
+import { GoalContainer } from './GoalContainer/GoalContainer'
+import { MapContainer } from './MapContainer/MapContainer'
 import { LeftContainer } from './LeftContainer/LeftContainer'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 export const MainContent = () => (
-  <Container>
-    <LeftContainer />
-    <VerticalGroup>
-      <DecisionContainer />
+  <Row>
+    <Col lg="auto">
+      <LeftContainer />
+    </Col>
+    <Col>
       <GoalContainer />
-    </VerticalGroup>
-    <MapContainer />
-  </Container>
+      <DecisionContainer />
+    </Col>
+    <Col lg="auto">
+      <MapContainer />
+    </Col>
+  </Row>
 )
