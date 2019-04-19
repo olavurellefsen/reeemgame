@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "REEEMgame",
+  "name": "OSeMOSYS/OSeMBE energy systems learning game",
   "icons": [
     {
       "src": "favicon.ico",

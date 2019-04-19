@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <ContextStore>
-    <BrowserRouter>
+    <BrowserRouter basename={'/reeemgame'}>
       <App />
     </BrowserRouter>
   </ContextStore>,
