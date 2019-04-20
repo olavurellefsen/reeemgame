@@ -24,7 +24,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=false",
-    "testci": "CI=true react-scripts test --verbose=false",
     "test:coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "u": "jest -u",
