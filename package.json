@@ -1,7 +1,7 @@
 {
   "name": "reeemgame",
   "version": "0.1.0",
-  "homepage": "https://reeemproject.github.io/reeemgame",
+  "homepage": "https://game.reeem.org",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
