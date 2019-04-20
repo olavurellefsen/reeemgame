@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
+  max-width: 100%;
 `
 
-export const Map = styled.img`
-  max-width: 100%;
-  width: 60vw;
-  height: 50vw;
+export const StyledEurope = styled.div`
+  .ru {
+    fill: #aaaaaa;
+  }
+  fill: #cccccc;
+  stroke: gray;
+  stroke-width: 10;
+  stroke-miterlimit: 22.9256;
 `
