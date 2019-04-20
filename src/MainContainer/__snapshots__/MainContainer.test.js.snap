@@ -313,12 +313,16 @@ exports[`should render correctly 1`] = `
         <div
           class="sc-kpOJdX buZqTR"
         >
-          <svg>
-            europe.svg
-          </svg>
+          <div
+            class="sc-dxgOiQ lpfWHE"
+          >
+            <svg>
+              europe.svg
+            </svg>
+          </div>
         </div>
         <div
-          class="sc-dxgOiQ kdypfu"
+          class="sc-ckVGcZ jaNNM"
         >
           <div
             class="progress"
