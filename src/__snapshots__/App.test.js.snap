@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa bPGLpq"
+  >
+    <div
+      class="sc-bwzfXH gkOoBg"
+    >
+      <div
+        class="row no-gutters"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="sc-htpNat ktXyzA"
+          >
+            <a
+              href="/"
+            >
+              <div
+                class="sc-ifAKCX hrWLvt"
+              >
+                <img
+                  alt="logo"
+                  height="40"
+                  src="REEEMlogo.transparent.1.svg"
+                  width="200"
+                />
+              </div>
+            </a>
+            <div
+              class="sc-bxivhb bAImMG"
+            >
+              game
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-auto"
+        >
+          <div
+            class="sc-bZQynM eHHkRo"
+          >
+            <a
+              class="sc-gzVnrw iPHUbZ"
+              href="/about"
+            >
+              About
+            </a>
+            <a
+              class="sc-gzVnrw iPHUbZ"
+              href="/score"
+            >
+              Score
+            </a>
+            <button
+              class="sc-EHOje bbZGQD"
+            >
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row no-gutters"
+    >
+      <div
+        class="col-lg-auto"
+      >
+        <div
+          class="sc-iwsKbI gRKeIA"
+        >
+          <div
+            class="col"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Electricity demands
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Demand Profile
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Technology Performance
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Technology Cost
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Generation constraints
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="sc-gZMcBi DcDyO"
+              >
+                Emission constraints
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-VigVT cXgrjz"
+        >
+          <img
+            alt="EU flag"
+            class="sc-fjdhpX dkLfWB"
+            src="/reeemgame/eu-flag.png"
+          />
+          <div
+            class="sc-jTzLTM bwyeWm"
+          >
+            This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
+          </div>
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="sc-chPdSV jrQqqr"
+        >
+          <div
+            class="col"
+          >
+            <h1
+              class="sc-kgoBCf fXFYCN"
+            >
+              Goal
+            </h1>
+            <div
+              class="sc-kGXeez bMDHZO"
+            >
+              Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
+            </div>
+            <table
+              class="table"
+            >
+              <thead>
+                <tr>
+                  <th />
+                  <th>
+                    Weight
+                  </th>
+                  <th>
+                    Score
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Economic
+                  </td>
+                  <td>
+                    21%
+                  </td>
+                  <td>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="1000"
+                        aria-valuemin="0"
+                        aria-valuenow="321"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 32.1%;"
+                      >
+                        321
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Social
+                  </td>
+                  <td>
+                    38%
+                  </td>
+                  <td>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="1000"
+                        aria-valuemin="0"
+                        aria-valuenow="432"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 43.2%;"
+                      >
+                        432
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Environmental
+                  </td>
+                  <td>
+                    41%
+                  </td>
+                  <td>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="1000"
+                        aria-valuemin="0"
+                        aria-valuenow="210"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 21%;"
+                      >
+                        210
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td />
+                  <td>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="1000"
+                        aria-valuemin="0"
+                        aria-valuenow="333"
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 33.3%;"
+                      >
+                        333
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="sc-jzJRlG ctDSzB"
+        >
+          <div
+            class="col"
+          >
+            <h1
+              class="sc-cSHVUG cVLVRZ"
+            >
+              Maximise your score
+            </h1>
+            <div
+              class="sc-kAzzGY hjahid"
+            >
+              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score
+            </div>
+            <form
+              class=""
+            >
+              <button
+                class="btn btn-success"
+                type="submit"
+              >
+                START
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-7"
+      >
+        <div
+          class="sc-kpOJdX ieBFuD"
+        >
+          <div
+            class="row no-gutters"
+          >
+            <img
+              alt="Europe"
+              class="sc-dxgOiQ cNLGLd"
+              src="europe.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-ckVGcZ jjGpXY"
+        >
+          <div
+            class="progress"
+          >
+            <div
+              aria-valuemax="2050"
+              aria-valuemin="2015"
+              aria-valuenow="2019"
+              class="progress-bar"
+              role="progressbar"
+              style="width: 11.429%;"
+            >
+              2019
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
