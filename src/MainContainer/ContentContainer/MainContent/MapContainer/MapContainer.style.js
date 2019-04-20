@@ -7,5 +7,5 @@ export const Container = styled.div`
 export const Map = styled.img`
   max-width: 100%;
   width: 60vw;
-  height: 50vw;
+  height: 40vw;
 `
