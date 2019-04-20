@@ -1,30 +1,45 @@
-import React from 'react'
-import { DecisionHeader, IntroText } from './DecisionForm.style'
+import React, { useState } from 'react'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { DecisionHeader, IntroText } from './DecisionForm.style'
+import { decisions } from './Decisions'
 
 export const DecisionForm = () => {
+  const [choices, setChoice] = useState({})
+
   return (
     <Col>
-      <DecisionHeader>Decisions in 2020</DecisionHeader>
-      <IntroText>
-        Which decisions do you want to make in order to reach your goal?
-      </IntroText>
+      <DecisionHeader>{decisions.header}</DecisionHeader>
+      <IntroText>{decisions.introText}</IntroText>
       <Form>
-        <Form.Group controlId="researchSpending">
-          <div>Spending on energy technology (R{'&'}D)?</div>
-          <Form.Check type="radio" name="research" label="High" id="high" />
-          <Form.Check type="radio" name="research" label="Low" id="low" />
-        </Form.Group>
-        <Form.Group controlId="emissionTarget">
-          <div>Emission restrictions?</div>
-          <Form.Check type="radio" name="emissions" label="High" id="high" />
-          <Form.Check type="radio" name="emissions" label="Medium" id="med" />
-          <Form.Check type="radio" name="emissions" label="Low" id="low" />
-        </Form.Group>
-        <Button variant="outline-success" type="submit">
-          Submit decisions
+        {decisions.individualDecisions.map((decision, i) => (
+          <Form.Group key={i} controlId={decision.name}>
+            <div>{decision.introText}</div>
+            {decision.options.map((option, j) => (
+              <Form.Check
+                key={j}
+                type="radio"
+                name={decision.name}
+                label={option}
+                id={option}
+                onClick={() => {
+                  setChoice({ ...choices, [decision.name]: option })
+                }}
+              />
+            ))}
+          </Form.Group>
+        ))}
+        <Button
+          variant="success"
+          type="submit"
+          disabled={
+            !decisions.individualDecisions.every(
+              decision => choices[decision.name] !== undefined
+            )
+          }
+        >
+          Submit choices
         </Button>
       </Form>
     </Col>

@@ -139,7 +139,7 @@ exports[`should render correctly 1`] = `
           <img
             alt="EU flag"
             class="sc-fjdhpX dkLfWB"
-            src="/eu-flag.png"
+            src="/reeemgame/eu-flag.png"
           />
           <div
             class="sc-jTzLTM bwyeWm"
@@ -292,7 +292,7 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-kAzzGY hjahid"
             >
-              Which decisions do you want to make in order to reach your goal?
+              Which choices do you want to make in order to reach your goal?
             </div>
             <form
               class=""
@@ -301,9 +301,7 @@ exports[`should render correctly 1`] = `
                 class="form-group"
               >
                 <div>
-                  Spending on energy technology (R
-                  &
-                  D)?
+                  Spending on energy technology (R&D)?
                 </div>
                 <div
                   class="form-check"
@@ -320,7 +318,7 @@ exports[`should render correctly 1`] = `
                     title=""
                     type="checkbox"
                   >
-                    High
+                    high
                   </label>
                 </div>
                 <div
@@ -338,7 +336,7 @@ exports[`should render correctly 1`] = `
                     title=""
                     type="checkbox"
                   >
-                    Low
+                    low
                   </label>
                 </div>
               </div>
@@ -363,7 +361,7 @@ exports[`should render correctly 1`] = `
                     title=""
                     type="checkbox"
                   >
-                    High
+                    high
                   </label>
                 </div>
                 <div
@@ -371,17 +369,17 @@ exports[`should render correctly 1`] = `
                 >
                   <input
                     class="form-check-input"
-                    id="med"
+                    id="medium"
                     name="emissions"
                     type="radio"
                   />
                   <label
                     class="form-check-label"
-                    for="med"
+                    for="medium"
                     title=""
                     type="checkbox"
                   >
-                    Medium
+                    medium
                   </label>
                 </div>
                 <div
@@ -399,15 +397,16 @@ exports[`should render correctly 1`] = `
                     title=""
                     type="checkbox"
                   >
-                    Low
+                    low
                   </label>
                 </div>
               </div>
               <button
-                class="btn btn-outline-success"
+                class="btn btn-success"
+                disabled=""
                 type="submit"
               >
-                Submit decisions
+                Submit choices
               </button>
             </form>
           </div>
