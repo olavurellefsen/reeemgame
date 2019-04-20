@@ -1,45 +1,61 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import { DecisionHeader, IntroText } from './DecisionForm.style'
+import Context from '../../../../../Context/Context'
 import { decisions } from './Decisions'
+import { DecisionHeader, IntroText } from './DecisionForm.style'
 
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
+  const [state, dispatch] = useContext(Context)
+  const currentDecisions = decisions.filter(
+    decision => decision.year === state.currentDecision
+  )[0]
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    dispatch({
+      type: 'forwardToNextDecision',
+    })
+    setChoice({})
+    e.target.reset()
+  }
 
   return (
     <Col>
-      <DecisionHeader>{decisions.header}</DecisionHeader>
-      <IntroText>{decisions.introText}</IntroText>
-      <Form>
-        {decisions.individualDecisions.map((decision, i) => (
-          <Form.Group key={i} controlId={decision.name}>
-            <div>{decision.introText}</div>
-            {decision.options.map((option, j) => (
-              <Form.Check
-                key={j}
-                type="radio"
-                name={decision.name}
-                label={option}
-                id={option}
-                onClick={() => {
-                  setChoice({ ...choices, [decision.name]: option })
-                }}
-              />
-            ))}
-          </Form.Group>
-        ))}
+      <DecisionHeader>{currentDecisions.header}</DecisionHeader>
+      <IntroText>{currentDecisions.introText}</IntroText>
+      <Form onSubmit={e => handleSubmit(e)}>
+        {currentDecisions.individualDecisions !== undefined &&
+          currentDecisions.individualDecisions.map((decision, i) => (
+            <Form.Group key={i} controlId={decision.name}>
+              <div>{decision.introText}</div>
+              {decision.options.map((option, j) => (
+                <Form.Check
+                  key={j}
+                  type="radio"
+                  name={decision.name}
+                  label={option}
+                  id={option}
+                  onClick={() => {
+                    setChoice({ ...choices, [decision.name]: option })
+                  }}
+                />
+              ))}
+            </Form.Group>
+          ))}
         <Button
           variant="success"
           type="submit"
           disabled={
-            !decisions.individualDecisions.every(
+            currentDecisions.individualDecisions !== undefined &&
+            !currentDecisions.individualDecisions.every(
               decision => choices[decision.name] !== undefined
             )
           }
         >
-          Submit choices
+          {currentDecisions.submitText}
         </Button>
       </Form>
     </Col>

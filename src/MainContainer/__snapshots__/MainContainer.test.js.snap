@@ -287,126 +287,21 @@ exports[`should render correctly 1`] = `
             <h1
               class="sc-cSHVUG cVLVRZ"
             >
-              Decisions in 2020
+              Maximise your score
             </h1>
             <div
               class="sc-kAzzGY hjahid"
             >
-              Which choices do you want to make in order to reach your goal?
+              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score
             </div>
             <form
               class=""
             >
-              <div
-                class="form-group"
-              >
-                <div>
-                  Spending on energy technology (R&D)?
-                </div>
-                <div
-                  class="form-check"
-                >
-                  <input
-                    class="form-check-input"
-                    id="high"
-                    name="research"
-                    type="radio"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="high"
-                    title=""
-                    type="checkbox"
-                  >
-                    high
-                  </label>
-                </div>
-                <div
-                  class="form-check"
-                >
-                  <input
-                    class="form-check-input"
-                    id="low"
-                    name="research"
-                    type="radio"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="low"
-                    title=""
-                    type="checkbox"
-                  >
-                    low
-                  </label>
-                </div>
-              </div>
-              <div
-                class="form-group"
-              >
-                <div>
-                  Emission restrictions?
-                </div>
-                <div
-                  class="form-check"
-                >
-                  <input
-                    class="form-check-input"
-                    id="high"
-                    name="emissions"
-                    type="radio"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="high"
-                    title=""
-                    type="checkbox"
-                  >
-                    high
-                  </label>
-                </div>
-                <div
-                  class="form-check"
-                >
-                  <input
-                    class="form-check-input"
-                    id="medium"
-                    name="emissions"
-                    type="radio"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="medium"
-                    title=""
-                    type="checkbox"
-                  >
-                    medium
-                  </label>
-                </div>
-                <div
-                  class="form-check"
-                >
-                  <input
-                    class="form-check-input"
-                    id="low"
-                    name="emissions"
-                    type="radio"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="low"
-                    title=""
-                    type="checkbox"
-                  >
-                    low
-                  </label>
-                </div>
-              </div>
               <button
                 class="btn btn-success"
-                disabled=""
                 type="submit"
               >
-                Submit choices
+                START
               </button>
             </form>
           </div>

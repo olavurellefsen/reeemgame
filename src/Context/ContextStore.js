@@ -17,15 +17,21 @@ ContextStore.propTypes = {
 }
 
 const initialState = {
-  currentDecision: 2020,
+  currentDecision: '2019',
 }
+
+const decisionCycle = ['2019', '2020', '2030', '2040', '2050']
 
 const reducer = createReducer(initialState, {
   reset: () => initialState,
-  setCurrentDecison: (state, action) => ({
-    ...state,
-    currentDecision: action.number,
-  }),
+  forwardToNextDecision: state => {
+    let nextDecision = decisionCycle.indexOf(state.currentDecision) + 1
+    if (nextDecision >= decisionCycle.length) nextDecision = 0
+    return {
+      ...state,
+      currentDecision: decisionCycle[nextDecision],
+    }
+  },
 })
 
 export default ContextStore
