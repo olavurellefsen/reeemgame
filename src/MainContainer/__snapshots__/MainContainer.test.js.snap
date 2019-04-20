@@ -308,23 +308,17 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="col-lg-7"
+        class="col-lg-6"
       >
         <div
-          class="sc-kpOJdX ieBFuD"
+          class="sc-kpOJdX buZqTR"
         >
-          <div
-            class="row no-gutters"
-          >
-            <img
-              alt="Europe"
-              class="sc-dxgOiQ cNLGLd"
-              src="europe.svg"
-            />
-          </div>
+          <svg>
+            europe.svg
+          </svg>
         </div>
         <div
-          class="sc-ckVGcZ LWpXx"
+          class="sc-dxgOiQ kdypfu"
         >
           <div
             class="progress"
