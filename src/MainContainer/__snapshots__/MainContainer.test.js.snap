@@ -69,7 +69,7 @@ exports[`should render correctly 1`] = `
       class="row no-gutters"
     >
       <div
-        class="col-lg-auto"
+        class="col-lg-2 col-sm-2"
       >
         <div
           class="sc-iwsKbI gRKeIA"
@@ -134,7 +134,7 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-VigVT cXgrjz"
+          class="sc-VigVT kFBRJe"
         >
           <img
             alt="EU flag"
@@ -149,7 +149,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="col"
+        class="col-lg-4 col-sm-4"
       >
         <div
           class="sc-chPdSV jrQqqr"
@@ -308,13 +308,13 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="col-lg-6"
+        class="col-lg-6 col-sm-6"
       >
         <div
           class="sc-kpOJdX buZqTR"
         >
           <div
-            class="sc-dxgOiQ lpfWHE"
+            class="sc-dxgOiQ bVbVzN"
           >
             <svg>
               europe.svg
