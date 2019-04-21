@@ -10,15 +10,15 @@ import Row from 'react-bootstrap/Row'
 
 export const MainContent = () => (
   <Row noGutters="true">
-    <Col lg="auto">
+    <Col lg="2" sm="2">
       <IndicatorContainer />
       <EUacknowledgement />
     </Col>
-    <Col>
+    <Col lg="4" sm="4">
       <GoalContainer />
       <DecisionContainer />
     </Col>
-    <Col lg="6">
+    <Col lg="6" sm="6">
       <MapContainer />
       <TimelineContainer />
     </Col>
