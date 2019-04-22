@@ -1,9 +1,9 @@
 export const decisions = [
   {
     year: '2019',
-    header: 'Maximise your score',
+    header: 'Decide the future of Europe',
     introText:
-      'You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score',
+      'You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.',
     submitText: 'START',
   },
   {

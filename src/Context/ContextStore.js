@@ -18,7 +18,10 @@ ContextStore.propTypes = {
 
 const initialState = {
   currentDecision: '2019',
+  currentYear: 2019,
+  maxYear: 2020,
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
+  maxYears: [2020, 2020, 2030, 2040, 2050],
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
   selectedIndicator: null,
   selectedScenario: 'C0T0E0',
@@ -29,9 +32,13 @@ const reducer = createReducer(initialState, {
   forwardToNextDecision: (state, action) => {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     if (nextDecision >= state.decisionCycle.length) nextDecision = 0
+    const newYear = state.decisionCycle[nextDecision]
+    const newMaxYear = state.maxYears[nextDecision]
     return {
       ...state,
-      currentDecision: state.decisionCycle[nextDecision],
+      currentDecision: newYear,
+      currentYear: parseInt(newYear),
+      maxYear: newMaxYear,
     }
   },
   setSelectedIndicator: (state, action) => ({
@@ -41,6 +48,10 @@ const reducer = createReducer(initialState, {
   setSelectedScenario: (state, action) => ({
     ...state,
     selectedScenario: action.name,
+  }),
+  setCurrentYear: (state, action) => ({
+    ...state,
+    currentYear: action.year,
   }),
 })
 

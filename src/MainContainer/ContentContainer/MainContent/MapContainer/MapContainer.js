@@ -6,7 +6,7 @@ import { getMapColors } from './MapValues'
 
 export const MapContainer = () => {
   const [state] = useContext(Context)
-  const currentYear = parseInt(state.currentDecision)
+  const currentYear = state.currentYear
   const mapColors = getMapColors(
     state.selectedIndicator,
     state.selectedScenario,
