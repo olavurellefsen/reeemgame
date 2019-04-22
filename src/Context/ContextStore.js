@@ -30,9 +30,10 @@ const reducer = createReducer(initialState, {
     return {
       ...state,
       currentDecision: state.decisionCycle[nextDecision],
+      chosenYear: parseInt(state.decisionCycle[nextDecision]),
     }
   },
-  choseYear: (state, action) => ({
+  chooseYear: (state, action) => ({
     ...state,
     chosenYear: action.year,
   }),
