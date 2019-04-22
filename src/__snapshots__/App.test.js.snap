@@ -311,19 +311,40 @@ exports[`should render correctly 1`] = `
         class="col-lg-6 col-sm-6"
       >
         <div
-          class="sc-kpOJdX buZqTR"
+          class="sc-ckVGcZ OGfrb"
         >
           <div
-            class="sc-dxgOiQ bVbVzN"
+            class="sc-jKJlTe geZiA"
           >
-            <svg>
-              europe.svg
-            </svg>
+            <div
+              class="sc-eNQAEJ hBfPcT"
+              max="2050"
+              min="2015"
+            >
+              2020
+            </div>
+            <div
+              class="sc-eNQAEJ bLlsqx"
+              max="2050"
+              min="2015"
+            >
+              2030
+            </div>
+            <div
+              class="sc-eNQAEJ bwePyC"
+              max="2050"
+              min="2015"
+            >
+              2040
+            </div>
+            <div
+              class="sc-eNQAEJ dpFhLb"
+              max="2050"
+              min="2015"
+            >
+              2050
+            </div>
           </div>
-        </div>
-        <div
-          class="sc-ckVGcZ jaNNM"
-        >
           <div
             class="progress"
           >
@@ -337,6 +358,17 @@ exports[`should render correctly 1`] = `
             >
               2019
             </div>
+          </div>
+        </div>
+        <div
+          class="sc-kpOJdX buZqTR"
+        >
+          <div
+            class="sc-dxgOiQ bVbVzN"
+          >
+            <svg>
+              europe.svg
+            </svg>
           </div>
         </div>
       </div>
