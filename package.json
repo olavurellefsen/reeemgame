@@ -4,6 +4,8 @@
   "homepage": "https://game.reeem.org",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/lab": "^3.0.0-alpha.30",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "graphql": "^14.1.1",
