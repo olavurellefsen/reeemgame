@@ -12,8 +12,8 @@ export const LeftMenuItem = styled.div`
   font-size: 16px;
   height: 60px;
   width: 250px;
-  color: white;
-  background: #2b2a2a;
+  color: ${props => (props.selected ? 'black' : 'white')}
+  background: ${props => (props.selected ? '#888888' : '#2b2a2a')}
   text-align: left;
   padding: 0px 0px 0px 16px;
   cursor: pointer;
@@ -22,7 +22,7 @@ export const LeftMenuItem = styled.div`
   display: flex;
   align-items: center;
   :hover {
-    color: grey;
+    color: #aaaaaa;
   }
 `
 

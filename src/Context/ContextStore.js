@@ -20,11 +20,13 @@ const initialState = {
   currentDecision: '2019',
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
+  selectedIndicator: null,
+  selectedScenario: 'C0T0E0',
 }
 
 const reducer = createReducer(initialState, {
   reset: () => initialState,
-  forwardToNextDecision: state => {
+  forwardToNextDecision: (state, action) => {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     if (nextDecision >= state.decisionCycle.length) nextDecision = 0
     return {
@@ -32,6 +34,14 @@ const reducer = createReducer(initialState, {
       currentDecision: state.decisionCycle[nextDecision],
     }
   },
+  setSelectedIndicator: (state, action) => ({
+    ...state,
+    selectedIndicator: action.name,
+  }),
+  setSelectedScenario: (state, action) => ({
+    ...state,
+    selectedScenario: action.name,
+  }),
 })
 
 export default ContextStore
