@@ -339,18 +339,27 @@ exports[`should render correctly 1`] = `
           </div>
           <div
             class="progress"
-            id="timeline"
           >
             <div
               aria-valuemax="2050"
               aria-valuemin="2015"
               aria-valuenow="2019"
               class="progress-bar"
+              id="beforenow"
               role="progressbar"
               style="width: 11.429%;"
             >
               2019
             </div>
+            <div
+              aria-valuemax="2050"
+              aria-valuemin="2015"
+              aria-valuenow="2016"
+              class="progress-bar bg-warning"
+              id="afternow"
+              role="progressbar"
+              style="width: 2.857%;"
+            />
           </div>
         </div>
         <div
