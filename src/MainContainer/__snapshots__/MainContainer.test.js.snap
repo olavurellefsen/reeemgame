@@ -346,6 +346,38 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
+            aria-disabled="false"
+            aria-orientation="horizontal"
+            aria-valuemax="2050"
+            aria-valuemin="2015"
+            aria-valuenow="2019"
+            class="MuiSlider-root-1"
+            role="slider"
+          >
+            <div
+              class="MuiSlider-container-2"
+            >
+              <div
+                class="MuiSlider-track-3 MuiSlider-trackBefore-4"
+                style="transform: translateY(-50%) scaleX(0.11428571428571428);"
+              />
+              <div
+                class="MuiSlider-thumbWrapper-6"
+                style="transform: translateX(11.428571428571429%);"
+              >
+                <button
+                  class="MuiButtonBase-root-15 MuiSlider-thumb-7"
+                  tabindex="0"
+                  type="button"
+                />
+              </div>
+              <div
+                class="MuiSlider-track-3 MuiSlider-trackAfter-5"
+                style="transform: translateY(-50%) scaleX(0.8857142857142857);"
+              />
+            </div>
+          </div>
+          <div
             class="progress"
           >
             <div
@@ -359,6 +391,10 @@ exports[`should render correctly 1`] = `
               2019
             </div>
           </div>
+          <p>
+            Looking at: 
+            2019
+          </p>
         </div>
         <div
           class="sc-kpOJdX buZqTR"
