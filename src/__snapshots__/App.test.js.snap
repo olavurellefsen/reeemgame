@@ -81,7 +81,7 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-gZMcBi DcDyO"
+                class="sc-gZMcBi gCPFUL"
               >
                 Electricity demands
               </div>
@@ -90,45 +90,9 @@ exports[`should render correctly 1`] = `
               class="row"
             >
               <div
-                class="sc-gZMcBi DcDyO"
+                class="sc-gZMcBi gCPFUL"
               >
-                Demand Profile
-              </div>
-            </div>
-            <div
-              class="row"
-            >
-              <div
-                class="sc-gZMcBi DcDyO"
-              >
-                Technology Performance
-              </div>
-            </div>
-            <div
-              class="row"
-            >
-              <div
-                class="sc-gZMcBi DcDyO"
-              >
-                Technology Cost
-              </div>
-            </div>
-            <div
-              class="row"
-            >
-              <div
-                class="sc-gZMcBi DcDyO"
-              >
-                Generation constraints
-              </div>
-            </div>
-            <div
-              class="row"
-            >
-              <div
-                class="sc-gZMcBi DcDyO"
-              >
-                Emission constraints
+                Emission Limit
               </div>
             </div>
           </div>
@@ -392,7 +356,7 @@ exports[`should render correctly 1`] = `
           class="sc-kpOJdX buZqTR"
         >
           <div
-            class="sc-dxgOiQ bVbVzN"
+            class="sc-dxgOiQ jCYBBK"
           >
             <svg>
               europe.svg

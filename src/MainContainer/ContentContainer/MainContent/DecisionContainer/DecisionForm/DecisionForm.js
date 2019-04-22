@@ -18,6 +18,21 @@ export const DecisionForm = () => {
     dispatch({
       type: 'forwardToNextDecision',
     })
+
+    // Simple choice between E1 and E0 scenarios based on emission choice in 2020
+    if (choices.emissions1 === 'high') {
+      dispatch({
+        type: 'setSelectedScenario',
+        name: 'C0T0E1',
+      })
+    }
+    if (state.currentDecision === '2019') {
+      dispatch({
+        type: 'setSelectedScenario',
+        name: 'C0T0E0',
+      })
+    }
+
     setChoice({})
     e.target.reset()
   }
