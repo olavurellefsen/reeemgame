@@ -116,6 +116,34 @@ exports[`should render correctly 1`] = `
         class="col-lg-4 col-sm-4"
       >
         <div
+          class="sc-jzJRlG ctDSzB"
+        >
+          <div
+            class="col"
+          >
+            <h1
+              class="sc-cSHVUG cVLVRZ"
+            >
+              Decide the future of Europe
+            </h1>
+            <div
+              class="sc-kAzzGY hjahid"
+            >
+              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
+            </div>
+            <form
+              class=""
+            >
+              <button
+                class="btn btn-success"
+                type="submit"
+              >
+                START
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
           class="sc-chPdSV jrQqqr"
         >
           <div
@@ -242,34 +270,6 @@ exports[`should render correctly 1`] = `
             </table>
           </div>
         </div>
-        <div
-          class="sc-jzJRlG ctDSzB"
-        >
-          <div
-            class="col"
-          >
-            <h1
-              class="sc-cSHVUG cVLVRZ"
-            >
-              Maximise your score
-            </h1>
-            <div
-              class="sc-kAzzGY hjahid"
-            >
-              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score
-            </div>
-            <form
-              class=""
-            >
-              <button
-                class="btn btn-success"
-                type="submit"
-              >
-                START
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
       <div
         class="col-lg-6 col-sm-6"
@@ -339,6 +339,7 @@ exports[`should render correctly 1`] = `
           </div>
           <div
             class="progress"
+            id="timeline"
           >
             <div
               aria-valuemax="2050"

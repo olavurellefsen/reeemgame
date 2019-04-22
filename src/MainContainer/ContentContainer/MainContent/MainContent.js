@@ -15,8 +15,8 @@ export const MainContent = () => (
       <EUacknowledgement />
     </Col>
     <Col lg="4" sm="4">
-      <GoalContainer />
       <DecisionContainer />
+      <GoalContainer />
     </Col>
     <Col lg="6" sm="6">
       <TimelineContainer />
