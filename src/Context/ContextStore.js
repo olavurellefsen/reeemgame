@@ -19,6 +19,7 @@ ContextStore.propTypes = {
 const initialState = {
   currentDecision: '2019',
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
+  timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
 }
 
 const reducer = createReducer(initialState, {

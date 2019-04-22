@@ -7,8 +7,8 @@ export const TimelineContainer = () => {
   const [state] = useContext(Context)
 
   const now = parseInt(state.currentDecision)
-  const years = state.decisionCycle
-  var prevYear = 2015
+  const years = state.timeline
+  var prevYear = 2010
   const progressInstance = (
     <Container>
       <LabelContainer>

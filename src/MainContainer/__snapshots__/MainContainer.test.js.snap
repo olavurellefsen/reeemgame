@@ -314,31 +314,59 @@ exports[`should render correctly 1`] = `
           class="sc-ckVGcZ OGfrb"
         >
           <div
-            class="sc-jKJlTe geZiA"
+            class="sc-jKJlTe wgyFa"
           >
             <div
-              class="sc-eNQAEJ hBfPcT"
+              class="sc-eNQAEJ hfJHik"
+              max="2050"
+              min="2015"
+            >
+              2015
+            </div>
+            <div
+              class="sc-eNQAEJ hfJHik"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-eNQAEJ bLlsqx"
+              class="sc-eNQAEJ hfJHik"
+              max="2050"
+              min="2015"
+            >
+              2025
+            </div>
+            <div
+              class="sc-eNQAEJ hfJHik"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-eNQAEJ bwePyC"
+              class="sc-eNQAEJ hfJHik"
+              max="2050"
+              min="2015"
+            >
+              2035
+            </div>
+            <div
+              class="sc-eNQAEJ hfJHik"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-eNQAEJ dpFhLb"
+              class="sc-eNQAEJ hfJHik"
+              max="2050"
+              min="2015"
+            >
+              2045
+            </div>
+            <div
+              class="sc-eNQAEJ hfJHik"
               max="2050"
               min="2015"
             >

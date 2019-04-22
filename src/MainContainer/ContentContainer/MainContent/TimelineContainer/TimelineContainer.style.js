@@ -7,6 +7,7 @@ export const Container = styled.div`
 `
 export const LabelContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   width: 100%;
   margin: 5px;
   height: 15px;
@@ -14,7 +15,5 @@ export const LabelContainer = styled.div`
 export const Label = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  left: ${props =>
-    ((props.year - props.min) / (props.max - props.min)) * 100 - 4}%;
+  font-size: 12px;
 `
