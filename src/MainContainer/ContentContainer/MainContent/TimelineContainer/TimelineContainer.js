@@ -1,12 +1,7 @@
 import React, { useContext } from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Context from '../../../../Context/Context'
-import {
-  Container,
-  Label,
-  LabelContainer,
-  Timeline,
-} from './TimelineContainer.style'
+import { Container, Label, LabelContainer } from './TimelineContainer.style'
 
 export const TimelineContainer = () => {
   const [state] = useContext(Context)
@@ -22,7 +17,7 @@ export const TimelineContainer = () => {
           if (year - prevYear >= 5) {
             prevYear = year
             return (
-              <Label year={year} min={2015} max={2050}>
+              <Label year={year} min={2015} max={2050} key={'label' + year}>
                 {year}
               </Label>
             )
