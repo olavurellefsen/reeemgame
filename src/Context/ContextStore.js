@@ -26,6 +26,8 @@ const initialState = {
   selectedIndicator: null,
   selectedScenario: 'C0T0E0',
   weights: { eco: 20, env: 30, soc: 50 },
+  scores: { eco: 300, env: 500, soc: 200 },
+  weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
 }
 const getNewWeights = () => {
   var ret = {}
@@ -37,6 +39,15 @@ const getNewWeights = () => {
   var eco = Math.round((ecoTemp / sum) * 100, 2)
   var soc = 100 - env - eco
   ret = { env: env, eco: eco, soc: soc }
+  return ret
+}
+const getNewWeightedScores = (weights, scores) => {
+  var ret = {}
+
+  var wEco = (scores.eco * weights.eco) / 100
+  var wEnv = (scores.env * weights.env) / 100
+  var wSoc = (scores.soc * weights.soc) / 100
+  ret = { eco: wEco, env: wEnv, soc: wSoc, sum: wEco + wEnv + wSoc }
   return ret
 }
 
@@ -66,9 +77,22 @@ const reducer = createReducer(initialState, {
     ...state,
     currentYear: action.year,
   }),
-  resetWeights: (state, action) => ({
+  resetWeights: state => {
+    var newWeights = getNewWeights()
+    return {
+      ...state,
+      weights: newWeights,
+      weightedScores: getNewWeightedScores(newWeights, state.scores),
+    }
+  },
+  setScores: (state, action) => ({
     ...state,
-    weights: getNewWeights(),
+    scores: { eco: action.eco, env: action.env, soc: action.soc },
+    weightedScores: getNewWeightedScores(state.weights, {
+      eco: action.eco,
+      env: action.env,
+      soc: action.soc,
+    }),
   }),
 })
 

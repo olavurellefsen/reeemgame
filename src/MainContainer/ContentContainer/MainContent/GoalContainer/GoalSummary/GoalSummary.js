@@ -20,57 +20,62 @@ export const GoalSummary = () => {
         <thead>
           <tr>
             <th />
-            <th>Weight</th>
             <th>Score</th>
+            <th>Weight</th>
+            <th>Weigted Score</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Economic</td>
+            <td>{state.scores.eco}</td>
             <td>{state.weights.eco}%</td>
             <td>
               <ProgressBar
-                now={state.weights.eco}
-                label={`${state.weights.eco}`}
+                now={state.weightedScores.eco}
+                label={`${state.weightedScores.eco}`}
                 min={0}
-                max={100}
+                max={500}
               />
             </td>
           </tr>
           <tr>
             <td>Social</td>
+            <td>{state.scores.soc}</td>
             <td>{state.weights.soc}%</td>
             <td>
               <ProgressBar
-                now={state.weights.soc}
-                label={`${state.weights.soc}`}
+                now={state.weightedScores.soc}
+                label={`${state.weightedScores.soc}`}
                 min={0}
-                max={100}
+                max={500}
               />
             </td>
           </tr>
           <tr>
             <td>Environmental</td>
+            <td>{state.scores.env}</td>
             <td>{state.weights.env}%</td>
             <td>
               <ProgressBar
-                now={state.weights.env}
-                label={`${state.weights.env}`}
+                now={state.weightedScores.env}
+                label={`${state.weightedScores.env}`}
                 min={0}
-                max={100}
+                max={500}
               />
             </td>
           </tr>
           <tr>
             <td />
             <td />
+            <td />
             <td>
               <ProgressBar
                 variant="success"
-                now={333}
-                label={`${333}`}
+                now={state.weightedScores.sum}
+                label={`${state.weightedScores.sum}`}
                 min={0}
-                max={1000}
+                max={500}
               />
             </td>
           </tr>
