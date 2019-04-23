@@ -25,6 +25,19 @@ const initialState = {
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
   selectedIndicator: null,
   selectedScenario: 'C0T0E0',
+  weights: { eco: 20, env: 30, soc: 50 },
+}
+const getNewWeights = () => {
+  var ret = {}
+  var envTemp = Math.random()
+  var ecoTemp = Math.random()
+  var socTemp = Math.random()
+  var sum = envTemp + ecoTemp + socTemp
+  var env = Math.round((envTemp / sum) * 100, 2)
+  var eco = Math.round((ecoTemp / sum) * 100, 2)
+  var soc = 100 - env - eco
+  ret = { env: env, eco: eco, soc: soc }
+  return ret
 }
 
 const reducer = createReducer(initialState, {
@@ -52,6 +65,10 @@ const reducer = createReducer(initialState, {
   setCurrentYear: (state, action) => ({
     ...state,
     currentYear: action.year,
+  }),
+  resetWeights: (state, action) => ({
+    ...state,
+    weights: getNewWeights(),
   }),
 })
 

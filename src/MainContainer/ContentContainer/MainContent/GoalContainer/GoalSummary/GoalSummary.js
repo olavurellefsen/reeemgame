@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Col from 'react-bootstrap/Col'
 import Table from 'react-bootstrap/Table'
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import Context from './../../../../../Context/Context'
+
 import { GoalHeader, IntroText } from './GoalSummary.style'
 
 export const GoalSummary = () => {
+  const [state] = useContext(Context)
   return (
     <Col>
       <GoalHeader>Goal</GoalHeader>
@@ -24,23 +27,38 @@ export const GoalSummary = () => {
         <tbody>
           <tr>
             <td>Economic</td>
-            <td>21%</td>
+            <td>{state.weights.eco}%</td>
             <td>
-              <ProgressBar now={321} label={`${321}`} min={0} max={1000} />
+              <ProgressBar
+                now={state.weights.eco}
+                label={`${state.weights.eco}`}
+                min={0}
+                max={100}
+              />
             </td>
           </tr>
           <tr>
             <td>Social</td>
-            <td>38%</td>
+            <td>{state.weights.soc}%</td>
             <td>
-              <ProgressBar now={432} label={`${432}`} min={0} max={1000} />
+              <ProgressBar
+                now={state.weights.soc}
+                label={`${state.weights.soc}`}
+                min={0}
+                max={100}
+              />
             </td>
           </tr>
           <tr>
             <td>Environmental</td>
-            <td>41%</td>
+            <td>{state.weights.env}%</td>
             <td>
-              <ProgressBar now={210} label={`${210}`} min={0} max={1000} />
+              <ProgressBar
+                now={state.weights.env}
+                label={`${state.weights.env}`}
+                min={0}
+                max={100}
+              />
             </td>
           </tr>
           <tr>
