@@ -291,62 +291,62 @@ exports[`should render correctly 1`] = `
         class="col-lg-6 col-sm-6"
       >
         <div
-          class="sc-iAyFgw kylPEd"
+          class="sc-hSdWYo fIAWwi"
         >
           <div
-            class="sc-hSdWYo kXOuoN"
+            class="sc-eHgmQL bkigIP"
           >
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-eHgmQL lfcQJs"
+              class="sc-cvbbAY kTLjQA"
               max="2050"
               min="2015"
             >
@@ -387,194 +387,6 @@ exports[`should render correctly 1`] = `
             <svg>
               europe.svg
             </svg>
-            <div
-              class="sc-ckVGcZ kxWqZm"
-            >
-              <div
-                class="sc-hMqMXs glRmkL"
-              >
-                <div
-                  class="sc-kkGfuU egbYGV"
-                >
-                  MW
-                </div>
-                <div
-                  class="sc-kEYyzF koCczG"
-                >
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    100
-                    <div
-                      class="sc-eNQAEJ efgUlG"
-                      color="#ff0000"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    96
-                    <div
-                      class="sc-eNQAEJ etSzkd"
-                      color="#f52700"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    91
-                    <div
-                      class="sc-eNQAEJ dpJdir"
-                      color="#ea3900"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    87
-                    <div
-                      class="sc-eNQAEJ dKMkPy"
-                      color="#e34200"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    82
-                    <div
-                      class="sc-eNQAEJ jtyHGN"
-                      color="#d64f00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    78
-                    <div
-                      class="sc-eNQAEJ dLYmfp"
-                      color="#ca5800"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    73
-                    <div
-                      class="sc-eNQAEJ jwOizc"
-                      color="#c05e00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    69
-                    <div
-                      class="sc-eNQAEJ kXzoLb"
-                      color="#b46400"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    64
-                    <div
-                      class="sc-eNQAEJ ebtDYS"
-                      color="#ad6700"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    60
-                    <div
-                      class="sc-eNQAEJ jnLiEz"
-                      color="#a46a00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    56
-                    <div
-                      class="sc-eNQAEJ blvUtP"
-                      color="#976f00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    51
-                    <div
-                      class="sc-eNQAEJ cLpkEC"
-                      color="#897300"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    47
-                    <div
-                      class="sc-eNQAEJ efMbvA"
-                      color="#7f7500"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    42
-                    <div
-                      class="sc-eNQAEJ bWXivr"
-                      color="#747700"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    38
-                    <div
-                      class="sc-eNQAEJ fedBvN"
-                      color="#647a00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    33
-                    <div
-                      class="sc-eNQAEJ lbORuk"
-                      color="#557c00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    29
-                    <div
-                      class="sc-eNQAEJ dBSHsA"
-                      color="#477d00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    24
-                    <div
-                      class="sc-eNQAEJ cHKdzi"
-                      color="#2c7f00"
-                    />
-                  </div>
-                  <div
-                    class="sc-jKJlTe jWwhwY"
-                  >
-                    20
-                    <div
-                      class="sc-eNQAEJ dLOSsz"
-                      color="#008000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -40,5 +40,9 @@ export const LegendColumn = styled.div`
 export const LegendUnit = styled.div`
   padding-right: 7px;
   align-self: center;
-  transform: rotate(-0.25turn);
+`
+export const LegendUnitText = styled.div`
+  padding-right: 7px;
+  align-self: center;
+  writing-mode: vertical-lr;
 `

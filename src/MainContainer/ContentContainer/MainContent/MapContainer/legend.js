@@ -6,6 +6,7 @@ import {
   LegendRow,
   LegendColumn,
   LegendUnit,
+  LegendUnitText,
 } from './legend.style'
 import { PropTypes } from 'prop-types'
 import { convertToColor } from './convertToColor'
@@ -23,7 +24,9 @@ export const Legend = ({ maxValue, minValue = 0, unit, title, size = 7 }) => {
   return (
     <LegendStyle>
       <LegendRow>
-        <LegendUnit>{unit}</LegendUnit>
+        <LegendUnit>
+          <LegendUnitText>{unit}</LegendUnitText>
+        </LegendUnit>
         <LegendColumn>
           {legendItemContent.map((e, i) => (
             <LegendItem
