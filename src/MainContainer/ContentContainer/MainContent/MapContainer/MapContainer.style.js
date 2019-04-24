@@ -20,4 +20,5 @@ export const StyledEurope = styled.div`
   stroke: gray;
   stroke-width: 10;
   stroke-miterlimit: 22.9256;
+  position: relative;
 `
