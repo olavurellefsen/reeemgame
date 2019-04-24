@@ -59,7 +59,7 @@ export const decisions = [
   {
     year: '2050',
     header: 'Results in 2050',
-    introText: 'Above, you can see your total score.',
+    introText: 'Below, you can see your total score.',
     submitText: 'Try again!',
   },
 ]
