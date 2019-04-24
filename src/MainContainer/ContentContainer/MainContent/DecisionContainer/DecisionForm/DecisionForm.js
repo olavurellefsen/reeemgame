@@ -32,7 +32,12 @@ export const DecisionForm = () => {
         name: 'C0T0E0',
       })
     }
-
+    if (e.target.innerText === 'START') {
+      dispatch({
+        type: 'resetWeights',
+        toggle: true,
+      })
+    }
     setChoice({})
     e.target.reset()
   }
