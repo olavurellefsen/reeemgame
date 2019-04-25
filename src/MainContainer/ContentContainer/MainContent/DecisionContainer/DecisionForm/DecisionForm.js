@@ -1,7 +1,9 @@
 import React, { useState, useContext } from 'react'
-import Col from 'react-bootstrap/Col'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+import Radio from '@material-ui/core/Radio'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormLabel from '@material-ui/core/FormLabel'
+import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
 import Context from '../../../../../Context/Context'
 import { decisions } from './Decisions'
 import { DecisionHeader, IntroText } from './DecisionForm.style'
@@ -39,45 +41,52 @@ export const DecisionForm = () => {
       })
     }
     setChoice({})
-    e.target.reset()
   }
 
   return (
-    <Col>
+    <Grid
+      container
+      direction="column"
+      justify="space-between"
+      alignItems="flex-start"
+    >
       <DecisionHeader>{currentDecisions.header}</DecisionHeader>
       <IntroText>{currentDecisions.introText}</IntroText>
-      <Form onSubmit={e => handleSubmit(e)}>
+      <form onSubmit={e => handleSubmit(e)}>
         {currentDecisions.individualDecisions !== undefined &&
           currentDecisions.individualDecisions.map((decision, i) => (
-            <Form.Group key={i} controlId={decision.name}>
-              <div>{decision.introText}</div>
+            <React.Fragment key={i}>
+              <FormLabel component="legend">{decision.introText}</FormLabel>
               {decision.options.map((option, j) => (
-                <Form.Check
+                <FormControlLabel
                   key={j}
-                  type="radio"
-                  name={decision.name}
+                  value={option}
+                  control={<Radio />}
                   label={option}
                   id={option}
+                  checked={choices[decision.name] === option}
                   onClick={() => {
                     setChoice({ ...choices, [decision.name]: option })
                   }}
                 />
               ))}
-            </Form.Group>
+            </React.Fragment>
           ))}
-        <Button
-          variant="success"
-          type="submit"
-          disabled={
-            currentDecisions.individualDecisions !== undefined &&
-            !currentDecisions.individualDecisions.every(
-              decision => choices[decision.name] !== undefined
-            )
-          }
-        >
-          {currentDecisions.submitText}
-        </Button>
-      </Form>
-    </Col>
+        <Grid item>
+          <Button
+            variant="contained"
+            type="submit"
+            disabled={
+              currentDecisions.individualDecisions !== undefined &&
+              !currentDecisions.individualDecisions.every(
+                decision => choices[decision.name] !== undefined
+              )
+            }
+          >
+            {currentDecisions.submitText}
+          </Button>
+        </Grid>
+      </form>
+    </Grid>
   )
 }

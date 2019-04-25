@@ -14,7 +14,6 @@ export const MapContainer = () => {
     state.selectedScenario,
     currentYear
   )
-  //alert(state.selectedIndicator)
   var lp
   if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
   return (
