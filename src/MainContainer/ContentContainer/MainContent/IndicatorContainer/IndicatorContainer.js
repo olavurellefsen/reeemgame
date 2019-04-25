@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import Grid from '@material-ui/core/Grid'
 import Context from '../../../../Context/Context'
 import { Container, LeftMenuItem } from './IndicatorContainer.style'
 
@@ -9,9 +8,14 @@ export const IndicatorContainer = () => {
   const availableIndicators = ['Electricity demands', 'Emission Limit']
   return (
     <Container>
-      <Col>
+      <Grid
+        container
+        direction="column"
+        justify="space-between"
+        alignItems="flex-start"
+      >
         {availableIndicators.map((indicator, i) => (
-          <Row key={i}>
+          <Grid item key={i}>
             <LeftMenuItem
               onClick={() => {
                 let newIndicator = indicator
@@ -27,9 +31,9 @@ export const IndicatorContainer = () => {
             >
               {indicator}
             </LeftMenuItem>
-          </Row>
+          </Grid>
         ))}
-      </Col>
+      </Grid>
     </Container>
   )
 }

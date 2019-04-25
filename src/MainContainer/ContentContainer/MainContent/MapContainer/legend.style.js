@@ -38,10 +38,12 @@ export const LegendColumn = styled.div`
   flex-direction: column;
 `
 export const LegendUnit = styled.div`
+  font-family: 'Roboto', sans-serif;
   padding-right: 7px;
   align-self: center;
 `
 export const LegendUnitText = styled.div`
+  font-family: 'Roboto', sans-serif;
   padding-right: 7px;
   align-self: center;
   writing-mode: vertical-lr;
