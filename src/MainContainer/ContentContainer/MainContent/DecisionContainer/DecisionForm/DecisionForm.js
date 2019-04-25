@@ -3,10 +3,14 @@ import Radio from '@material-ui/core/Radio'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormLabel from '@material-ui/core/FormLabel'
 import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
 import Context from '../../../../../Context/Context'
 import { decisions } from './Decisions'
-import { DecisionHeader, IntroText } from './DecisionForm.style'
+import {
+  DecisionHeader,
+  IntroText,
+  DecisionIntroText,
+  StyledButton,
+} from './DecisionForm.style'
 
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
@@ -56,7 +60,9 @@ export const DecisionForm = () => {
         {currentDecisions.individualDecisions !== undefined &&
           currentDecisions.individualDecisions.map((decision, i) => (
             <React.Fragment key={i}>
-              <FormLabel component="legend">{decision.introText}</FormLabel>
+              <DecisionIntroText>
+                <FormLabel component="legend">{decision.introText}</FormLabel>
+              </DecisionIntroText>
               {decision.options.map((option, j) => (
                 <FormControlLabel
                   key={j}
@@ -73,7 +79,7 @@ export const DecisionForm = () => {
             </React.Fragment>
           ))}
         <Grid item>
-          <Button
+          <StyledButton
             variant="contained"
             type="submit"
             disabled={
@@ -84,7 +90,7 @@ export const DecisionForm = () => {
             }
           >
             {currentDecisions.submitText}
-          </Button>
+          </StyledButton>
         </Grid>
       </form>
     </Grid>
