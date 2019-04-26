@@ -27,32 +27,27 @@ export const GoalSummary = () => {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Score</TableCell>
             <TableCell>Weight</TableCell>
-            <TableCell>Weigted Score</TableCell>
+            <TableCell>Weighted Score</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow>
             <TableCell>Economic</TableCell>
-            <TableCell>{state.scores.eco}</TableCell>
             <TableCell>{state.weights.eco}%</TableCell>
             <TableCell>{state.weightedScores.eco}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Social</TableCell>
-            <TableCell>{state.scores.soc}</TableCell>
             <TableCell>{state.weights.soc}%</TableCell>
             <TableCell>{state.weightedScores.soc}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Environmental</TableCell>
-            <TableCell>{state.scores.env}</TableCell>
             <TableCell>{state.weights.env}%</TableCell>
             <TableCell>{state.weightedScores.env}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell />
             <TableCell />
             <TableCell />
             <TableCell>{state.weightedScores.sum}</TableCell>

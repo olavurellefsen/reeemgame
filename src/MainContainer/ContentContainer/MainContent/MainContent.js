@@ -6,46 +6,65 @@ import { DecisionContainer } from './DecisionContainer/DecisionContainer'
 import { GoalContainer } from './GoalContainer/GoalContainer'
 import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
+import styled from 'styled-components'
+import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
-export const MainContent = () => (
-  <Grid
-    container
-    direction="row"
-    justify="space-between"
-    alignItems="flex-start"
-  >
+const StyledGrid = styled(Grid)`
+  && {
+    order: ${props => props.order};
+  }
+`
+
+export const MainContent = () => {
+  const wide = useMediaQuery('(min-width:960px)')
+  return (
     <Grid
       container
-      item
-      direction="column"
+      direction="row"
       justify="space-between"
       alignItems="flex-start"
-      xs={2}
     >
-      <IndicatorContainer />
-      <EUacknowledgement />
+      <StyledGrid
+        container
+        item
+        direction="column"
+        justify="space-between"
+        alignItems="flex-start"
+        lg={2}
+        md={4}
+        sm={12}
+        order={wide ? 1 : 3}
+      >
+        <IndicatorContainer />
+        <EUacknowledgement />
+      </StyledGrid>
+      <StyledGrid
+        container
+        item
+        direction="column"
+        justify="space-between"
+        alignItems="flex-start"
+        lg={4}
+        md={8}
+        sm={12}
+        order={wide ? 2 : 1}
+      >
+        <DecisionContainer />
+        <GoalContainer />
+      </StyledGrid>
+      <StyledGrid
+        container
+        item
+        direction="column"
+        justify="space-between"
+        alignItems="flex-start"
+        lg={6}
+        md={12}
+        order={wide ? 3 : 2}
+      >
+        <TimelineContainer />
+        <MapContainer />
+      </StyledGrid>
     </Grid>
-    <Grid
-      container
-      item
-      direction="column"
-      justify="space-between"
-      alignItems="flex-start"
-      xs={4}
-    >
-      <DecisionContainer />
-      <GoalContainer />
-    </Grid>
-    <Grid
-      container
-      item
-      direction="column"
-      justify="space-between"
-      alignItems="flex-start"
-      xs={6}
-    >
-      <TimelineContainer />
-      <MapContainer />
-    </Grid>
-  </Grid>
-)
+  )
+}
