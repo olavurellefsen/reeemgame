@@ -1,15 +1,22 @@
 import React, { useContext } from 'react'
-import Col from 'react-bootstrap/Col'
-import Table from 'react-bootstrap/Table'
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import Grid from '@material-ui/core/Grid'
+import Table from '@material-ui/core/Table'
+import TableBody from '@material-ui/core/TableBody'
+import TableCell from '@material-ui/core/TableCell'
+import TableHead from '@material-ui/core/TableHead'
+import TableRow from '@material-ui/core/TableRow'
 import Context from './../../../../../Context/Context'
-
 import { GoalHeader, IntroText } from './GoalSummary.style'
 
 export const GoalSummary = () => {
   const [state] = useContext(Context)
   return (
-    <Col>
+    <Grid
+      container
+      direction="column"
+      justify="space-between"
+      alignItems="flex-start"
+    >
       <GoalHeader>Goal</GoalHeader>
       <IntroText>
         Your goal is to maximise the score in 2050. Your score is calculated as
@@ -17,70 +24,41 @@ export const GoalSummary = () => {
         which can be seen below.
       </IntroText>
       <Table>
-        <thead>
-          <tr>
-            <th />
-            <th>Score</th>
-            <th>Weight</th>
-            <th>Weigted Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Economic</td>
-            <td>{state.scores.eco}</td>
-            <td>{state.weights.eco}%</td>
-            <td>
-              <ProgressBar
-                now={state.weightedScores.eco}
-                label={`${state.weightedScores.eco}`}
-                min={0}
-                max={500}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Social</td>
-            <td>{state.scores.soc}</td>
-            <td>{state.weights.soc}%</td>
-            <td>
-              <ProgressBar
-                now={state.weightedScores.soc}
-                label={`${state.weightedScores.soc}`}
-                min={0}
-                max={500}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Environmental</td>
-            <td>{state.scores.env}</td>
-            <td>{state.weights.env}%</td>
-            <td>
-              <ProgressBar
-                now={state.weightedScores.env}
-                label={`${state.weightedScores.env}`}
-                min={0}
-                max={500}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td />
-            <td />
-            <td />
-            <td>
-              <ProgressBar
-                variant="success"
-                now={state.weightedScores.sum}
-                label={`${state.weightedScores.sum}`}
-                min={0}
-                max={500}
-              />
-            </td>
-          </tr>
-        </tbody>
+        <TableHead>
+          <TableRow>
+            <TableCell />
+            <TableCell>Score</TableCell>
+            <TableCell>Weight</TableCell>
+            <TableCell>Weigted Score</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableCell>Economic</TableCell>
+            <TableCell>{state.scores.eco}</TableCell>
+            <TableCell>{state.weights.eco}%</TableCell>
+            <TableCell>{state.weightedScores.eco}</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Social</TableCell>
+            <TableCell>{state.scores.soc}</TableCell>
+            <TableCell>{state.weights.soc}%</TableCell>
+            <TableCell>{state.weightedScores.soc}</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Environmental</TableCell>
+            <TableCell>{state.scores.env}</TableCell>
+            <TableCell>{state.weights.env}%</TableCell>
+            <TableCell>{state.weightedScores.env}</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell />
+            <TableCell />
+            <TableCell />
+            <TableCell>{state.weightedScores.sum}</TableCell>
+          </TableRow>
+        </TableBody>
       </Table>
-    </Col>
+    </Grid>
   )
 }

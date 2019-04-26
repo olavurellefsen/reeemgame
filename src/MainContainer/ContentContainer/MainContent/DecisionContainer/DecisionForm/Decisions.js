@@ -13,13 +13,19 @@ export const decisions = [
     individualDecisions: [
       {
         name: 'research',
-        introText: 'Spending on energy technology (R&D)?',
-        options: ['high', 'low'],
+        introText:
+          'Should there be extra financial incentives for research and development of renewable/carbon free technologies?',
+        options: ['Yes', 'No'],
       },
       {
         name: 'emissions1',
-        introText: 'Emission restrictions?',
-        options: ['high', 'medium', 'low'],
+        introText:
+          'Which restrictions are you willing to set in order to reach your emission target?',
+        options: [
+          'Low reduction rate – EU ETS cap',
+          'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
+          'High reduction rate - Zero emissions in 2040',
+        ],
       },
     ],
     submitText: 'Submit choices',
@@ -32,13 +38,18 @@ export const decisions = [
       {
         name: 'transmission',
         introText:
-          'Implement the Ten-Year Network Development Plan for transmissions?',
-        options: ['yes', 'no'],
+          'Do you want to implement the 10-year network development plan on transboundary grid capacity?',
+        options: ['Yes', 'No'],
       },
       {
         name: 'emissions2',
-        introText: 'Emission restrictions?',
-        options: ['high', 'medium', 'low'],
+        introText:
+          'Do you want to keep your emission reduction rate for the next 10 years or change it?',
+        options: [
+          'Low reduction rate – EU ETS cap',
+          'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
+          'High reduction rate - Zero emissions in 2040',
+        ],
       },
     ],
     submitText: 'Submit choices',
@@ -50,8 +61,13 @@ export const decisions = [
     individualDecisions: [
       {
         name: 'emissions3',
-        introText: 'Emission restrictions?',
-        options: ['high', 'medium', 'low'],
+        introText:
+          'Do you want to keep your emission reduction rate for the next 10 years or change it?',
+        options: [
+          'Low reduction rate – EU ETS cap',
+          'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
+          'High reduction rate - Zero emissions in 2040',
+        ],
       },
     ],
     submitText: 'Submit choice',

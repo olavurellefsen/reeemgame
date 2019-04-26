@@ -7,8 +7,7 @@ export const Container = styled.div`
 `
 
 export const LeftMenuItem = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   height: 60px;
   width: 250px;
@@ -24,8 +23,4 @@ export const LeftMenuItem = styled.div`
   :hover {
     color: #aaaaaa;
   }
-`
-
-export const EUflagContainer = styled.div`
-  width: 250px;
 `

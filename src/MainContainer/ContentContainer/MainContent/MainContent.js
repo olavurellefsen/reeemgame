@@ -1,26 +1,51 @@
 import React from 'react'
+import Grid from '@material-ui/core/Grid'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { DecisionContainer } from './DecisionContainer/DecisionContainer'
 import { GoalContainer } from './GoalContainer/GoalContainer'
 import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 
 export const MainContent = () => (
-  <Row noGutters="true">
-    <Col lg="2" sm="2">
+  <Grid
+    container
+    direction="row"
+    justify="space-between"
+    alignItems="flex-start"
+  >
+    <Grid
+      container
+      item
+      direction="column"
+      justify="space-between"
+      alignItems="flex-start"
+      xs={2}
+    >
       <IndicatorContainer />
       <EUacknowledgement />
-    </Col>
-    <Col lg="4" sm="4">
+    </Grid>
+    <Grid
+      container
+      item
+      direction="column"
+      justify="space-between"
+      alignItems="flex-start"
+      xs={4}
+    >
       <DecisionContainer />
       <GoalContainer />
-    </Col>
-    <Col lg="6" sm="6">
+    </Grid>
+    <Grid
+      container
+      item
+      direction="column"
+      justify="space-between"
+      alignItems="flex-start"
+      xs={6}
+    >
       <TimelineContainer />
       <MapContainer />
-    </Col>
-  </Row>
+    </Grid>
+  </Grid>
 )
