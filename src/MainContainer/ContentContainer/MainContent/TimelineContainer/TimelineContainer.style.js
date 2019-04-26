@@ -19,6 +19,7 @@ export const Label = styled.div`
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: ${props => (props.selected ? 'bold' : 'normal')};
+  color: ${props => (props.future ? 'lightgray' : 'inherited')};
 `
 
 export const SliderContainer = styled.div`

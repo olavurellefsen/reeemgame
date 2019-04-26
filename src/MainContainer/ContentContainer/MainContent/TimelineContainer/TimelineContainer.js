@@ -28,6 +28,7 @@ export const TimelineContainer = () => {
                 max={2050}
                 key={'label' + year}
                 selected={parseInt(year) === state.currentYear}
+                future={parseInt(year) > state.maxYear}
               >
                 {year}
               </Label>
