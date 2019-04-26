@@ -22,3 +22,13 @@ export { customRender as render }
 AllTheProviders.propTypes = {
   children: PropTypes.any,
 }
+
+window.matchMedia =
+  window.matchMedia ||
+  function() {
+    return {
+      matches: false,
+      addListener: function() {},
+      removeListener: function() {},
+    }
+  }
