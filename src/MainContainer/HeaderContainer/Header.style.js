@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid'
 
 export const HeaderStyle = styled.div`
   background-image: linear-gradient(gray, black);
@@ -32,3 +33,5 @@ export const HeaderMenuItemLink = styled(Link)`
     cursor: pointer;
   }
 `
+
+export const StyledGrid = styled(Grid)``

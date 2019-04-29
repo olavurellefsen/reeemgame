@@ -1,12 +1,11 @@
 import React, { useContext } from 'react'
-//import ProgressBar from 'react-bootstrap/ProgressBar'
-import Slider from '@material-ui/lab/Slider'
 import Context from '../../../../Context/Context'
 import {
   Container,
   Label,
   LabelContainer,
   SliderContainer,
+  StyledSlider,
 } from './TimelineContainer.style'
 
 export const TimelineContainer = () => {
@@ -39,7 +38,7 @@ export const TimelineContainer = () => {
         })}
       </LabelContainer>
       <SliderContainer>
-        <Slider
+        <StyledSlider
           value={parseInt(state.currentYear)}
           min={2015}
           max={2050}
