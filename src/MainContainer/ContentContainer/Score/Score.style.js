@@ -20,7 +20,7 @@ export const Row = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   flex-grow: 0;
-  background-color: ${props => (props.index % 2 ? '#EDEDED' : 'white')};
+  background-color: ${props => (props.index % 2 ? 'white' : '#EDEDED')};
 `
 export const Cell = styled.div`
   flex-grow: 1;
