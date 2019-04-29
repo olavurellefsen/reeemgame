@@ -52,7 +52,17 @@ const getNewWeightedScores = (weights, scores) => {
   ret = { eco: wEco, env: wEnv, soc: wSoc, sum: wEco + wEnv + wSoc }
   return ret
 }
-
+const saveScore = state => {
+  let oldScores = JSON.parse(localStorage.getItem('score'))
+  if (!oldScores) oldScores = []
+  let d = new Date()
+  let score = {
+    date: d.toDateString(),
+    weightedScores: state.weightedScores,
+  }
+  oldScores.push(score)
+  localStorage.setItem('score', JSON.stringify(oldScores))
+}
 const reducer = createReducer(initialState, {
   reset: () => initialState,
   forwardToNextDecision: (state, action) => {
@@ -65,6 +75,7 @@ const reducer = createReducer(initialState, {
     if (nextDecision === state.decisionCycle.length - 1) {
       //If game is over
       newGameState = state.gameCycle[state.gameCycle.length - 1]
+      saveScore(state)
     }
     if (nextDecision >= state.decisionCycle.length) {
       //If game is starting again
