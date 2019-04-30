@@ -12,6 +12,8 @@ const specifiedAnnualDemand = (scenario, currentYear) =>
     .map(country => ({
       code: country.Country.toLowerCase(),
       color: convertToColor(country[currentYear], 90, 400),
+      value: country[currentYear],
+      unit: country.Unit,
     }))
 
 const emissionLimit = (scenario, currentYear) => {

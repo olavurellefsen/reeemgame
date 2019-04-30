@@ -5,6 +5,7 @@ import { Container, StyledEurope } from './MapContainer.style'
 import { getMapColors } from './MapValues'
 import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
+import { IndicatorInfo } from './IndicatorInfo'
 
 export const MapContainer = () => {
   const [state] = useContext(Context)
@@ -14,12 +15,25 @@ export const MapContainer = () => {
     state.selectedScenario,
     currentYear
   )
+  //alert(state.selectedIndicator)
   var lp
   if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
   return (
     <Container>
       <StyledEurope colors={mapColors}>
-        <Europe />
+        <div
+          id="map"
+          onClick={event => {
+            event.preventDefault()
+            alert(
+              JSON.stringify(
+                mapColors.filter(element => element.code === event.target.id)
+              )
+            )
+          }}
+        >
+          <Europe />
+        </div>
         {state.selectedIndicator ? (
           <Legend
             maxValue={lp.max}
@@ -28,6 +42,12 @@ export const MapContainer = () => {
             unit={lp.unit}
           />
         ) : null}
+        <IndicatorInfo
+          visible={true}
+          unit="kg"
+          value="100"
+          year={currentYear}
+        />
       </StyledEurope>
     </Container>
   )
