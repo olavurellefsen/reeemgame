@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Slider from '@material-ui/lab/Slider'
 
 export const Container = styled.div`
   display: flex;
@@ -25,3 +26,5 @@ export const Label = styled.div`
 export const SliderContainer = styled.div`
   padding: 20px 20px;
 `
+
+export const StyledSlider = styled(Slider)``
