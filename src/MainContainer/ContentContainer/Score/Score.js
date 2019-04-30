@@ -24,9 +24,9 @@ export const Score = () => {
           </Cell>
         </Row>
         <>
-          {scoreList.length > 0
+          {scoreList && scoreList.length > 0
             ? scoreList.map((s, i) => (
-                <Row index={1 + i}>
+                <Row key={i} index={1 + i}>
                   <Cell>
                     <TextContainer>{s.date}</TextContainer>
                   </Cell>
