@@ -1,3 +1,3 @@
 module.exports = {
-  setupTestFrameworkScriptFile: "./rtl.setup.js"
-};
+  setupTestFrameworkScriptFile: './rtl.setup.js',
+}
