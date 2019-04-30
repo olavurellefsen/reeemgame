@@ -66,7 +66,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-gipzik cgjDxG"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-hzDkRC hRbBOg"
         order="3"
       >
         <ul
@@ -111,46 +111,46 @@ exports[`should render correctly 1`] = `
           </li>
         </ul>
         <div
-          class="sc-htoDjs jDYVpU"
+          class="sc-gqjmRU gTyLWT"
         >
           <img
             alt="EU flag"
-            class="sc-iwsKbI iZGqvh"
+            class="sc-jTzLTM gwWWKv"
             src="euflag.png"
           />
           <div
-            class="sc-dnqmqq jhXWun"
+            class="sc-VigVT dahfHN"
           >
             This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
           </div>
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-gipzik iFXGRd"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-hzDkRC eKjvNe"
         order="1"
       >
         <div
-          class="sc-gZMcBi fPZPGY"
+          class="sc-fjdhpX jGtfjV"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-kAzzGY jHprQs"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-kpOJdX kAzjOl"
           >
             <h1
-              class="sc-gqjmRU jfGDzg"
+              class="sc-jzJRlG kRUFbu"
             >
               Decide the future of Europe
             </h1>
             <div
-              class="sc-VigVT jIuuhf"
+              class="sc-cSHVUG ilUWLw"
             >
               You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
-                class="MuiGrid-item-2 sc-kAzzGY jHprQs"
+                class="MuiGrid-item-2 sc-kpOJdX kAzjOl"
               >
                 <button
-                  class="MuiButtonBase-root-117 MuiButton-root-162 MuiButton-text-164 MuiButton-flat-167 sc-jTzLTM JeKHa"
+                  class="MuiButtonBase-root-117 MuiButton-root-162 MuiButton-text-164 MuiButton-flat-167 sc-kAzzGY gTKVmn"
                   tabindex="0"
                   type="submit"
                 >
@@ -168,42 +168,42 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-chPdSV bLHQyl"
+          class="sc-dxgOiQ gKizUT"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-kpOJdX kAzjOl"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-eNQAEJ fAbPPh"
           >
             <h1
-              class="sc-kgoBCf ccQQqf"
+              class="sc-ckVGcZ cvlZK"
             >
               Goal
             </h1>
             <div
-              class="sc-kGXeez dxEuZi"
+              class="sc-jKJlTe kMdWBA"
             >
               Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
             </div>
             <table
-              class="MuiTable-root-188 sc-dxgOiQ hTjMfW"
+              class="MuiTable-root-188 sc-hMqMXs cPxEnv"
             >
               <thead
-                class="MuiTableHead-root-189 sc-eNQAEJ fAbPPh"
+                class="MuiTableHead-root-189 sc-iAyFgw gPlgsX"
               >
                 <tr
-                  class="MuiTableRow-root-190 MuiTableRow-head-193 sc-hMqMXs cPxEnv"
+                  class="MuiTableRow-root-190 MuiTableRow-head-193 sc-hSdWYo bIQQAp"
                 >
                   <th
-                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-kkGfuU gqJIVH"
                     scope="col"
                   />
                   <th
-                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-kkGfuU gqJIVH"
                     scope="col"
                   >
                     Weight
                   </th>
                   <th
-                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-head-196 sc-kkGfuU gqJIVH"
                     scope="col"
                   >
                     Weighted Score
@@ -211,79 +211,79 @@ exports[`should render correctly 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="MuiTableBody-root-207 sc-ckVGcZ foYhJp"
+                class="MuiTableBody-root-207 sc-kEYyzF gfWKdx"
               >
                 <tr
-                  class="MuiTableRow-root-190 sc-hMqMXs cPxEnv"
+                  class="MuiTableRow-root-190 sc-hSdWYo bIQQAp"
                 >
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     Economic
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     20
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     60
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-190 sc-hMqMXs cPxEnv"
+                  class="MuiTableRow-root-190 sc-hSdWYo bIQQAp"
                 >
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     Social
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     50
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     100
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-190 sc-hMqMXs cPxEnv"
+                  class="MuiTableRow-root-190 sc-hSdWYo bIQQAp"
                 >
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     Environmental
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     30
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     150
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-190 sc-hMqMXs cPxEnv"
+                  class="MuiTableRow-root-190 sc-hSdWYo bIQQAp"
                 >
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   />
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   />
                   <td
-                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-jKJlTe loXQau"
+                    class="MuiTableCell-root-195 MuiTableCell-body-197 sc-kkGfuU gqJIVH"
                   >
                     310
                   </td>
@@ -294,66 +294,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-gipzik bZGHjM"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-hzDkRC jlxNMc"
         order="2"
       >
         <div
-          class="sc-jAaTju bKYeId"
+          class="sc-jlyJG dEGCPZ"
         >
           <div
-            class="sc-jDwBTQ cawUcv"
+            class="sc-gipzik dZCXPz"
           >
             <div
-              class="sc-gPEVay bihxCF"
+              class="sc-csuQGl bdijCY"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-gPEVay bihxCF"
+              class="sc-csuQGl bdijCY"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-gPEVay dQWVvZ"
+              class="sc-csuQGl hVIbTX"
               max="2050"
               min="2015"
             >
@@ -361,7 +361,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-iRbamj gmsLqC"
+            class="sc-Rmtcm iWRYsG"
           >
             <div
               aria-disabled="false"
@@ -369,7 +369,7 @@ exports[`should render correctly 1`] = `
               aria-valuemax="2050"
               aria-valuemin="2015"
               aria-valuenow="2019"
-              class="MuiSlider-root-208 sc-jlyJG bbyJzT"
+              class="MuiSlider-root-208 sc-bRBYWo ccSRck"
               role="slider"
             >
               <div
@@ -398,10 +398,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kEYyzF bnShOR"
+          class="sc-eHgmQL fsNuxe"
         >
           <div
-            class="sc-kkGfuU hLdXcY"
+            class="sc-cvbbAY datIyI"
           >
             <svg>
               europe.svg
