@@ -17,6 +17,8 @@ ContextStore.propTypes = {
 }
 
 const initialState = {
+  gameCycle: ['start', 'run', 'over'],
+  gameState: 'start',
   currentDecision: '2019',
   currentYear: 2019,
   maxYear: 2020,
@@ -50,12 +52,36 @@ const getNewWeightedScores = (weights, scores) => {
   ret = { eco: wEco, env: wEnv, soc: wSoc, sum: wEco + wEnv + wSoc }
   return ret
 }
-
+const saveScore = state => {
+  let oldScores = JSON.parse(localStorage.getItem('score'))
+  if (!oldScores) oldScores = []
+  let d = new Date()
+  let score = {
+    date: d.toDateString(),
+    weightedScores: state.weightedScores,
+  }
+  oldScores.push(score)
+  localStorage.setItem('score', JSON.stringify(oldScores))
+}
 const reducer = createReducer(initialState, {
   reset: () => initialState,
   forwardToNextDecision: (state, action) => {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
-    if (nextDecision >= state.decisionCycle.length) nextDecision = 0
+    let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
+    if (nextDecision === 1) {
+      //If game is starting
+      newGameState = state.gameCycle[1]
+    }
+    if (nextDecision === state.decisionCycle.length - 1) {
+      //If game is over
+      newGameState = state.gameCycle[state.gameCycle.length - 1]
+      saveScore(state)
+    }
+    if (nextDecision >= state.decisionCycle.length) {
+      //If game is starting again
+      nextDecision = 0
+      newGameState = state.gameCycle[0]
+    }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
     return {
@@ -63,6 +89,7 @@ const reducer = createReducer(initialState, {
       currentDecision: newYear,
       currentYear: parseInt(newYear),
       maxYear: newMaxYear,
+      gameState: newGameState,
     }
   },
   setSelectedIndicator: (state, action) => ({
