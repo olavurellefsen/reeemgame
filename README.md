@@ -1,70 +1,31 @@
 [![Build Status](https://travis-ci.com/ReeemProject/reeemgame.svg?branch=master)](https://travis-ci.com/ReeemProject/reeemgame)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Online version of REEEMgame](https://game.reeem.org)
 
-## Available Scripts
+# REEEMgame
+The purpose of this game is to learn about energy systems.
 
-In the project directory, you can run:
+Participants learn how different decisions affect the energy systems and the outcomes for other stakeholders.
 
-### `npm start`
+The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](http://www.osemosys.org/osembe.html), which is the open source energy model base for the European Union.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The REEEM project is a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## How to play
+The game is a simulation of how the future will look depending on how participants decide to act. 
 
-### `npm test`
+The aim of the game is for participants to maximise their overall combined score in 2050. The overall combined score is calculated as the weighted average of three components: social, economic, and environmental score.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The weights between social, economic, and environmental are reset every time a new game is started, and the participant needs to take this into account when making decisions.
 
-### `npm run build`
+For instance, if the economic score is weighted highly, the participant needs to take decisions that have a high positive impact on the economic score in 2050. Likewise, if the environmental score is weighted highly, the participant needs to take decisions that have a high positive impact on the environmental score in 2050.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In order to take good decisions, the participant can review available data about e.g. electricity demands and emission limits in Europe over time.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Local version
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Prerequisites: [Node.js and npm](https://nodejs.org/en/download/)  Node.js ^6.9.5, npm ^3.10.10
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Installation: npm install
+2. Start Server at port 3000: npm start
+3. Go to url [localhost:3000](http://localhost:3000)
