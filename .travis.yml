@@ -10,9 +10,8 @@ script:
 - npm run build
 deploy:
   provider: s3
-  access_key_id: AKIASNCOC6B5V2ZBB77V
-  secret_access_key:
-    secure: Jvx4WEvTh/ASnkDPUjRF2cVyK9QNlZsBK18Hw4DzyfCeW5UTSS3PXPoRVGTTP2Vl/MNvqkiP8TIphZS54OtxTJzj8H+YSYdamIGsU5UOqfloegw9pMOi3wuVu8jGi7STupqu2HrW3pOqwn4ha7LhUqApWIYOEEoWea0bil9ziRpUDcyHnezufH6MoTQQ2YUNAREW1IrcXZ578piXv7vdw/0s1Itsxe3e9KnraHUrMWkXoGkW5IxpoVL7nJook0gB1+KghUzx32Ksdlz1Bjtklxi0cD3qUWNlzFTxVe9/+8w95DEKOn8l/o72u/ixBo4D0AdaGxgj36xPPdl/fYA99MVc90B5movQbswgSDi4D2WJjcivKPO7njvNeX8pzOYDWIcqow57LxmpATflEPTEWhlHnF5qePLOY28TCT6q24LY4+bsPcgBOUm/IEKRXqdpW5FOXXgp3qFwcvuOcF2SB61lUyTpSNQr4rB3Wjzl0O3jNgQUn8G/2w8JJgALhdVJlPDyiaWYZIyD6g7M5FgmlWnGowkiwOxWLvFxwYBEC5uUTcsBtvkmSOoXPRMtRLi4ZT5nL1AvtqrqnbQtOJRo84Z64Q5xv6JqRjOmA5cE2FL/nd+sRztysZjOIRDOJnsoveSkcu2ZpXf55kwCCjpOYwwPN3AgEDllfrW1AzFs2B8=
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
   bucket: reeemgame
   region: eu-west-1
   skip_cleanup: true
