@@ -6,6 +6,7 @@
     "share": "Share"
   },
   "goal": {
+    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
     "economic": "Economic",
     "social": "Social",
     "environmental": "Environmental",

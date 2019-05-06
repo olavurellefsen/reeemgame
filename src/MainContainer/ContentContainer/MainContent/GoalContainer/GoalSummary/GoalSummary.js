@@ -12,6 +12,7 @@ import { GoalHeader, IntroText } from './GoalSummary.style'
 export const GoalSummary = () => {
   const [state] = useContext(Context)
   const { t, i18n } = useTranslation()
+
   return (
     <Grid
       container
@@ -20,11 +21,7 @@ export const GoalSummary = () => {
       alignItems="flex-start"
     >
       <GoalHeader>{t('goal.title')}</GoalHeader>
-      <IntroText>
-        Your goal is to maximise the score in 2050. Your score is calculated as
-        the weighted average of the economic, social, and enviromental scores,
-        which can be seen below.
-      </IntroText>
+      <IntroText>{t('goal.summary')}</IntroText>
       <Table>
         <TableHead>
           <TableRow>
