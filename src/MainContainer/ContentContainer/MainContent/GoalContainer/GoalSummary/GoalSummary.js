@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 import Grid from '@material-ui/core/Grid'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
@@ -10,6 +11,7 @@ import { GoalHeader, IntroText } from './GoalSummary.style'
 
 export const GoalSummary = () => {
   const [state] = useContext(Context)
+  const { t, i18n } = useTranslation()
   return (
     <Grid
       container
@@ -17,7 +19,7 @@ export const GoalSummary = () => {
       justify="space-between"
       alignItems="flex-start"
     >
-      <GoalHeader>Goal</GoalHeader>
+      <GoalHeader>{t('goal.title')}</GoalHeader>
       <IntroText>
         Your goal is to maximise the score in 2050. Your score is calculated as
         the weighted average of the economic, social, and enviromental scores,
@@ -27,23 +29,23 @@ export const GoalSummary = () => {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Weight</TableCell>
-            <TableCell>Weighted Score</TableCell>
+            <TableCell>{t('goal.weight')}</TableCell>
+            <TableCell>{t('goal.weightedScore')}</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableCell>Economic</TableCell>
+            <TableCell>{t('goal.economic')}</TableCell>
             <TableCell>{state.weights.eco}%</TableCell>
             <TableCell>{state.weightedScores.eco}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Social</TableCell>
+            <TableCell>{t('goal.social')}</TableCell>
             <TableCell>{state.weights.soc}%</TableCell>
             <TableCell>{state.weightedScores.soc}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Environmental</TableCell>
+            <TableCell>{t('goal.environmental')}</TableCell>
             <TableCell>{state.weights.env}%</TableCell>
             <TableCell>{state.weightedScores.env}</TableCell>
           </TableRow>

@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "game",
+    "about": "About",
+    "score": "Score",
+    "share": "Share"
+  },
+  "goal": {
+    "economic": "Economic",
+    "social": "Social",
+    "environmental": "Environmental",
+    "weight": "Weight",
+    "weightedScore": "Weighted Score",
+    "title": "Goal"
+  }
+}
