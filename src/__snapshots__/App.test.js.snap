@@ -66,7 +66,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-iAyFgw Pvwdy"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jWBwVP bpdKHQ"
         order="3"
       >
         <ul
@@ -111,37 +111,37 @@ exports[`should render correctly 1`] = `
           </li>
         </ul>
         <div
-          class="sc-gzVnrw cTzqPo"
+          class="sc-gZMcBi bIoaEe"
         >
           <img
             alt="EU flag"
-            class="sc-dnqmqq IWxDe"
+            class="sc-VigVT bbQYpK"
             src="euflag.png"
           />
           <div
-            class="sc-htoDjs ccmioW"
+            class="sc-gqjmRU kbyEZs"
           >
             This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
           </div>
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-iAyFgw hBDvMM"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jWBwVP hYpZPv"
         order="1"
       >
         <div
-          class="sc-iwsKbI dsQjOm"
+          class="sc-jTzLTM kJWOCh"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-gZMcBi bUAJbJ"
+              class="sc-fjdhpX hZLcce"
             >
               Decide the future of Europe
             </h1>
             <div
-              class="sc-gqjmRU euoWFt"
+              class="sc-jzJRlG cnAAoI"
             >
               You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
@@ -168,18 +168,18 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-jTzLTM iJjEgI"
+          class="sc-kAzzGY iVjUDh"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-fjdhpX hZLcce"
+              class="sc-chPdSV jeAxoc"
             >
               Goal
             </h1>
             <div
-              class="sc-jzJRlG cnAAoI"
+              class="sc-kgoBCf fHpkVi"
             >
               Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
             </div>
@@ -294,66 +294,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-iAyFgw gmVIha"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jWBwVP kiuFjX"
         order="2"
       >
         <div
-          class="sc-eNQAEJ ihWRbb"
+          class="sc-iAyFgw iNKreP"
         >
           <div
-            class="sc-hMqMXs jIFRDV"
+            class="sc-hSdWYo EHaJt"
           >
             <div
-              class="sc-kEYyzF iBCPiz"
+              class="sc-eHgmQL hYjZKq"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-kEYyzF iBCPiz"
+              class="sc-eHgmQL hYjZKq"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-kEYyzF cUkACR"
+              class="sc-eHgmQL dHkiwe"
               max="2050"
               min="2015"
             >
@@ -361,7 +361,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-kkGfuU dXvHZI"
+            class="sc-cvbbAY dybdrN"
           >
             <div
               aria-disabled="false"
@@ -398,10 +398,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-cSHVUG jAnVpe"
+          class="sc-kGXeez hdOaOS"
         >
           <div
-            class="sc-kAzzGY igqGAV"
+            class="sc-kpOJdX hswWLy"
           >
             <svg>
               europe.svg
