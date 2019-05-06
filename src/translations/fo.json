@@ -1,7 +1,16 @@
 {
   "header": {
+    "title": "game",
     "about": "Um",
     "score": "Stigatalva",
     "share": "Deil"
+  },
+  "goal": {
+    "economic": "Fíggjarligt",
+    "social": "Samfelag",
+    "environmental": "Umhørvi",
+    "weight": "Vektir",
+    "weightedScore": "Vægtet Score",
+    "title": "Mál"
   }
 }

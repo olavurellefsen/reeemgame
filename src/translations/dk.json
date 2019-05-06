@@ -1,7 +1,16 @@
 {
   "header": {
+    "title": "game",
     "about": "Om",
     "score": "Score",
     "share": "Del"
+  },
+  "goal": {
+    "economic": "Økonomisk",
+    "social": "Social",
+    "environmental": "Miljø",
+    "weight": "Vægte",
+    "weightedScore": "Vægtet Score",
+    "title": "Mål"
   }
 }
