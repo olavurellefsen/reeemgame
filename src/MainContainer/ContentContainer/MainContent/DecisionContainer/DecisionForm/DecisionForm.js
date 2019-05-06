@@ -38,7 +38,7 @@ export const DecisionForm = () => {
         name: 'C0T0E0',
       })
     }
-    if (e.target.innerText === 'START') {
+    if (state.gameState === 'start') {
       dispatch({
         type: 'resetWeights',
         toggle: true,
