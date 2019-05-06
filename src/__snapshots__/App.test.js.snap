@@ -30,7 +30,7 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-bxivhb fEqXEV"
             >
-              game
+              header.title
             </div>
           </div>
         </div>
@@ -44,19 +44,19 @@ exports[`should render correctly 1`] = `
               class="sc-ifAKCX dvSEDi"
               href="/about"
             >
-              About
+              header.about
             </a>
             <a
               class="sc-ifAKCX dvSEDi"
               href="/score"
             >
-              Score
+              header.score
             </a>
             <a
               class="sc-ifAKCX dvSEDi"
               href="/"
             >
-              Share
+              header.share
             </a>
           </div>
         </div>
@@ -66,7 +66,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jWBwVP bpdKHQ"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jAaTju gIylOC"
         order="3"
       >
         <ul
@@ -84,7 +84,7 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-126 MuiTypography-subheading-133 MuiListItemText-primary-123"
               >
-                Electricity demands
+                indicator.electricityDemands
               </span>
             </div>
             <span
@@ -102,7 +102,7 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-126 MuiTypography-subheading-133 MuiListItemText-primary-123"
               >
-                Emission Limit
+                indicator.emissionLimit
               </span>
             </div>
             <span
@@ -111,39 +111,58 @@ exports[`should render correctly 1`] = `
           </li>
         </ul>
         <div
-          class="sc-gZMcBi bIoaEe"
+          class="sc-brqgnP eGBMUc"
+        >
+          <button
+            class="sc-cMljjf fCPMze"
+          >
+            English
+          </button>
+          <button
+            class="sc-cMljjf fCPMze"
+          >
+            Danish
+          </button>
+          <button
+            class="sc-cMljjf fCPMze"
+          >
+            Faroese
+          </button>
+        </div>
+        <div
+          class="sc-gqjmRU gTyLWT"
         >
           <img
             alt="EU flag"
-            class="sc-VigVT bbQYpK"
+            class="sc-jTzLTM gwWWKv"
             src="euflag.png"
           />
           <div
-            class="sc-gqjmRU kbyEZs"
+            class="sc-VigVT dahfHN"
           >
-            This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
+            euAcknowledgement
           </div>
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jWBwVP hYpZPv"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jAaTju eAoCDQ"
         order="1"
       >
         <div
-          class="sc-jTzLTM kJWOCh"
+          class="sc-fjdhpX jGtfjV"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-fjdhpX hZLcce"
+              class="sc-jzJRlG kRUFbu"
             >
-              Decide the future of Europe
+              decisions.2019.header
             </h1>
             <div
-              class="sc-jzJRlG cnAAoI"
+              class="sc-cSHVUG bjIOib"
             >
-              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
+              decisions.2019.intro
             </div>
             <form>
               <div
@@ -157,7 +176,7 @@ exports[`should render correctly 1`] = `
                   <span
                     class="MuiButton-label-164"
                   >
-                    START
+                    decisions.start
                   </span>
                   <span
                     class="MuiTouchRipple-root-223"
@@ -168,20 +187,20 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kAzzGY iVjUDh"
+          class="sc-chPdSV bLHQyl"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-chPdSV jeAxoc"
+              class="sc-kgoBCf ccQQqf"
             >
-              Goal
+              goal.title
             </h1>
             <div
-              class="sc-kgoBCf fHpkVi"
+              class="sc-kGXeez blOYKJ"
             >
-              Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and enviromental scores, which can be seen below.
+              goal.summary
             </div>
             <table
               class="MuiTable-root-189"
@@ -200,13 +219,13 @@ exports[`should render correctly 1`] = `
                     class="MuiTableCell-root-196 MuiTableCell-head-197"
                     scope="col"
                   >
-                    Weight
+                    goal.weight
                   </th>
                   <th
                     class="MuiTableCell-root-196 MuiTableCell-head-197"
                     scope="col"
                   >
-                    Weighted Score
+                    goal.weightedScore
                   </th>
                 </tr>
               </thead>
@@ -219,7 +238,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
                   >
-                    Economic
+                    goal.economic
                   </td>
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
@@ -239,7 +258,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
                   >
-                    Social
+                    goal.social
                   </td>
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
@@ -259,7 +278,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
                   >
-                    Environmental
+                    goal.environmental
                   </td>
                   <td
                     class="MuiTableCell-root-196 MuiTableCell-body-198"
@@ -294,66 +313,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jWBwVP kiuFjX"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jAaTju bBbrZJ"
         order="2"
       >
         <div
-          class="sc-iAyFgw iNKreP"
+          class="sc-hSdWYo iQxBX"
         >
           <div
-            class="sc-hSdWYo EHaJt"
+            class="sc-eHgmQL dIJsul"
           >
             <div
-              class="sc-eHgmQL hYjZKq"
+              class="sc-cvbbAY hUkBRw"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-eHgmQL hYjZKq"
+              class="sc-cvbbAY hUkBRw"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-eHgmQL dHkiwe"
+              class="sc-cvbbAY iLcRxm"
               max="2050"
               min="2015"
             >
@@ -361,7 +380,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-cvbbAY dybdrN"
+            class="sc-jWBwVP bXISXi"
           >
             <div
               aria-disabled="false"
@@ -398,10 +417,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kGXeez hdOaOS"
+          class="sc-kpOJdX LsipW"
         >
           <div
-            class="sc-kpOJdX hswWLy"
+            class="sc-dxgOiQ OZUbG"
           >
             <svg>
               europe.svg
