@@ -15,7 +15,7 @@ import {
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
   const [state, dispatch] = useContext(Context)
-  const currentDecisions = decisions.filter(
+  const currentDecisions = decisions().filter(
     decision => decision.year === state.currentDecision
   )[0]
 
@@ -66,13 +66,13 @@ export const DecisionForm = () => {
               {decision.options.map((option, j) => (
                 <FormControlLabel
                   key={j}
-                  value={option}
+                  value={option.value}
                   control={<Radio />}
-                  label={option}
-                  id={option}
-                  checked={choices[decision.name] === option}
+                  label={option.text}
+                  id={option.value}
+                  checked={choices[decision.name] === option.value}
                   onClick={() => {
-                    setChoice({ ...choices, [decision.name]: option })
+                    setChoice({ ...choices, [decision.name]: option.value })
                   }}
                 />
               ))}
