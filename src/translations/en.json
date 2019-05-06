@@ -12,5 +12,9 @@
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
+  },
+  "indicator": {
+    "electricityDemands": "Electricity Demands",
+    "emissionLimit": "Emission Limit"
   }
 }

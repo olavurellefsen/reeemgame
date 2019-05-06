@@ -10,7 +10,11 @@
     "social": "Samfelag",
     "environmental": "Umhørvi",
     "weight": "Vektir",
-    "weightedScore": "Vægtet Score",
+    "weightedScore": "Vektað Stig",
     "title": "Mál"
+  },
+  "indicator": {
+    "electricityDemands": "Elnýtsla",
+    "emissionLimit": "Útlátsloft"
   }
 }
