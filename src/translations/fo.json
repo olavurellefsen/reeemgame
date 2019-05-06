@@ -54,5 +54,9 @@
     "tryAgain": "Royn aftur",
     "whichChoices": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+  },
+  "score": {
+    "sum": "Tilsamans",
+    "date": "Dagfesting"
   }
 }

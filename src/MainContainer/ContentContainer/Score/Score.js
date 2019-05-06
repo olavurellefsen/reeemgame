@@ -1,26 +1,28 @@
 import React from 'react'
 import { Container, Row, Cell, Table, TextContainer } from './Score.style'
+import { useTranslation } from 'react-i18next'
 
 export const Score = () => {
+  const { t, i18n } = useTranslation()
   var scoreList = JSON.parse(localStorage.getItem('score'))
   return (
     <Container>
       <Table data-testid="scoreTable">
         <Row index={0}>
           <Cell>
-            <TextContainer>Date</TextContainer>
+            <TextContainer>{t('score.date')}</TextContainer>
           </Cell>
           <Cell>
-            <TextContainer>Economic</TextContainer>
+            <TextContainer>{t('goal.economic')}</TextContainer>
           </Cell>
           <Cell>
-            <TextContainer>Environmental</TextContainer>
+            <TextContainer>{t('goal.environmental')}</TextContainer>
           </Cell>
           <Cell>
-            <TextContainer>Social</TextContainer>
+            <TextContainer>{t('goal.social')}</TextContainer>
           </Cell>
           <Cell>
-            <TextContainer>Sum</TextContainer>
+            <TextContainer>{t('score.sum')}</TextContainer>
           </Cell>
         </Row>
         <>
