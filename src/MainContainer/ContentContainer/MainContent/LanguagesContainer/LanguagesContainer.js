@@ -61,6 +61,9 @@ export const Languages = () => {
     setOpen(false)
   }
   const anchorEl = React.useRef(null)
+  const style = {
+    textTransform: 'none',
+  }
   return (
     <Container>
       <Button
@@ -68,6 +71,7 @@ export const Languages = () => {
         aria-owns={open ? 'menu-list-grow' : undefined}
         aria-haspopup="true"
         onClick={toggleMenu}
+        style={style}
       >
         <Icon>
           <MaterialIcon icon="public" />
