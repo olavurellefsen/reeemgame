@@ -6,7 +6,7 @@ import { DecisionContainer } from './DecisionContainer/DecisionContainer'
 import { GoalContainer } from './GoalContainer/GoalContainer'
 import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
-import { Languages } from './LanguageContainer/Languages'
+import { Languages } from './LanguagesContainer/LanguagesContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
