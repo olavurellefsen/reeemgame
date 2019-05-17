@@ -3,13 +3,13 @@ node_js:
   - 'stable'
 cache:
   directories:
-  - node_modules
   - $HOME/.cache/pip
 python:
   - "3.5"
 install:
   - pip install --user awscli
 script:
+  - npm install
   - npm test
   - npm run test:coverage
   - npm run build
