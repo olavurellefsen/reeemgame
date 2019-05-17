@@ -9,6 +9,7 @@ python:
 install:
   - pip install --user awscli
 script:
+  - npm install
   - npm test
   - npm run test:coverage
   - npm run build
