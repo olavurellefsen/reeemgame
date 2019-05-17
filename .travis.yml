@@ -3,7 +3,6 @@ node_js:
   - 'stable'
 cache:
   directories:
-  - node_modules
   - $HOME/.cache/pip
 python:
   - "3.5"
