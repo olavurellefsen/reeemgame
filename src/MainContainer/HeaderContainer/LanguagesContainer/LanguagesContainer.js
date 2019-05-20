@@ -100,24 +100,30 @@ export const Languages = () => {
             <Paper>
               <ClickAwayListener onClickAway={closeMenu}>
                 <MenuList>
-                  <MenuItem
-                    key={'enMenuItem'}
-                    onClick={e => changeLanguage(e, 'en')}
-                  >
-                    English
-                  </MenuItem>
-                  <MenuItem
-                    key={'foMenuItem'}
-                    onClick={e => changeLanguage(e, 'fo')}
-                  >
-                    Føroyskt
-                  </MenuItem>
-                  <MenuItem
-                    key={'dkMenuItem'}
-                    onClick={e => changeLanguage(e, 'dk')}
-                  >
-                    Dansk
-                  </MenuItem>
+                  {currentLanguage !== 'en' && (
+                    <MenuItem
+                      key={'enMenuItem'}
+                      onClick={e => changeLanguage(e, 'en')}
+                    >
+                      English
+                    </MenuItem>
+                  )}
+                  {currentLanguage !== 'fo' && (
+                    <MenuItem
+                      key={'enMenuItem'}
+                      onClick={e => changeLanguage(e, 'fo')}
+                    >
+                      Føroyskt
+                    </MenuItem>
+                  )}
+                  {currentLanguage !== 'dk' && (
+                    <MenuItem
+                      key={'enMenuItem'}
+                      onClick={e => changeLanguage(e, 'dk')}
+                    >
+                      Dansk
+                    </MenuItem>
+                  )}
                 </MenuList>
               </ClickAwayListener>
             </Paper>
