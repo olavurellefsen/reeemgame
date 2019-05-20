@@ -11,9 +11,9 @@
   },
   "goal": {
     "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
-    "economic": "Fíggjarligt",
+    "economic": "Fíggjarlið",
     "social": "Samfelag",
-    "environmental": "Umhørvi",
+    "environmental": "Umhørvið",
     "weight": "Vektir",
     "weightedScore": "Vektað Stig",
     "title": "Mál"
@@ -29,7 +29,7 @@
     },
     "2020": {
       "header": "Avgerðir í 2020",
-      "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
+      "researchDecision": "Skal eykað fíggjarlig tilstuðlan verið til gransking og menning af varandi- / koltvíiltufríari tøkni?",
       "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
     },
     "2030": {
@@ -45,7 +45,7 @@
     },
     "options": {
       "lowReduction": "Skerjing við lágari ferð - U ETS cap",
-      "mediumReduction": "Skerjing við miðalferð - IPPC Pathway Zero Emissions í 2050",
+      "mediumReduction": "Skerjing við miðal ferð - IPPC Pathway Zero Emissions í 2050",
       "highReduction": "Skerjing við høgari ferð - Null útlát í 2040"
     },
     "start": "Byrja",
@@ -53,11 +53,11 @@
     "submitChoice": "Víðari",
     "tryAgain": "Royn aftur",
     "whichChoices": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
-    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+    "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
   },
   "score": {
     "sum": "Tilsamans",
     "date": "Dagfesting"
   },
-  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739."
+  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739."
 }

@@ -9,6 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import MenuList from '@material-ui/core/MenuList'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import MaterialIcon from 'material-icons-react'
+import { Public, ExpandLess, ExpandMore } from '@material-ui/icons'
 
 export const Languages = () => {
   const [open, setOpen] = useState(false)
@@ -66,6 +67,7 @@ export const Languages = () => {
     minWidth: '150px',
     display: 'flex',
     justifyContent: 'flex-start',
+    color: 'white',
   }
   return (
     <Container>
@@ -77,15 +79,15 @@ export const Languages = () => {
         style={style}
       >
         <Icon>
-          <MaterialIcon icon="public" />
+          <Public />
         </Icon>
         {lanugageTitle}
         <Icon>
-          {open && <MaterialIcon icon={'expand_less'} />}
-          {!open && <MaterialIcon icon={'expand_more'} />}
+          {open && <ExpandLess />}
+          {!open && <ExpandMore />}
         </Icon>
       </Button>
-      <Popper open={open} anchorEl={anchorEl.current} transition disablePortal>
+      <Popper open={open} anchorEl={anchorEl.current} transition>
         {({ TransitionProps, placement }) => (
           <Grow
             {...TransitionProps}
@@ -98,14 +100,23 @@ export const Languages = () => {
             <Paper>
               <ClickAwayListener onClickAway={closeMenu}>
                 <MenuList>
-                  <MenuItem onClick={e => changeLanguage(e, 'en')}>
+                  <MenuItem
+                    key={'enMenuItem'}
+                    onClick={e => changeLanguage(e, 'en')}
+                  >
                     English
                   </MenuItem>
-                  <MenuItem onClick={e => changeLanguage(e, 'dk')}>
-                    Dansk
-                  </MenuItem>
-                  <MenuItem onClick={e => changeLanguage(e, 'fo')}>
+                  <MenuItem
+                    key={'foMenuItem'}
+                    onClick={e => changeLanguage(e, 'fo')}
+                  >
                     Føroyskt
+                  </MenuItem>
+                  <MenuItem
+                    key={'dkMenuItem'}
+                    onClick={e => changeLanguage(e, 'dk')}
+                  >
+                    Dansk
                   </MenuItem>
                 </MenuList>
               </ClickAwayListener>
