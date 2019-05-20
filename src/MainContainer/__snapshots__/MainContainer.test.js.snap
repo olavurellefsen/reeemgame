@@ -41,12 +41,15 @@ exports[`should render correctly 1`] = `
             class="MuiGrid-container-1 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20"
           >
             <div
-              class="sc-EHOje ceyZIx"
+              class="sc-EHOje fKmvao"
+            />
+            <div
+              class="sc-bZQynM VYfCa"
             >
               <button
                 aria-haspopup="true"
                 class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103"
-                style="text-transform: none; min-width: 150px; display: flex; justify-content: flex-start; color: white;"
+                style="text-transform: none; display: flex; justify-content: flex-start; color: white;"
                 tabindex="0"
                 type="button"
               >
@@ -54,7 +57,7 @@ exports[`should render correctly 1`] = `
                   class="MuiButton-label-99"
                 >
                   <div
-                    class="sc-gzVnrw dsBRcA"
+                    class="sc-htoDjs bMUrX"
                   >
                     <svg
                       aria-hidden="true"
@@ -74,7 +77,7 @@ exports[`should render correctly 1`] = `
                   </div>
                   
                   <div
-                    class="sc-gzVnrw dsBRcA"
+                    class="sc-htoDjs bMUrX"
                   >
                     <svg
                       aria-hidden="true"
@@ -98,6 +101,9 @@ exports[`should render correctly 1`] = `
                 />
               </button>
             </div>
+            <div
+              class="sc-EHOje fKmvao"
+            />
             <a
               class="sc-ifAKCX dvSEDi"
               href="/about"
@@ -124,7 +130,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jDwBTQ bfMGhp"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jlyJG grMFtU"
         order="3"
       >
         <ul
@@ -169,37 +175,37 @@ exports[`should render correctly 1`] = `
           </li>
         </ul>
         <div
-          class="sc-fjdhpX iCIgYY"
+          class="sc-kAzzGY kGQNLV"
         >
           <img
             alt="EU flag"
-            class="sc-cSHVUG gVBueK"
+            class="sc-kgoBCf jpCcDx"
             src="euflag.png"
           />
           <div
-            class="sc-jzJRlG cfehdh"
+            class="sc-chPdSV cSxtdw"
           >
             euAcknowledgement
           </div>
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jDwBTQ iFstYF"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jlyJG JQjHn"
         order="1"
       >
         <div
-          class="sc-kAzzGY eAEjwP"
+          class="sc-kGXeez eRrQUu"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-chPdSV jeAxoc"
+              class="sc-kpOJdX gdwYEV"
             >
               decisions.2019.header
             </h1>
             <div
-              class="sc-kgoBCf fHpkVi"
+              class="sc-dxgOiQ PSfxR"
             >
               decisions.2019.intro
             </div>
@@ -226,18 +232,18 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kpOJdX kCeuct"
+          class="sc-jKJlTe hgSZmq"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-dxgOiQ dicieg"
+              class="sc-eNQAEJ dveiIa"
             >
               goal.title
             </h1>
             <div
-              class="sc-ckVGcZ iGSHEJ"
+              class="sc-hMqMXs jVHSyv"
             >
               goal.summary
             </div>
@@ -352,66 +358,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jDwBTQ bfUTSy"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jlyJG dmMEBF"
         order="2"
       >
         <div
-          class="sc-jWBwVP kwHzRF"
+          class="sc-jAaTju bKYeId"
         >
           <div
-            class="sc-brqgnP ekcSev"
+            class="sc-jDwBTQ cawUcv"
           >
             <div
-              class="sc-cMljjf bCDpmb"
+              class="sc-gPEVay bihxCF"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-cMljjf bCDpmb"
+              class="sc-gPEVay bihxCF"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-cMljjf bDFgYW"
+              class="sc-gPEVay dQWVvZ"
               max="2050"
               min="2015"
             >
@@ -419,7 +425,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-jAaTju grTtLa"
+            class="sc-iRbamj gmsLqC"
           >
             <div
               aria-disabled="false"
@@ -456,10 +462,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-jKJlTe hHLXRu"
+          class="sc-kEYyzF bnShOR"
         >
           <div
-            class="sc-eNQAEJ bnDKHB"
+            class="sc-kkGfuU hLdXcY"
           >
             <svg>
               europe.svg

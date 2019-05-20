@@ -16,7 +16,15 @@ export const StyledButton = styled.button`
   }
   background-color: transparent;
 `
+
 export const Icon = styled.div`
   display: flex;
   padding-right: 5px;
+`
+export const TextContainer = styled.div`
+  color: white;
+`
+export const Menu = styled.div`
+  background-color: #242323;
+  color: white;
 `

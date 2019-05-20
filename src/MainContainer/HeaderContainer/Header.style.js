@@ -32,3 +32,8 @@ export const HeaderMenuItemLink = styled(Link)`
     cursor: pointer;
   }
 `
+
+export const Divider = styled.div`
+  border-right: thin solid white;
+  height: 100%;
+`

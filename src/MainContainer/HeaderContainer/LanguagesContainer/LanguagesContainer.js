@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '@material-ui/core/Button'
 import { useTranslation } from 'react-i18next'
-import { Container, Icon } from './Languages.style'
+import { Container, Icon, Menu, TextContainer } from './Languages.style'
 import Grow from '@material-ui/core/Grow'
 import Paper from '@material-ui/core/Paper'
 import Popper from '@material-ui/core/Popper'
@@ -64,7 +64,6 @@ export const Languages = () => {
   const anchorEl = React.useRef(null)
   const style = {
     textTransform: 'none',
-    minWidth: '150px',
     display: 'flex',
     justifyContent: 'flex-start',
     color: 'white',
@@ -97,7 +96,7 @@ export const Languages = () => {
                 placement === 'bottom' ? 'center top' : 'center bottom',
             }}
           >
-            <Paper>
+            <Menu>
               <ClickAwayListener onClickAway={closeMenu}>
                 <MenuList>
                   {currentLanguage !== 'en' && (
@@ -105,7 +104,7 @@ export const Languages = () => {
                       key={'enMenuItem'}
                       onClick={e => changeLanguage(e, 'en')}
                     >
-                      English
+                      <TextContainer>English</TextContainer>
                     </MenuItem>
                   )}
                   {currentLanguage !== 'fo' && (
@@ -113,7 +112,7 @@ export const Languages = () => {
                       key={'enMenuItem'}
                       onClick={e => changeLanguage(e, 'fo')}
                     >
-                      Føroyskt
+                      <TextContainer>Føroyskt</TextContainer>
                     </MenuItem>
                   )}
                   {currentLanguage !== 'dk' && (
@@ -121,12 +120,12 @@ export const Languages = () => {
                       key={'enMenuItem'}
                       onClick={e => changeLanguage(e, 'dk')}
                     >
-                      Dansk
+                      <TextContainer>Dansk</TextContainer>
                     </MenuItem>
                   )}
                 </MenuList>
               </ClickAwayListener>
-            </Paper>
+            </Menu>
           </Grow>
         )}
       </Popper>

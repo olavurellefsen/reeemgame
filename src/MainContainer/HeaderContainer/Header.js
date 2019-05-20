@@ -7,6 +7,7 @@ import {
   TitleContainer,
   HeaderMenuItemLink,
   TextContainer,
+  Divider,
 } from './Header.style'
 import logo from './REEEMlogo.transparent.1.svg'
 import { Languages } from './LanguagesContainer/LanguagesContainer'
@@ -36,7 +37,9 @@ export const Header = () => {
             justify="space-between"
             alignItems="center"
           >
+            <Divider />
             <Languages />
+            <Divider />
             <HeaderMenuItemLink to="/about">
               {t('header.about')}
             </HeaderMenuItemLink>
