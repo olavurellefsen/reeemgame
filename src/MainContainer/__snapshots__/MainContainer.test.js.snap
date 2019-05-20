@@ -40,6 +40,64 @@ exports[`should render correctly 1`] = `
           <div
             class="MuiGrid-container-1 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20"
           >
+            <div
+              class="sc-EHOje ceyZIx"
+            >
+              <button
+                aria-haspopup="true"
+                class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103"
+                style="text-transform: none; min-width: 150px; display: flex; justify-content: flex-start; color: white;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label-99"
+                >
+                  <div
+                    class="sc-gzVnrw dsBRcA"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root-127"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                      />
+                    </svg>
+                  </div>
+                  
+                  <div
+                    class="sc-gzVnrw dsBRcA"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root-127"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                </span>
+                <span
+                  class="MuiTouchRipple-root-232"
+                />
+              </button>
+            </div>
             <a
               class="sc-ifAKCX dvSEDi"
               href="/about"
@@ -66,101 +124,82 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jAaTju gIylOC"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jDwBTQ bfMGhp"
         order="3"
       >
         <ul
-          class="MuiList-root-98 MuiList-padding-99"
+          class="MuiList-root-136 MuiList-padding-137"
           role="menu"
         >
           <li
-            class="MuiButtonBase-root-117 MuiListItem-root-105 MuiListItem-default-108 MuiListItem-gutters-113 MuiListItem-button-114 MuiMenuItem-root-102 MuiMenuItem-gutters-103"
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
             role="menuitem"
             tabindex="0"
           >
             <div
-              class="MuiListItemText-root-120"
+              class="MuiListItemText-root-155"
             >
               <span
-                class="MuiTypography-root-126 MuiTypography-subheading-133 MuiListItemText-primary-123"
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
                 indicator.electricityDemands
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-223"
+              class="MuiTouchRipple-root-232"
             />
           </li>
           <li
-            class="MuiButtonBase-root-117 MuiListItem-root-105 MuiListItem-default-108 MuiListItem-gutters-113 MuiListItem-button-114 MuiMenuItem-root-102 MuiMenuItem-gutters-103"
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
             role="menuitem"
             tabindex="-1"
           >
             <div
-              class="MuiListItemText-root-120"
+              class="MuiListItemText-root-155"
             >
               <span
-                class="MuiTypography-root-126 MuiTypography-subheading-133 MuiListItemText-primary-123"
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
                 indicator.emissionLimit
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-223"
+              class="MuiTouchRipple-root-232"
             />
           </li>
         </ul>
         <div
-          class="sc-brqgnP eGBMUc"
-        >
-          <button
-            class="sc-cMljjf fCPMze"
-          >
-            English
-          </button>
-          <button
-            class="sc-cMljjf fCPMze"
-          >
-            Danish
-          </button>
-          <button
-            class="sc-cMljjf fCPMze"
-          >
-            Faroese
-          </button>
-        </div>
-        <div
-          class="sc-gqjmRU gTyLWT"
+          class="sc-fjdhpX iCIgYY"
         >
           <img
             alt="EU flag"
-            class="sc-jTzLTM gwWWKv"
+            class="sc-cSHVUG gVBueK"
             src="euflag.png"
           />
           <div
-            class="sc-VigVT dahfHN"
+            class="sc-jzJRlG cfehdh"
           >
             euAcknowledgement
           </div>
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jAaTju eAoCDQ"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jDwBTQ iFstYF"
         order="1"
       >
         <div
-          class="sc-fjdhpX jGtfjV"
+          class="sc-kAzzGY eAEjwP"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-jzJRlG kRUFbu"
+              class="sc-chPdSV jeAxoc"
             >
               decisions.2019.header
             </h1>
             <div
-              class="sc-cSHVUG bjIOib"
+              class="sc-kgoBCf fHpkVi"
             >
               decisions.2019.intro
             </div>
@@ -169,17 +208,17 @@ exports[`should render correctly 1`] = `
                 class="MuiGrid-item-2"
               >
                 <button
-                  class="MuiButtonBase-root-117 MuiButton-root-163 WithStyles-Button--root-162 MuiButton-contained-174 MuiButton-raised-177"
+                  class="MuiButtonBase-root-124 MuiButton-root-98 WithStyles-Button--root-197 MuiButton-contained-109 MuiButton-raised-112"
                   tabindex="0"
                   type="submit"
                 >
                   <span
-                    class="MuiButton-label-164"
+                    class="MuiButton-label-99"
                   >
                     decisions.start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-223"
+                    class="MuiTouchRipple-root-232"
                   />
                 </button>
               </div>
@@ -187,42 +226,42 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-chPdSV bLHQyl"
+          class="sc-kpOJdX kCeuct"
         >
           <div
             class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
           >
             <h1
-              class="sc-kgoBCf ccQQqf"
+              class="sc-dxgOiQ dicieg"
             >
               goal.title
             </h1>
             <div
-              class="sc-kGXeez blOYKJ"
+              class="sc-ckVGcZ iGSHEJ"
             >
               goal.summary
             </div>
             <table
-              class="MuiTable-root-189"
+              class="MuiTable-root-198"
             >
               <thead
-                class="MuiTableHead-root-190"
+                class="MuiTableHead-root-199"
               >
                 <tr
-                  class="MuiTableRow-root-191 MuiTableRow-head-194"
+                  class="MuiTableRow-root-200 MuiTableRow-head-203"
                 >
                   <th
-                    class="MuiTableCell-root-196 MuiTableCell-head-197"
+                    class="MuiTableCell-root-205 MuiTableCell-head-206"
                     scope="col"
                   />
                   <th
-                    class="MuiTableCell-root-196 MuiTableCell-head-197"
+                    class="MuiTableCell-root-205 MuiTableCell-head-206"
                     scope="col"
                   >
                     goal.weight
                   </th>
                   <th
-                    class="MuiTableCell-root-196 MuiTableCell-head-197"
+                    class="MuiTableCell-root-205 MuiTableCell-head-206"
                     scope="col"
                   >
                     goal.weightedScore
@@ -230,79 +269,79 @@ exports[`should render correctly 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="MuiTableBody-root-208"
+                class="MuiTableBody-root-217"
               >
                 <tr
-                  class="MuiTableRow-root-191"
+                  class="MuiTableRow-root-200"
                 >
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     goal.economic
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     20
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     60
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-191"
+                  class="MuiTableRow-root-200"
                 >
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     goal.social
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     50
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     100
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-191"
+                  class="MuiTableRow-root-200"
                 >
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     goal.environmental
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     30
                     %
                   </td>
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     150
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root-191"
+                  class="MuiTableRow-root-200"
                 >
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   />
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   />
                   <td
-                    class="MuiTableCell-root-196 MuiTableCell-body-198"
+                    class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
                     310
                   </td>
@@ -313,66 +352,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jAaTju bBbrZJ"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jDwBTQ bfUTSy"
         order="2"
       >
         <div
-          class="sc-hSdWYo iQxBX"
+          class="sc-jWBwVP kwHzRF"
         >
           <div
-            class="sc-eHgmQL dIJsul"
+            class="sc-brqgnP ekcSev"
           >
             <div
-              class="sc-cvbbAY hUkBRw"
+              class="sc-cMljjf bCDpmb"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-cvbbAY hUkBRw"
+              class="sc-cMljjf bCDpmb"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-cvbbAY iLcRxm"
+              class="sc-cMljjf bDFgYW"
               max="2050"
               min="2015"
             >
@@ -380,7 +419,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-jWBwVP bXISXi"
+            class="sc-jAaTju grTtLa"
           >
             <div
               aria-disabled="false"
@@ -388,28 +427,28 @@ exports[`should render correctly 1`] = `
               aria-valuemax="2050"
               aria-valuemin="2015"
               aria-valuenow="2019"
-              class="MuiSlider-root-209"
+              class="MuiSlider-root-218"
               role="slider"
             >
               <div
-                class="MuiSlider-container-210"
+                class="MuiSlider-container-219"
               >
                 <div
-                  class="MuiSlider-track-211 MuiSlider-trackBefore-212"
+                  class="MuiSlider-track-220 MuiSlider-trackBefore-221"
                   style="transform: translateY(-50%) scaleX(0.11428571428571428);"
                 />
                 <div
-                  class="MuiSlider-thumbWrapper-214"
+                  class="MuiSlider-thumbWrapper-223"
                   style="transform: translateX(11.428571428571429%);"
                 >
                   <button
-                    class="MuiButtonBase-root-117 MuiSlider-thumb-215"
+                    class="MuiButtonBase-root-124 MuiSlider-thumb-224"
                     tabindex="0"
                     type="button"
                   />
                 </div>
                 <div
-                  class="MuiSlider-track-211 MuiSlider-trackAfter-213"
+                  class="MuiSlider-track-220 MuiSlider-trackAfter-222"
                   style="transform: translateY(-50%) scaleX(0.8857142857142857);"
                 />
               </div>
@@ -417,10 +456,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kpOJdX LsipW"
+          class="sc-jKJlTe hHLXRu"
         >
           <div
-            class="sc-dxgOiQ OZUbG"
+            class="sc-eNQAEJ bnDKHB"
           >
             <svg>
               europe.svg

@@ -8,7 +8,6 @@ import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
-import { Languages } from './../../HeaderContainer/LanguagesContainer/LanguagesContainer'
 
 const StyledGrid = styled(Grid)`
   && {
@@ -37,7 +36,6 @@ export const MainContent = () => {
         order={wide ? 1 : 3}
       >
         <IndicatorContainer />
-        <Languages />
         <EUacknowledgement />
       </StyledGrid>
       <StyledGrid
