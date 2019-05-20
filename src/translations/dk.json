@@ -24,17 +24,17 @@
   },
   "decisions": {
     "2019": {
-      "header": "Bestem frentiden for Europa",
-      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+      "header": "Bestem fremtiden for Europa",
+      "intro": "Du har ansvaret for Europas klima politik og vil blive bedt om at tage nogle beslutninge i 2020, i 2030 og i 2040 for at maksimere den samlede økonimske, sociale og miljømæssige score. Dine vægte kan ses nedenfor i \"Vægte\" kolonnen."
     },
     "2020": {
       "header": "Beslutninger i 2020",
-      "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
-      "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
+      "researchDecision": "Skal der være ekstra økonomiske incitamenter til forskning og udvikling af vedvarende / kulstoffri teknologi?",
+      "emissionsDecision": "Hvilke begræsninger er du villig til at sætte for at nå dit emissionsmål?"
     },
     "2030": {
       "header": "Beslutninger i 2030",
-      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "transmissionDecision": "Vil du implementere den 10-årige netværksudviklingsplan for netkapacitet på tværs af grænser?"
     },
     "2040": {
       "header": "Beslutninger i 2040"
@@ -44,20 +44,20 @@
       "intro": "Nedenunder kan du se din score."
     },
     "options": {
-      "lowReduction": "Low reduction rate – EU ETS cap",
-      "mediumReduction": "Medium reduction rate - IPPC Pathway Zero Emissions in 2050",
-      "highReduction": "High reduction rate - Zero emissions in 2040"
+      "lowReduction": "Lav reduktionshastighed - EU ETS cap",
+      "mediumReduction": "Medium reduktionshastighed - IPPC Pathway Zero Emissions i 2050",
+      "highReduction": "Høj reduktionshastighed - Nul emissioner i 2040"
     },
     "start": "Start",
     "submitChoices": "Næste",
     "submitChoice": "Næste",
     "tryAgain": "Prøv igen",
     "whichChoices": "Hvilke valg vil du tage for at nå dit mål?",
-    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
   },
   "score": {
     "sum": "Tilsammen",
     "date": "Dato"
   },
-  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739."
+  "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739."
 }

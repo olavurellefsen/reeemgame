@@ -63,6 +63,9 @@ export const Languages = () => {
   const anchorEl = React.useRef(null)
   const style = {
     textTransform: 'none',
+    minWidth: '150px',
+    display: 'flex',
+    justifyContent: 'flex-start',
   }
   return (
     <Container>

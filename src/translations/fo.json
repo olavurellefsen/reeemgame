@@ -10,7 +10,7 @@
     "share": "Deil"
   },
   "goal": {
-    "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, tað samfelagsliga og tað umhvørviðsliga, sum sæst niðanfyri.",
+    "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
     "economic": "Fíggjarligt",
     "social": "Samfelag",
     "environmental": "Umhørvi",
@@ -24,17 +24,17 @@
   },
   "decisions": {
     "2019": {
-      "header": "Decide the future of Europe",
-      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+      "header": "Ger av hvussu framtíðin hjá Evropa sær út",
+      "intro": "Tú hevur ábyrgdina av veðurlagspolitikkinum í Evropa og verður biðin um at taka nakrar avgerðir í 2020, 2030 og í 2040 fyri at fáa flest møgulig samlað stig innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið. Tú sært tínar vektir niðanfyri undir teiginum \"Vektir\"."
     },
     "2020": {
       "header": "Avgerðir í 2020",
       "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
-      "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
+      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
     },
     "2030": {
       "header": "Avgerðir í 2030",
-      "transmissionDecision": "'Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "transmissionDecision": "Vilt tú seta í verk 10-árs netverksmenningarætlanina fyri netorku tvørtur um landamørk?"
     },
     "2040": {
       "header": "Avgerðir í 2040"
@@ -44,9 +44,9 @@
       "intro": "Niðanfyri sært tú tíni stig."
     },
     "options": {
-      "lowReduction": "Low reduction rate – EU ETS cap",
-      "mediumReduction": "Medium reduction rate - IPPC Pathway Zero Emissions in 2050",
-      "highReduction": "High reduction rate - Zero emissions in 2040"
+      "lowReduction": "Skerjing við lágari ferð - U ETS cap",
+      "mediumReduction": "Skerjing við miðalferð - IPPC Pathway Zero Emissions í 2050",
+      "highReduction": "Skerjing við høgari ferð - Null útlát í 2040"
     },
     "start": "Byrja",
     "submitChoices": "Víðari",

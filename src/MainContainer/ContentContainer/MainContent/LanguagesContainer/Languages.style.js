@@ -7,9 +7,9 @@ export const Container = styled.div`
   margin: 10px;
 `
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   display: flex;
-  margin: 5px;
+  width: 100%;
   border: none;
   :hover {
     cursor: pointer;
