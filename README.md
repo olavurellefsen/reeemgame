@@ -10,7 +10,9 @@ Participants learn how different decisions affect the energy systems and the out
 The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](http://www.osemosys.org/osembe.html), which is the open source energy model base for the European Union.
 
 The REEEM project is a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
+
 ![Screenshot](reeemGame_screenshot.PNG)
+
 ## How to play
 The game is a simulation of how the future will look depending on how participants decide to act. 
 
