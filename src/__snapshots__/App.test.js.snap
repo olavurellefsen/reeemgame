@@ -66,7 +66,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-jhAzac kvdZqh"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-fBuWsC eiqvWW"
         order="3"
       >
         <ul
@@ -88,7 +88,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-222"
+              class="MuiTouchRipple-root-225"
             />
           </li>
           <li
@@ -106,7 +106,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-222"
+              class="MuiTouchRipple-root-225"
             />
           </li>
         </ul>
@@ -126,7 +126,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-jhAzac ggiPkm"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-fBuWsC gXecAF"
         order="1"
       >
         <div
@@ -160,7 +160,7 @@ exports[`should render correctly 1`] = `
                     START
                   </span>
                   <span
-                    class="MuiTouchRipple-root-222"
+                    class="MuiTouchRipple-root-225"
                   />
                 </button>
               </div>
@@ -294,66 +294,66 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-jhAzac ldOVZJ"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-fBuWsC lczSKP"
         order="2"
       >
         <div
-          class="sc-gipzik frtYyo"
+          class="sc-csuQGl eAoUBW"
         >
           <div
-            class="sc-csuQGl loPNVl"
+            class="sc-Rmtcm iYZmuj"
           >
             <div
-              class="sc-Rmtcm ljAhKR"
+              class="sc-bRBYWo biXckv"
               max="2050"
               min="2015"
             >
               2015
             </div>
             <div
-              class="sc-Rmtcm ljAhKR"
+              class="sc-bRBYWo biXckv"
               max="2050"
               min="2015"
             >
               2020
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
               2025
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
               2030
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
               2035
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
               2040
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
               2045
             </div>
             <div
-              class="sc-Rmtcm hIYgqQ"
+              class="sc-bRBYWo giKlzl"
               max="2050"
               min="2015"
             >
@@ -361,7 +361,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-bRBYWo dfyHnE"
+            class="sc-hzDkRC gwEeIm"
           >
             <div
               aria-disabled="false"
@@ -369,7 +369,7 @@ exports[`should render correctly 1`] = `
               aria-valuemax="2050"
               aria-valuemin="2015"
               aria-valuenow="2019"
-              class="MuiSlider-root-208 sc-hzDkRC kpsoyz"
+              class="MuiSlider-root-208 sc-jhAzac hmXDXQ"
               role="slider"
             >
               <div
@@ -403,9 +403,20 @@ exports[`should render correctly 1`] = `
           <div
             class="sc-jWBwVP fpxGuH"
           >
-            <svg>
-              europe.svg
-            </svg>
+            <div
+              id="map"
+            >
+              <svg>
+                europe.svg
+              </svg>
+            </div>
+            <div
+              class="sc-gipzik hAmfox"
+            >
+              100
+               
+              kg
+            </div>
           </div>
         </div>
       </div>

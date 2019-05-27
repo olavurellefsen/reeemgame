@@ -6,8 +6,26 @@ import { getMapColors } from './MapValues'
 import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
 import { IndicatorInfo } from './IndicatorInfo'
+import Popover from '@material-ui/core/Popover'
+import Typography from '@material-ui/core/Typography'
 
 export const MapContainer = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [anchorPosition, setAnchorPosition] = React.useState(null)
+
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget)
+    setAnchorPosition({ left: event.clientX, top: event.clientY })
+  }
+
+  function handleClose() {
+    setAnchorEl(null)
+    setAnchorPosition(null)
+  }
+
+  const open = Boolean(anchorEl)
+  const id = open ? 'simple-popover' : null
+
   const [state] = useContext(Context)
   const currentYear = state.currentYear
   const mapColors = getMapColors(
@@ -20,16 +38,22 @@ export const MapContainer = () => {
   if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
   return (
     <Container>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorPosition={anchorPosition}
+        anchorReference={'anchorPosition'}
+      >
+        <Typography>The content of the Popover.</Typography>
+      </Popover>
       <StyledEurope colors={mapColors}>
         <div
           id="map"
           onClick={event => {
             event.preventDefault()
-            alert(
-              JSON.stringify(
-                mapColors.filter(element => element.code === event.target.id)
-              )
-            )
+            handleClick(event)
           }}
         >
           <Europe />
