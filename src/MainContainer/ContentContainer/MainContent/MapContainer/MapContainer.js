@@ -7,20 +7,30 @@ import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
 import { IndicatorInfo } from './IndicatorInfo'
 import Popover from '@material-ui/core/Popover'
-import Typography from '@material-ui/core/Typography'
+import { CountryPopup } from './CountryPopup'
 
 export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
+  const [selectedCountry, setSelectedCountry] = React.useState(null)
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
     setAnchorPosition({ left: event.clientX, top: event.clientY })
+    setSelectedCountry(event.target.id)
+    console.log('open')
+    slowClose()
   }
 
   function handleClose() {
     setAnchorEl(null)
     setAnchorPosition(null)
+    console.log('close')
+  }
+  function slowClose() {
+    setTimeout(function() {
+      handleClose()
+    }, 2000)
   }
 
   const open = Boolean(anchorEl)
@@ -33,7 +43,7 @@ export const MapContainer = () => {
     state.selectedScenario,
     currentYear
   )
-  //alert(state.selectedIndicator)
+
   var lp
   if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
   return (
@@ -46,14 +56,16 @@ export const MapContainer = () => {
         anchorPosition={anchorPosition}
         anchorReference={'anchorPosition'}
       >
-        <Typography>The content of the Popover.</Typography>
+        <CountryPopup country={selectedCountry} onClose={handleClose} />
       </Popover>
       <StyledEurope colors={mapColors}>
         <div
           id="map"
           onClick={event => {
-            event.preventDefault()
-            handleClick(event)
+            if (event.target.id) {
+              event.preventDefault()
+              handleClick(event)
+            }
           }}
         >
           <Europe />
