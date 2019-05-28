@@ -13,18 +13,19 @@ export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
+  const [hoverOn, setHoverOn] = React.useState(null)
+  var timer = null
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
     setAnchorPosition({ left: event.clientX, top: event.clientY })
     setSelectedCountry(event.target.id)
     console.log('open')
-    slowClose()
   }
-
   function handleClose() {
     setAnchorEl(null)
     setAnchorPosition(null)
+    setHoverOn(null)
     console.log('close')
   }
   function slowClose() {
@@ -32,7 +33,24 @@ export const MapContainer = () => {
       handleClose()
     }, 2000)
   }
-
+  // function openPopup(anchor, position, id) {
+  //   setAnchorEl(anchor)
+  //   setAnchorPosition(position)
+  //   setSelectedCountry(id)
+  //   console.log('open')
+  // }
+  // function onMouseMove(event) {
+  //   if (!hoverOn || hoverOn !== event.target.id) {
+  //     if (timer) clearTimeout(timer)
+  //     setHoverOn(event.target.id)
+  //     const anchor = event.currentTarget
+  //     const position = { left: event.clientX, top: event.clientY }
+  //     const id = event.target.id
+  //     timer = setTimeout(function() {
+  //       openPopup(anchor, position, id)
+  //     }, 1000)
+  //   }
+  // }
   const open = Boolean(anchorEl)
   const id = open ? 'simple-popover' : null
 
@@ -59,17 +77,14 @@ export const MapContainer = () => {
         <CountryPopup country={selectedCountry} onClose={handleClose} />
       </Popover>
       <StyledEurope colors={mapColors}>
-        <div
-          id="map"
+        <Europe
           onClick={event => {
             if (event.target.id) {
               event.preventDefault()
               handleClick(event)
             }
           }}
-        >
-          <Europe />
-        </div>
+        />
         {state.selectedIndicator ? (
           <Legend
             maxValue={lp.max}
@@ -79,7 +94,7 @@ export const MapContainer = () => {
           />
         ) : null}
         <IndicatorInfo
-          visible={true}
+          visible={false}
           unit="kg"
           value="100"
           year={currentYear}

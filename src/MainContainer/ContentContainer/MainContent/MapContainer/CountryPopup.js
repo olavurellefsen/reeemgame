@@ -1,16 +1,27 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
-import { Container, Country } from './CountryPopup.style'
+import {
+  Container,
+  Country,
+  Header,
+  Content,
+  Icon,
+  Button,
+} from './CountryPopup.style'
+import { Close } from '@material-ui/icons'
 
 export const CountryPopup = props => {
-  function close() {
-    setTimeout(function() {
-      props.onClose()
-    }, 300)
-  }
   return (
-    <Container onMouseLeave={() => close()}>
-      <Country>{props.country}</Country>
+    <Container>
+      <Header>
+        <Country>{props.country}</Country>
+        <Button onClick={props.onClose}>
+          <Icon>
+            <Close />
+          </Icon>
+        </Button>
+      </Header>
+      <Content />
     </Container>
   )
 }
