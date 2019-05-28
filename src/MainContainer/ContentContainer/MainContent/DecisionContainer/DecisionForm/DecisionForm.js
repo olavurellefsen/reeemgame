@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import Context from '../../../../../Context/Context'
-import { decisions } from './Decisions'
+import { Decisions } from './Decisions'
 import {
   DecisionHeader,
   IntroText,
@@ -14,7 +14,7 @@ import {
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
   const [state, dispatch] = useContext(Context)
-  const currentDecisions = decisions().filter(
+  const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
   )[0]
 
@@ -66,7 +66,7 @@ export const DecisionForm = () => {
                 <StyledFormControlLabel
                   key={j}
                   value={option.value}
-                  control={<Radio />}
+                  control={<StyledRadio />}
                   label={option.text}
                   id={option.value}
                   checked={choices[decision.name] === option.value}

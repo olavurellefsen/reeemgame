@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-export const decisions = () => {
+export const Decisions = () => {
   const { t } = useTranslation()
   return [
     {

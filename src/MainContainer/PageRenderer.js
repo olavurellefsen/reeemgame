@@ -19,7 +19,7 @@ export const Page = p => {
       .then(text => {
         setContent(text)
       })
-  }, [])
+  })
 
   return (
     <Container>
