@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { withStyles } from '@material-ui/core/styles'
 
 export const Container = styled.div`
   display: flex;

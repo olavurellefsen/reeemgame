@@ -7,7 +7,7 @@ import about_dk from '../../../Markdown/about.dk.md'
 import about_fo from '../../../Markdown/about.fo.md'
 
 export const About = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const language = i18n.language
   var file
   switch (language) {

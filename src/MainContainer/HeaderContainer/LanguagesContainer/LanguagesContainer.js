@@ -3,17 +3,15 @@ import Button from '@material-ui/core/Button'
 import { useTranslation } from 'react-i18next'
 import { Container, Icon, Menu, TextContainer } from './Languages.style'
 import Grow from '@material-ui/core/Grow'
-import Paper from '@material-ui/core/Paper'
 import Popper from '@material-ui/core/Popper'
 import MenuItem from '@material-ui/core/MenuItem'
 import MenuList from '@material-ui/core/MenuList'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
-import MaterialIcon from 'material-icons-react'
 import { Public, ExpandLess, ExpandMore } from '@material-ui/icons'
 
 export const Languages = () => {
   const [open, setOpen] = useState(false)
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const currentLanguage = i18n.language
 
   const changeLanguage = (e, language) => {

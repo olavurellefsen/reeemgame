@@ -3,7 +3,7 @@ import { Container, Row, Cell, Table, TextContainer } from './Score.style'
 import { useTranslation } from 'react-i18next'
 
 export const Score = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   var scoreList = JSON.parse(localStorage.getItem('score'))
   return (
     <Container>

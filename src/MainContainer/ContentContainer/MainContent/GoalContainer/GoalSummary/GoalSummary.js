@@ -11,7 +11,7 @@ import { GoalHeader, IntroText } from './GoalSummary.style'
 
 export const GoalSummary = () => {
   const [state] = useContext(Context)
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <Grid
