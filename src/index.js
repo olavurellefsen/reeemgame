@@ -11,6 +11,7 @@ import JssProvider from 'react-jss/lib/JssProvider'
 import { create } from 'jss'
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import './i18n'
 
 const generateClassName = createGenerateClassName()
 const jss = create({

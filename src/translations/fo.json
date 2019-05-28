@@ -1,0 +1,63 @@
+{
+  "general": {
+    "yes": "Ja",
+    "no": "Nei"
+  },
+  "header": {
+    "title": "game",
+    "about": "Um",
+    "score": "Stigatalva",
+    "share": "Deil"
+  },
+  "goal": {
+    "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
+    "economic": "Fíggjarligt",
+    "social": "Samfelagi",
+    "environmental": "Umhørvið",
+    "weight": "Vektir",
+    "weightedScore": "Vektað Stig",
+    "title": "Mál"
+  },
+  "indicator": {
+    "electricityDemands": "Elnýtsla",
+    "emissionLimit": "Útlátsloft"
+  },
+  "decisions": {
+    "2019": {
+      "header": "Ger av hvussu framtíðin hjá Evropa sær út",
+      "intro": "Tú hevur ábyrgdina av veðurlagspolitikkinum í Evropa og verður biðin um at taka nakrar avgerðir í 2020, 2030 og í 2040 fyri at fáa flest møgulig samlað stig innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið. Tú sært tínar vektir niðanfyri undir teiginum \"Vektir\"."
+    },
+    "2020": {
+      "header": "Avgerðir í 2020",
+      "researchDecision": "Skal eykað fíggjarlig tilstuðlan verið til gransking og menning af varandi- / koltvíiltufríari tøkni?",
+      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
+    },
+    "2030": {
+      "header": "Avgerðir í 2030",
+      "transmissionDecision": "Vilt tú seta í verk 10-árs netverksmenningarætlanina fyri netorku tvørtur um landamørk?"
+    },
+    "2040": {
+      "header": "Avgerðir í 2040"
+    },
+    "2050": {
+      "header": "Úrslit í 2050",
+      "intro": "Niðanfyri sært tú tíni stig."
+    },
+    "options": {
+      "lowReduction": "Skerjing við lágari ferð - U ETS cap",
+      "mediumReduction": "Skerjing við miðal ferð - IPPC Pathway Zero Emissions í 2050",
+      "highReduction": "Skerjing við høgari ferð - Null útlát í 2040"
+    },
+    "start": "Byrja",
+    "submitChoices": "Víðari",
+    "submitChoice": "Víðari",
+    "tryAgain": "Royn aftur",
+    "whichChoices": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
+    "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
+  },
+  "score": {
+    "sum": "Tilsamans",
+    "date": "Dagfesting"
+  },
+  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739."
+}

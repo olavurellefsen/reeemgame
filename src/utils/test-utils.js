@@ -5,6 +5,7 @@ import { ApolloProvider } from 'react-apollo'
 import ContextStore from '../Context/ContextStore'
 import client from '../reeemApolloClient'
 import { BrowserRouter } from 'react-router-dom'
+import '../i18n'
 
 const AllTheProviders = ({ children }) => (
   <ApolloProvider client={client}>

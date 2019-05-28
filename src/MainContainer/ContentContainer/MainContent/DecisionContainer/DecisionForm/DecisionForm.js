@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import Context from '../../../../../Context/Context'
-import { decisions } from './Decisions'
+import { Decisions } from './Decisions'
 import {
   DecisionHeader,
   IntroText,
@@ -14,7 +14,7 @@ import {
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
   const [state, dispatch] = useContext(Context)
-  const currentDecisions = decisions.filter(
+  const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
   )[0]
 
@@ -37,7 +37,7 @@ export const DecisionForm = () => {
         name: 'C0T0E0',
       })
     }
-    if (e.target.innerText === 'START') {
+    if (state.gameState === 'start') {
       dispatch({
         type: 'resetWeights',
         toggle: true,
@@ -65,13 +65,13 @@ export const DecisionForm = () => {
               {decision.options.map((option, j) => (
                 <StyledFormControlLabel
                   key={j}
-                  value={option}
+                  value={option.value}
                   control={<StyledRadio />}
-                  label={option}
-                  id={option}
-                  checked={choices[decision.name] === option}
+                  label={option.text}
+                  id={option.value}
+                  checked={choices[decision.name] === option.value}
                   onClick={() => {
-                    setChoice({ ...choices, [decision.name]: option })
+                    setChoice({ ...choices, [decision.name]: option.value })
                   }}
                 />
               ))}

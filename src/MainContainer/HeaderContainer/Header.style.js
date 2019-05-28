@@ -34,4 +34,9 @@ export const HeaderMenuItemLink = styled(Link)`
   }
 `
 
+export const Divider = styled.div`
+  border-right: thin solid white;
+  height: 100%;
+`
+
 export const StyledGrid = styled(Grid)``
