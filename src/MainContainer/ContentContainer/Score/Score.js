@@ -1,54 +1,43 @@
 import React from 'react'
-import { Container, Row, Cell, Table, TextContainer } from './Score.style'
 import { useTranslation } from 'react-i18next'
+import {
+  StyledGrid,
+  StyledTable,
+  StyledTableBody,
+  StyledTableCell,
+  StyledTableHead,
+  StyledTableRow,
+} from './Score.style'
 
 export const Score = () => {
   const { t } = useTranslation()
   var scoreList = JSON.parse(localStorage.getItem('score'))
   return (
-    <Container>
-      <Table data-testid="scoreTable">
-        <Row index={0}>
-          <Cell>
-            <TextContainer>{t('score.date')}</TextContainer>
-          </Cell>
-          <Cell>
-            <TextContainer>{t('goal.economic')}</TextContainer>
-          </Cell>
-          <Cell>
-            <TextContainer>{t('goal.environmental')}</TextContainer>
-          </Cell>
-          <Cell>
-            <TextContainer>{t('goal.social')}</TextContainer>
-          </Cell>
-          <Cell>
-            <TextContainer>{t('score.sum')}</TextContainer>
-          </Cell>
-        </Row>
-        <>
-          {scoreList.length > 0
+    <StyledGrid>
+      <StyledTable data-testid="scoreTable">
+        <StyledTableHead>
+          <StyledTableRow index={0}>
+            <StyledTableCell>{t('score.date')}</StyledTableCell>
+            <StyledTableCell>{t('score.economic')}</StyledTableCell>
+            <StyledTableCell>{t('score.environmental')}</StyledTableCell>
+            <StyledTableCell>{t('score.social')}</StyledTableCell>
+            <StyledTableCell>{t('score.sum')}</StyledTableCell>
+          </StyledTableRow>
+        </StyledTableHead>
+        <StyledTableBody>
+          {scoreList && scoreList.length > 0
             ? scoreList.map((s, i) => (
-                <Row index={1 + i}>
-                  <Cell>
-                    <TextContainer>{s.date}</TextContainer>
-                  </Cell>
-                  <Cell>
-                    <TextContainer>{s.weightedScores.eco}</TextContainer>
-                  </Cell>
-                  <Cell>
-                    <TextContainer>{s.weightedScores.env}</TextContainer>
-                  </Cell>
-                  <Cell>
-                    <TextContainer>{s.weightedScores.soc}</TextContainer>
-                  </Cell>
-                  <Cell>
-                    <TextContainer>{s.weightedScores.sum}</TextContainer>
-                  </Cell>
-                </Row>
+                <StyledTableRow key={i} index={1 + i}>
+                  <StyledTableCell>{s.date}</StyledTableCell>
+                  <StyledTableCell>{s.weightedScores.eco}</StyledTableCell>
+                  <StyledTableCell>{s.weightedScores.env}</StyledTableCell>
+                  <StyledTableCell>{s.weightedScores.soc}</StyledTableCell>
+                  <StyledTableCell>{s.weightedScores.sum}</StyledTableCell>
+                </StyledTableRow>
               ))
             : null}
-        </>
-      </Table>
-    </Container>
+        </StyledTableBody>
+      </StyledTable>
+    </StyledGrid>
   )
 }

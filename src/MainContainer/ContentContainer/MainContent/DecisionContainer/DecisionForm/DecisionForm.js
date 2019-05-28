@@ -1,15 +1,14 @@
 import React, { useState, useContext } from 'react'
-import Radio from '@material-ui/core/Radio'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormLabel from '@material-ui/core/FormLabel'
-import Grid from '@material-ui/core/Grid'
 import Context from '../../../../../Context/Context'
 import { decisions } from './Decisions'
 import {
   DecisionHeader,
   IntroText,
-  DecisionIntroText,
   StyledButton,
+  StyledRadio,
+  StyledFormControlLabel,
+  StyledFormLabel,
+  StyledGrid,
 } from './DecisionForm.style'
 
 export const DecisionForm = () => {
@@ -48,7 +47,7 @@ export const DecisionForm = () => {
   }
 
   return (
-    <Grid
+    <StyledGrid
       container
       direction="column"
       justify="space-between"
@@ -60,11 +59,11 @@ export const DecisionForm = () => {
         {currentDecisions.individualDecisions !== undefined &&
           currentDecisions.individualDecisions.map((decision, i) => (
             <React.Fragment key={i}>
-              <DecisionIntroText>
-                <FormLabel component="legend">{decision.introText}</FormLabel>
-              </DecisionIntroText>
+              <StyledFormLabel component="legend">
+                {decision.introText}
+              </StyledFormLabel>
               {decision.options.map((option, j) => (
-                <FormControlLabel
+                <StyledFormControlLabel
                   key={j}
                   value={option.value}
                   control={<Radio />}
@@ -78,9 +77,8 @@ export const DecisionForm = () => {
               ))}
             </React.Fragment>
           ))}
-        <Grid item>
+        <StyledGrid item>
           <StyledButton
-            variant="contained"
             type="submit"
             disabled={
               currentDecisions.individualDecisions !== undefined &&
@@ -91,8 +89,8 @@ export const DecisionForm = () => {
           >
             {currentDecisions.submitText}
           </StyledButton>
-        </Grid>
+        </StyledGrid>
       </form>
-    </Grid>
+    </StyledGrid>
   )
 }
