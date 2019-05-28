@@ -2,6 +2,7 @@ import React from 'react'
 import { PropTypes } from 'prop-types'
 import Chart from 'react-google-charts'
 import sampleData from '../../../../data/sampledata.json'
+import { convertToColor } from './convertToColor'
 import {
   Container,
   Country,
@@ -22,15 +23,13 @@ export const CountryPopup = props => {
         country.Scenario === scenario
     )
     for (var i = 2015; i <= currentYear; i = i + 5) {
-      let year = [i, countryData[0][i], 'gray']
+      let year = [
+        i,
+        countryData[0][i],
+        convertToColor(countryData[0][i], 0, 1000000),
+      ]
       data.push(year)
     }
-    // map(country => ({
-    //   code: country.Country.toLowerCase(),
-    //   color: convertToColor(country[currentYear], 90, 400),
-    //   value: country[currentYear],
-    //   unit: country.Unit,
-    // }))
     return data
   }
   return (
@@ -48,7 +47,7 @@ export const CountryPopup = props => {
           chartType="ColumnChart"
           width="100%"
           heigth="400px"
-          data={getData('AT', 'C0T0E0', 2040, 'SpecifiedAnnual Demand')}
+          data={getData('EU28+CH+NO', 'C0T0E1', 2040, 'AnnualEmissionLimit')}
         />
       </Content>
     </Container>
