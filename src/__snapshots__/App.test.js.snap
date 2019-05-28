@@ -30,7 +30,7 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-bxivhb fEqXEV"
             >
-              header.title
+              game
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ exports[`should render correctly 1`] = `
                       />
                     </svg>
                   </div>
-                  
+                  English
                   <div
                     class="sc-htoDjs bMUrX"
                   >
@@ -108,19 +108,19 @@ exports[`should render correctly 1`] = `
               class="sc-ifAKCX dvSEDi"
               href="/about"
             >
-              header.about
+              About
             </a>
             <a
               class="sc-ifAKCX dvSEDi"
               href="/score"
             >
-              header.score
+              Score
             </a>
             <a
               class="sc-ifAKCX dvSEDi"
               href="/"
             >
-              header.share
+              Share
             </a>
           </div>
         </div>
@@ -148,7 +148,7 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
-                indicator.electricityDemands
+                Electricity Demands
               </span>
             </div>
             <span
@@ -166,7 +166,7 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
-                indicator.emissionLimit
+                Emission Limit
               </span>
             </div>
             <span
@@ -185,7 +185,7 @@ exports[`should render correctly 1`] = `
           <div
             class="sc-chPdSV cSxtdw"
           >
-            euAcknowledgement
+            This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
           </div>
         </div>
       </div>
@@ -202,12 +202,12 @@ exports[`should render correctly 1`] = `
             <h1
               class="sc-kpOJdX gdwYEV"
             >
-              decisions.2019.header
+              Decide the future of Europe
             </h1>
             <div
               class="sc-dxgOiQ PSfxR"
             >
-              decisions.2019.intro
+              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
@@ -221,7 +221,7 @@ exports[`should render correctly 1`] = `
                   <span
                     class="MuiButton-label-99"
                   >
-                    decisions.start
+                    Start
                   </span>
                   <span
                     class="MuiTouchRipple-root-232"
@@ -240,12 +240,12 @@ exports[`should render correctly 1`] = `
             <h1
               class="sc-eNQAEJ dveiIa"
             >
-              goal.title
+              Goal
             </h1>
             <div
               class="sc-hMqMXs jVHSyv"
             >
-              goal.summary
+              Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.
             </div>
             <table
               class="MuiTable-root-198"
@@ -264,13 +264,13 @@ exports[`should render correctly 1`] = `
                     class="MuiTableCell-root-205 MuiTableCell-head-206"
                     scope="col"
                   >
-                    goal.weight
+                    Weight
                   </th>
                   <th
                     class="MuiTableCell-root-205 MuiTableCell-head-206"
                     scope="col"
                   >
-                    goal.weightedScore
+                    Weighted Score
                   </th>
                 </tr>
               </thead>
@@ -283,7 +283,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
-                    goal.economic
+                    Economic
                   </td>
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"
@@ -303,7 +303,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
-                    goal.social
+                    Social
                   </td>
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"
@@ -323,7 +323,7 @@ exports[`should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"
                   >
-                    goal.environmental
+                    Environmental
                   </td>
                   <td
                     class="MuiTableCell-root-205 MuiTableCell-body-207"

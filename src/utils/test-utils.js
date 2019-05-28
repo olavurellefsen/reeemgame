@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { render } from 'react-testing-library'
 import ContextStore from '../Context/ContextStore'
 import { BrowserRouter } from 'react-router-dom'
+import '../i18n'
 
 const AllTheProviders = ({ children }) => (
   <ContextStore>
