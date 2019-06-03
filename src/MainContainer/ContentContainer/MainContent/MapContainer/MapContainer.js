@@ -23,13 +23,11 @@ export const MapContainer = () => {
       top: Math.min(event.clientY, window.innerHeight - 400),
     })
     setSelectedCountry(event.target.id)
-    console.log('open')
   }
   function handleClose() {
     setAnchorEl(null)
     setAnchorPosition(null)
     setHoverOn(null)
-    console.log('close')
   }
   function slowClose() {
     setTimeout(function() {

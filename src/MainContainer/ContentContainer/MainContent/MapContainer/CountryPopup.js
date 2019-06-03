@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Context from '../../../../Context/Context'
 import { PropTypes } from 'prop-types'
 import Chart from 'react-google-charts'
-import sampleData from '../../../../data/sampledata.json'
-import { convertToColor } from './convertToColor'
+import { getCountryDataForChart, getUnit } from './MapValues'
 import {
   Container,
   Country,
@@ -14,24 +14,11 @@ import {
 import { Close } from '@material-ui/icons'
 
 export const CountryPopup = props => {
-  function getData(myCountry, scenario, currentYear, parameter) {
-    let data = [['Element', 'Ton', { role: 'style' }]]
-    const countryData = sampleData.filter(
-      country =>
-        country.Country === myCountry &&
-        country.Parameter === parameter &&
-        country.Scenario === scenario
-    )
-    for (var i = 2015; i <= currentYear; i = i + 5) {
-      let year = [
-        JSON.stringify(i),
-        countryData[0][i],
-        convertToColor(countryData[0][i], 0, 1000000),
-      ]
-      data.push(year)
-    }
-    return data
-  }
+  const [state] = useContext(Context)
+  const currentYear = state.currentYear
+  const selectedScenario = state.selectedScenario
+  const selectedIndicator = state.selectedIndicator
+
   return (
     <Container>
       <Header>
@@ -48,8 +35,16 @@ export const CountryPopup = props => {
           width="500px"
           height="350px"
           loader={<>Loading Chart</>}
-          data={getData('EU28+CH+NO', 'C0T0E1', 2050, 'AnnualEmissionLimit')}
-          options={{ legend: { position: 'none' }, vAxis: { title: 'Ton' } }}
+          data={getCountryDataForChart(
+            props.country,
+            currentYear,
+            selectedIndicator,
+            selectedScenario
+          )}
+          options={{
+            legend: { position: 'none' },
+            vAxis: { title: getUnit(selectedIndicator) },
+          }}
         />
       </Content>
     </Container>
