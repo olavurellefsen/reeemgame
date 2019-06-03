@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from '../../../../Context/Context'
 import { PropTypes } from 'prop-types'
 import Chart from 'react-google-charts'
+import { useTranslation } from 'react-i18next'
 import { getCountryDataForChart, getUnit } from './MapValues'
 import {
   Container,
@@ -14,6 +15,7 @@ import {
 import { Close } from '@material-ui/icons'
 
 export const CountryPopup = props => {
+  const { t } = useTranslation()
   const [state] = useContext(Context)
   const currentYear = state.currentYear
   const selectedScenario = state.selectedScenario
@@ -22,7 +24,7 @@ export const CountryPopup = props => {
   return (
     <Container>
       <Header>
-        <Country>{props.country}</Country>
+        <Country>{t('countries.' + props.country)}</Country>
         <Button onClick={props.onClose}>
           <Icon>
             <Close />

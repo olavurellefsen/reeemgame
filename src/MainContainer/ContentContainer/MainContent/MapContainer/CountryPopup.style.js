@@ -11,6 +11,7 @@ export const Country = styled.div`
   font-size: 18px;
   font-weight: 800;
   align-self: center;
+  padding-left: 10px;
 `
 export const Icon = styled.div`
   display: flex;
