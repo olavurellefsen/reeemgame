@@ -18,7 +18,10 @@ export const MapContainer = () => {
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
-    setAnchorPosition({ left: event.clientX, top: event.clientY })
+    setAnchorPosition({
+      left: Math.min(event.clientX, window.innerHeight + 450),
+      top: Math.min(event.clientY, window.innerHeight - 400),
+    })
     setSelectedCountry(event.target.id)
     console.log('open')
   }

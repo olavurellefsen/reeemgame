@@ -45,7 +45,7 @@ export const CountryPopup = props => {
       <Content>
         <Chart
           chartType="ColumnChart"
-          width="450px"
+          width="500px"
           height="350px"
           loader={<>Loading Chart</>}
           data={getData('EU28+CH+NO', 'C0T0E1', 2050, 'AnnualEmissionLimit')}
