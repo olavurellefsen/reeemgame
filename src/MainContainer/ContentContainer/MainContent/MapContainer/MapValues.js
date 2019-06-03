@@ -73,19 +73,24 @@ export const getCountryDataForChart = (
       country.Parameter === indicator &&
       country.Scenario === scenario
   )
-  let data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
-  for (var i = 2015; i <= currentYear; i = i + 5) {
-    let year = [
-      JSON.stringify(i),
-      countryData[0][i],
-      convertToColor(countryData[0][i], minValue, maxValue),
-    ]
-    data.push(year)
+  let data = []
+  if (countryData.length) {
+    //prevent compile errors if cliked on country with no data
+    data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
+    for (var i = 2015; i <= currentYear; i = i + 5) {
+      let year = [
+        JSON.stringify(i),
+        countryData[0][i],
+        convertToColor(countryData[0][i], minValue, maxValue),
+      ]
+      data.push(year)
+    }
   }
   return data
 }
 export const getUnit = indicator => {
   if (indicator === 'Electricity demands') indicator = 'SpecifiedAnnual Demand'
   else if (indicator === 'Emission Limit') indicator = 'AnnualEmissionLimit'
-  return sampleData.find(element => element.Parameter === indicator).Unit
+  const elmt = sampleData.find(element => element.Parameter === indicator)
+  return elmt ? elmt.Unit : 'undefined'
 }

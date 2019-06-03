@@ -3,6 +3,7 @@ import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
 import { getMapColors } from './MapValues'
+import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
 import { IndicatorInfo } from './IndicatorInfo'
@@ -80,7 +81,14 @@ export const MapContainer = () => {
       <StyledEurope colors={mapColors}>
         <Europe
           onClick={event => {
-            if (event.target.id) {
+            if (
+              event.target.id &&
+              hasData(
+                event.target.id,
+                state.selectedIndicator,
+                state.selectedScenario
+              )
+            ) {
               event.preventDefault()
               handleClick(event)
             }
@@ -114,4 +122,22 @@ const getLegendPara = indicator => {
     min: sampleData.find(element => element.Parameter === indicator).min,
     steps: sampleData.find(element => element.Parameter === indicator).steps,
   }
+}
+
+const hasData = (country, indicator, selectedScenario) => {
+  var data
+  if (indicator === 'Electricity demands') {
+    indicator = 'SpecifiedAnnual Demand'
+    data = sampleData.find(
+      element =>
+        element.Parameter === indicator &&
+        element.Country === country.toUpperCase() &&
+        element.Scenario === selectedScenario
+    )
+  }
+
+  if (indicator === 'Emission Limit') {
+    data = eunochCountries.find(element => element.code === country)
+  }
+  return data ? true : false
 }
