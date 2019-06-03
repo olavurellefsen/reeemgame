@@ -55,13 +55,13 @@ export const getCountryDataForChart = (
 ) => {
   var minValue
   var maxValue
-  if (indicator === 'Electricity demands') {
+  if (indicator === 'electricityDemands') {
     indicator = 'SpecifiedAnnual Demand'
     myCountry = myCountry.toUpperCase()
     minValue = minValueDemand
     maxValue = maxValueDemand
   }
-  if (indicator === 'Emission Limit') {
+  if (indicator === 'emissionLimit') {
     indicator = 'AnnualEmissionLimit'
     myCountry = 'EU28+CH+NO' //Because there is not distinct data for every country
     minValue = minValueEmissionLimit
@@ -89,8 +89,8 @@ export const getCountryDataForChart = (
   return data
 }
 export const getUnit = indicator => {
-  if (indicator === 'Electricity demands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'Emission Limit') indicator = 'AnnualEmissionLimit'
+  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
+  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
   const elmt = sampleData.find(element => element.Parameter === indicator)
   return elmt ? elmt.Unit : 'undefined'
 }

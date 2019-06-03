@@ -14,8 +14,6 @@ export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
-  const [hoverOn, setHoverOn] = React.useState(null)
-  var timer = null
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
@@ -28,31 +26,7 @@ export const MapContainer = () => {
   function handleClose() {
     setAnchorEl(null)
     setAnchorPosition(null)
-    setHoverOn(null)
   }
-  function slowClose() {
-    setTimeout(function() {
-      handleClose()
-    }, 2000)
-  }
-  // function openPopup(anchor, position, id) {
-  //   setAnchorEl(anchor)
-  //   setAnchorPosition(position)
-  //   setSelectedCountry(id)
-  //   console.log('open')
-  // }
-  // function onMouseMove(event) {
-  //   if (!hoverOn || hoverOn !== event.target.id) {
-  //     if (timer) clearTimeout(timer)
-  //     setHoverOn(event.target.id)
-  //     const anchor = event.currentTarget
-  //     const position = { left: event.clientX, top: event.clientY }
-  //     const id = event.target.id
-  //     timer = setTimeout(function() {
-  //       openPopup(anchor, position, id)
-  //     }, 1000)
-  //   }
-  // }
   const open = Boolean(anchorEl)
   const id = open ? 'simple-popover' : null
 
@@ -126,7 +100,7 @@ const getLegendPara = indicator => {
 
 const hasData = (country, indicator, selectedScenario) => {
   var data
-  if (indicator === 'Electricity demands') {
+  if (indicator === 'electricityDemands') {
     indicator = 'SpecifiedAnnual Demand'
     data = sampleData.find(
       element =>
@@ -136,7 +110,7 @@ const hasData = (country, indicator, selectedScenario) => {
     )
   }
 
-  if (indicator === 'Emission Limit') {
+  if (indicator === 'emissionLimit') {
     data = eunochCountries.find(element => element.code === country)
   }
   return data ? true : false
