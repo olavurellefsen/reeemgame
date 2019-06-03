@@ -1,18 +1,30 @@
 language: node_js
 node_js:
-  - "stable"
+  - 'stable'
 cache:
   directories:
-  - node_modules
+  - $HOME/.cache/pip
+python:
+  - "3.5"
+install:
+  - pip install --user awscli
 script:
+  - npm install
   - npm test
   - npm run test:coverage
   - npm run build
 deploy:
-  provider: pages
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: reeemgame
+  region: eu-west-1
   skip_cleanup: true
-  github_token: $github_token
+  acl: public_read
   keep_history: true
   local_dir: build
   on:
     branch: master
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
