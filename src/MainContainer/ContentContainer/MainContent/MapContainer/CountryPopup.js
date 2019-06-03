@@ -24,7 +24,10 @@ export const CountryPopup = props => {
   return (
     <Container>
       <Header>
-        <Country>{t('countries.' + props.country)}</Country>
+        <Country>
+          {t('countries.' + props.country)} -{' '}
+          {t('indicator.' + selectedIndicator)}
+        </Country>
         <Button onClick={props.onClose}>
           <Icon>
             <Close />
