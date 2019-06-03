@@ -15,7 +15,7 @@ import { Close } from '@material-ui/icons'
 
 export const CountryPopup = props => {
   function getData(myCountry, scenario, currentYear, parameter) {
-    let data = [['Element', 'Density', { role: 'style' }]]
+    let data = [['Element', 'Ton', { role: 'style' }]]
     const countryData = sampleData.filter(
       country =>
         country.Country === myCountry &&
@@ -24,7 +24,7 @@ export const CountryPopup = props => {
     )
     for (var i = 2015; i <= currentYear; i = i + 5) {
       let year = [
-        i,
+        JSON.stringify(i),
         countryData[0][i],
         convertToColor(countryData[0][i], 0, 1000000),
       ]
@@ -45,9 +45,11 @@ export const CountryPopup = props => {
       <Content>
         <Chart
           chartType="ColumnChart"
-          width="100%"
-          heigth="400px"
-          data={getData('EU28+CH+NO', 'C0T0E1', 2040, 'AnnualEmissionLimit')}
+          width="450px"
+          height="350px"
+          loader={<>Loading Chart</>}
+          data={getData('EU28+CH+NO', 'C0T0E1', 2050, 'AnnualEmissionLimit')}
+          options={{ legend: { position: 'none' }, vAxis: { title: 'Ton' } }}
         />
       </Content>
     </Container>

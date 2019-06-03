@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `
 export const Country = styled.div`
   display: flex;
@@ -31,6 +32,5 @@ export const Header = styled.div`
 `
 export const Content = styled.div`
   display: flex;
-  height: 300px;
-  width: 300px;
+  justify-content: center;
 `
