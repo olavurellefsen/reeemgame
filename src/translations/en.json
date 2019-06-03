@@ -1,0 +1,63 @@
+{
+  "general": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "header": {
+    "title": "game",
+    "about": "About",
+    "score": "Score",
+    "share": "Share"
+  },
+  "goal": {
+    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
+    "economic": "Economic",
+    "social": "Social",
+    "environmental": "Environmental",
+    "weight": "Weight",
+    "weightedScore": "Weighted Score",
+    "title": "Goal"
+  },
+  "indicator": {
+    "electricityDemands": "Electricity Demands",
+    "emissionLimit": "Emission Limit"
+  },
+  "decisions": {
+    "2019": {
+      "header": "Decide the future of Europe",
+      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+    },
+    "2020": {
+      "header": "Decisions in 2020",
+      "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
+      "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
+    },
+    "2030": {
+      "header": "Decisions in 2030",
+      "transmissionDecision": "'Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+    },
+    "2040": {
+      "header": "Decisions in 2040"
+    },
+    "2050": {
+      "header": "Results in 2050",
+      "intro": "Below, you can see your total score."
+    },
+    "options": {
+      "lowReduction": "Low reduction rate – EU ETS cap",
+      "mediumReduction": "Medium reduction rate - IPPC Pathway Zero Emissions in 2050",
+      "highReduction": "High reduction rate - Zero emissions in 2040"
+    },
+    "start": "Start",
+    "submitChoices": "Submit Choices",
+    "submitChoice": "Submit Choice",
+    "tryAgain": "Try Again",
+    "whichChoices": "Which choices do you want to make in order to reach your goal?",
+    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+  },
+  "score": {
+    "sum": "Sum",
+    "date": "Date"
+  },
+  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739."
+}

@@ -114,8 +114,8 @@ export const MapContainer = () => {
 }
 
 const getLegendPara = indicator => {
-  if (indicator === 'Electricity demands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'Emission Limit') indicator = 'AnnualEmissionLimit'
+  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
+  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
   return {
     unit: sampleData.find(element => element.Parameter === indicator).Unit,
     max: sampleData.find(element => element.Parameter === indicator).max,

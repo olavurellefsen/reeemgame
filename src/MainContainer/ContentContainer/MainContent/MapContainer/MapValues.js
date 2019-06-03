@@ -38,10 +38,10 @@ const emissionLimit = (scenario, currentYear) => {
 }
 
 export const getMapColors = (selectedIndicator, scenario, currentYear) => {
-  if (selectedIndicator === 'Electricity demands') {
+  if (selectedIndicator === 'electricityDemands') {
     return specifiedAnnualDemand(scenario, currentYear)
   }
-  if (selectedIndicator === 'Emission Limit') {
+  if (selectedIndicator === 'emissionLimit') {
     return emissionLimit(scenario, currentYear)
   }
   return []
