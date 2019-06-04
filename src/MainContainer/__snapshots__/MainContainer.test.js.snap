@@ -97,7 +97,7 @@ exports[`should render correctly 1`] = `
                   </div>
                 </span>
                 <span
-                  class="MuiTouchRipple-root-231"
+                  class="MuiTouchRipple-root-241"
                 />
               </button>
             </div>
@@ -130,31 +130,13 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-gisBJw kQhawb"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-TOsTZ bKVEXr"
         order="3"
       >
         <ul
           class="MuiList-root-136 MuiList-padding-137"
           role="menu"
         >
-          <li
-            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
-            role="menuitem"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root-155"
-            >
-              <span
-                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
-              >
-                Electricity Demands
-              </span>
-            </div>
-            <span
-              class="MuiTouchRipple-root-231"
-            />
-          </li>
           <li
             class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
             role="menuitem"
@@ -166,11 +148,29 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
+                Electricity Demands
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-241"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiListItem-selected-154 MuiMenuItem-root-140 MuiMenuItem-selected-142 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
                 Emission Limit
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-231"
+              class="MuiTouchRipple-root-241"
             />
           </li>
         </ul>
@@ -190,7 +190,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-gisBJw jkxgsR"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-TOsTZ gillNb"
         order="1"
       >
         <div
@@ -224,7 +224,7 @@ exports[`should render correctly 1`] = `
                     Start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-231"
+                    class="MuiTouchRipple-root-241"
                   />
                 </button>
               </div>
@@ -358,105 +358,141 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-gisBJw iCUJOO"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-TOsTZ eLZIdI"
         order="2"
       >
         <div
-          class="sc-fMiknA gFACAG"
+          class="sc-dVhcbM BciiV"
         >
           <div
-            class="sc-dVhcbM kxXhar"
+            class="sc-kjoXOD bWNQbM"
           >
-            <div
-              class="sc-eqIVtm ksFqsu"
-              max="2050"
-              min="2015"
+            <button
+              class="MuiButtonBase-root-124 MuiFab-root-217 MuiFab-sizeSmall-225"
+              tabindex="0"
+              type="button"
             >
-              2015
-            </div>
-            <div
-              class="sc-eqIVtm ksFqsu"
-              max="2050"
-              min="2015"
-            >
-              2020
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2025
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2030
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2035
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2040
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2045
-            </div>
-            <div
-              class="sc-eqIVtm rJjAG"
-              max="2050"
-              min="2015"
-            >
-              2050
-            </div>
+              <span
+                class="MuiFab-label-218"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root-127"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 5v14l11-7z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root-241"
+              />
+            </button>
           </div>
           <div
-            class="sc-fAjcbJ dYgYqz"
+            class="sc-fMiknA agRgl"
           >
             <div
-              aria-disabled="false"
-              aria-orientation="horizontal"
-              aria-valuemax="2050"
-              aria-valuemin="2015"
-              aria-valuenow="2019"
-              class="MuiSlider-root-217 sc-caSCKo jjNSwx"
-              role="slider"
+              class="sc-eqIVtm kkrcSc"
             >
               <div
-                class="MuiSlider-container-218"
+                class="sc-fAjcbJ lnnTSz"
+                max="2050"
+                min="2015"
+              >
+                2015
+              </div>
+              <div
+                class="sc-fAjcbJ lnnTSz"
+                max="2050"
+                min="2015"
+              >
+                2020
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2025
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2030
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2035
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2040
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2045
+              </div>
+              <div
+                class="sc-fAjcbJ jRyqWt"
+                max="2050"
+                min="2015"
+              >
+                2050
+              </div>
+            </div>
+            <div
+              class="sc-caSCKo LzWKM"
+            >
+              <div
+                aria-disabled="false"
+                aria-orientation="horizontal"
+                aria-valuemax="2050"
+                aria-valuemin="2015"
+                aria-valuenow="2019"
+                class="MuiSlider-root-227 sc-gisBJw kDlVKO"
+                role="slider"
               >
                 <div
-                  class="MuiSlider-track-219 MuiSlider-trackBefore-220"
-                  style="transform: translateY(-50%) scaleX(0.11428571428571428);"
-                />
-                <div
-                  class="MuiSlider-thumbWrapper-222"
-                  style="transform: translateX(11.428571428571429%);"
+                  class="MuiSlider-container-228"
                 >
-                  <button
-                    class="MuiButtonBase-root-124 MuiSlider-thumb-223"
-                    tabindex="0"
-                    type="button"
+                  <div
+                    class="MuiSlider-track-229 MuiSlider-trackBefore-230"
+                    style="transform: translateY(-50%) scaleX(0.11428571428571428);"
+                  />
+                  <div
+                    class="MuiSlider-thumbWrapper-232"
+                    style="transform: translateX(11.428571428571429%);"
+                  >
+                    <button
+                      class="MuiButtonBase-root-124 MuiSlider-thumb-233"
+                      tabindex="0"
+                      type="button"
+                    />
+                  </div>
+                  <div
+                    class="MuiSlider-track-229 MuiSlider-trackAfter-231"
+                    style="transform: translateY(-50%) scaleX(0.8857142857142857);"
                   />
                 </div>
-                <div
-                  class="MuiSlider-track-219 MuiSlider-trackAfter-221"
-                  style="transform: translateY(-50%) scaleX(0.8857142857142857);"
-                />
               </div>
             </div>
           </div>
@@ -465,11 +501,77 @@ exports[`should render correctly 1`] = `
           class="sc-iRbamj cyutKX"
         >
           <div
-            class="sc-jlyJG izSGFg"
+            class="sc-jlyJG fQGcyF"
           >
             <svg>
               europe.svg
             </svg>
+            <div
+              class="sc-gipzik ihGSHY"
+            >
+              <div
+                class="sc-bRBYWo caLiHr"
+              >
+                <div
+                  class="sc-jhAzac kXjtdO"
+                >
+                  <div
+                    class="sc-fBuWsC eulBug"
+                  >
+                    Tons
+                  </div>
+                </div>
+                <div
+                  class="sc-hzDkRC gVPzYn"
+                >
+                  <div
+                    class="sc-csuQGl jdUWRR"
+                  >
+                    900000
+                    <div
+                      class="sc-Rmtcm cUiTnH"
+                      color="#ff0000"
+                    />
+                  </div>
+                  <div
+                    class="sc-csuQGl jdUWRR"
+                  >
+                    700000
+                    <div
+                      class="sc-Rmtcm cFhWhb"
+                      color="#cf5500"
+                    />
+                  </div>
+                  <div
+                    class="sc-csuQGl jdUWRR"
+                  >
+                    500000
+                    <div
+                      class="sc-Rmtcm krglX"
+                      color="#a46a00"
+                    />
+                  </div>
+                  <div
+                    class="sc-csuQGl jdUWRR"
+                  >
+                    300000
+                    <div
+                      class="sc-Rmtcm liDfcm"
+                      color="#6b7900"
+                    />
+                  </div>
+                  <div
+                    class="sc-csuQGl jdUWRR"
+                  >
+                    100000
+                    <div
+                      class="sc-Rmtcm bgCJFR"
+                      color="#008000"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
