@@ -59,5 +59,37 @@
     "sum": "Sum",
     "date": "Date"
   },
-  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739."
+  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
+  "countries": {
+    "se": "Sweden",
+    "dk": "Denmark",
+    "de": "Germany",
+    "at": "Austria",
+    "ie": "Ireland",
+    "uk": "United Kingdom",
+    "hr": "Croatia",
+    "nl": "Netherlands",
+    "be": "Belgium",
+    "lu": "Luxembourg",
+    "fi": "Finland",
+    "ee": "Estonia",
+    "lv": "Latvia",
+    "lt": "Lithuania",
+    "fr": "France",
+    "es": "Spain",
+    "pt": "Portugal",
+    "it": "Italy",
+    "mt": "Malta",
+    "gr": "Greece",
+    "si": "Slovenia",
+    "pl": "Poland",
+    "hu": "Hungary",
+    "cz": "Czechia",
+    "sk": "Slovakia",
+    "ro": "Romania",
+    "bg": "Bulgaria",
+    "cy": "Cyprus",
+    "no": "Norway",
+    "ch": "Switzerland"
+  }
 }

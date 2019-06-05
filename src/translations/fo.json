@@ -59,5 +59,37 @@
     "sum": "Tilsamans",
     "date": "Dagfesting"
   },
-  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739."
+  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
+  "countries": {
+    "se": "Svøríki",
+    "dk": "Danmark",
+    "de": "Týskland",
+    "at": "Eysturríki",
+    "ie": "Írland",
+    "uk": "Stóra Bretland",
+    "hr": "Kroatia",
+    "nl": "Holland",
+    "be": "Belgia",
+    "lu": "Luksemborg",
+    "fi": "Finland",
+    "ee": "Estland",
+    "lv": "Letland",
+    "lt": "Litava",
+    "fr": "Frankaríki",
+    "es": "Spania",
+    "pt": "Portugal",
+    "it": "Italia",
+    "mt": "Malta",
+    "gr": "Grikkaland",
+    "si": "Slovenia",
+    "pl": "Póland",
+    "hu": "Ungarn",
+    "cz": "Kekkia",
+    "sk": "Slovakia",
+    "ro": "Rumenia",
+    "bg": "Bulgaria",
+    "cy": "Kýpros",
+    "no": "Noreg",
+    "ch": "Sveis "
+  }
 }

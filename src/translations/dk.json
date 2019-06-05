@@ -59,5 +59,37 @@
     "sum": "Tilsammen",
     "date": "Dato"
   },
-  "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739."
+  "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
+  "countries": {
+    "se": "Sverige",
+    "dk": "Danmark",
+    "de": "Tyskland",
+    "at": "Østrig",
+    "ie": "Irland",
+    "uk": "Storbritannien",
+    "hr": "Krotien",
+    "nl": "Holland",
+    "be": "Belgien",
+    "lu": "Luxembourg",
+    "fi": "Finland",
+    "ee": "Estland",
+    "lv": "Letland",
+    "lt": "Litauen",
+    "fr": "Frankrig",
+    "es": "Spanien",
+    "pt": "Portugal",
+    "it": "Italien",
+    "mt": "Malta",
+    "gr": "Grækenland",
+    "si": "Slovenien",
+    "pl": "Polen",
+    "hu": "Ungarn",
+    "cz": "Tjekkiet",
+    "sk": "Slovakiet",
+    "ro": "Rumænien",
+    "bg": "Bulgarien",
+    "cy": "Cypern",
+    "no": "Norge",
+    "ch": "Schweiz "
+  }
 }
