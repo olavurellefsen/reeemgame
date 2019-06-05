@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import Button from '@material-ui/core/Fab'
 import { PlayButtonContainer } from './PlayButton.style'
 import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
