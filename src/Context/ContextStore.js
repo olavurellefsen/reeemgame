@@ -65,6 +65,11 @@ const saveScore = state => {
   oldScores.push(score)
   localStorage.setItem('score', JSON.stringify(oldScores))
 }
+const getCurrentYear = (state, newYear) => {
+  return state.animationState === 'paused'
+    ? parseInt(newYear)
+    : state.currentYear
+}
 const reducer = createReducer(initialState, {
   reset: () => initialState,
   forwardToNextDecision: (state, action) => {
@@ -86,13 +91,11 @@ const reducer = createReducer(initialState, {
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
+    //alert("next")
     return {
       ...state,
       currentDecision: newYear,
-      currentYear: () =>
-        state.animationState === 'paused'
-          ? parseInt(newYear)
-          : state.currentYear,
+      currentYear: getCurrentYear(state, newYear),
       maxYear: newMaxYear,
       gameState: newGameState,
     }

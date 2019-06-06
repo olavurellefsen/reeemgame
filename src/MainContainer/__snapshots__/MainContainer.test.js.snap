@@ -97,7 +97,7 @@ exports[`should render correctly 1`] = `
                   </div>
                 </span>
                 <span
-                  class="MuiTouchRipple-root-241"
+                  class="MuiTouchRipple-root-244"
                 />
               </button>
             </div>
@@ -130,7 +130,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-TOsTZ bKVEXr"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-hqyNC ioTPZa"
         order="3"
       >
         <ul
@@ -152,7 +152,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-241"
+              class="MuiTouchRipple-root-244"
             />
           </li>
           <li
@@ -170,7 +170,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-241"
+              class="MuiTouchRipple-root-244"
             />
           </li>
         </ul>
@@ -190,7 +190,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-TOsTZ gillNb"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-hqyNC gFZEHz"
         order="1"
       >
         <div
@@ -224,7 +224,7 @@ exports[`should render correctly 1`] = `
                     Start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-241"
+                    class="MuiTouchRipple-root-244"
                   />
                 </button>
               </div>
@@ -358,14 +358,14 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-TOsTZ eLZIdI"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-hqyNC cnMmcU"
         order="2"
       >
         <div
-          class="sc-dVhcbM BciiV"
+          class="sc-TOsTZ hFlXIC"
         >
           <div
-            class="sc-kjoXOD bWNQbM"
+            class="sc-frDJqD fljNon"
           >
             <button
               class="MuiButtonBase-root-124 MuiFab-root-217 MuiFab-sizeSmall-225"
@@ -392,67 +392,67 @@ exports[`should render correctly 1`] = `
                 </svg>
               </span>
               <span
-                class="MuiTouchRipple-root-241"
+                class="MuiTouchRipple-root-244"
               />
             </button>
           </div>
           <div
-            class="sc-fMiknA agRgl"
+            class="sc-cHGsZl iAqkjF"
           >
             <div
-              class="sc-eqIVtm kkrcSc"
+              class="sc-kgAjT euNBiH"
             >
               <div
-                class="sc-fAjcbJ lnnTSz"
+                class="sc-cJSrbW kPREkE"
                 max="2050"
                 min="2015"
               >
                 2015
               </div>
               <div
-                class="sc-fAjcbJ lnnTSz"
+                class="sc-cJSrbW kPREkE"
                 max="2050"
                 min="2015"
               >
                 2020
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
                 2025
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
                 2030
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
                 2035
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
                 2040
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
                 2045
               </div>
               <div
-                class="sc-fAjcbJ jRyqWt"
+                class="sc-cJSrbW eitjpK"
                 max="2050"
                 min="2015"
               >
@@ -460,7 +460,7 @@ exports[`should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-caSCKo LzWKM"
+              class="sc-ksYbfQ hxKcHV"
             >
               <div
                 aria-disabled="false"
@@ -468,7 +468,7 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-227 sc-gisBJw kDlVKO"
+                class="MuiSlider-root-227 sc-hmzhuo eRtqMp"
                 role="slider"
               >
                 <div
