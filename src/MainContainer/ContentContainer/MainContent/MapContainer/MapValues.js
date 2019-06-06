@@ -78,20 +78,12 @@ export const getCountryDataForChart = (
   if (countryData.length) {
     data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
     for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
-      var year
-      if (i % 5 == 0) {
-        year = [
-          JSON.stringify(i),
-          countryData[0][i],
-          convertToColor(countryData[0][i], minValue, maxValue),
-        ]
-      } else {
-        year = [
-          ,
-          countryData[0][i],
-          convertToColor(countryData[0][i], minValue, maxValue),
-        ]
-      }
+      let year = [
+        JSON.stringify(i),
+        countryData[0][i],
+        convertToColor(countryData[0][i], minValue, maxValue),
+      ]
+
       data.push(year)
     }
   }
