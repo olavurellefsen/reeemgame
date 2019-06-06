@@ -11,6 +11,7 @@ import {
 } from './Header.style'
 import logo from './REEEMlogo.transparent.1.svg'
 import { Languages } from './LanguagesContainer/LanguagesContainer'
+import { ShareDialog } from './ShareDialog'
 
 export const Header = () => {
   const { t } = useTranslation()
@@ -39,6 +40,7 @@ export const Header = () => {
           >
             <Divider />
             <Languages />
+            <ShareDialog />
             <Divider />
             <HeaderMenuItemLink to="/about">
               {t('header.about')}
