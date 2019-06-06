@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 
 export const HeaderStyle = styled.div`
   background-image: linear-gradient(gray, black);
+  align-items: baseline;
 `
 
 export const TitleContainer = styled.div`
