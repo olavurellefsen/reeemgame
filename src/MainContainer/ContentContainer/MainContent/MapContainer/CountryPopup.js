@@ -49,6 +49,8 @@ export const CountryPopup = props => {
           options={{
             legend: { position: 'none' },
             vAxis: { title: getUnit(selectedIndicator) },
+            slantedText: 'true',
+            slantedTextAngle: 90,
           }}
         />
       </Content>
