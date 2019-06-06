@@ -25,11 +25,13 @@ const initialState = {
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
   maxYears: [2020, 2020, 2030, 2040, 2050],
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
-  selectedIndicator: null,
+  selectedIndicator: 'emissionLimit',
   selectedScenario: 'C0T0E0',
   weights: { eco: 20, env: 30, soc: 50 },
   scores: { eco: 300, env: 500, soc: 200 },
   weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
+  animationState: 'paused',
+  animationYear: 2015,
 }
 const getNewWeights = () => {
   var ret = {}
@@ -63,6 +65,11 @@ const saveScore = state => {
   oldScores.push(score)
   localStorage.setItem('score', JSON.stringify(oldScores))
 }
+const getCurrentYear = (state, newYear) => {
+  return state.animationState === 'paused'
+    ? parseInt(newYear)
+    : state.currentYear
+}
 const reducer = createReducer(initialState, {
   reset: () => initialState,
   forwardToNextDecision: (state, action) => {
@@ -84,10 +91,11 @@ const reducer = createReducer(initialState, {
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
+    //alert("next")
     return {
       ...state,
       currentDecision: newYear,
-      currentYear: parseInt(newYear),
+      currentYear: getCurrentYear(state, newYear),
       maxYear: newMaxYear,
       gameState: newGameState,
     }
@@ -103,6 +111,14 @@ const reducer = createReducer(initialState, {
   setCurrentYear: (state, action) => ({
     ...state,
     currentYear: action.year,
+  }),
+  setAnimationState: (state, action) => ({
+    ...state,
+    animationState: action.animationState,
+  }),
+  setAnimationYear: (state, action) => ({
+    ...state,
+    animationYear: Math.min(action.animationYear, state.maxYear),
   }),
   resetWeights: state => {
     var newWeights = getNewWeights()
