@@ -41,8 +41,6 @@ export const MapContainer = () => {
 
   const { height, width } = useWindowDimensions()
   function handleClick(event) {
-    console.log('height: ' + height + ' width: ' + width)
-    console.log('clienty: ' + event.clientY + ' clientx: ' + event.clientX)
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
       left: Math.min(event.clientX, width - 520),
