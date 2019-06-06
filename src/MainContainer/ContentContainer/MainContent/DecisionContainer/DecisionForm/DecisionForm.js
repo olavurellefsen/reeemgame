@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import Context from '../../../../../Context/Context'
 import { Decisions } from './Decisions'
+import { Share } from '../../Share'
 import {
   DecisionHeader,
   IntroText,
@@ -89,6 +90,7 @@ export const DecisionForm = () => {
           >
             {currentDecisions.submitText}
           </StyledButton>
+          <Share />
         </StyledGrid>
       </form>
     </StyledGrid>

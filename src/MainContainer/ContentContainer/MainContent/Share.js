@@ -1,18 +1,20 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Container } from './ShareDialog.style'
+import { Container, ShareButton, ShareButtonsContainer } from './Share.style'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import Button from '@material-ui/core/Button'
+import { FacebookIcon } from 'react-share'
+import { FacebookShareButton } from 'react-share'
 
-export const ShareDialog = () => {
+export const Share = () => {
   const [open, setOpen] = React.useState(false)
 
-  function handleClickOpen() {
-    setOpen(true)
+  function handleClick() {
+    setOpen(!open)
   }
 
   function handleClose() {
@@ -20,10 +22,20 @@ export const ShareDialog = () => {
   }
   return (
     <Container>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open form dialog
-      </Button>
-      <Dialog
+      <ShareButton onClick={handleClick}>SHARE</ShareButton>
+      {open && (
+        <ShareButtonsContainer>
+          <FacebookShareButton
+            url={
+              'http://reeem-pathways-staging.s3-website-eu-west-1.amazonaws.com/'
+            }
+            quote={'Can you beat my score?'}
+          >
+            <FacebookIcon size={32} round={true} />
+          </FacebookShareButton>
+        </ShareButtonsContainer>
+      )}
+      {/* <Dialog
         open={open}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
@@ -37,7 +49,7 @@ export const ShareDialog = () => {
             Cancel
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
     </Container>
   )
 }
