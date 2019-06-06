@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
@@ -14,12 +14,39 @@ export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+      width,
+      height,
+    }
+  }
 
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(
+      getWindowDimensions()
+    )
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions())
+      }
+
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    return windowDimensions
+  }
+
+  const { height, width } = useWindowDimensions()
   function handleClick(event) {
+    console.log('height: ' + height + ' width: ' + width)
+    console.log('clienty: ' + event.clientY + ' clientx: ' + event.clientX)
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
-      left: Math.min(event.clientX, window.innerHeight + 450),
-      top: Math.min(event.clientY, window.innerHeight - 400),
+      left: Math.min(event.clientX, width - 520),
+      top: Math.min(event.clientY, height - 420),
     })
     setSelectedCountry(event.target.id)
   }
