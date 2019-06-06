@@ -11,9 +11,6 @@
   },
   "goal": {
     "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
-    "economic": "Fíggjarligt",
-    "social": "Samfelagi",
-    "environmental": "Umhørvið",
     "weight": "Vektir",
     "weightedScore": "Vektað Stig",
     "title": "Mál"
@@ -57,7 +54,10 @@
   },
   "score": {
     "sum": "Tilsamans",
-    "date": "Dagfesting"
+    "date": "Dagfesting",
+    "economic": "Fíggjarligt",
+    "social": "Samfelagið",
+    "environmental": "Umhørvið"
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {

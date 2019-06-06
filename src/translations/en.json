@@ -11,9 +11,6 @@
   },
   "goal": {
     "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
-    "economic": "Economic",
-    "social": "Social",
-    "environmental": "Environmental",
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
@@ -57,7 +54,10 @@
   },
   "score": {
     "sum": "Sum",
-    "date": "Date"
+    "date": "Date",
+    "economic": "Economic",
+    "social": "Social",
+    "environmental": "Environmental"
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {

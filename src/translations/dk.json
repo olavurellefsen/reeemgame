@@ -11,9 +11,6 @@
   },
   "goal": {
     "summary": "Dit mål er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score, som kan ses nedenfor.",
-    "economic": "Økonomisk",
-    "social": "Social",
-    "environmental": "Miljø",
     "weight": "Vægte",
     "weightedScore": "Vægtet Score",
     "title": "Mål"
@@ -57,7 +54,10 @@
   },
   "score": {
     "sum": "Tilsammen",
-    "date": "Dato"
+    "date": "Dato",
+    "economic": "Økonomisk",
+    "social": "Social",
+    "environmental": "Miljø"
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {
