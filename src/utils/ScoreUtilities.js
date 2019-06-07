@@ -1,6 +1,7 @@
 import eunochCountries from './data/eunochcountries.json'
+import scoreData from './data/dummyScore.json'
 
-export function generate() {
+export function generateScores() {
   const score = {}
   let scenarios = []
   let countries = []
@@ -35,5 +36,6 @@ export function generate() {
       })
     })
   })
+  //Print scores
   console.log(JSON.stringify(score))
 }
