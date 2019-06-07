@@ -32,9 +32,15 @@ export const MapContainer = () => {
 
   const [state] = useContext(Context)
   const currentYear = state.currentYear
+
+  let tempScenario = state.selectedScenario
+
+  //TODO Important to change when real data has been added
+  if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
+    tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
     state.selectedIndicator,
-    state.selectedScenario,
+    tempScenario,
     currentYear
   )
 
@@ -57,11 +63,7 @@ export const MapContainer = () => {
           onClick={event => {
             if (
               event.target.id &&
-              hasData(
-                event.target.id,
-                state.selectedIndicator,
-                state.selectedScenario
-              )
+              hasData(event.target.id, state.selectedIndicator, tempScenario)
             ) {
               event.preventDefault()
               handleClick(event)

@@ -21,6 +21,10 @@ export const CountryPopup = props => {
   const selectedScenario = state.selectedScenario
   const selectedIndicator = state.selectedIndicator
 
+  let tempScenario = selectedScenario
+  //TODO Important to change when real data has been added
+  if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
+    tempScenario = 'C0T0E0'
   return (
     <Container>
       <Header>
@@ -44,7 +48,7 @@ export const CountryPopup = props => {
             props.country,
             currentYear,
             selectedIndicator,
-            selectedScenario
+            tempScenario
           )}
           options={{
             legend: { position: 'none' },

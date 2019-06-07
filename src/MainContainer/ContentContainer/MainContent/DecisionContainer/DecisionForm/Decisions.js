@@ -21,10 +21,12 @@ export const Decisions = () => {
             {
               value: 'Yes',
               text: t('general.yes'),
+              scenario: { C: 0 },
             },
             {
               value: 'No',
               text: t('general.no'),
+              scenario: { C: 1 },
             },
           ],
         },
@@ -35,15 +37,18 @@ export const Decisions = () => {
             {
               value: 'Low reduction rate – EU ETS cap',
               text: t('decisions.options.lowReduction'),
+              scenario: { E: 0 },
             },
             {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
+              scenario: { E: 9 },
             },
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
+              scenario: { E: 18 },
             },
           ],
         },
@@ -62,10 +67,12 @@ export const Decisions = () => {
             {
               value: 'Yes',
               text: t('general.yes'),
+              scenario: { T: 0 },
             },
             {
               value: 'No',
               text: t('general.no'),
+              scenario: { T: 1 },
             },
           ],
         },
@@ -76,15 +83,18 @@ export const Decisions = () => {
             {
               value: 'Low reduction rate – EU ETS cap',
               text: t('decisions.options.lowReduction'),
+              scenario: { E: 0 },
             },
             {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
+              scenario: { E: 3 },
             },
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
+              scenario: { E: 6 },
             },
           ],
         },
@@ -103,15 +113,18 @@ export const Decisions = () => {
             {
               value: 'Low reduction rate – EU ETS cap',
               text: t('decisions.options.lowReduction'),
+              scenario: { E: 0 },
             },
             {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
+              scenario: { E: 1 },
             },
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
+              scenario: { E: 2 },
             },
           ],
         },
