@@ -39,19 +39,13 @@ const emissionLimit = (scenario, currentYear) => {
 }
 
 const score = scenario => {
-  const score = scoredata
-    .filter(
-      country =>
-        country.Parameter === 'AnnualEmissionLimit' &&
-        country.Scenario === scenario
-    )
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(countryGroup[currentYear], 0, 1000000),
-      }))
-    )
-  return emissionLimitData[0]
+  const score = scoreData
+    .filter(elmt => elmt.scenario === scenario)
+    .map(e => ({
+      code: e.country,
+      color: convertToColor(10 - (e.env + e.eco + e.soc) / 3, 0, 10),
+    }))
+  return score
 }
 
 export const getMapColors = (valueToShow, scenario, currentYear) => {
@@ -60,6 +54,9 @@ export const getMapColors = (valueToShow, scenario, currentYear) => {
   }
   if (valueToShow === 'emissionLimit') {
     return emissionLimit(scenario, currentYear)
+  }
+  if (valueToShow === 'score') {
+    return score(scenario)
   }
   return []
 }

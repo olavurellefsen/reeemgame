@@ -33,7 +33,7 @@ export const MapContainer = () => {
   const [state] = useContext(Context)
   const currentYear = state.currentYear
   const mapColors = getMapColors(
-    state.selectedIndicator,
+    state.gameState === 'over' ? 'score' : state.selectedIndicator,
     state.selectedScenario,
     currentYear
   )
