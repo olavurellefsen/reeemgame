@@ -41,7 +41,6 @@ const emissionLimit = (scenario, currentYear) => {
 }
 
 const score = scenario => {
-  const s = scoreData.filter(elmt => elmt.scenario === scenario)
   const score = scoreData
     .filter(elmt => elmt.scenario === scenario)
     .map(e => ({

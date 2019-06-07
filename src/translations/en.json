@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "score": "Score"
   },
   "header": {
     "title": "game",

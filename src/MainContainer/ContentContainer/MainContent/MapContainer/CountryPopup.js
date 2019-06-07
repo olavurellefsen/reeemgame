@@ -30,13 +30,15 @@ export const CountryPopup = props => {
     soc: t('score.social.short'),
     sum: t('score.sum.short'),
   }
-
+  const title =
+    state.gameState === 'over'
+      ? t('general.score')
+      : t('indicator.' + selectedIndicator)
   return (
     <Container>
       <Header>
         <Country>
-          {t('countries.' + props.country)} -{' '}
-          {t('indicator.' + selectedIndicator)}
+          {t('countries.' + props.country)} - {title}
         </Country>
         <Button onClick={props.onClose}>
           <Icon>
@@ -59,7 +61,9 @@ export const CountryPopup = props => {
             )}
             options={{
               legend: { position: 'none' },
-              vAxis: { title: 'Score' },
+              vAxis: {
+                title: getUnit(selectedIndicator),
+              },
             }}
           />
         )}
@@ -76,7 +80,12 @@ export const CountryPopup = props => {
             )}
             options={{
               legend: { position: 'none' },
-              vAxis: { title: getUnit(selectedIndicator) },
+              vAxis: {
+                viewWindow: {
+                  min: 0,
+                  max: 10,
+                },
+              },
             }}
           />
         )}
