@@ -35,7 +35,7 @@ export const MapContainer = () => {
 
   let tempScenario = state.selectedScenario
 
-  //Important to change when
+  //TODO Important to change when real data has been added
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
@@ -63,11 +63,7 @@ export const MapContainer = () => {
           onClick={event => {
             if (
               event.target.id &&
-              hasData(
-                event.target.id,
-                state.selectedIndicator,
-                state.selectedScenario
-              )
+              hasData(event.target.id, state.selectedIndicator, tempScenario)
             ) {
               event.preventDefault()
               handleClick(event)
