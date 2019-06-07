@@ -7,6 +7,8 @@ const minValueDemand = 90
 const maxValueDemand = 400
 const minValueEmissionLimit = 0
 const maxValueEmissionLimit = 1000000
+const minScoreValue = 0
+const maxScoreValue = 10
 
 const specifiedAnnualDemand = (scenario, currentYear) =>
   sampleData
@@ -39,15 +41,19 @@ const emissionLimit = (scenario, currentYear) => {
 }
 
 const score = scenario => {
+  const s = scoreData.filter(elmt => elmt.scenario === scenario)
   const score = scoreData
     .filter(elmt => elmt.scenario === scenario)
     .map(e => ({
       code: e.country,
-      color: convertToColor(10 - (e.env + e.eco + e.soc) / 3, 0, 10),
+      color: convertToColor(
+        maxScoreValue - (e.env + e.eco + e.soc) / 3,
+        minScoreValue,
+        maxScoreValue
+      ),
     }))
   return score
 }
-
 export const getMapColors = (valueToShow, scenario, currentYear) => {
   if (valueToShow === 'electricityDemands') {
     return specifiedAnnualDemand(scenario, currentYear)
@@ -89,7 +95,7 @@ export const getCountryDataForChart = (
   )
   let data = []
   if (countryData.length) {
-    //prevent compile errors if cliked on country with no data
+    //prevent compile errors if clicked on country with no data
     data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
     for (var i = 2015; i <= currentYear; i = i + 5) {
       let year = [
@@ -107,4 +113,40 @@ export const getUnit = indicator => {
   else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
   const elmt = sampleData.find(element => element.Parameter === indicator)
   return elmt ? elmt.Unit : 'undefined'
+}
+
+export const getCountryScoreForChart = (myCountry, scenario, translation) => {
+  const scoreElements = ['env', 'eco', 'soc']
+  const countryData = scoreData.filter(
+    country => country.country === myCountry && country.scenario === scenario
+  )
+  let data
+  //prevent compile errors if clicked on country with no data
+  if (countryData.length) {
+    data = [['Element', 'Score', { role: 'style' }]]
+    for (var i = 0; i < scoreElements.length; i++) {
+      let elmt = [
+        translation[scoreElements[i]],
+        countryData[0][scoreElements[i]],
+        convertToColor(
+          maxScoreValue - countryData[0][scoreElements[i]],
+          minScoreValue,
+          maxScoreValue
+        ),
+      ]
+      data.push(elmt)
+    }
+    let combined = 0
+    for (i = 0; i < scoreElements.length; i++) {
+      combined += countryData[0][scoreElements[i]]
+    }
+    combined /= 3
+    let elmt = [
+      translation['sum'],
+      combined,
+      convertToColor(maxScoreValue - combined, minScoreValue, maxScoreValue),
+    ]
+    data.push(elmt)
+  }
+  return data
 }

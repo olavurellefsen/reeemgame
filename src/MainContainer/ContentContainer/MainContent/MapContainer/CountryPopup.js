@@ -3,7 +3,11 @@ import Context from '../../../../Context/Context'
 import { PropTypes } from 'prop-types'
 import Chart from 'react-google-charts'
 import { useTranslation } from 'react-i18next'
-import { getCountryDataForChart, getUnit } from './MapValues'
+import {
+  getCountryDataForChart,
+  getUnit,
+  getCountryScoreForChart,
+} from './MapValues'
 import {
   Container,
   Country,
@@ -20,6 +24,12 @@ export const CountryPopup = props => {
   const currentYear = state.currentYear
   const selectedScenario = state.selectedScenario
   const selectedIndicator = state.selectedIndicator
+  const scoreElements = {
+    env: t('score.environmental.short'),
+    eco: t('score.economic.short'),
+    soc: t('score.social.short'),
+    sum: t('score.sum.short'),
+  }
 
   return (
     <Container>
@@ -35,22 +45,41 @@ export const CountryPopup = props => {
         </Button>
       </Header>
       <Content>
-        <Chart
-          chartType="ColumnChart"
-          width="500px"
-          height="350px"
-          loader={<>Loading Chart</>}
-          data={getCountryDataForChart(
-            props.country,
-            currentYear,
-            selectedIndicator,
-            selectedScenario
-          )}
-          options={{
-            legend: { position: 'none' },
-            vAxis: { title: getUnit(selectedIndicator) },
-          }}
-        />
+        {!(state.gameState === 'over') && (
+          <Chart
+            chartType="ColumnChart"
+            width="500px"
+            height="350px"
+            loader={<>Loading Chart</>}
+            data={getCountryDataForChart(
+              props.country,
+              currentYear,
+              selectedIndicator,
+              selectedScenario
+            )}
+            options={{
+              legend: { position: 'none' },
+              vAxis: { title: 'Score' },
+            }}
+          />
+        )}
+        {state.gameState === 'over' && (
+          <Chart
+            chartType="ColumnChart"
+            width="500px"
+            height="350px"
+            loader={<>Loading Chart</>}
+            data={getCountryScoreForChart(
+              props.country,
+              selectedScenario,
+              scoreElements
+            )}
+            options={{
+              legend: { position: 'none' },
+              vAxis: { title: getUnit(selectedIndicator) },
+            }}
+          />
+        )}
       </Content>
     </Container>
   )
