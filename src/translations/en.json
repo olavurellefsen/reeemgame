@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "score": "Score"
   },
   "header": {
     "title": "game",
@@ -11,9 +12,6 @@
   },
   "goal": {
     "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
-    "economic": "Economic",
-    "social": "Social",
-    "environmental": "Environmental",
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
@@ -56,8 +54,23 @@
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
   },
   "score": {
-    "sum": "Sum",
-    "date": "Date"
+    "sum": {
+      "long": "Sum",
+      "short": "Sum"
+    },
+    "date": "Date",
+    "economic": {
+      "long": "Economic",
+      "short": "Eco"
+    },
+    "social": {
+      "long": "Social",
+      "short": "Soc"
+    },
+    "environmental": {
+      "long": "Environmental",
+      "short": "Env"
+    }
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {

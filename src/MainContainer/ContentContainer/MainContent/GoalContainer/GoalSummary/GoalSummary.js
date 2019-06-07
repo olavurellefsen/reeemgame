@@ -44,17 +44,17 @@ export const GoalSummary = () => {
         </StyledTableHead>
         <StyledTableBody>
           <StyledTableRow>
-            <StyledTableCell>{t('goal.economic')}</StyledTableCell>
+            <StyledTableCell>{t('score.economic.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.eco}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.eco}</StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
-            <StyledTableCell>{t('goal.social')}</StyledTableCell>
+            <StyledTableCell>{t('score.social.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.soc}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.soc}</StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
-            <StyledTableCell>{t('goal.environmental')}</StyledTableCell>
+            <StyledTableCell>{t('score.environmental.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.env}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.env}</StyledTableCell>
           </StyledTableRow>

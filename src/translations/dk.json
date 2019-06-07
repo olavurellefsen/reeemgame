@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Ja",
-    "no": "Nej"
+    "no": "Nej",
+    "score": "Score"
   },
   "header": {
     "title": "game",
@@ -11,9 +12,6 @@
   },
   "goal": {
     "summary": "Dit mål er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score, som kan ses nedenfor.",
-    "economic": "Økonomisk",
-    "social": "Social",
-    "environmental": "Miljø",
     "weight": "Vægte",
     "weightedScore": "Vægtet Score",
     "title": "Mål"
@@ -56,8 +54,23 @@
     "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
   },
   "score": {
-    "sum": "Tilsammen",
-    "date": "Dato"
+    "sum": {
+      "long": "Tilsammen",
+      "short": "Tils."
+    },
+    "date": "Dato",
+    "economic": {
+      "long": "Økonomisk",
+      "short": "Økon."
+    },
+    "social": {
+      "long": "Social",
+      "short": "Soc."
+    },
+    "environmental": {
+      "long": "Miljø",
+      "short": "Miljø"
+    }
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {

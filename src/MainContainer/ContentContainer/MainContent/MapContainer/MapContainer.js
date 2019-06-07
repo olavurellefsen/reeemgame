@@ -39,7 +39,7 @@ export const MapContainer = () => {
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
-    state.selectedIndicator,
+    state.gameState === 'over' ? 'score' : state.selectedIndicator,
     tempScenario,
     currentYear
   )

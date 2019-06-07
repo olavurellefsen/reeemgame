@@ -63,8 +63,9 @@ export const Languages = () => {
   const style = {
     textTransform: 'none',
     display: 'flex',
-    justifyContent: 'flex-start',
     color: 'white',
+    backgroundColor: 'transparent',
+    marginTop: '0',
   }
   return (
     <Container>
@@ -107,7 +108,7 @@ export const Languages = () => {
                   )}
                   {currentLanguage !== 'fo' && (
                     <MenuItem
-                      key={'enMenuItem'}
+                      key={'foMenuItem'}
                       onClick={e => changeLanguage(e, 'fo')}
                     >
                       <TextContainer>Føroyskt</TextContainer>
@@ -115,7 +116,7 @@ export const Languages = () => {
                   )}
                   {currentLanguage !== 'dk' && (
                     <MenuItem
-                      key={'enMenuItem'}
+                      key={'dkMenuItem'}
                       onClick={e => changeLanguage(e, 'dk')}
                     >
                       <TextContainer>Dansk</TextContainer>
