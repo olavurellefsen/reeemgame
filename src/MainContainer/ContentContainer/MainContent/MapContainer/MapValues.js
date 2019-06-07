@@ -1,5 +1,6 @@
 import sampleData from '../../../../data/sampledata.json'
 import eunochCountries from '../../../../data/eunochcountries.json'
+import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
 
 const minValueDemand = 90
@@ -37,11 +38,27 @@ const emissionLimit = (scenario, currentYear) => {
   return emissionLimitData[0]
 }
 
-export const getMapColors = (selectedIndicator, scenario, currentYear) => {
-  if (selectedIndicator === 'electricityDemands') {
+const score = scenario => {
+  const score = scoredata
+    .filter(
+      country =>
+        country.Parameter === 'AnnualEmissionLimit' &&
+        country.Scenario === scenario
+    )
+    .map(countryGroup =>
+      eunochCountries.map(country => ({
+        code: country.code.toLowerCase(),
+        color: convertToColor(countryGroup[currentYear], 0, 1000000),
+      }))
+    )
+  return emissionLimitData[0]
+}
+
+export const getMapColors = (valueToShow, scenario, currentYear) => {
+  if (valueToShow === 'electricityDemands') {
     return specifiedAnnualDemand(scenario, currentYear)
   }
-  if (selectedIndicator === 'emissionLimit') {
+  if (valueToShow === 'emissionLimit') {
     return emissionLimit(scenario, currentYear)
   }
   return []
