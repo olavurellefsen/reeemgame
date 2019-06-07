@@ -32,9 +32,15 @@ export const MapContainer = () => {
 
   const [state] = useContext(Context)
   const currentYear = state.currentYear
+
+  let tempScenario = state.selectedScenario
+
+  //Important to change when
+  if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
+    tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
     state.selectedIndicator,
-    state.selectedScenario,
+    tempScenario,
     currentYear
   )
 
