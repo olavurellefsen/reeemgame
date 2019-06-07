@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
 `
 
 export const StyledButton = styled.button`
