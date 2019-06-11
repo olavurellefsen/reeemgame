@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import Context from './../../../../../Context/Context'
-import { Decisions } from './../../DecisionContainer/DecisionForm/Decisions'
 import {
   GoalHeader,
   IntroText,
@@ -24,16 +23,8 @@ export const GoalSummary = () => {
       justify="space-between"
       alignItems="flex-start"
     >
-      <GoalHeader>
-        {t('goal.title')}
-        {state.selectedScenario}
-      </GoalHeader>
+      <GoalHeader>{t('goal.title')}</GoalHeader>
       <IntroText>{t('goal.summary')}</IntroText>
-      <IntroText>Decisions taken</IntroText>
-      <IntroText>{JSON.stringify(Decisions)}</IntroText>
-      {/* <IntroText>1 {Decisions[1].individualDecisions[0].introText}</IntroText>
-      <IntroText>2 {Decisions[1].individualDecisions[1].introText}</IntroText>
-      <IntroText>3 {Decisions[1].individualDecisions[1].introText}</IntroText> */}
       <StyledTable>
         <StyledTableHead>
           <StyledTableRow>

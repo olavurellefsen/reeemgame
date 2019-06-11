@@ -88,7 +88,12 @@ export const MapContainer = () => {
           onClick={event => {
             if (
               event.target.id &&
-              hasData(event.target.id, state.selectedIndicator, tempScenario)
+              (hasData(
+                event.target.id,
+                state.selectedIndicator,
+                tempScenario
+              ) ||
+                state.gameState === 'over')
             ) {
               event.preventDefault()
               handleClick(event)
