@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   margin-top: 40px;
   margin-right: 20px;
+  align-self: flex-end;
 `
 
 export const Text = styled.div`

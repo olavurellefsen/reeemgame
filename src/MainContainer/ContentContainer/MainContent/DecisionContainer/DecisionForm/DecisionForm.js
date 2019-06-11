@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import Context from '../../../../../Context/Context'
-import { decisions } from './Decisions'
+import { Decisions } from './Decisions'
 import {
   DecisionHeader,
   IntroText,
@@ -13,8 +13,9 @@ import {
 
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
+  const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
   const [state, dispatch] = useContext(Context)
-  const currentDecisions = decisions.filter(
+  const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
   )[0]
 
@@ -23,27 +24,31 @@ export const DecisionForm = () => {
     dispatch({
       type: 'forwardToNextDecision',
     })
+    /* alert(
+      'choices: ' +
+        JSON.stringify('C' + scenario.c + 'E' + scenario.e + 'T' + scenario.t)
+    ) */
+    dispatch({
+      type: 'setSelectedScenario',
+      name: 'C' + scenario.c + 'T' + scenario.t + 'E' + scenario.e,
+    })
 
     // Simple choice between E1 and E0 scenarios based on emission choice in 2020
-    if (choices.emissions1 === 'high') {
-      dispatch({
-        type: 'setSelectedScenario',
-        name: 'C0T0E1',
-      })
-    }
-    if (state.currentDecision === '2019') {
-      dispatch({
-        type: 'setSelectedScenario',
-        name: 'C0T0E0',
-      })
-    }
-    if (e.target.innerText === 'START') {
+    if (state.gameState === 'start') {
       dispatch({
         type: 'resetWeights',
         toggle: true,
       })
     }
     setChoice({})
+  }
+  const getNewScenario = add => {
+    let newScenario = scenario
+    if (add.C || add.C === 0) newScenario.c = scenario.c + add.C
+    else if (add.E || add.E === 0) newScenario.e = scenario.e + add.E
+    else if (add.T || add.T === 0) newScenario.t = scenario.t + add.T
+    else alert('add: ' + JSON.stringify(add))
+    return newScenario
   }
 
   return (
@@ -58,20 +63,24 @@ export const DecisionForm = () => {
       <form onSubmit={e => handleSubmit(e)}>
         {currentDecisions.individualDecisions !== undefined &&
           currentDecisions.individualDecisions.map((decision, i) => (
-            <React.Fragment key={i}>
+            <React.Fragment key={'decision' + i}>
               <StyledFormLabel component="legend">
                 {decision.introText}
               </StyledFormLabel>
               {decision.options.map((option, j) => (
                 <StyledFormControlLabel
-                  key={j}
-                  value={option}
+                  key={'option' + j}
+                  value={option.value}
                   control={<StyledRadio />}
-                  label={option}
-                  id={option}
-                  checked={choices[decision.name] === option}
+                  label={option.text}
+                  id={option.value}
+                  checked={choices[decision.name] === option.value}
                   onClick={() => {
-                    setChoice({ ...choices, [decision.name]: option })
+                    setChoice({
+                      ...choices,
+                      [decision.name]: option.value,
+                    })
+                    setScenario(getNewScenario(option.scenario))
                   }}
                 />
               ))}

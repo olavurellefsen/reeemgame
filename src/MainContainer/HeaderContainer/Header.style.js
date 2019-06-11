@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 
 export const HeaderStyle = styled.div`
   background-image: linear-gradient(gray, black);
+  align-items: baseline;
 `
 
 export const TitleContainer = styled.div`
@@ -32,6 +33,11 @@ export const HeaderMenuItemLink = styled(Link)`
   :hover {
     cursor: pointer;
   }
+`
+
+export const Divider = styled.div`
+  border-right: thin solid white;
+  height: 100%;
 `
 
 export const StyledGrid = styled(Grid)``

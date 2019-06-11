@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   StyledGrid,
   StyledTable,
@@ -9,17 +10,18 @@ import {
 } from './Score.style'
 
 export const Score = () => {
+  const { t } = useTranslation()
   var scoreList = JSON.parse(localStorage.getItem('score'))
   return (
     <StyledGrid>
       <StyledTable data-testid="scoreTable">
         <StyledTableHead>
           <StyledTableRow index={0}>
-            <StyledTableCell>Date</StyledTableCell>
-            <StyledTableCell>Economic</StyledTableCell>
-            <StyledTableCell>Environmental</StyledTableCell>
-            <StyledTableCell>Social</StyledTableCell>
-            <StyledTableCell>Sum</StyledTableCell>
+            <StyledTableCell>{t('score.date')}</StyledTableCell>
+            <StyledTableCell>{t('score.economic.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.environmental.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.social.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.sum.long')}</StyledTableCell>
           </StyledTableRow>
         </StyledTableHead>
         <StyledTableBody>

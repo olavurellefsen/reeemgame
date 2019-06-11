@@ -4,10 +4,15 @@ import Slider from '@material-ui/lab/Slider'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+`
+export const RowContainer = styled.div`
+  display: flex;
   margin-right: 20px;
   width: 98%;
   overflow: hidden; // Needed because of https://github.com/mui-org/material-ui/issues/13455
   padding: 10px;
+  flex-direction: row;
 `
 export const LabelContainer = styled.div`
   display: flex;
@@ -24,7 +29,7 @@ export const Label = styled.div`
 `
 
 export const SliderContainer = styled.div`
-  padding: 20px 20px;
+  padding: 20px 13px 5px 15px;
 `
 
 export const StyledSlider = styled(Slider)``

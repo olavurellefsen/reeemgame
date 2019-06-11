@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 import Context from './../../../../../Context/Context'
 import {
   GoalHeader,
@@ -13,6 +14,8 @@ import {
 
 export const GoalSummary = () => {
   const [state] = useContext(Context)
+  const { t } = useTranslation()
+
   return (
     <StyledGrid
       container
@@ -20,33 +23,29 @@ export const GoalSummary = () => {
       justify="space-between"
       alignItems="flex-start"
     >
-      <GoalHeader>Goal</GoalHeader>
-      <IntroText>
-        Your goal is to maximise the score in 2050. Your score is calculated as
-        the weighted average of the economic, social, and enviromental scores,
-        which can be seen below.
-      </IntroText>
+      <GoalHeader>{t('goal.title')}</GoalHeader>
+      <IntroText>{t('goal.summary')}</IntroText>
       <StyledTable>
         <StyledTableHead>
           <StyledTableRow>
             <StyledTableCell />
-            <StyledTableCell>Weight</StyledTableCell>
-            <StyledTableCell>Weighted Score</StyledTableCell>
+            <StyledTableCell>{t('goal.weight')}</StyledTableCell>
+            <StyledTableCell>{t('goal.weightedScore')}</StyledTableCell>
           </StyledTableRow>
         </StyledTableHead>
         <StyledTableBody>
           <StyledTableRow>
-            <StyledTableCell>Economic</StyledTableCell>
+            <StyledTableCell>{t('score.economic.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.eco}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.eco}</StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
-            <StyledTableCell>Social</StyledTableCell>
+            <StyledTableCell>{t('score.social.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.soc}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.soc}</StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
-            <StyledTableCell>Environmental</StyledTableCell>
+            <StyledTableCell>{t('score.environmental.long')}</StyledTableCell>
             <StyledTableCell>{state.weights.env}%</StyledTableCell>
             <StyledTableCell>{state.weightedScores.env}</StyledTableCell>
           </StyledTableRow>
