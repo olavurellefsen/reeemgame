@@ -241,21 +241,12 @@ exports[`should render correctly 1`] = `
               class="sc-eHgmQL kqKptM"
             >
               Goal
-              C0T0E0
             </h1>
             <div
               class="sc-cvbbAY hrpUhG"
             >
               Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.
             </div>
-            <div
-              class="sc-cvbbAY hrpUhG"
-            >
-              Decisions taken
-            </div>
-            <div
-              class="sc-cvbbAY hrpUhG"
-            />
             <table
               class="MuiTable-root-197 sc-brqgnP SqPLV"
             >
