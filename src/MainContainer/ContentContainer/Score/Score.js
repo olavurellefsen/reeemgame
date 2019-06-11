@@ -18,10 +18,10 @@ export const Score = () => {
         <StyledTableHead>
           <StyledTableRow index={0}>
             <StyledTableCell>{t('score.date')}</StyledTableCell>
-            <StyledTableCell>{t('score.economic')}</StyledTableCell>
-            <StyledTableCell>{t('score.environmental')}</StyledTableCell>
-            <StyledTableCell>{t('score.social')}</StyledTableCell>
-            <StyledTableCell>{t('score.sum')}</StyledTableCell>
+            <StyledTableCell>{t('score.economic.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.environmental.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.social.long')}</StyledTableCell>
+            <StyledTableCell>{t('score.sum.long')}</StyledTableCell>
           </StyledTableRow>
         </StyledTableHead>
         <StyledTableBody>

@@ -1,7 +1,6 @@
 import eunochCountries from './data/eunochcountries.json'
 
 export function generate() {
-  const score = {}
   let scenarios = []
   let countries = []
   const scoreElmts = ['env', 'eco', 'soc']
@@ -13,7 +12,7 @@ export function generate() {
   for (var c = 0; c <= 1; c++) {
     for (var t = 0; t <= 1; t++) {
       for (var e = 0; e <= 26; e++) {
-        scenarios.push('C' + c + 'T' + t + 'e' + e)
+        scenarios.push('C' + c + 'T' + t + 'E' + e)
       }
     }
   }
@@ -26,13 +25,16 @@ export function generate() {
   }
 
   //Create data
+  let score = []
   scenarios.forEach(function(s) {
-    score[s] = {}
     countries.forEach(function(c) {
-      score[s][c] = {}
+      let elmt = {}
+      elmt['scenario'] = s
+      elmt['country'] = c
       scoreElmts.forEach(function(e) {
-        score[s][c][e] = getRandomInt(1, 10)
+        elmt[e] = getRandomInt(1, 10)
       })
+      score.push(elmt)
     })
   })
   console.log(JSON.stringify(score))

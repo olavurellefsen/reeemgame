@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
@@ -14,12 +14,37 @@ export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+      width,
+      height,
+    }
+  }
 
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(
+      getWindowDimensions()
+    )
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions())
+      }
+
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    return windowDimensions
+  }
+
+  const { height, width } = useWindowDimensions()
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
-      left: Math.min(event.clientX, window.innerHeight + 450),
-      top: Math.min(event.clientY, window.innerHeight - 400),
+      left: Math.min(event.clientX, width - 520),
+      top: Math.min(event.clientY, height - 420),
     })
     setSelectedCountry(event.target.id)
   }
@@ -35,11 +60,11 @@ export const MapContainer = () => {
 
   let tempScenario = state.selectedScenario
 
-  //Important to change when
+  //TODO Important to change when real data has been added
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
-    state.selectedIndicator,
+    state.gameState === 'over' ? 'score' : state.selectedIndicator,
     tempScenario,
     currentYear
   )
@@ -63,11 +88,7 @@ export const MapContainer = () => {
           onClick={event => {
             if (
               event.target.id &&
-              hasData(
-                event.target.id,
-                state.selectedIndicator,
-                state.selectedScenario
-              )
+              hasData(event.target.id, state.selectedIndicator, tempScenario)
             ) {
               event.preventDefault()
               handleClick(event)
