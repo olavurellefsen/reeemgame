@@ -3,7 +3,11 @@ import Context from '../../../../Context/Context'
 import { PropTypes } from 'prop-types'
 import Chart from 'react-google-charts'
 import { useTranslation } from 'react-i18next'
-import { getCountryDataForChart, getUnit } from './MapValues'
+import {
+  getCountryDataForChart,
+  getUnit,
+  getCountryScoreForChart,
+} from './MapValues'
 import {
   Container,
   Country,
@@ -20,6 +24,16 @@ export const CountryPopup = props => {
   const currentYear = state.currentYear
   const selectedScenario = state.selectedScenario
   const selectedIndicator = state.selectedIndicator
+  const scoreElements = {
+    env: t('score.environmental.short'),
+    eco: t('score.economic.short'),
+    soc: t('score.social.short'),
+    sum: t('score.sum.short'),
+  }
+  const title =
+    state.gameState === 'over'
+      ? t('general.score')
+      : t('indicator.' + selectedIndicator)
 
   let tempScenario = selectedScenario
   //TODO Important to change when real data has been added
@@ -29,8 +43,7 @@ export const CountryPopup = props => {
     <Container>
       <Header>
         <Country>
-          {t('countries.' + props.country)} -{' '}
-          {t('indicator.' + selectedIndicator)}
+          {t('countries.' + props.country)} - {title}
         </Country>
         <Button onClick={props.onClose}>
           <Icon>
@@ -39,24 +52,48 @@ export const CountryPopup = props => {
         </Button>
       </Header>
       <Content>
-        <Chart
-          chartType="ColumnChart"
-          width="500px"
-          height="350px"
-          loader={<>Loading Chart</>}
-          data={getCountryDataForChart(
-            props.country,
-            currentYear,
-            selectedIndicator,
-            tempScenario
-          )}
-          options={{
-            legend: { position: 'none' },
-            vAxis: { title: getUnit(selectedIndicator) },
-            slantedText: 'true',
-            slantedTextAngle: 90,
-          }}
-        />
+        {!(state.gameState === 'over') && (
+          <Chart
+            chartType="ColumnChart"
+            width="500px"
+            height="350px"
+            loader={<>Loading Chart</>}
+            data={getCountryDataForChart(
+              props.country,
+              currentYear,
+              selectedIndicator,
+              tempScenario
+            )}
+            options={{
+              legend: { position: 'none' },
+              vAxis: {
+                title: getUnit(selectedIndicator),
+              },
+            }}
+          />
+        )}
+        {state.gameState === 'over' && (
+          <Chart
+            chartType="ColumnChart"
+            width="500px"
+            height="350px"
+            loader={<>Loading Chart</>}
+            data={getCountryScoreForChart(
+              props.country,
+              tempScenario,
+              scoreElements
+            )}
+            options={{
+              legend: { position: 'none' },
+              vAxis: {
+                viewWindow: {
+                  min: 0,
+                  max: 10,
+                },
+              },
+            }}
+          />
+        )}
       </Content>
     </Container>
   )

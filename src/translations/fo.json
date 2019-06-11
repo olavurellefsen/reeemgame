@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Ja",
-    "no": "Nei"
+    "no": "Nei",
+    "score": "Stig"
   },
   "header": {
     "title": "game",
@@ -53,11 +54,23 @@
     "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
   },
   "score": {
-    "sum": "Tilsamans",
+    "sum": {
+      "long": "Tilsamans",
+      "short": "Tils."
+    },
     "date": "Dagfesting",
-    "economic": "Fíggjarligt",
-    "social": "Samfelagið",
-    "environmental": "Umhørvið"
+    "economic": {
+      "long": "Fíggjarligt",
+      "short": "Fíggj."
+    },
+    "social": {
+      "long": "Samfelagið",
+      "short": "Samf."
+    },
+    "environmental": {
+      "long": "Umhørvið",
+      "short": "Umhv."
+    }
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {

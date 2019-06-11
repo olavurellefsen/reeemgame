@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Ja",
-    "no": "Nej"
+    "no": "Nej",
+    "score": "Score"
   },
   "header": {
     "title": "game",
@@ -53,11 +54,23 @@
     "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
   },
   "score": {
-    "sum": "Tilsammen",
+    "sum": {
+      "long": "Tilsammen",
+      "short": "Tils."
+    },
     "date": "Dato",
-    "economic": "Økonomisk",
-    "social": "Social",
-    "environmental": "Miljø"
+    "economic": {
+      "long": "Økonomisk",
+      "short": "Økon."
+    },
+    "social": {
+      "long": "Social",
+      "short": "Soc."
+    },
+    "environmental": {
+      "long": "Miljø",
+      "short": "Miljø"
+    }
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {
