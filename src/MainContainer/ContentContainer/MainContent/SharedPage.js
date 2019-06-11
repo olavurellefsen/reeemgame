@@ -15,9 +15,16 @@ const StyledGrid = styled(Grid)`
   }
 `
 
+const buildURL = (eco, soc, env) => {
+  return '?eco=' + eco + '&soc=' + soc + '&env=' + env
+}
+
 export const SharedPage = props => {
   const { t } = useTranslation()
   const wide = useMediaQuery('(min-width:960px)')
+  const eco = props.sharedValues.eco
+  const soc = props.sharedValues.soc
+  const env = props.sharedValues.env
   return (
     <Grid
       container
@@ -50,12 +57,14 @@ export const SharedPage = props => {
         order={wide ? 2 : 1}
       >
         <Container>
-          <TextContainer>Weight Eco: {props.sharedValues.eco}</TextContainer>
-          <TextContainer>Weight Soc: {props.sharedValues.soc}</TextContainer>
-          <TextContainer>Weight Env: {props.sharedValues.env}</TextContainer>
+          <TextContainer>Weight Eco: {eco}</TextContainer>
+          <TextContainer>Weight Soc: {soc}</TextContainer>
+          <TextContainer>Weight Env: {env}</TextContainer>
           <TextContainer>Score: {props.sharedValues.score}</TextContainer>
           <Button>
-            <LinkButton to="/">{t('shared.tryGameButton')}</LinkButton>
+            <LinkButton to={'/' + buildURL(eco, soc, env)}>
+              {t('shared.tryGameButton')}
+            </LinkButton>
           </Button>
         </Container>
       </StyledGrid>
