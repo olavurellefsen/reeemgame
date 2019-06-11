@@ -16,19 +16,20 @@ import {
   StyledTableHead,
   StyledTableRow,
 } from './GoalSummary.style'
+import { createListOfScenarios } from '../../../../../utils/ScoreUtilities'
 
 const getDecisionsMade = scenario => {
   let ret_decisions = {}
   let decs = Decisions()
   let e = scenario.substring(5, 7)
-  alert(
+  /* alert(
     'C: ' +
       scenario.substring(1, 2) +
       ' T: ' +
       scenario.substring(3, 4) +
       ' E: ' +
       scenario.substring(5, 7)
-  )
+  ) */
   ret_decisions.dec1 = {}
   ret_decisions.dec1.name = decs[1].individualDecisions[0].introText
   if (scenario.substring(1, 2) == 0)
@@ -96,7 +97,13 @@ export const GoalSummary = () => {
   const [state] = useContext(Context)
   const { t } = useTranslation()
   let decisionsMade = getDecisionsMade(state.selectedScenario)
-  alert('GoalSum: ' + JSON.stringify(decisionsMade))
+  let decisionRanks = createListOfScenarios(state.weights)
+  let optimalScenario = getDecisionsMade(decisionRanks[0].scenario)
+  let score = decisionRanks.find(e => {
+    return e.scenario === state.selectedScenario
+  })
+  //let optimalDecision = createListOfScenarios(state.weights)[0].scenario
+  /* alert('Score: ' + JSON.stringify(score)) */
   return (
     <React.Fragment>
       <StyledGrid
@@ -121,32 +128,39 @@ export const GoalSummary = () => {
             <StyledTableRow>
               <StyledTableCell>{decisionsMade.dec1.name}</StyledTableCell>
               <StyledTableCell>{decisionsMade.dec1.decision}</StyledTableCell>
-              <StyledTableCell />
+              <StyledTableCell>{optimalScenario.dec1.decision}</StyledTableCell>
             </StyledTableRow>
             <StyledTableRow>
               <StyledTableCell>{decisionsMade.dec2.name}</StyledTableCell>
               <StyledTableCell>{decisionsMade.dec2.decision}</StyledTableCell>
-              <StyledTableCell />
+              <StyledTableCell>{optimalScenario.dec2.decision}</StyledTableCell>
             </StyledTableRow>
             <StyledTableRow>
               <StyledTableCell>{decisionsMade.dec3.name}</StyledTableCell>
               <StyledTableCell>{decisionsMade.dec3.decision}</StyledTableCell>
-              <StyledTableCell />
+              <StyledTableCell>{optimalScenario.dec3.decision}</StyledTableCell>
             </StyledTableRow>
             <StyledTableRow>
               <StyledTableCell>{decisionsMade.dec4.name}</StyledTableCell>
               <StyledTableCell>{decisionsMade.dec4.decision}</StyledTableCell>
-              <StyledTableCell />
+              <StyledTableCell>{optimalScenario.dec4.decision}</StyledTableCell>
             </StyledTableRow>
             <StyledTableRow>
               <StyledTableCell>{decisionsMade.dec5.name}</StyledTableCell>
               <StyledTableCell>{decisionsMade.dec5.decision}</StyledTableCell>
-              <StyledTableCell />
+              <StyledTableCell>{optimalScenario.dec5.decision}</StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <StyledTableCell>
+                Total score based on the weights
+              </StyledTableCell>
+              <StyledTableCell>{score.score}</StyledTableCell>
+              <StyledTableCell>{decisionRanks[0].score}</StyledTableCell>
             </StyledTableRow>
           </StyledTableBody>
         </StyledTable>
       </StyledGrid>
-      <StyledGrid>
+      {/* <StyledGrid>
         <StyledTable>
           <StyledTableHead>
             <StyledTableRow>
@@ -178,7 +192,7 @@ export const GoalSummary = () => {
             </StyledTableRow>
           </StyledTableBody>
         </StyledTable>
-      </StyledGrid>
+      </StyledGrid> */}
     </React.Fragment>
   )
 }
