@@ -74,15 +74,16 @@ export const getCountryDataForChart = (
       country.Scenario === scenario
   )
   let data = []
+  //prevent compile errors if cliked on country with no data
   if (countryData.length) {
-    //prevent compile errors if cliked on country with no data
     data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
-    for (var i = 2015; i <= currentYear; i = i + 5) {
+    for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
       let year = [
         JSON.stringify(i),
         countryData[0][i],
         convertToColor(countryData[0][i], minValue, maxValue),
       ]
+
       data.push(year)
     }
   }
