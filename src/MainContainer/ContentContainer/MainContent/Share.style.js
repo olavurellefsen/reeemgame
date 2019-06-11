@@ -22,3 +22,15 @@ export const ShareButton = styled.div`
   border-radius: 10%;
   justify-content: center;
 `
+export const ShareLinkButton = styled.div`
+  display: flex;
+  background-color: blue;
+  color: white;
+  padding: 3px;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 50%;
+  justify-content: center;
+`

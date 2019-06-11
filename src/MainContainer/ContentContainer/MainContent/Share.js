@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Container, ShareButton, ShareButtonsContainer } from './Share.style'
+import Context from './../../../Context/Context'
+import {
+  Container,
+  ShareButton,
+  ShareButtonsContainer,
+  ShareLinkButton,
+} from './Share.style'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
@@ -11,14 +17,33 @@ import { FacebookIcon } from 'react-share'
 import { FacebookShareButton } from 'react-share'
 
 export const Share = () => {
+  const [state] = useContext(Context)
   const [open, setOpen] = React.useState(false)
+  const [dialogOpen, setDialogOpen] = React.useState(false)
 
   function handleClick() {
     setOpen(!open)
   }
 
   function handleClose() {
-    setOpen(false)
+    setDialogOpen(false)
+  }
+
+  function handleClickShareLink() {
+    setDialogOpen(!dialogOpen)
+  }
+  const buildURL = () => {
+    return (
+      window.location.href +
+      'shared/?eco=' +
+      state.weights.eco +
+      '&soc=' +
+      state.weights.soc +
+      '&env=' +
+      state.weights.env +
+      '&score=' +
+      state.weightedScores.sum
+    )
   }
   return (
     <Container>
@@ -26,32 +51,27 @@ export const Share = () => {
       {open && (
         <ShareButtonsContainer>
           <FacebookShareButton
-            url={
-              'http://reeem-pathways-staging.s3-website-eu-west-1.amazonaws.com/'
-            }
+            url={buildURL()}
             quote={'Can you beat my score?'}
           >
             <FacebookIcon size={32} round={true} />
           </FacebookShareButton>
+          <ShareLinkButton onClick={handleClickShareLink}>Link</ShareLinkButton>
         </ShareButtonsContainer>
       )}
-      {/* <Dialog
-        open={open}
+      <Dialog
+        open={dialogOpen}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+        <DialogTitle id="form-dialog-title">Share Game</DialogTitle>
         <DialogContent>
-          <DialogContentText>Share Game</DialogContentText>
+          <DialogContentText>{buildURL()}</DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Cancel
-          </Button>
+          <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
-      </Dialog> */}
+      </Dialog>
     </Container>
   )
 }
-
-//https://www.npmjs.com/package/react-share
