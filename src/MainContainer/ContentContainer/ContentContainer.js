@@ -14,7 +14,7 @@ export const ContentContainer = () => (
     <Route path={`/about`} component={About} />
     <Route
       path={`/shared`}
-      component={({ location, history }) => (
+      component={({ location }) => (
         <SharedPage sharedValues={queryString.parse(location.search)} />
       )}
     />

@@ -104,5 +104,8 @@
     "cy": "Cypern",
     "no": "Norge",
     "ch": "Schweiz "
+  },
+  "shared": {
+    "tryGameButton": "Slå min score!"
   }
 }

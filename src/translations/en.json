@@ -104,5 +104,8 @@
     "cy": "Cyprus",
     "no": "Norway",
     "ch": "Switzerland"
+  },
+  "shared": {
+    "tryGameButton": "Beat my Score!"
   }
 }

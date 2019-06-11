@@ -1,16 +1,14 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
-import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
+import { useTranslation } from 'react-i18next'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
-import { DecisionContainer } from './DecisionContainer/DecisionContainer'
-import { GoalContainer } from './GoalContainer/GoalContainer'
 import { MapContainer } from './MapContainer/MapContainer'
-import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 import { PropTypes } from 'prop-types'
-import { Container, TextContainer } from './SharedPage.style'
+import { Container, TextContainer, LinkButton } from './SharedPage.style'
 
+import Button from '@material-ui/core/Button'
 const StyledGrid = styled(Grid)`
   && {
     order: ${props => props.order};
@@ -18,6 +16,7 @@ const StyledGrid = styled(Grid)`
 `
 
 export const SharedPage = props => {
+  const { t } = useTranslation()
   const wide = useMediaQuery('(min-width:960px)')
   return (
     <Grid
@@ -37,7 +36,6 @@ export const SharedPage = props => {
         sm={12}
         order={wide ? 1 : 3}
       >
-        <IndicatorContainer />
         <EUacknowledgement />
       </StyledGrid>
       <StyledGrid
@@ -56,6 +54,9 @@ export const SharedPage = props => {
           <TextContainer>Weight Soc: {props.sharedValues.soc}</TextContainer>
           <TextContainer>Weight Env: {props.sharedValues.env}</TextContainer>
           <TextContainer>Score: {props.sharedValues.score}</TextContainer>
+          <Button>
+            <LinkButton to="/">{t('shared.tryGameButton')}</LinkButton>
+          </Button>
         </Container>
       </StyledGrid>
       <StyledGrid
@@ -68,7 +69,6 @@ export const SharedPage = props => {
         md={12}
         order={wide ? 3 : 2}
       >
-        <TimelineContainer />
         <MapContainer />
       </StyledGrid>
     </Grid>

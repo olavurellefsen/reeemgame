@@ -104,5 +104,8 @@
     "cy": "Kýpros",
     "no": "Noreg",
     "ch": "Sveis "
+  },
+  "shared": {
+    "tryGameButton": "Beat my Score!"
   }
 }
