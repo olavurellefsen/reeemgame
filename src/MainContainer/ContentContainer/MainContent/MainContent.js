@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
+import { PropTypes } from 'prop-types'
 import Grid from '@material-ui/core/Grid'
+import Context from './../../../Context/Context'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { DecisionContainer } from './DecisionContainer/DecisionContainer'
@@ -15,7 +17,18 @@ const StyledGrid = styled(Grid)`
   }
 `
 
-export const MainContent = () => {
+export const MainContent = props => {
+  const [state, dispatch] = useContext(Context)
+  useEffect(() => {
+    if (props.weights.eco && props.weights.soc && props.weights.env) {
+      dispatch({
+        type: 'setWeights',
+        eco: props.weights.eco,
+        soc: props.weights.soc,
+        env: props.weights.env,
+      })
+    }
+  })
   const wide = useMediaQuery('(min-width:960px)')
   return (
     <Grid
@@ -67,4 +80,7 @@ export const MainContent = () => {
       </StyledGrid>
     </Grid>
   )
+}
+MainContent.propTypes = {
+  weights: PropTypes.object,
 }

@@ -137,6 +137,10 @@ const reducer = createReducer(initialState, {
       soc: action.soc,
     }),
   }),
+  setWeights: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
+  }),
 })
 
 export default ContextStore

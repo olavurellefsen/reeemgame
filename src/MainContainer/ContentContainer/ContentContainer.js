@@ -9,7 +9,13 @@ const queryString = require('query-string')
 
 export const ContentContainer = () => (
   <Switch>
-    <Route exact={true} path={`/`} component={MainContent} />
+    <Route
+      exact={true}
+      path={`/`}
+      component={({ location }) => (
+        <MainContent weights={queryString.parse(location.search)} />
+      )}
+    />
     <Route path={`/score`} component={Score} />
     <Route path={`/about`} component={About} />
     <Route

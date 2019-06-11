@@ -35,7 +35,8 @@ export const DecisionForm = () => {
     })
 
     // Simple choice between E1 and E0 scenarios based on emission choice in 2020
-    if (state.gameState === 'start') {
+    if (state.gameState === 'over') {
+      //Reset weights when clicking "try again"
       dispatch({
         type: 'resetWeights',
         toggle: true,
