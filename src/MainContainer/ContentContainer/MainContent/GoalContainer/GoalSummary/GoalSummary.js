@@ -3,10 +3,6 @@ import { useTranslation } from 'react-i18next'
 import Context from './../../../../../Context/Context'
 import { Decisions } from './../../DecisionContainer/DecisionForm/Decisions'
 import {
-  StyledFormControlLabel,
-  StyledRadio,
-} from './../../DecisionContainer/DecisionForm/DecisionForm.style'
-import {
   GoalHeader,
   IntroText,
   StyledGrid,
@@ -32,7 +28,7 @@ const getDecisionsMade = scenario => {
   ) */
   ret_decisions.dec1 = {}
   ret_decisions.dec1.name = decs[1].individualDecisions[0].introText
-  if (scenario.substring(1, 2) == 0)
+  if (scenario.substring(1, 2) === '0')
     ret_decisions.dec1.decision =
       decs[1].individualDecisions[0].options[0].value
   else
@@ -57,7 +53,7 @@ const getDecisionsMade = scenario => {
 
   ret_decisions.dec3 = {}
   ret_decisions.dec3.name = decs[2].individualDecisions[0].introText
-  if (scenario.substring(3, 4) == 0)
+  if (scenario.substring(3, 4) === '0')
     ret_decisions.dec3.decision =
       decs[2].individualDecisions[0].options[0].value
   else
