@@ -63,7 +63,7 @@ export const SharedPage = props => {
           <TextContainer>Score: {props.sharedValues.score}</TextContainer>
           <Button>
             <LinkButton to={'/' + buildURL(eco, soc, env)}>
-              {t('shared.tryGameButton')}
+              {t('share.tryGameButton')}
             </LinkButton>
           </Button>
         </Container>

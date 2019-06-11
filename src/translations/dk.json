@@ -105,7 +105,10 @@
     "no": "Norge",
     "ch": "Schweiz "
   },
-  "shared": {
-    "tryGameButton": "Slå min score!"
+  "share": {
+    "tryGameButton": "Slå min score!",
+    "dialogTitle": "Del spillet",
+    "shareDialogText": "Del følgende link:",
+    "closeDialog": "Luk"
   }
 }

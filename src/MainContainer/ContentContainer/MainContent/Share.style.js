@@ -1,27 +1,68 @@
 import styled from 'styled-components'
+import Button from '@material-ui/core/Button'
+import React from 'react'
+
+export const DialogHeader = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 15px;
+`
+
+export const DialogText = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+`
+
+export const DialogTextField = styled.input`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+  font-family: 'Montserrat', sans-serif;
+  border: solid #9dc3e6;
+  border-width: 2px;
+  padding: 10px;
+  padding-right: 0px;
+  width: 100%;
+`
+
+export const DialogButton = styled.button`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+  font-family: 'Montserrat', sans-serif;
+  background-color: #9dc3e6;
+  padding: 5px;
+  width: 10%;
+  border: none;
+  border-radius: 10px;
+  :hover {
+    cursor: pointer;
+  }
+`
+export const DialogContentContainer = styled.div`
+  padding: 10px;
+`
 
 export const Container = styled.div`
   display: flex;
-  padding: 5px;
+  padding: 10px 0px;
 `
 
 export const ShareButtonsContainer = styled.div`
   display: flex;
-  padding: 5px;
 `
 
 export const ShareButton = styled.div`
   display: flex;
   background-color: blue;
   color: white;
-  padding: 3px;
-  margin: 5px;
+  padding: 15px 30px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 800;
-  border-radius: 10%;
+  border-radius: 5px;
   justify-content: center;
 `
+
 export const ShareLinkButton = styled.div`
   display: flex;
   background-color: blue;
@@ -33,4 +74,8 @@ export const ShareLinkButton = styled.div`
   font-weight: 800;
   border-radius: 50%;
   justify-content: center;
+`
+export const SocialMediaBtn = styled.div`
+  display: flex;
+  padding: 3px;
 `

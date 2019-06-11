@@ -105,7 +105,10 @@
     "no": "Norway",
     "ch": "Switzerland"
   },
-  "shared": {
-    "tryGameButton": "Beat my Score!"
+  "share": {
+    "tryGameButton": "Beat my Score!",
+    "dialogTitle": "Share the Game",
+    "shareDialogText": "Share the following link:",
+    "closeDialog": "Close"
   }
 }

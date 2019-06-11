@@ -105,7 +105,10 @@
     "no": "Noreg",
     "ch": "Sveis "
   },
-  "shared": {
-    "tryGameButton": "Beat my Score!"
+  "share": {
+    "tryGameButton": "Beat my Score!",
+    "dialogTitle": "Deil spælið",
+    "shareDialogText": "Share the following link:",
+    "closeDialog": "Lat aftur"
   }
 }
