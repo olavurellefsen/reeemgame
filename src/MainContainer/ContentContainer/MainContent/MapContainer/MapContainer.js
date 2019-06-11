@@ -88,7 +88,12 @@ export const MapContainer = () => {
           onClick={event => {
             if (
               event.target.id &&
-              hasData(event.target.id, state.selectedIndicator, tempScenario)
+              hasData(
+                event.target.id,
+                state.selectedIndicator,
+                tempScenario,
+                state.gameState
+              )
             ) {
               event.preventDefault()
               handleClick(event)
@@ -125,7 +130,7 @@ const getLegendPara = indicator => {
   }
 }
 
-const hasData = (country, indicator, selectedScenario) => {
+const hasData = (country, indicator, selectedScenario, gameState) => {
   var data
   if (indicator === 'electricityDemands') {
     indicator = 'SpecifiedAnnual Demand'
@@ -137,7 +142,7 @@ const hasData = (country, indicator, selectedScenario) => {
     )
   }
 
-  if (indicator === 'emissionLimit') {
+  if (indicator === 'emissionLimit' || gameState === 'over') {
     data = eunochCountries.find(element => element.code === country)
   }
   return data ? true : false
