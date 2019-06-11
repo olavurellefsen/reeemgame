@@ -9,6 +9,7 @@ import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 import { PropTypes } from 'prop-types'
+import { Container, TextContainer } from './SharedPage.style'
 
 const StyledGrid = styled(Grid)`
   && {
@@ -50,10 +51,12 @@ export const SharedPage = props => {
         sm={12}
         order={wide ? 2 : 1}
       >
-        Eco: {props.sharedValues.eco}
-        Soc: {props.sharedValues.soc}
-        Env: {props.sharedValues.env}
-        Score: {props.sharedValues.score}
+        <Container>
+          <TextContainer>Weight Eco: {props.sharedValues.eco}</TextContainer>
+          <TextContainer>Weight Soc: {props.sharedValues.soc}</TextContainer>
+          <TextContainer>Weight Env: {props.sharedValues.env}</TextContainer>
+          <TextContainer>Score: {props.sharedValues.score}</TextContainer>
+        </Container>
       </StyledGrid>
       <StyledGrid
         container
