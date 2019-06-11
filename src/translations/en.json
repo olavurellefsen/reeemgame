@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "score": "Score"
   },
   "header": {
     "title": "game",
@@ -11,9 +12,6 @@
   },
   "goal": {
     "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
-    "economic": "Economic",
-    "social": "Social",
-    "environmental": "Environmental",
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
@@ -56,8 +54,55 @@
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
   },
   "score": {
-    "sum": "Sum",
-    "date": "Date"
+    "sum": {
+      "long": "Sum",
+      "short": "Sum"
+    },
+    "date": "Date",
+    "economic": {
+      "long": "Economic",
+      "short": "Eco"
+    },
+    "social": {
+      "long": "Social",
+      "short": "Soc"
+    },
+    "environmental": {
+      "long": "Environmental",
+      "short": "Env"
+    }
   },
-  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739."
+  "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
+  "countries": {
+    "se": "Sweden",
+    "dk": "Denmark",
+    "de": "Germany",
+    "at": "Austria",
+    "ie": "Ireland",
+    "uk": "United Kingdom",
+    "hr": "Croatia",
+    "nl": "Netherlands",
+    "be": "Belgium",
+    "lu": "Luxembourg",
+    "fi": "Finland",
+    "ee": "Estonia",
+    "lv": "Latvia",
+    "lt": "Lithuania",
+    "fr": "France",
+    "es": "Spain",
+    "pt": "Portugal",
+    "it": "Italy",
+    "mt": "Malta",
+    "gr": "Greece",
+    "si": "Slovenia",
+    "pl": "Poland",
+    "hu": "Hungary",
+    "cz": "Czechia",
+    "sk": "Slovakia",
+    "ro": "Romania",
+    "bg": "Bulgaria",
+    "cy": "Cyprus",
+    "no": "Norway",
+    "ch": "Switzerland"
+  }
 }

@@ -1,7 +1,8 @@
 {
   "general": {
     "yes": "Ja",
-    "no": "Nei"
+    "no": "Nei",
+    "score": "Stig"
   },
   "header": {
     "title": "game",
@@ -11,9 +12,6 @@
   },
   "goal": {
     "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
-    "economic": "Fíggjarligt",
-    "social": "Samfelagi",
-    "environmental": "Umhørvið",
     "weight": "Vektir",
     "weightedScore": "Vektað Stig",
     "title": "Mál"
@@ -44,7 +42,7 @@
       "intro": "Niðanfyri sært tú tíni stig."
     },
     "options": {
-      "lowReduction": "Skerjing við lágari ferð - U ETS cap",
+      "lowReduction": "Skerjing við lágari ferð - EU ETS cap",
       "mediumReduction": "Skerjing við miðal ferð - IPPC Pathway Zero Emissions í 2050",
       "highReduction": "Skerjing við høgari ferð - Null útlát í 2040"
     },
@@ -56,8 +54,55 @@
     "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
   },
   "score": {
-    "sum": "Tilsamans",
-    "date": "Dagfesting"
+    "sum": {
+      "long": "Tilsamans",
+      "short": "Tils."
+    },
+    "date": "Dagfesting",
+    "economic": {
+      "long": "Fíggjarligt",
+      "short": "Fíggj."
+    },
+    "social": {
+      "long": "Samfelagið",
+      "short": "Samf."
+    },
+    "environmental": {
+      "long": "Umhørvið",
+      "short": "Umhv."
+    }
   },
-  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739."
+  "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
+  "countries": {
+    "se": "Svøríki",
+    "dk": "Danmark",
+    "de": "Týskland",
+    "at": "Eysturríki",
+    "ie": "Írland",
+    "uk": "Stóra Bretland",
+    "hr": "Kroatia",
+    "nl": "Holland",
+    "be": "Belgia",
+    "lu": "Luksemborg",
+    "fi": "Finland",
+    "ee": "Estland",
+    "lv": "Letland",
+    "lt": "Litava",
+    "fr": "Frankaríki",
+    "es": "Spania",
+    "pt": "Portugal",
+    "it": "Italia",
+    "mt": "Malta",
+    "gr": "Grikkaland",
+    "si": "Slovenia",
+    "pl": "Póland",
+    "hu": "Ungarn",
+    "cz": "Kekkia",
+    "sk": "Slovakia",
+    "ro": "Rumenia",
+    "bg": "Bulgaria",
+    "cy": "Kýpros",
+    "no": "Noreg",
+    "ch": "Sveis "
+  }
 }
