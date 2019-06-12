@@ -110,9 +110,10 @@
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link to let others try the game:",
     "closeDialog": "Close",
-    "header": "Can you beat my score?",
+    "header": "Can You Beat my Score?",
     "intro": "The goal of the game is to maximise the score in 2050. The score is calculated as the weighted average of the economic, social, and environmental scores.",
-    "MyScore": "My Score",
+    "myScore": "My score was",
+    "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
     "tooltipCopyText": "Copied to clipboard"
   }

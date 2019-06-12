@@ -5,6 +5,7 @@ import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { MapContainer } from './MapContainer/MapContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
+import { createListOfScenarios } from './../../../utils/ScoreUtilities'
 import { PropTypes } from 'prop-types'
 import {
   Container,
@@ -36,6 +37,11 @@ export const SharedPage = props => {
   const envWeight = props.sharedValues.env
   const scenario = props.sharedValues.scenario
 
+  const decisionRanks = createListOfScenarios(state.weights)
+  const score = decisionRanks.find(e => {
+    return e.scenario === state.selectedScenario
+  }).score
+  const optimalScore = decisionRanks[0].score
   useEffect(() => {
     dispatch({
       type: 'setStateToShared',
@@ -86,9 +92,11 @@ export const SharedPage = props => {
           <Header>{t('share.header')}</Header>
           <IntroText>{t('share.intro')}</IntroText>
           <TextContainer>
-            {t('share.MyScore') + ': ' + state.weightedScores.sum}
+            {t('share.myScore') + ' ' + score.toPrecision(3)}
           </TextContainer>
-
+          <TextContainer>
+            {t('share.optimalScore') + ' ' + optimalScore.toPrecision(3)}
+          </TextContainer>
           <Button>
             <LinkButton to={'/' + buildURL(ecoWeight, socWeight, envWeight)}>
               {t('share.tryGameButton')}
