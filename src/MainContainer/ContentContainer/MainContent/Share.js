@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Context from './../../../Context/Context'
 import {
   Container,

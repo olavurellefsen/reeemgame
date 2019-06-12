@@ -24,6 +24,7 @@
     "query-string": "^6.7.0",
     "react": "^16.8.6",
     "react-apollo": "^2.5.5",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
     "react-ga": "^2.5.7",
     "react-google-charts": "^3.0.13",
