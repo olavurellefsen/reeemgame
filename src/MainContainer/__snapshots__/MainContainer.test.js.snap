@@ -97,7 +97,7 @@ exports[`should render correctly 1`] = `
                   </div>
                 </span>
                 <span
-                  class="MuiTouchRipple-root-244"
+                  class="MuiTouchRipple-root-224"
                 />
               </button>
             </div>
@@ -152,7 +152,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-244"
+              class="MuiTouchRipple-root-224"
             />
           </li>
           <li
@@ -170,7 +170,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-244"
+              class="MuiTouchRipple-root-224"
             />
           </li>
         </ul>
@@ -224,184 +224,11 @@ exports[`should render correctly 1`] = `
                     Start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-244"
+                    class="MuiTouchRipple-root-224"
                   />
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-        <div
-          class="sc-hSdWYo erIQEx"
-        >
-          <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-jWBwVP fDrbnp"
-          >
-            <h1
-              class="sc-eHgmQL kqKptM"
-            >
-              Goal
-            </h1>
-            <div
-              class="sc-cvbbAY hrpUhG"
-            >
-              Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.
-            </div>
-            <div
-              class="sc-cvbbAY hrpUhG"
-            >
-              Decisions taken 
-              C0T0E0
-            </div>
-            <div
-              class="sc-cvbbAY hrpUhG"
-            />
-            <table
-              class="MuiTable-root-197 sc-brqgnP SqPLV"
-            >
-              <thead
-                class="MuiTableHead-root-198 sc-jDwBTQ dWtMUn"
-              >
-                <tr
-                  class="MuiTableRow-root-199 MuiTableRow-head-202 sc-gPEVay eQYmiW"
-                >
-                  <th
-                    class="MuiTableCell-root-204 MuiTableCell-head-205 sc-jAaTju fNCBho"
-                    scope="col"
-                  />
-                  <th
-                    class="MuiTableCell-root-204 MuiTableCell-head-205 sc-jAaTju fNCBho"
-                    scope="col"
-                  >
-                    Decision made
-                  </th>
-                  <th
-                    class="MuiTableCell-root-204 MuiTableCell-head-205 sc-jAaTju fNCBho"
-                    scope="col"
-                  >
-                    Optimal decision
-                  </th>
-                </tr>
-              </thead>
-              <tbody
-                class="MuiTableBody-root-216 sc-cMljjf eTbdzc"
-              >
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Should there be extra financial incentives for research and development of renewable/carbon free technologies?
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Yes
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    No
-                  </td>
-                </tr>
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Which restrictions are you willing to set in order to reach your emission target?
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Low reduction rate – EU ETS cap
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    High reduction rate - Zero emissions in 2040
-                  </td>
-                </tr>
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    'Do you want to implement the 10-year network development plan on transboundary grid capacity?
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Yes
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    No
-                  </td>
-                </tr>
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Do you want to keep your emission reduction rate for the next 10 years or change it?
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Low reduction rate – EU ETS cap
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Low reduction rate – EU ETS cap
-                  </td>
-                </tr>
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Do you want to keep your emission reduction rate for the next 10 years or change it?
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    High reduction rate - Zero emissions in 2040
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    High reduction rate - Zero emissions in 2040
-                  </td>
-                </tr>
-                <tr
-                  class="MuiTableRow-root-199 sc-gPEVay eQYmiW"
-                >
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    Total score based on the weights
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    4.622580645161291
-                  </td>
-                  <td
-                    class="MuiTableCell-root-204 MuiTableCell-body-206 sc-jAaTju fNCBho"
-                  >
-                    5.790322580645162
-                  </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
@@ -416,12 +243,12 @@ exports[`should render correctly 1`] = `
             class="sc-frDJqD fljNon"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-217 MuiFab-sizeSmall-225"
+              class="MuiButtonBase-root-124 MuiFab-root-197 MuiFab-sizeSmall-205"
               tabindex="0"
               type="button"
             >
               <span
-                class="MuiFab-label-218"
+                class="MuiFab-label-198"
               >
                 <svg
                   aria-hidden="true"
@@ -440,7 +267,7 @@ exports[`should render correctly 1`] = `
                 </svg>
               </span>
               <span
-                class="MuiTouchRipple-root-244"
+                class="MuiTouchRipple-root-224"
               />
             </button>
           </div>
@@ -516,28 +343,28 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-227 sc-hmzhuo eRtqMp"
+                class="MuiSlider-root-207 sc-hmzhuo eRtqMp"
                 role="slider"
               >
                 <div
-                  class="MuiSlider-container-228"
+                  class="MuiSlider-container-208"
                 >
                   <div
-                    class="MuiSlider-track-229 MuiSlider-trackBefore-230"
+                    class="MuiSlider-track-209 MuiSlider-trackBefore-210"
                     style="transform: translateY(-50%) scaleX(0.11428571428571428);"
                   />
                   <div
-                    class="MuiSlider-thumbWrapper-232"
+                    class="MuiSlider-thumbWrapper-212"
                     style="transform: translateX(11.428571428571429%);"
                   >
                     <button
-                      class="MuiButtonBase-root-124 MuiSlider-thumb-233"
+                      class="MuiButtonBase-root-124 MuiSlider-thumb-213"
                       tabindex="0"
                       type="button"
                     />
                   </div>
                   <div
-                    class="MuiSlider-track-229 MuiSlider-trackAfter-231"
+                    class="MuiSlider-track-209 MuiSlider-trackAfter-211"
                     style="transform: translateY(-50%) scaleX(0.8857142857142857);"
                   />
                 </div>
