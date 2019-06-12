@@ -18,14 +18,6 @@ const getDecisionsMade = scenario => {
   let ret_decisions = {}
   let decs = Decisions()
   let e = scenario.substring(5, 7)
-  /* alert(
-    'C: ' +
-      scenario.substring(1, 2) +
-      ' T: ' +
-      scenario.substring(3, 4) +
-      ' E: ' +
-      scenario.substring(5, 7)
-  ) */
   ret_decisions.dec1 = {}
   ret_decisions.dec1.name = decs[1].individualDecisions[0].introText
   if (scenario.substring(1, 2) === '0')
@@ -93,15 +85,11 @@ export const GoalSummary = () => {
   const [state] = useContext(Context)
   const { t } = useTranslation()
   let decisionsMade = getDecisionsMade(state.selectedScenario)
-  //alert('DecMade: ' + JSON.stringify(decisionsMade))
   let decisionRanks = createListOfScenarios(state.weights)
   let optimalScenario = getDecisionsMade(decisionRanks[0].scenario)
-  //alert('optSol: ' + JSON.stringify(decisionsMade))
   let score = decisionRanks.find(e => {
     return e.scenario === state.selectedScenario
   })
-  //let optimalDecision = createListOfScenarios(state.weights)[0].scenario
-  //alert('Score: ' + JSON.stringify(score))
   return (
     <React.Fragment>
       <StyledGrid
