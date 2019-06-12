@@ -6,7 +6,13 @@ import { MapContainer } from './MapContainer/MapContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 import { PropTypes } from 'prop-types'
-import { Container, TextContainer, LinkButton } from './SharedPage.style'
+import {
+  Container,
+  TextContainer,
+  LinkButton,
+  IntroText,
+  Header,
+} from './SharedPage.style'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import Context from './../../../Context/Context'
 
@@ -71,17 +77,24 @@ export const SharedPage = props => {
         sm={12}
         order={wide ? 2 : 1}
       >
-        <Container>
-          <TextContainer>Weight Eco: {ecoWeight}</TextContainer>
-          <TextContainer>Weight Soc: {socWeight}</TextContainer>
-          <TextContainer>Weight Env: {envWeight}</TextContainer>
-          <TextContainer>Score: {props.sharedValues.score}</TextContainer>
+        <StyledGrid
+          container
+          direction="column"
+          justify="space-between"
+          alignItems="flex-start"
+        >
+          <Header>{t('share.header')}</Header>
+          <IntroText>{t('share.intro')}</IntroText>
+          <TextContainer>
+            {t('share.MyScore') + ': ' + state.weightedScores.sum}
+          </TextContainer>
+
           <Button>
             <LinkButton to={'/' + buildURL(ecoWeight, socWeight, envWeight)}>
               {t('share.tryGameButton')}
             </LinkButton>
           </Button>
-        </Container>
+        </StyledGrid>
       </StyledGrid>
       <StyledGrid
         container

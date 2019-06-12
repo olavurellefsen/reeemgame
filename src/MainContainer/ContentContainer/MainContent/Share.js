@@ -16,9 +16,6 @@ import {
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
-import DialogContentText from '@material-ui/core/DialogContentText'
-import DialogTitle from '@material-ui/core/DialogTitle'
-import Button from '@material-ui/core/Button'
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share'
 import { Link } from '@material-ui/icons'
 import {
@@ -46,8 +43,8 @@ export const Share = () => {
   }
   const buildURL = () => {
     return (
-      window.location.href +
-      'shared?' +
+      window.location.origin +
+      '/shared?' +
       'scenario=' +
       state.selectedScenario +
       '&eco=' +
@@ -55,9 +52,7 @@ export const Share = () => {
       '&soc=' +
       state.weights.soc +
       '&env=' +
-      state.weights.env +
-      '&score=' +
-      state.weightedScores.sum
+      state.weights.env
     )
   }
   return (

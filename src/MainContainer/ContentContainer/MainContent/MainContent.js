@@ -22,13 +22,16 @@ export const MainContent = props => {
   useEffect(() => {
     if (props.weights.eco && props.weights.soc && props.weights.env) {
       dispatch({
+        type: 'reset',
+      })
+      dispatch({
         type: 'setWeights',
         eco: props.weights.eco,
         soc: props.weights.soc,
         env: props.weights.env,
       })
     }
-  })
+  }, [dispatch, props.weights.eco, props.weights.env, props.weights.soc])
   const wide = useMediaQuery('(min-width:960px)')
   return (
     <Grid

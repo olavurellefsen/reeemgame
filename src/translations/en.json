@@ -109,6 +109,9 @@
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link:",
-    "closeDialog": "Close"
+    "closeDialog": "Close",
+    "header": "This is ReeemGame",
+    "intro": "The goal of the game is to maximise the score in 2050. The score is calculated as the weighted average of the economic, social, and environmental scores.",
+    "MyScore": "My Score"
   }
 }
