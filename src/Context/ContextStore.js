@@ -75,6 +75,7 @@ const reducer = createReducer(initialState, {
   forwardToNextDecision: (state, action) => {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
+    let newScenario = state.selectedScenario
     if (nextDecision === 1) {
       //If game is starting
       newGameState = state.gameCycle[1]
@@ -88,16 +89,17 @@ const reducer = createReducer(initialState, {
       //If game is starting again
       nextDecision = 0
       newGameState = state.gameCycle[0]
+      newScenario = 'C0T0E0'
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
-    //alert("next")
     return {
       ...state,
       currentDecision: newYear,
       currentYear: getCurrentYear(state, newYear),
       maxYear: newMaxYear,
       gameState: newGameState,
+      selectedScenario: newScenario,
     }
   },
   setSelectedIndicator: (state, action) => ({

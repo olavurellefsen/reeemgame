@@ -15,6 +15,7 @@ import {
 export const DecisionForm = () => {
   const [choices, setChoice] = useState({})
   const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
+  const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
   const [state, dispatch] = useContext(Context)
   const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
@@ -25,36 +26,45 @@ export const DecisionForm = () => {
     dispatch({
       type: 'forwardToNextDecision',
     })
-    /* alert(
-      'choices: ' +
-        JSON.stringify('C' + scenario.c + 'E' + scenario.e + 'T' + scenario.t)
-    ) */
-    dispatch({
-      type: 'setSelectedScenario',
-      name: 'C' + scenario.c + 'T' + scenario.t + 'E' + scenario.e,
-    })
-
-    // Simple choice between E1 and E0 scenarios based on emission choice in 2020
     if (state.gameState === 'over') {
       //Reset weights when clicking "try again"
       dispatch({
         type: 'resetWeights',
         toggle: true,
       })
-    } else if (state.gameState === 'start') {
+    }
+    if (state.gameState === 'start') {
       //Set indicator to emission limit when the game starts
       dispatch({
-        type: 'setSelectedIndicator',
         name: 'emissionLimit',
+        type: 'setSelectedIndicator',
+      })
+      setNewScenario({ c: 0, e: 0, t: 0 })
+      setScenario({ c: 0, e: 0, t: 0 })
+      dispatch({
+        type: 'setSelectedScenario',
+        name: 'C0T0E0',
+      })
+    } else {
+      let nextScenario = {}
+      nextScenario.c = newScenario.c + scenario.c
+      nextScenario.t = newScenario.t + scenario.t
+      nextScenario.e = newScenario.e + scenario.e
+
+      setScenario(nextScenario)
+      setNewScenario({ c: 0, e: 0, t: 0 })
+      dispatch({
+        type: 'setSelectedScenario',
+        name:
+          'C' + nextScenario.c + 'T' + nextScenario.t + 'E' + nextScenario.e,
       })
     }
     setChoice({})
   }
   const getNewScenario = add => {
-    let newScenario = scenario
-    if (add.C || add.C === 0) newScenario.c = scenario.c + add.C
-    else if (add.E || add.E === 0) newScenario.e = scenario.e + add.E
-    else if (add.T || add.T === 0) newScenario.t = scenario.t + add.T
+    if (add.C || add.C === 0) newScenario.c = add.C
+    else if (add.E || add.E === 0) newScenario.e = add.E
+    else if (add.T || add.T === 0) newScenario.t = add.T
     else alert('add: ' + JSON.stringify(add))
     return newScenario
   }
@@ -88,7 +98,7 @@ export const DecisionForm = () => {
                       ...choices,
                       [decision.name]: option.value,
                     })
-                    setScenario(getNewScenario(option.scenario))
+                    setNewScenario(getNewScenario(option.scenario))
                   }}
                 />
               ))}
