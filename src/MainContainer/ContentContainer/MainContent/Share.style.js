@@ -86,3 +86,16 @@ export const SocialMediaBtn = styled.div`
     cursor: pointer;
   }
 `
+export const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+export const CopyToClipboardBtn = styled.button`
+  display: flex;
+  background-color: #9dc3e6;
+  border: none;
+  :hover {
+    cursor: pointer;
+  }
+  border-radius: 3px;
+`

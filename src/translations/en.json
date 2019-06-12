@@ -108,10 +108,12 @@
   "share": {
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
-    "shareDialogText": "Share the following link:",
+    "shareDialogText": "Share the following link to let others try the game:",
     "closeDialog": "Close",
-    "header": "This is ReeemGame",
+    "header": "Can you beat my score?",
     "intro": "The goal of the game is to maximise the score in 2050. The score is calculated as the weighted average of the economic, social, and environmental scores.",
-    "MyScore": "My Score"
+    "MyScore": "My Score",
+    "copyToClipboard": "Copy",
+    "tooltipCopyText": "Copied to clipboard"
   }
 }

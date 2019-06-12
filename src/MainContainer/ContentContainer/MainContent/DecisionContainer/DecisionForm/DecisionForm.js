@@ -106,7 +106,7 @@ export const DecisionForm = () => {
           >
             {currentDecisions.submitText}
           </StyledButton>
-          {state.gameState === 'over' && <Share />}
+          {state.gameState !== 'over' && <Share />}
         </StyledGrid>
       </form>
     </StyledGrid>

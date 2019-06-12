@@ -13,12 +13,16 @@ import {
   DialogButton,
   DialogContentContainer,
   SocialMediaBtn,
+  LinkContainer,
+  CopyToClipboardBtn,
 } from './Share.style'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share'
 import { Link } from '@material-ui/icons'
+import Tooltip from '@material-ui/core/Tooltip'
+import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -29,6 +33,7 @@ export const Share = () => {
   const [state] = useContext(Context)
   const [open, setOpen] = React.useState(false)
   const [dialogOpen, setDialogOpen] = React.useState(false)
+  const [tooltipOpen, setTooltipOpen] = React.useState(false)
   const { t } = useTranslation()
 
   function handleClick() {
@@ -41,6 +46,13 @@ export const Share = () => {
 
   function handleClickShareLink() {
     setDialogOpen(!dialogOpen)
+  }
+  function handleTooltipClose() {
+    setTooltipOpen(false)
+  }
+
+  function showTooltip() {
+    setTooltipOpen(true)
   }
   const buildURL = () => {
     return (
@@ -95,27 +107,46 @@ export const Share = () => {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogHeader id="alert-dialog-slide-title">
-          {t('share.dialogTitle')}
-        </DialogHeader>
-        <DialogContentContainer>
-          <DialogContent>
-            <DialogText id="alert-dialog-slide-description">
-              {t('share.shareDialogText')}
-            </DialogText>
-            <DialogTextField
-              autoFocus={false}
-              value={buildURL()}
-              variant="outlined"
-              readOnly={true}
-            />
-          </DialogContent>
-          <DialogActions>
-            <DialogButton onClick={handleClose} color="black">
-              {t('share.closeDialog')}
-            </DialogButton>
-          </DialogActions>
-        </DialogContentContainer>
+        <ClickAwayListener onClickAway={handleTooltipClose}>
+          <DialogHeader id="alert-dialog-slide-title">
+            {t('share.dialogTitle')}
+          </DialogHeader>
+          <DialogContentContainer>
+            <DialogContent>
+              <DialogText id="alert-dialog-slide-description">
+                {t('share.shareDialogText')}
+              </DialogText>
+              <LinkContainer>
+                <DialogTextField
+                  autoFocus={false}
+                  value={buildURL()}
+                  variant="outlined"
+                  readOnly={true}
+                />
+                <Tooltip
+                  title={t('share.tooltipCopyText')}
+                  placement="top"
+                  open={tooltipOpen}
+                >
+                  <CopyToClipboard
+                    text={buildURL()}
+                    onCopy={() => showTooltip()}
+                    onClose={handleTooltipClose}
+                  >
+                    <CopyToClipboardBtn color="black">
+                      {t('share.copyToClipboard')}
+                    </CopyToClipboardBtn>
+                  </CopyToClipboard>
+                </Tooltip>
+              </LinkContainer>
+            </DialogContent>
+            <DialogActions>
+              <DialogButton onClick={handleClose} color="black">
+                {t('share.closeDialog')}
+              </DialogButton>
+            </DialogActions>
+          </DialogContentContainer>
+        </ClickAwayListener>
       </Dialog>
     </Container>
   )
