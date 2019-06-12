@@ -47,6 +47,10 @@ export const TimelineContainer = () => {
   var prevYear = 2010
   const progressInstance = (
     <RowContainer>
+      <p>{'currentYear: ' + state.currentYear}</p>
+      <p>{'maxYear: ' + state.maxYear}</p>
+      <p>{'animationYear: ' + state.animationYear}</p>
+      <p>{'animationState: ' + state.animationState}</p>
       <PlayButton
         onStartPause={play}
         onFastForward={fastForward}

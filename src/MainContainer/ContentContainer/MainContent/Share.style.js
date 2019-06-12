@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import Button from '@material-ui/core/Button'
-import React from 'react'
 
 export const DialogHeader = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
@@ -45,37 +43,46 @@ export const DialogContentContainer = styled.div`
 export const Container = styled.div`
   display: flex;
   padding: 10px 0px;
+  align-items: center;
 `
 
 export const ShareButtonsContainer = styled.div`
   display: flex;
+  padding-left: 10px;
 `
 
 export const ShareButton = styled.div`
   display: flex;
-  background-color: blue;
+  background-color: #5683ce;
   color: white;
   padding: 15px 30px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 800;
-  border-radius: 5px;
+  border-radius: 3px;
   justify-content: center;
+  :hover {
+    cursor: pointer;
+  }
 `
 
 export const ShareLinkButton = styled.div`
   display: flex;
-  background-color: blue;
+  background-color: #5683ce;
   color: white;
-  padding: 3px;
-  margin: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 800;
   border-radius: 50%;
+  width: 32px;
+  height: 32px;
   justify-content: center;
+  align-items: center;
 `
 export const SocialMediaBtn = styled.div`
   display: flex;
   padding: 3px;
+  :hover {
+    cursor: pointer;
+  }
 `

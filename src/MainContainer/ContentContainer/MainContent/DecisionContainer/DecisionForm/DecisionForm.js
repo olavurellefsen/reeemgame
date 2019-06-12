@@ -41,6 +41,12 @@ export const DecisionForm = () => {
         type: 'resetWeights',
         toggle: true,
       })
+    } else if (state.gameState === 'start') {
+      //Set indicator to emission limit when the game starts
+      dispatch({
+        type: 'setSelectedIndicator',
+        name: 'emissionLimit',
+      })
     }
     setChoice({})
   }

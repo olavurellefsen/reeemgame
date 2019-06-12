@@ -20,6 +20,7 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import Button from '@material-ui/core/Button'
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share'
+import { Link } from '@material-ui/icons'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -46,7 +47,10 @@ export const Share = () => {
   const buildURL = () => {
     return (
       window.location.href +
-      'shared?eco=' +
+      'shared?' +
+      'scenario=' +
+      state.selectedScenario +
+      '&eco=' +
       state.weights.eco +
       '&soc=' +
       state.weights.soc +
@@ -81,7 +85,7 @@ export const Share = () => {
           </SocialMediaBtn>
           <SocialMediaBtn>
             <ShareLinkButton onClick={handleClickShareLink}>
-              Link
+              <Link />
             </ShareLinkButton>
           </SocialMediaBtn>
         </ShareButtonsContainer>
