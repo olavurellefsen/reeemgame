@@ -93,13 +93,15 @@ export const GoalSummary = () => {
   const [state] = useContext(Context)
   const { t } = useTranslation()
   let decisionsMade = getDecisionsMade(state.selectedScenario)
+  //alert('DecMade: ' + JSON.stringify(decisionsMade))
   let decisionRanks = createListOfScenarios(state.weights)
   let optimalScenario = getDecisionsMade(decisionRanks[0].scenario)
+  //alert('optSol: ' + JSON.stringify(decisionsMade))
   let score = decisionRanks.find(e => {
     return e.scenario === state.selectedScenario
   })
   //let optimalDecision = createListOfScenarios(state.weights)[0].scenario
-  /* alert('Score: ' + JSON.stringify(score)) */
+  //alert('Score: ' + JSON.stringify(score))
   return (
     <React.Fragment>
       <StyledGrid

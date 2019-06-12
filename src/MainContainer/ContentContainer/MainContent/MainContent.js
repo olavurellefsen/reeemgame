@@ -52,7 +52,8 @@ export const MainContent = () => {
         order={wide ? 2 : 1}
       >
         <DecisionContainer />
-        {state.gameState === 'over' ? <GoalContainer /> : null}
+        {/* {state.gameState === 'over' ? <GoalContainer /> : null} */}
+        <GoalContainer />
       </StyledGrid>
       <StyledGrid
         container
