@@ -8,7 +8,6 @@ import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMe
 import { createListOfScenarios } from './../../../utils/ScoreUtilities'
 import { PropTypes } from 'prop-types'
 import {
-  Container,
   TextContainer,
   LinkButton,
   IntroText,
