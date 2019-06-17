@@ -11,7 +11,7 @@ import {
   StyledGrid,
 } from './DecisionForm.style'
 
-export const DecisionForm = () => {
+export const DecisionForm = ({ onOpenStartModal }) => {
   const [choices, setChoice] = useState({})
   const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
   const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
@@ -26,6 +26,7 @@ export const DecisionForm = () => {
       type: 'forwardToNextDecision',
     })
     if (state.gameState === 'start') {
+      onOpenStartModal()
       setNewScenario({ c: 0, e: 0, t: 0 })
       setScenario({ c: 0, e: 0, t: 0 })
       dispatch({

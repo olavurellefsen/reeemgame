@@ -70,6 +70,18 @@
     "environmental": {
       "long": "Miljø",
       "short": "Miljø"
+    },
+    "score": {
+      "long": "Pointtal",
+      "short": "Point"
+    },
+    "optimal score": {
+      "long": "Optimal Pointtal",
+      "short": "Optimal Point"
+    },
+    "weights": {
+      "long": "Vægte",
+      "short": "Vægte"
     }
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Grid from '@material-ui/core/Grid'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
@@ -9,6 +9,7 @@ import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 import Context from '../../../Context/Context'
+import StartModal from './StartModal/StartModal'
 
 const StyledGrid = styled(Grid)`
   && {
@@ -19,6 +20,13 @@ const StyledGrid = styled(Grid)`
 export const MainContent = () => {
   const wide = useMediaQuery('(min-width:960px)')
   const [state] = useContext(Context)
+  const [startModal, setStartModal] = useState(false)
+  const onCloseStartModal = () => {
+    setStartModal(false)
+  }
+  const onOpenStartModal = () => {
+    setStartModal(true)
+  }
   return (
     <Grid
       container
@@ -51,8 +59,25 @@ export const MainContent = () => {
         sm={12}
         order={wide ? 2 : 1}
       >
-        <DecisionContainer />
-        {state.gameState === 'over' ? <GoalContainer /> : null}
+        <DecisionContainer
+          onOpenStartModal={onOpenStartModal}
+          weights={state.weights}
+        />
+        {state.gameState === 'over' ? (
+          <GoalContainer
+            selectedScenario={state.selectedScenario}
+            weights={state.weights}
+          />
+        ) : null}
+        <StartModal
+          open={startModal}
+          onClose={onCloseStartModal}
+          weights={state.weights}
+        />
+        {/* <GoalContainer
+          selectedScenario={state.selectedScenario}
+          weights={state.weights}
+        /> */}
       </StyledGrid>
       <StyledGrid
         container

@@ -36,7 +36,7 @@ export const CountryPopup = props => {
       : t('indicator.' + selectedIndicator)
 
   let tempScenario = selectedScenario
-  //TODO Important to change when real data has been added
+  //TODO Important to change when real data has been added Very Important
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
   return (

@@ -27,7 +27,7 @@ const initialState = {
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
   selectedIndicator: 'emissionLimit',
   selectedScenario: 'C0T0E0',
-  weights: { eco: 20, env: 30, soc: 50 },
+  weights: {},
   scores: { eco: 300, env: 500, soc: 200 },
   weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
   animationState: 'paused',
@@ -54,16 +54,19 @@ const getNewWeightedScores = (weights, scores) => {
   ret = { eco: wEco, env: wEnv, soc: wSoc, sum: wEco + wEnv + wSoc }
   return ret
 }
+
 const saveScore = state => {
-  let oldScores = JSON.parse(localStorage.getItem('score'))
+  let oldScores = JSON.parse(localStorage.getItem('score3'))
   if (!oldScores) oldScores = []
   let d = new Date()
   let score = {
     date: d.toDateString(),
     weightedScores: state.weightedScores,
+    weights: state.weights,
+    scenario: state.selectedScenario,
   }
   oldScores.push(score)
-  localStorage.setItem('score', JSON.stringify(oldScores))
+  localStorage.setItem('score3', JSON.stringify(oldScores))
 }
 const getCurrentYear = (state, newYear) => {
   return state.animationState === 'paused'
@@ -76,6 +79,8 @@ const reducer = createReducer(initialState, {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
     let newScenario = state.selectedScenario
+    let newWeights = state.weights
+    alert('nextDecision: ' + nextDecision)
     if (nextDecision === 1) {
       //If game is starting
       newGameState = state.gameCycle[1]
@@ -90,6 +95,7 @@ const reducer = createReducer(initialState, {
       nextDecision = 0
       newGameState = state.gameCycle[0]
       newScenario = 'C0T0E0'
+      newWeights = {}
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
@@ -100,6 +106,7 @@ const reducer = createReducer(initialState, {
       maxYear: newMaxYear,
       gameState: newGameState,
       selectedScenario: newScenario,
+      weights: newWeights,
     }
   },
   setSelectedIndicator: (state, action) => ({

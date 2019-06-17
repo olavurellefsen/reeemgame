@@ -70,6 +70,18 @@
     "environmental": {
       "long": "Umhørvið",
       "short": "Umhv."
+    },
+    "score": {
+      "long": "Pointtal",
+      "short": "Point"
+    },
+    "optimal score": {
+      "long": "Optimal Pointtal",
+      "short": "Optimal Point"
+    },
+    "weights": {
+      "long": "Vekt",
+      "short": "Vekt"
     }
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",

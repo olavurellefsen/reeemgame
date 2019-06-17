@@ -13,6 +13,7 @@ import {
   StyledTableRow,
 } from './GoalSummary.style'
 import { createListOfScenarios } from '../../../../../utils/ScoreUtilities'
+import PropTypes from 'prop-types'
 
 const getDecisionsMade = scenario => {
   let ret_decisions = {}
@@ -81,14 +82,15 @@ const getDecisionsMade = scenario => {
   return ret_decisions
 }
 
-export const GoalSummary = () => {
-  const [state] = useContext(Context)
+export const GoalSummary = ({ selectedScenario, weights }) => {
+  //const [state] = useContext(Context)
   const { t } = useTranslation()
-  let decisionsMade = getDecisionsMade(state.selectedScenario)
-  let decisionRanks = createListOfScenarios(state.weights)
+  let decisionsMade = getDecisionsMade(selectedScenario)
+  let decisionRanks = createListOfScenarios(weights)
   let optimalScenario = getDecisionsMade(decisionRanks[0].scenario)
+  alert('decisions: ' + JSON.stringify(decisionRanks))
   let score = decisionRanks.find(e => {
-    return e.scenario === state.selectedScenario
+    return e.scenario === selectedScenario
   })
   return (
     <React.Fragment>
@@ -100,7 +102,6 @@ export const GoalSummary = () => {
       >
         <GoalHeader>{t('goal.title')}</GoalHeader>
         <IntroText>{t('goal.summary')}</IntroText>
-        <IntroText>Decisions taken {state.selectedScenario}</IntroText>
         <IntroText />
         <StyledTable>
           <StyledTableHead>
@@ -181,4 +182,9 @@ export const GoalSummary = () => {
       </StyledGrid> */}
     </React.Fragment>
   )
+}
+
+GoalSummary.propTypes = {
+  selectedScenario: PropTypes.string.isRequired,
+  weights: PropTypes.object.isRequired,
 }
