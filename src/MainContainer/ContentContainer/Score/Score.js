@@ -19,7 +19,6 @@ export const Score = () => {
   const [scoreChosen, setScoreChosen] = React.useState(null)
   const { t } = useTranslation()
   var scoreList = JSON.parse(localStorage.getItem('score3'))
-  alert('scoreList: ' + JSON.stringify(scoreList))
   function handleClose() {
     setAnchorEl(null)
     setAnchorPosition(null)
@@ -49,7 +48,6 @@ export const Score = () => {
   }
   const { height, width } = useWindowDimensions()
   function handleClick(event) {
-    //alert("Index: " + JSON.stringify( scoreList[event.target.parentNode.rowIndex]) + "   " + event.target.parentNode.rowIndex)
     setScoreChosen(scoreList[event.target.parentNode.rowIndex - 1])
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
@@ -59,12 +57,6 @@ export const Score = () => {
   }
   const open = Boolean(anchorEl)
   const id = open ? 'simple-popover' : null
-  const dataPie = [
-    ['Group', 'Percent'],
-    ['Economic', 11],
-    ['Social', 2],
-    ['Enviromental', 2],
-  ]
 
   return (
     <React.Fragment>
@@ -126,14 +118,6 @@ export const Score = () => {
         anchorPosition={anchorPosition}
         anchorReference={'anchorPosition'}
       >
-        {scoreChosen !== null
-          ? alert(
-              'ss: ' +
-                scoreChosen.selectedScenario +
-                '  w: ' +
-                JSON.stringify(scoreChosen.weights)
-            )
-          : null}
         {scoreChosen !== null ? (
           <GoalSummary
             selectedScenario={scoreChosen.scenario}

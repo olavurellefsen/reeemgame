@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import Context from './../../../../../Context/Context'
 import { Decisions } from './../../DecisionContainer/DecisionForm/Decisions'
 import {
   GoalHeader,
@@ -88,7 +87,6 @@ export const GoalSummary = ({ selectedScenario, weights }) => {
   let decisionsMade = getDecisionsMade(selectedScenario)
   let decisionRanks = createListOfScenarios(weights)
   let optimalScenario = getDecisionsMade(decisionRanks[0].scenario)
-  alert('decisions: ' + JSON.stringify(decisionRanks))
   let score = decisionRanks.find(e => {
     return e.scenario === selectedScenario
   })

@@ -80,7 +80,6 @@ const reducer = createReducer(initialState, {
     let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
     let newScenario = state.selectedScenario
     let newWeights = state.weights
-    alert('nextDecision: ' + nextDecision)
     if (nextDecision === 1) {
       //If game is starting
       newGameState = state.gameCycle[1]
