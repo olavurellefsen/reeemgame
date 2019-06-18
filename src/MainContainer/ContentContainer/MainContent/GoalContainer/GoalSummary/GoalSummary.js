@@ -21,61 +21,49 @@ const getDecisionsMade = scenario => {
   ret_decisions.dec1 = {}
   ret_decisions.dec1.name = decs[1].individualDecisions[0].introText
   if (scenario.substring(1, 2) === '0')
-    ret_decisions.dec1.decision =
-      decs[1].individualDecisions[0].options[0].value
+    ret_decisions.dec1.decision = decs[1].individualDecisions[0].options[0].text
   else
-    ret_decisions.dec1.decision =
-      decs[1].individualDecisions[0].options[1].value
+    ret_decisions.dec1.decision = decs[1].individualDecisions[0].options[1].text
 
   ret_decisions.dec2 = {}
   ret_decisions.dec2.name = decs[1].individualDecisions[1].introText
 
   if (scenario.substring(5, 7) < 9)
-    ret_decisions.dec2.decision =
-      decs[1].individualDecisions[1].options[0].value
+    ret_decisions.dec2.decision = decs[1].individualDecisions[1].options[0].text
   else if (scenario.substring(5, 7) >= 9 && scenario.substring(5, 7) < 17) {
     ret_decisions.dec2.decision =
-      decs[1].individualDecisions[1].options[1].value
+      decs[1].individualDecisions[1].options[1].valtextue
     e = -9
   } else {
-    ret_decisions.dec2.decision =
-      decs[1].individualDecisions[1].options[2].value
+    ret_decisions.dec2.decision = decs[1].individualDecisions[1].options[2].text
     e = -18
   }
 
   ret_decisions.dec3 = {}
   ret_decisions.dec3.name = decs[2].individualDecisions[0].introText
   if (scenario.substring(3, 4) === '0')
-    ret_decisions.dec3.decision =
-      decs[2].individualDecisions[0].options[0].value
+    ret_decisions.dec3.decision = decs[2].individualDecisions[0].options[0].text
   else
-    ret_decisions.dec3.decision =
-      decs[2].individualDecisions[0].options[1].value
+    ret_decisions.dec3.decision = decs[2].individualDecisions[0].options[1].text
   ret_decisions.dec4 = {}
   ret_decisions.dec4.name = decs[2].individualDecisions[1].introText
   if (e < 3)
-    ret_decisions.dec4.decision =
-      decs[2].individualDecisions[1].options[0].value
+    ret_decisions.dec4.decision = decs[2].individualDecisions[1].options[0].text
   else if (e >= 3 && e < 6) {
-    ret_decisions.dec4.decision =
-      decs[2].individualDecisions[1].options[1].value
+    ret_decisions.dec4.decision = decs[2].individualDecisions[1].options[1].text
     e -= 3
   } else {
-    ret_decisions.dec4.decision =
-      decs[2].individualDecisions[1].options[2].value
+    ret_decisions.dec4.decision = decs[2].individualDecisions[1].options[2].text
     e -= 6
   }
   ret_decisions.dec5 = {}
   ret_decisions.dec5.name = decs[3].individualDecisions[0].introText
   if (e === 0)
-    ret_decisions.dec5.decision =
-      decs[3].individualDecisions[0].options[0].value
+    ret_decisions.dec5.decision = decs[3].individualDecisions[0].options[0].text
   else if (e === 1) {
-    ret_decisions.dec5.decision =
-      decs[3].individualDecisions[0].options[1].value
+    ret_decisions.dec5.decision = decs[3].individualDecisions[0].options[1].text
   } else {
-    ret_decisions.dec5.decision =
-      decs[3].individualDecisions[0].options[2].value
+    ret_decisions.dec5.decision = decs[3].individualDecisions[0].options[2].text
   }
 
   return ret_decisions
@@ -100,14 +88,18 @@ export const GoalSummary = () => {
       >
         <GoalHeader>{t('goal.title')}</GoalHeader>
         <IntroText>{t('goal.summary')}</IntroText>
-        <IntroText>Decisions taken {state.selectedScenario}</IntroText>
+        <IntroText>
+          {t('goalSummary.decisionsTaken') + ': ' + state.selectedScenario}
+        </IntroText>
         <IntroText />
         <StyledTable>
           <StyledTableHead>
             <StyledTableRow>
               <StyledTableCell />
-              <StyledTableCell>Decision made</StyledTableCell>
-              <StyledTableCell>Optimal decision</StyledTableCell>
+              <StyledTableCell>{t('goalSummary.decisionMade')}</StyledTableCell>
+              <StyledTableCell>
+                {t('goalSummary.optimalDecision')}
+              </StyledTableCell>
             </StyledTableRow>
           </StyledTableHead>
           <StyledTableBody>
@@ -137,9 +129,7 @@ export const GoalSummary = () => {
               <StyledTableCell>{optimalScenario.dec5.decision}</StyledTableCell>
             </StyledTableRow>
             <StyledTableRow>
-              <StyledTableCell>
-                Total score based on the weights
-              </StyledTableCell>
+              <StyledTableCell>{t('goalSummary.totalScore')}</StyledTableCell>
               <StyledTableCell>{score.score}</StyledTableCell>
               <StyledTableCell>{decisionRanks[0].score}</StyledTableCell>
             </StyledTableRow>

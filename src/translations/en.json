@@ -2,7 +2,8 @@
   "general": {
     "yes": "Yes",
     "no": "No",
-    "score": "Score"
+    "score": "Score",
+    "share": "Share"
   },
   "header": {
     "title": "game",
@@ -105,6 +106,7 @@
     "ch": "Switzerland"
   },
   "share": {
+    "share": "Share",
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link to let others try the game:",
@@ -114,10 +116,18 @@
     "myScore": "My score was",
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
-    "tooltipCopyText": "Copied to clipboard"
+    "tooltipCopyText": "Copied to clipboard",
+    "facebookQuote": "Can you beat my score?",
+    "twitterTitle": "Can you beat my score?"
   },
   "map": {
     "mwPerCapita": "MW per capita",
     "tons": "Tons"
+  },
+  "goalSummary": {
+    "decisionsTaken": "Decisions taken",
+    "decisionMade": "Decision made",
+    "optimalDecision": "Optimal decision",
+    "totalScore": "Total score based on the weights"
   }
 }

@@ -70,19 +70,22 @@ export const Share = () => {
   }
   return (
     <Container>
-      <ShareButton onClick={handleClick}>SHARE</ShareButton>
+      <ShareButton onClick={handleClick}>{t('share.share')}</ShareButton>
       {open && (
         <ShareButtonsContainer>
           <SocialMediaBtn>
             <FacebookShareButton
               url={buildURL()}
-              quote={'Can you beat my score?'}
+              quote={t('share.facebookQuote')}
             >
               <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
           </SocialMediaBtn>
           <SocialMediaBtn>
-            <TwitterShareButton url={buildURL()} title={'ReeemGame'}>
+            <TwitterShareButton
+              url={buildURL()}
+              title={t('share.twitterTitle')}
+            >
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
           </SocialMediaBtn>
