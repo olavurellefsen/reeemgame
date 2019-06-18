@@ -7,8 +7,7 @@
   "header": {
     "title": "game",
     "about": "About",
-    "score": "Score",
-    "share": "Share"
+    "score": "Score"
   },
   "goal": {
     "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
@@ -116,5 +115,17 @@
     "cy": "Cyprus",
     "no": "Norway",
     "ch": "Switzerland"
+  },
+  "share": {
+    "tryGameButton": "Beat my Score!",
+    "dialogTitle": "Share the Game",
+    "shareDialogText": "Share the following link to let others try the game:",
+    "closeDialog": "Close",
+    "header": "Can You Beat my Score?",
+    "intro": "The goal of the game is to maximise the score in 2050. The score is calculated as the weighted average of the economic, social, and environmental scores.",
+    "myScore": "My score was",
+    "optimalScore": "The optimal score is",
+    "copyToClipboard": "Copy",
+    "tooltipCopyText": "Copied to clipboard"
   }
 }

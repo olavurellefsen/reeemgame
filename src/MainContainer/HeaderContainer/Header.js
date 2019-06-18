@@ -46,7 +46,6 @@ export const Header = () => {
             <HeaderMenuItemLink to="/score">
               {t('header.score')}
             </HeaderMenuItemLink>
-            <HeaderMenuItemLink to="/">{t('header.share')}</HeaderMenuItemLink>
           </StyledGrid>
         </StyledGrid>
       </StyledGrid>
