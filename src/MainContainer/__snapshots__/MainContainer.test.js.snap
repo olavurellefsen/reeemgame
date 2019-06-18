@@ -173,13 +173,8 @@ exports[`should render correctly 1`] = `
         >
           <img
             alt="EU flag"
-<<<<<<< HEAD
             class="sc-iAyFgw DtLtk"
-            src="euflag.png"
-=======
-            class="sc-kpOJdX bKyEab"
             src="http://localhost/euflag.png"
->>>>>>> marita/ch538/enable-sharing-of-games-on-twitter-linkedin
           />
           <div
             class="sc-kkGfuU cmLGEP"
@@ -196,42 +191,24 @@ exports[`should render correctly 1`] = `
           class="sc-hSdWYo iaXeXB"
         >
           <div
-<<<<<<< HEAD
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-jDwBTQ dWtMUn"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-dVhcbM fghLuF"
           >
             <h1
-              class="sc-eHgmQL kqKptM"
-=======
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-gipzik iyhjGb"
-          >
-            <h1
-              class="sc-cMljjf hXWCab"
->>>>>>> marita/ch538/enable-sharing-of-games-on-twitter-linkedin
+              class="sc-Rmtcm fnzcKl"
             >
               Decide the future of Europe
             </h1>
             <div
-<<<<<<< HEAD
-              class="sc-cvbbAY hrpUhG"
-=======
-              class="sc-jAaTju laGRJH"
->>>>>>> marita/ch538/enable-sharing-of-games-on-twitter-linkedin
+              class="sc-bRBYWo cMvScP"
             >
               You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
-<<<<<<< HEAD
-                class="MuiGrid-item-2 sc-jDwBTQ dWtMUn"
+                class="MuiGrid-item-2 sc-dVhcbM fghLuF"
               >
                 <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-jWBwVP fGqCTh"
-=======
-                class="MuiGrid-item-2 sc-gipzik iyhjGb"
-              >
-                <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-jDwBTQ dulxzw"
->>>>>>> marita/ch538/enable-sharing-of-games-on-twitter-linkedin
+                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-hzDkRC ifqiVt"
                   tabindex="0"
                   type="submit"
                 >
@@ -360,11 +337,7 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-<<<<<<< HEAD
-                class="MuiSlider-root-223 sc-hmzhuo eRtqMp"
-=======
-                class="MuiSlider-root-207 sc-tilXH jMVAVb"
->>>>>>> marita/ch538/enable-sharing-of-games-on-twitter-linkedin
+                class="MuiSlider-root-223 sc-tilXH jMVAVb"
                 role="slider"
               >
                 <div
