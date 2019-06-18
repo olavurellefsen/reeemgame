@@ -109,5 +109,9 @@
     "dialogTitle": "Deil spælið",
     "shareDialogText": "Share the following link:",
     "closeDialog": "Lat aftur"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. íbúgva",
+    "tons": "Tons"
   }
 }

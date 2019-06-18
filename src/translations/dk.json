@@ -109,5 +109,9 @@
     "dialogTitle": "Del spillet",
     "shareDialogText": "Del følgende link:",
     "closeDialog": "Luk"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. indbygger",
+    "tons": "Tons"
   }
 }

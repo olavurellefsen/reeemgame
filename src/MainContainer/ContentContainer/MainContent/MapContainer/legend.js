@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   LegendStyle,
   LegendItemStyle,
@@ -12,6 +13,7 @@ import { PropTypes } from 'prop-types'
 import { convertToColor } from './convertToColor'
 
 export const Legend = ({ maxValue, minValue = 0, unit, title, size = 7 }) => {
+  const { t } = useTranslation()
   var legendItemContent = []
   const createContent = size => {
     for (let i = 0; i < size; i++) {
@@ -21,11 +23,15 @@ export const Legend = ({ maxValue, minValue = 0, unit, title, size = 7 }) => {
     }
   }
   createContent(size)
+  let unitText
+  if (unit === 'MW per capita') unitText = t('map.mwPerCapita')
+  else if (unit === 'Tons') unitText = t('map.tons')
+  else if (unit === 'Score') unitText = t('general.score')
   return (
     <LegendStyle>
       <LegendRow>
         <LegendUnit>
-          <LegendUnitText>{unit}</LegendUnitText>
+          <LegendUnitText>{unitText}</LegendUnitText>
         </LegendUnit>
         <LegendColumn>
           {legendItemContent.map((e, i) => (

@@ -31,7 +31,7 @@
     },
     "2030": {
       "header": "Decisions in 2030",
-      "transmissionDecision": "'Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
     },
     "2040": {
       "header": "Decisions in 2040"
@@ -115,5 +115,9 @@
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
     "tooltipCopyText": "Copied to clipboard"
+  },
+  "map": {
+    "mwPerCapita": "MW per capita",
+    "tons": "Tons"
   }
 }
