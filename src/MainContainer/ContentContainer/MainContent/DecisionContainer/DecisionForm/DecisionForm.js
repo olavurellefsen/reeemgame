@@ -25,15 +25,19 @@ export const DecisionForm = ({ onOpenStartModal }) => {
   const handleSubmit = e => {
     e.preventDefault()
     dispatch({
+      type: 'resetWeights',
+      toggle: true,
+    })
+    dispatch({
       type: 'forwardToNextDecision',
     })
-    if (state.gameState === 'over') {
+    /* if (state.gameState === 'over') {
       //Reset weights when clicking "try again"
       dispatch({
         type: 'resetWeights',
         toggle: true,
       })
-    }
+    } */
     if (state.gameState === 'start') {
       onOpenStartModal()
       //Set indicator to emission limit when the game starts
