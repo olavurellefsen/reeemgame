@@ -64,7 +64,7 @@ export const MapContainer = () => {
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
   const mapColors = getMapColors(
-    state.gameState === 'over' ? 'score' : state.selectedIndicator,
+    state.selectedIndicator,
     tempScenario,
     currentYear
   )
@@ -106,6 +106,7 @@ export const MapContainer = () => {
             minValue={lp.min}
             size={lp.steps}
             unit={lp.unit}
+            flipColors={lp.flipColors}
           />
         ) : null}
         <IndicatorInfo
@@ -120,6 +121,15 @@ export const MapContainer = () => {
 }
 
 const getLegendPara = indicator => {
+  if (indicator === 'score') {
+    return {
+      unit: 'score',
+      max: 10,
+      min: 0,
+      steps: 5,
+      flipColors: true,
+    }
+  }
   if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
   else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
   return {
@@ -142,7 +152,7 @@ const hasData = (country, indicator, selectedScenario, gameState) => {
     )
   }
 
-  if (indicator === 'emissionLimit' || gameState === 'over') {
+  if (indicator === 'emissionLimit' || indicator === 'score') {
     data = eunochCountries.find(element => element.code === country)
   }
   return data ? true : false

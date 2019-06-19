@@ -117,9 +117,28 @@
     "ch": "Schweiz "
   },
   "share": {
+    "share": "Del",
     "tryGameButton": "Slå min score!",
     "dialogTitle": "Del spillet",
     "shareDialogText": "Del følgende link:",
-    "closeDialog": "Luk"
+    "closeDialog": "Luk",
+    "header": "Kan du slå min score?",
+    "intro": "Formålet med spillet er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score.",
+    "myScore": "Min score var",
+    "optimalScore": "Den bedste score er",
+    "copyToClipboard": "Kopiér",
+    "tooltipCopyText": "Kopieret til udklipsholderen",
+    "facebookQuote": "Kan du slå min score?",
+    "twitterTitle": "Kan du slå min score?"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. indbygger",
+    "tons": "Tons"
+  },
+  "goalSummary": {
+    "decisionsTaken": "Beslutninger taget",
+    "decisionMade": "Din beslutning",
+    "optimalDecision": "Optimal beslutning",
+    "totalScore": "Samlet score baseret på vægtene"
   }
 }

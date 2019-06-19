@@ -9,7 +9,7 @@ export const IndicatorContainer = () => {
   const [state, dispatch] = useContext(Context)
   const { t } = useTranslation()
   const availableIndicators = ['electricityDemands', 'emissionLimit']
-
+  const scoreIndicator = 'score'
   return (
     <MenuList>
       {availableIndicators.map(function(indicator, i) {
@@ -33,6 +33,24 @@ export const IndicatorContainer = () => {
           </MenuItem>
         )
       })}
+      {state.gameState === 'over' && (
+        <MenuItem
+          key={'score'}
+          onClick={() => {
+            let newIndicator = scoreIndicator
+            if (scoreIndicator === state.selectedIndicator) {
+              newIndicator = null
+            }
+            dispatch({
+              type: 'setSelectedIndicator',
+              name: newIndicator,
+            })
+          }}
+          selected={scoreIndicator === state.selectedIndicator}
+        >
+          <ListItemText primary={t('general.score')} />
+        </MenuItem>
+      )}
     </MenuList>
   )
 }
