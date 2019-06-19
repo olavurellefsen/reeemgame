@@ -7,8 +7,7 @@
   "header": {
     "title": "game",
     "about": "Om",
-    "score": "Score",
-    "share": "Del"
+    "score": "Score"
   },
   "goal": {
     "summary": "Dit mål er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score, som kan ses nedenfor.",
@@ -104,5 +103,11 @@
     "cy": "Cypern",
     "no": "Norge",
     "ch": "Schweiz "
+  },
+  "share": {
+    "tryGameButton": "Slå min score!",
+    "dialogTitle": "Del spillet",
+    "shareDialogText": "Del følgende link:",
+    "closeDialog": "Luk"
   }
 }

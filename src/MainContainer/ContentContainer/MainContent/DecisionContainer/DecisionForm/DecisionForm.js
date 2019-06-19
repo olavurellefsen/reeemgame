@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import Context from '../../../../../Context/Context'
 import { Decisions } from './Decisions'
+import { Share } from '../../Share'
 import {
   DecisionHeader,
   IntroText,
@@ -25,13 +26,21 @@ export const DecisionForm = () => {
     dispatch({
       type: 'forwardToNextDecision',
     })
-    if (state.gameState === 'start') {
-      setNewScenario({ c: 0, e: 0, t: 0 })
-      setScenario({ c: 0, e: 0, t: 0 })
+    if (state.gameState === 'over') {
+      //Reset weights when clicking "try again"
       dispatch({
         type: 'resetWeights',
         toggle: true,
       })
+    }
+    if (state.gameState === 'start') {
+      //Set indicator to emission limit when the game starts
+      dispatch({
+        name: 'emissionLimit',
+        type: 'setSelectedIndicator',
+      })
+      setNewScenario({ c: 0, e: 0, t: 0 })
+      setScenario({ c: 0, e: 0, t: 0 })
       dispatch({
         type: 'setSelectedScenario',
         name: 'C0T0E0',
@@ -107,6 +116,7 @@ export const DecisionForm = () => {
           >
             {currentDecisions.submitText}
           </StyledButton>
+          {state.gameState === 'over' && <Share />}
         </StyledGrid>
       </form>
     </StyledGrid>

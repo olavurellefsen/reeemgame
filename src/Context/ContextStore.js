@@ -25,7 +25,7 @@ const initialState = {
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
   maxYears: [2020, 2020, 2030, 2040, 2050],
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
-  selectedIndicator: 'emissionLimit',
+  selectedIndicator: null,
   selectedScenario: 'C0T0E0',
   weights: { eco: 20, env: 30, soc: 50 },
   scores: { eco: 300, env: 500, soc: 200 },
@@ -138,6 +138,22 @@ const reducer = createReducer(initialState, {
       env: action.env,
       soc: action.soc,
     }),
+  }),
+  setWeights: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
+  }),
+  setStateToShared: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
+    weightedScores: getNewWeightedScores(
+      { eco: action.eco, env: action.env, soc: action.soc },
+      state.scores
+    ),
+    currentYear: state.maxYears[state.maxYears.length - 1],
+    maxYear: state.maxYears[state.maxYears.length - 1],
+    gameState: state.gameCycle[state.gameCycle.length - 1],
+    selectedScenario: action.scenario,
   }),
 })
 

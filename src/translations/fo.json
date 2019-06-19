@@ -7,8 +7,7 @@
   "header": {
     "title": "game",
     "about": "Um",
-    "score": "Stigatalva",
-    "share": "Deil"
+    "score": "Stigatalva"
   },
   "goal": {
     "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
@@ -104,5 +103,11 @@
     "cy": "Kýpros",
     "no": "Noreg",
     "ch": "Sveis "
+  },
+  "share": {
+    "tryGameButton": "Beat my Score!",
+    "dialogTitle": "Deil spælið",
+    "shareDialogText": "Share the following link:",
+    "closeDialog": "Lat aftur"
   }
 }

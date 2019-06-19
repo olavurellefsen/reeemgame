@@ -116,12 +116,6 @@ exports[`should render correctly 1`] = `
             >
               Score
             </a>
-            <a
-              class="sc-ifAKCX dvSEDi"
-              href="/"
-            >
-              Share
-            </a>
           </div>
         </div>
       </div>
@@ -130,7 +124,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-hqyNC ioTPZa"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-cIShpX jgvmtV"
         order="3"
       >
         <ul
@@ -140,7 +134,7 @@ exports[`should render correctly 1`] = `
           <li
             class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
             role="menuitem"
-            tabindex="-1"
+            tabindex="0"
           >
             <div
               class="MuiListItemText-root-155"
@@ -156,9 +150,9 @@ exports[`should render correctly 1`] = `
             />
           </li>
           <li
-            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiListItem-selected-154 MuiMenuItem-root-140 MuiMenuItem-selected-142 MuiMenuItem-gutters-141"
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
             role="menuitem"
-            tabindex="0"
+            tabindex="-1"
           >
             <div
               class="MuiListItemText-root-155"
@@ -180,7 +174,7 @@ exports[`should render correctly 1`] = `
           <img
             alt="EU flag"
             class="sc-kpOJdX bKyEab"
-            src="euflag.png"
+            src="http://localhost/euflag.png"
           />
           <div
             class="sc-kGXeez bSOFkI"
@@ -190,31 +184,31 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-hqyNC gFZEHz"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-cIShpX kTxrdv"
         order="1"
       >
         <div
           class="sc-dxgOiQ iPJQCN"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-iAyFgw gPlgsX"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-gipzik iyhjGb"
           >
             <h1
-              class="sc-ckVGcZ cvlZK"
+              class="sc-cMljjf hXWCab"
             >
               Decide the future of Europe
             </h1>
             <div
-              class="sc-jKJlTe kMdWBA"
+              class="sc-jAaTju laGRJH"
             >
               You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
-                class="MuiGrid-item-2 sc-iAyFgw gPlgsX"
+                class="MuiGrid-item-2 sc-gipzik iyhjGb"
               >
                 <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-eNQAEJ fAvjrs"
+                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-jDwBTQ dulxzw"
                   tabindex="0"
                   type="submit"
                 >
@@ -233,14 +227,14 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-hqyNC cnMmcU"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-cIShpX hSPYGD"
         order="2"
       >
         <div
-          class="sc-TOsTZ hFlXIC"
+          class="sc-bbmXgH kxQSVL"
         >
           <div
-            class="sc-frDJqD fljNon"
+            class="sc-hEsumM ieqihn"
           >
             <button
               class="MuiButtonBase-root-124 MuiFab-root-197 MuiFab-sizeSmall-205"
@@ -272,62 +266,62 @@ exports[`should render correctly 1`] = `
             </button>
           </div>
           <div
-            class="sc-cHGsZl iAqkjF"
+            class="sc-uJMKN jBnEeJ"
           >
             <div
-              class="sc-kgAjT euNBiH"
+              class="sc-gGBfsJ fErQVd"
             >
               <div
-                class="sc-cJSrbW kPREkE"
+                class="sc-jnlKLf gpcFJT"
                 max="2050"
                 min="2015"
               >
                 2015
               </div>
               <div
-                class="sc-cJSrbW kPREkE"
+                class="sc-jnlKLf gpcFJT"
                 max="2050"
                 min="2015"
               >
                 2020
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
                 2025
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
                 2030
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
                 2035
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
                 2040
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
                 2045
               </div>
               <div
-                class="sc-cJSrbW eitjpK"
+                class="sc-jnlKLf laOJxc"
                 max="2050"
                 min="2015"
               >
@@ -335,7 +329,7 @@ exports[`should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-ksYbfQ hxKcHV"
+              class="sc-fYxtnH iWzCtA"
             >
               <div
                 aria-disabled="false"
@@ -343,7 +337,7 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-207 sc-hmzhuo eRtqMp"
+                class="MuiSlider-root-207 sc-tilXH jMVAVb"
                 role="slider"
               >
                 <div
@@ -373,80 +367,14 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-iRbamj cyutKX"
+          class="sc-fAjcbJ gSXBFL"
         >
           <div
-            class="sc-jlyJG fQGcyF"
+            class="sc-caSCKo irZajl"
           >
             <svg>
               europe.svg
             </svg>
-            <div
-              class="sc-gipzik ihGSHY"
-            >
-              <div
-                class="sc-bRBYWo caLiHr"
-              >
-                <div
-                  class="sc-jhAzac kXjtdO"
-                >
-                  <div
-                    class="sc-fBuWsC eulBug"
-                  >
-                    Tons
-                  </div>
-                </div>
-                <div
-                  class="sc-hzDkRC gVPzYn"
-                >
-                  <div
-                    class="sc-csuQGl jdUWRR"
-                  >
-                    900000
-                    <div
-                      class="sc-Rmtcm cUiTnH"
-                      color="#ff0000"
-                    />
-                  </div>
-                  <div
-                    class="sc-csuQGl jdUWRR"
-                  >
-                    700000
-                    <div
-                      class="sc-Rmtcm cFhWhb"
-                      color="#cf5500"
-                    />
-                  </div>
-                  <div
-                    class="sc-csuQGl jdUWRR"
-                  >
-                    500000
-                    <div
-                      class="sc-Rmtcm krglX"
-                      color="#a46a00"
-                    />
-                  </div>
-                  <div
-                    class="sc-csuQGl jdUWRR"
-                  >
-                    300000
-                    <div
-                      class="sc-Rmtcm liDfcm"
-                      color="#6b7900"
-                    />
-                  </div>
-                  <div
-                    class="sc-csuQGl jdUWRR"
-                  >
-                    100000
-                    <div
-                      class="sc-Rmtcm bgCJFR"
-                      color="#008000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

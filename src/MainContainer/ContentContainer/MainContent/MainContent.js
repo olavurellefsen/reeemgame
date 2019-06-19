@@ -1,5 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
+import { PropTypes } from 'prop-types'
 import Grid from '@material-ui/core/Grid'
+import Context from './../../../Context/Context'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { DecisionContainer } from './DecisionContainer/DecisionContainer'
@@ -8,7 +10,6 @@ import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
-import Context from '../../../Context/Context'
 
 const StyledGrid = styled(Grid)`
   && {
@@ -16,9 +17,22 @@ const StyledGrid = styled(Grid)`
   }
 `
 
-export const MainContent = () => {
+export const MainContent = props => {
+  const [state, dispatch] = useContext(Context)
+  useEffect(() => {
+    if (props.weights.eco && props.weights.soc && props.weights.env) {
+      dispatch({
+        type: 'reset',
+      })
+      dispatch({
+        type: 'setWeights',
+        eco: props.weights.eco,
+        soc: props.weights.soc,
+        env: props.weights.env,
+      })
+    }
+  }, [dispatch, props.weights.eco, props.weights.env, props.weights.soc])
   const wide = useMediaQuery('(min-width:960px)')
-  const [state] = useContext(Context)
   return (
     <Grid
       container
@@ -69,4 +83,7 @@ export const MainContent = () => {
       </StyledGrid>
     </Grid>
   )
+}
+MainContent.propTypes = {
+  weights: PropTypes.object,
 }
