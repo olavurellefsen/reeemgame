@@ -5,7 +5,7 @@ function generateScenarioList() {
   let scenarios = []
   for (var c = 0; c <= 1; c++) {
     for (var t = 0; t <= 1; t++) {
-      for (var e = 0; e <= 26; e++) {
+      for (var e = 0; e <= 7; e++) {
         scenarios.push('C' + c + 'T' + t + 'E' + e)
       }
     }
@@ -49,7 +49,7 @@ export function createListOfScenarios(weights) {
   //For each possible scenario
   for (var c = 0; c <= 1; c++) {
     for (var t = 0; t <= 1; t++) {
-      for (var e = 0; e <= 26; e++) {
+      for (var e = 0; e <= 7; e++) {
         const scenario = 'C' + c + 'T' + t + 'E' + e
         let listItem = { scenario: scenario }
         let score = 0

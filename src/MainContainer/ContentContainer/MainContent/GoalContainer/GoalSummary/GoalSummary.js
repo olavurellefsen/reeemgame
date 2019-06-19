@@ -17,7 +17,7 @@ import PropTypes from 'prop-types'
 const getDecisionsMade = scenario => {
   let ret_decisions = {}
   let decs = Decisions()
-  let e = scenario.substring(5, 7)
+  let e = parseInt(scenario.substring(5, 7))
   ret_decisions.dec1 = {}
   ret_decisions.dec1.name = decs[1].individualDecisions[0].introText
   if (scenario.substring(1, 2) === '0')
@@ -30,17 +30,17 @@ const getDecisionsMade = scenario => {
   ret_decisions.dec2 = {}
   ret_decisions.dec2.name = decs[1].individualDecisions[1].introText
 
-  if (scenario.substring(5, 7) < 9)
+  if (scenario.substring(5, 7) < 4)
     ret_decisions.dec2.decision =
       decs[1].individualDecisions[1].options[0].value
-  else if (scenario.substring(5, 7) >= 9 && scenario.substring(5, 7) < 17) {
+  else if (scenario.substring(5, 7) >= 4 && scenario.substring(5, 7) < 17) {
     ret_decisions.dec2.decision =
       decs[1].individualDecisions[1].options[1].value
-    e = -9
+    e -= 4
   } else {
     ret_decisions.dec2.decision =
       decs[1].individualDecisions[1].options[2].value
-    e = -18
+    e -= 18
   }
 
   ret_decisions.dec3 = {}
@@ -53,13 +53,13 @@ const getDecisionsMade = scenario => {
       decs[2].individualDecisions[0].options[1].value
   ret_decisions.dec4 = {}
   ret_decisions.dec4.name = decs[2].individualDecisions[1].introText
-  if (e < 3)
+  if (e < 2)
     ret_decisions.dec4.decision =
       decs[2].individualDecisions[1].options[0].value
-  else if (e >= 3 && e < 6) {
+  else if (e >= 2 && e < 6) {
     ret_decisions.dec4.decision =
       decs[2].individualDecisions[1].options[1].value
-    e -= 3
+    e -= 2
   } else {
     ret_decisions.dec4.decision =
       decs[2].individualDecisions[1].options[2].value
