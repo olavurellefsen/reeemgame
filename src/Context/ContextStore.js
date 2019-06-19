@@ -32,6 +32,7 @@ const initialState = {
   weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
   animationState: 'paused',
   animationYear: 2015,
+  listOfScenarioScores: [],
 }
 const getNewWeights = () => {
   var ret = {}
@@ -158,6 +159,10 @@ const reducer = createReducer(initialState, {
     maxYear: state.maxYears[state.maxYears.length - 1],
     gameState: state.gameCycle[state.gameCycle.length - 1],
     selectedScenario: action.scenario,
+  }),
+  setListOfScenarioScores: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
   }),
 })
 

@@ -105,9 +105,28 @@
     "ch": "Sveis "
   },
   "share": {
+    "share": "Deil",
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Deil spælið",
-    "shareDialogText": "Share the following link:",
-    "closeDialog": "Lat aftur"
+    "shareDialogText": "Avrita leinkið:",
+    "closeDialog": "Lat aftur",
+    "header": "Klárar tú at fáa fleiri stig enn eg?",
+    "intro": "Málið í spælinum er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið.",
+    "myScore": "Mítt úrslit",
+    "optimalScore": "Besta møguliga úrslitið",
+    "copyToClipboard": "Avrita",
+    "tooltipCopyText": "Avritað til klippiborðið",
+    "facebookQuote": "Klárar tú at fáa fleiri stig enn eg?",
+    "twitterTitle": "Klárar tú at fáa fleiri stig enn eg?"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. íbúgva",
+    "tons": "Tons"
+  },
+  "goalSummary": {
+    "decisionsTaken": "Tínar avgerðir",
+    "decisionMade": "Tín avgerð",
+    "optimalDecision": "Besta avgerð",
+    "totalScore": "Samlað stig grundað á vektirnar"
   }
 }
