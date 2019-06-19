@@ -77,6 +77,7 @@ const reducer = createReducer(initialState, {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
     let newScenario = state.selectedScenario
+    let indicator = state.selectedIndicator
     if (nextDecision === 1) {
       //If game is starting
       newGameState = state.gameCycle[1]
@@ -85,12 +86,14 @@ const reducer = createReducer(initialState, {
       //If game is over
       newGameState = state.gameCycle[state.gameCycle.length - 1]
       saveScore(state)
+      indicator = 'score'
     }
     if (nextDecision >= state.decisionCycle.length) {
       //If game is starting again
       nextDecision = 0
       newGameState = state.gameCycle[0]
       newScenario = 'C0T0E0'
+      indicator = 'emissionLimit'
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
@@ -101,6 +104,7 @@ const reducer = createReducer(initialState, {
       maxYear: newMaxYear,
       gameState: newGameState,
       selectedScenario: newScenario,
+      selectedIndicator: indicator,
     }
   },
   setSelectedIndicator: (state, action) => ({

@@ -31,7 +31,7 @@ export const CountryPopup = props => {
     sum: t('score.sum.short'),
   }
   const title =
-    state.gameState === 'over'
+    state.selectedIndicator === 'score'
       ? t('general.score')
       : t('indicator.' + selectedIndicator)
 
@@ -57,7 +57,7 @@ export const CountryPopup = props => {
         </Button>
       </Header>
       <Content>
-        {!(state.gameState === 'over') && (
+        {!(state.selectedIndicator === 'score') && (
           <Chart
             chartType="ColumnChart"
             width="500px"
@@ -77,7 +77,7 @@ export const CountryPopup = props => {
             }}
           />
         )}
-        {state.gameState === 'over' && (
+        {state.selectedIndicator === 'score' && (
           <Chart
             chartType="ColumnChart"
             width="500px"

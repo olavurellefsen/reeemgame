@@ -12,8 +12,16 @@ import {
 import { PropTypes } from 'prop-types'
 import { convertToColor } from './convertToColor'
 
-export const Legend = ({ maxValue, minValue = 0, unit, title, size = 7 }) => {
+export const Legend = ({
+  maxValue,
+  minValue = 0,
+  unit,
+  title,
+  size = 7,
+  flipColors = false,
+}) => {
   const { t } = useTranslation()
+
   var legendItemContent = []
   const createContent = size => {
     for (let i = 0; i < size; i++) {
@@ -37,7 +45,11 @@ export const Legend = ({ maxValue, minValue = 0, unit, title, size = 7 }) => {
           {legendItemContent.map((e, i) => (
             <LegendItem
               key={i}
-              color={convertToColor(e, minValue, maxValue)}
+              color={
+                flipColors
+                  ? convertToColor(maxValue - e, minValue, maxValue)
+                  : convertToColor(e, minValue, maxValue)
+              }
               text={Math.round(e)}
             />
           ))}
@@ -54,6 +66,7 @@ Legend.propTypes = {
   unit: PropTypes.string,
   title: PropTypes.string,
   precision: PropTypes.number,
+  flipColors: PropTypes.bool,
 }
 
 const LegendItem = ({ text, color }) => {

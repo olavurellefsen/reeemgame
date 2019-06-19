@@ -111,44 +111,46 @@ export const Share = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <ClickAwayListener onClickAway={handleTooltipClose}>
-          <DialogHeader id="alert-dialog-slide-title">
-            {t('share.dialogTitle')}
-          </DialogHeader>
-          <DialogContentContainer>
-            <DialogContent>
-              <DialogText id="alert-dialog-slide-description">
-                {t('share.shareDialogText')}
-              </DialogText>
-              <LinkContainer>
-                <DialogTextField
-                  autoFocus={false}
-                  value={buildURL()}
-                  variant="outlined"
-                  readOnly={true}
-                />
-                <Tooltip
-                  title={t('share.tooltipCopyText')}
-                  placement="top"
-                  open={tooltipOpen}
-                >
-                  <CopyToClipboard
-                    text={buildURL()}
-                    onCopy={() => showTooltip()}
-                    onClose={handleTooltipClose}
+          <React.Fragment>
+            <DialogHeader id="alert-dialog-slide-title">
+              {t('share.dialogTitle')}
+            </DialogHeader>
+            <DialogContentContainer>
+              <DialogContent>
+                <DialogText id="alert-dialog-slide-description">
+                  {t('share.shareDialogText')}
+                </DialogText>
+                <LinkContainer>
+                  <DialogTextField
+                    autoFocus={false}
+                    value={buildURL()}
+                    variant="outlined"
+                    readOnly={true}
+                  />
+                  <Tooltip
+                    title={t('share.tooltipCopyText')}
+                    placement="top"
+                    open={tooltipOpen}
                   >
-                    <CopyToClipboardBtn color="black">
-                      {t('share.copyToClipboard')}
-                    </CopyToClipboardBtn>
-                  </CopyToClipboard>
-                </Tooltip>
-              </LinkContainer>
-            </DialogContent>
-            <DialogActions>
-              <DialogButton onClick={handleClose} color="black">
-                {t('share.closeDialog')}
-              </DialogButton>
-            </DialogActions>
-          </DialogContentContainer>
+                    <CopyToClipboard
+                      text={buildURL()}
+                      onCopy={() => showTooltip()}
+                      onClose={handleTooltipClose}
+                    >
+                      <CopyToClipboardBtn color="black">
+                        {t('share.copyToClipboard')}
+                      </CopyToClipboardBtn>
+                    </CopyToClipboard>
+                  </Tooltip>
+                </LinkContainer>
+              </DialogContent>
+              <DialogActions>
+                <DialogButton onClick={handleClose} color="black">
+                  {t('share.closeDialog')}
+                </DialogButton>
+              </DialogActions>
+            </DialogContentContainer>
+          </React.Fragment>
         </ClickAwayListener>
       </Dialog>
     </Container>
