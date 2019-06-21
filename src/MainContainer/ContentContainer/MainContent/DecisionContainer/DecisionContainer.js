@@ -1,10 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
+import { PropTypes } from 'prop-types'
 import { Container } from './DecisionContainer.style'
 import { DecisionForm } from './DecisionForm/DecisionForm'
 import Chart from 'react-google-charts'
+import { useTranslation } from 'react-i18next'
 
 export const DecisionContainer = ({ onOpenStartModal, weights }) => {
+  const { t } = useTranslation()
   return (
     <Container>
       <DecisionForm onOpenStartModal={onOpenStartModal} />
@@ -13,9 +16,9 @@ export const DecisionContainer = ({ onOpenStartModal, weights }) => {
           chartType="PieChart"
           data={[
             ['Group', 'Percent'],
-            ['Economic', weights.eco],
-            ['Social', weights.soc],
-            ['Enviromental', weights.env],
+            [t('score.economic.long'), weights.eco],
+            [t('score.social.long'), weights.soc],
+            [t('score.environmental.long'), weights.env],
           ]}
           width={'280px'}
           height={'250px'}
@@ -26,4 +29,8 @@ export const DecisionContainer = ({ onOpenStartModal, weights }) => {
       ) : null}
     </Container>
   )
+}
+DecisionContainer.propTypes = {
+  weights: PropTypes.any,
+  onOpenStartModal: PropTypes.func,
 }
