@@ -82,27 +82,40 @@ export const Score = () => {
                     <StyledTableCell>{s.date}</StyledTableCell>
                     <StyledTableCell>{s.weightedScores.sum}</StyledTableCell>
                     <StyledTableCell>
-                      {JSON.stringify(s.weights)}
-                      <Chart
-                        chartType="PieChart"
-                        data={[
-                          ['Group', 'Percent'],
-                          ['Economic', s.weights.eco],
-                          ['Social', s.weights.soc],
-                          ['Enviromental', s.weights.env],
-                        ]}
-                        width={'80px'}
-                        height={'50px'}
-                        options={{
-                          chartArea: {
-                            left: '5%',
-                            top: '5%',
-                            width: '90%',
-                            height: '90%',
-                          },
-                          legend: { position: 'none' },
-                        }}
-                      />
+                      <div style={{ height: '50px', width: '80px' }}>
+                        <Chart
+                          chartType="PieChart"
+                          data={[
+                            [
+                              'Group',
+                              'Percent',
+                              {
+                                role: 'tooltip',
+                                type: 'string',
+                                p: { html: true },
+                              },
+                            ],
+                            ['Economic', s.weights.eco, 'aaa'],
+                            ['Social', s.weights.soc, 'bbb'],
+                            ['Enviromental', s.weights.env, 'ccc'],
+                          ]}
+                          width={'100%'}
+                          height={'100%'}
+                          options={{
+                            chartArea: {
+                              left: '5%',
+                              top: '5%',
+                              width: '90%',
+                              height: '90%',
+                            },
+                            legend: { position: 'none' },
+                            tooltip: { isHtml: true, trigger: 'visible' },
+
+                            //backgroundColor: '#E4E4E4',
+                            is3D: true,
+                          }}
+                        />
+                      </div>
                     </StyledTableCell>
                   </StyledTableRow>
                 ))
