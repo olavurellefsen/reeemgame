@@ -7,7 +7,7 @@ import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
 export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
   const style = {
     boxShadow: 'none',
-    padding: '5px',
+    margin: '2px',
   }
   return (
     <PlayButtonContainer>
@@ -28,5 +28,5 @@ export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
 PlayButton.propTypes = {
   onStartPause: PropTypes.func,
   onFastForward: PropTypes.func,
-  animationState: PropTypes.func,
+  animationState: PropTypes.string,
 }
