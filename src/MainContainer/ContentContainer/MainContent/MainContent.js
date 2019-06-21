@@ -27,9 +27,9 @@ export const MainContent = props => {
       })
       dispatch({
         type: 'setWeights',
-        eco: props.weights.eco,
-        soc: props.weights.soc,
-        env: props.weights.env,
+        eco: Number(props.weights.eco),
+        soc: Number(props.weights.soc),
+        env: Number(props.weights.env),
       })
     }
   }, [dispatch, props.weights.eco, props.weights.env, props.weights.soc])

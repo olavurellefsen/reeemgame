@@ -13,7 +13,7 @@ import {
   StyledGrid,
 } from './DecisionForm.style'
 
-export const DecisionForm = ({ onOpenStartModal }) => {
+export const DecisionForm = ({ onStart }) => {
   const [choices, setChoice] = useState({})
   const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
   const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
@@ -27,19 +27,21 @@ export const DecisionForm = ({ onOpenStartModal }) => {
     dispatch({
       type: 'forwardToNextDecision',
     })
-    /* if (state.gameState === 'over') {
+    if (state.gameState === 'over') {
       //Reset weights when clicking "try again"
       dispatch({
-        type: 'resetWeights',
-        toggle: true,
+        type: 'setWeights',
+        weights: {},
       })
-    } */
+    }
     if (state.gameState === 'start') {
-      dispatch({
-        type: 'resetWeights',
-        toggle: true,
-      })
-      onOpenStartModal()
+      if (!(state.weights.eco && state.weights.soc && state.weights.env)) {
+        dispatch({
+          type: 'resetWeights',
+          toggle: true,
+        })
+      }
+      onStart()
       //Set indicator to emission limit when the game starts
       dispatch({
         name: 'emissionLimit',
@@ -130,5 +132,5 @@ export const DecisionForm = ({ onOpenStartModal }) => {
 }
 
 DecisionForm.propTypes = {
-  onOpenStartModal: PropTypes.func.isRequired,
+  onStart: PropTypes.func.isRequired,
 }

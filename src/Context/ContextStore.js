@@ -97,7 +97,6 @@ const reducer = createReducer(initialState, {
       nextDecision = 0
       newGameState = state.gameCycle[0]
       newScenario = 'C0T0E0'
-      newWeights = {}
       indicator = 'emissionLimit'
     }
     const newYear = state.decisionCycle[nextDecision]
