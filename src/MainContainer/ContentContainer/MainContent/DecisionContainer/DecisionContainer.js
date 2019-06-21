@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react'
+import React, { useState } from 'react'
 import { PropTypes } from 'prop-types'
 import { Container } from './DecisionContainer.style'
 import { DecisionForm } from './DecisionForm/DecisionForm'
@@ -8,10 +8,16 @@ import { useTranslation } from 'react-i18next'
 
 export const DecisionContainer = ({ onOpenStartModal, weights }) => {
   const { t } = useTranslation()
+  const [showChart, setShowChart] = useState(false)
+
+  function onStart() {
+    setShowChart(true)
+    onOpenStartModal()
+  }
   return (
     <Container>
-      <DecisionForm onOpenStartModal={onOpenStartModal} />
-      {weights ? (
+      <DecisionForm onStart={onStart} />
+      {weights && showChart ? (
         <Chart
           chartType="PieChart"
           data={[
@@ -33,4 +39,5 @@ export const DecisionContainer = ({ onOpenStartModal, weights }) => {
 DecisionContainer.propTypes = {
   weights: PropTypes.any,
   onOpenStartModal: PropTypes.func,
+  showChart: PropTypes.bool,
 }
