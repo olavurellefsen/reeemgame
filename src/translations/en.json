@@ -2,8 +2,7 @@
   "general": {
     "yes": "Yes",
     "no": "No",
-    "score": "Score",
-    "share": "Share"
+    "score": "Score"
   },
   "header": {
     "title": "game",
@@ -11,7 +10,7 @@
     "score": "Score"
   },
   "goal": {
-    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
+    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores, which can be seen below.",
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
@@ -23,7 +22,7 @@
   "decisions": {
     "2019": {
       "header": "Decide the future of Europe",
-      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030 and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
     },
     "2020": {
       "header": "Decisions in 2020",
@@ -32,7 +31,7 @@
     },
     "2030": {
       "header": "Decisions in 2030",
-      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "transmissionDecision": "'Do you want to implement the 10-year network development plan on transboundary grid capacity?"
     },
     "2040": {
       "header": "Decisions in 2040"
@@ -106,7 +105,6 @@
     "ch": "Switzerland"
   },
   "share": {
-    "share": "Share",
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link to let others try the game:",
@@ -116,18 +114,6 @@
     "myScore": "My score was",
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
-    "tooltipCopyText": "Copied to clipboard",
-    "facebookQuote": "Can you beat my score?",
-    "twitterTitle": "Can you beat my score?"
-  },
-  "map": {
-    "mwPerCapita": "MW per capita",
-    "tons": "Tons"
-  },
-  "goalSummary": {
-    "decisionsTaken": "Decisions taken",
-    "decisionMade": "Decision made",
-    "optimalDecision": "Optimal decision",
-    "totalScore": "Total score based on the weights"
+    "tooltipCopyText": "Copied to clipboard"
   }
 }
