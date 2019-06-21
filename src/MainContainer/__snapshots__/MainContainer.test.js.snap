@@ -97,7 +97,7 @@ exports[`should render correctly 1`] = `
                   </div>
                 </span>
                 <span
-                  class="MuiTouchRipple-root-224"
+                  class="MuiTouchRipple-root-238"
                 />
               </button>
             </div>
@@ -146,7 +146,7 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-224"
+              class="MuiTouchRipple-root-238"
             />
           </li>
           <li
@@ -164,20 +164,20 @@ exports[`should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root-224"
+              class="MuiTouchRipple-root-238"
             />
           </li>
         </ul>
         <div
-          class="sc-kgoBCf kKsePX"
+          class="sc-kEYyzF bpvAHA"
         >
           <img
             alt="EU flag"
-            class="sc-kpOJdX bKyEab"
+            class="sc-iAyFgw DtLtk"
             src="http://localhost/euflag.png"
           />
           <div
-            class="sc-kGXeez bSOFkI"
+            class="sc-kkGfuU cmLGEP"
           >
             This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.
           </div>
@@ -188,27 +188,27 @@ exports[`should render correctly 1`] = `
         order="1"
       >
         <div
-          class="sc-dxgOiQ iPJQCN"
+          class="sc-hSdWYo iaXeXB"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-gipzik iyhjGb"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-dVhcbM fghLuF"
           >
             <h1
-              class="sc-cMljjf hXWCab"
+              class="sc-Rmtcm fnzcKl"
             >
               Decide the future of Europe
             </h1>
             <div
-              class="sc-jAaTju laGRJH"
+              class="sc-bRBYWo cMvScP"
             >
               You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
-                class="MuiGrid-item-2 sc-gipzik iyhjGb"
+                class="MuiGrid-item-2 sc-dVhcbM fghLuF"
               >
                 <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-jDwBTQ dulxzw"
+                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-hzDkRC ifqiVt"
                   tabindex="0"
                   type="submit"
                 >
@@ -218,7 +218,7 @@ exports[`should render correctly 1`] = `
                     Start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-224"
+                    class="MuiTouchRipple-root-238"
                   />
                 </button>
               </div>
@@ -237,12 +237,12 @@ exports[`should render correctly 1`] = `
             class="sc-hEsumM ieqihn"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-197 MuiFab-sizeSmall-205"
+              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221"
               tabindex="0"
               type="button"
             >
               <span
-                class="MuiFab-label-198"
+                class="MuiFab-label-214"
               >
                 <svg
                   aria-hidden="true"
@@ -261,7 +261,7 @@ exports[`should render correctly 1`] = `
                 </svg>
               </span>
               <span
-                class="MuiTouchRipple-root-224"
+                class="MuiTouchRipple-root-238"
               />
             </button>
           </div>
@@ -337,28 +337,28 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-207 sc-tilXH jMVAVb"
+                class="MuiSlider-root-223 sc-tilXH jMVAVb"
                 role="slider"
               >
                 <div
-                  class="MuiSlider-container-208"
+                  class="MuiSlider-container-224"
                 >
                   <div
-                    class="MuiSlider-track-209 MuiSlider-trackBefore-210"
+                    class="MuiSlider-track-225 MuiSlider-trackBefore-226"
                     style="transform: translateY(-50%) scaleX(0.11428571428571428);"
                   />
                   <div
-                    class="MuiSlider-thumbWrapper-212"
+                    class="MuiSlider-thumbWrapper-228"
                     style="transform: translateX(11.428571428571429%);"
                   >
                     <button
-                      class="MuiButtonBase-root-124 MuiSlider-thumb-213"
+                      class="MuiButtonBase-root-124 MuiSlider-thumb-229"
                       tabindex="0"
                       type="button"
                     />
                   </div>
                   <div
-                    class="MuiSlider-track-209 MuiSlider-trackAfter-211"
+                    class="MuiSlider-track-225 MuiSlider-trackAfter-227"
                     style="transform: translateY(-50%) scaleX(0.8857142857142857);"
                   />
                 </div>
