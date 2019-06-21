@@ -19,4 +19,12 @@ export const ButtonGroup = styled.div`
   flex-direction: column;
   align-self: center;
 `
+export const Button = styled.button`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: solid thin black;
+  background-color: transparent;
+  border-radius: 50%;
+`
 export const PlayPauseButton = styled.button``

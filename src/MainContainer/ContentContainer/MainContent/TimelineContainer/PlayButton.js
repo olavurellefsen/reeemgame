@@ -5,16 +5,20 @@ import { PlayButtonContainer, Text, ButtonGroup } from './PlayButton.style'
 import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
 
 export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
+  const style = {
+    boxShadow: 'none',
+    padding: '5px',
+  }
   return (
     <PlayButtonContainer>
-      <Button onClick={onStartPause} size="small">
+      <Button style={style} onClick={onStartPause} size="small">
         {animationState === 'paused' ? <PlayArrow /> : <Pause />}
       </Button>
 
       {animationState === 'paused' ? null : (
-        <Button onClick={onFastForward} size="small">
+        <Button style={style} onClick={onFastForward} size="small">
           <ButtonGroup>
-            <FastForward />
+            {animationState === 'fast' ? <PlayArrow /> : <FastForward />}
           </ButtonGroup>
         </Button>
       )}
