@@ -26,8 +26,8 @@
     },
     "2020": {
       "header": "Avgerðir í 2020",
-      "researchDecision": "Skal eykað fíggjarlig tilstuðlan verið til gransking og menning af varandi- / koltvíiltufríari tøkni?",
-      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
+      "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi- / koltvíiltufríari tøkni?",
+      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum málið innan útlát?"
     },
     "2030": {
       "header": "Avgerðir í 2030",
@@ -118,7 +118,7 @@
   },
   "share": {
     "share": "Deil",
-    "tryGameButton": "Beat my Score!",
+    "tryGameButton": "Slá míni stig!",
     "dialogTitle": "Deil spælið",
     "shareDialogText": "Avrita leinkið:",
     "closeDialog": "Lat aftur",
@@ -127,7 +127,7 @@
     "myScore": "Mítt úrslit",
     "optimalScore": "Besta møguliga úrslitið",
     "copyToClipboard": "Avrita",
-    "tooltipCopyText": "Avritað til klippiborðið",
+    "tooltipCopyText": "Avrita til klippiborðið",
     "facebookQuote": "Klárar tú at fáa fleiri stig enn eg?",
     "twitterTitle": "Klárar tú at fáa fleiri stig enn eg?"
   },
