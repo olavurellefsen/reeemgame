@@ -1,6 +1,6 @@
 <a name="about_en"></a>
 
-## About
+## About REEEMgame
 
 REEEMgame is part of the [REEEM project](http://www.reeem.org). The game
 is developed to disseminate the data behind the simplified Open-source
@@ -20,6 +20,6 @@ electricity transmission between European countries.
 
 REEEMgame features data about e.g. electricity demands and emission limits in Europe over time and the player can review the data in order to make good decisions.
 
-All partners within the REEEM project have contributed to the learning simulation by providing feedback throughout the development process and the game will be updated throughout the project.
+All partners within the REEEM project have contributed to the learning simulation by providing feedback throughout the development process.
 
 Source code for the REEEMgame: https://github.com/ReeemProject/reeemgame
