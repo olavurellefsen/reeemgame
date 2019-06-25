@@ -238,6 +238,7 @@ exports[`should render correctly 1`] = `
           >
             <button
               class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221"
+              style="box-shadow: none; margin: 2px;"
               tabindex="0"
               type="button"
             >
