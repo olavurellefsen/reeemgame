@@ -10,7 +10,7 @@
     "score": "Score"
   },
   "goal": {
-    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores,which can be seen below.",
+    "summary": "Your goal is to maximise the score in 2050. Your score is calculated as the weighted average of the economic, social, and environmental scores, which can be seen below.",
     "weight": "Weight",
     "weightedScore": "Weighted Score",
     "title": "Goal"
@@ -22,7 +22,7 @@
   "decisions": {
     "2019": {
       "header": "Decide the future of Europe",
-      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030 and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
     },
     "2020": {
       "header": "Decisions in 2020",
@@ -69,6 +69,18 @@
     "environmental": {
       "long": "Environmental",
       "short": "Env"
+    },
+    "score": {
+      "long": "Score",
+      "short": "Score"
+    },
+    "optimal score": {
+      "long": "Optimal Score",
+      "short": "Optimal Score"
+    },
+    "weights": {
+      "long": "Weights",
+      "short": "Weights"
     }
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",

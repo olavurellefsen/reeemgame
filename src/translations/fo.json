@@ -26,8 +26,8 @@
     },
     "2020": {
       "header": "Avgerðir í 2020",
-      "researchDecision": "Skal eykað fíggjarlig tilstuðlan verið til gransking og menning af varandi- / koltvíiltufríari tøkni?",
-      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
+      "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi- / koltvíiltufríari tøkni?",
+      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum málið innan útlát?"
     },
     "2030": {
       "header": "Avgerðir í 2030",
@@ -69,6 +69,18 @@
     "environmental": {
       "long": "Umhørvið",
       "short": "Umhv."
+    },
+    "score": {
+      "long": "Stig",
+      "short": "Stig"
+    },
+    "optimal score": {
+      "long": "Optimal Pointtal",
+      "short": "Optimal Point"
+    },
+    "weights": {
+      "long": "Vekt",
+      "short": "Vekt"
     }
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
@@ -105,9 +117,28 @@
     "ch": "Sveis "
   },
   "share": {
-    "tryGameButton": "Beat my Score!",
+    "share": "Deil",
+    "tryGameButton": "Slá míni stig!",
     "dialogTitle": "Deil spælið",
-    "shareDialogText": "Share the following link:",
-    "closeDialog": "Lat aftur"
+    "shareDialogText": "Avrita leinkið:",
+    "closeDialog": "Lat aftur",
+    "header": "Klárar tú at fáa fleiri stig enn eg?",
+    "intro": "Málið í spælinum er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið.",
+    "myScore": "Mítt úrslit",
+    "optimalScore": "Besta møguliga úrslitið",
+    "copyToClipboard": "Avrita",
+    "tooltipCopyText": "Avrita til klippiborðið",
+    "facebookQuote": "Klárar tú at fáa fleiri stig enn eg?",
+    "twitterTitle": "Klárar tú at fáa fleiri stig enn eg?"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. íbúgva",
+    "tons": "Tons"
+  },
+  "goalSummary": {
+    "decisionsTaken": "Tínar avgerðir",
+    "decisionMade": "Tín avgerð",
+    "optimalDecision": "Besta avgerð",
+    "totalScore": "Samlað stig grundað á vektirnar"
   }
 }

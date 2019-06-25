@@ -39,16 +39,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 9 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 18 },
+              scenario: { E: 4 },
             },
           ],
         },
@@ -85,16 +85,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 3 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 6 },
+              scenario: { E: 2 },
             },
           ],
         },
@@ -115,16 +115,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 1 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 2 },
+              scenario: { E: 1 },
             },
           ],
         },

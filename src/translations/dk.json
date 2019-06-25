@@ -10,7 +10,7 @@
     "score": "Score"
   },
   "goal": {
-    "summary": "Dit mål er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score, som kan ses nedenfor.",
+    "summary": "Dit mål er at maksimere din score i 2050. Din score bliver udregnet som det vægtede gennemsnit af den økonomiske, den sociale og den miljømæssige score, som kan ses nedenfor.",
     "weight": "Vægte",
     "weightedScore": "Vægtet Score",
     "title": "Mål"
@@ -22,12 +22,12 @@
   "decisions": {
     "2019": {
       "header": "Bestem fremtiden for Europa",
-      "intro": "Du har ansvaret for Europas klima politik og vil blive bedt om at tage nogle beslutninge i 2020, i 2030 og i 2040 for at maksimere den samlede økonimske, sociale og miljømæssige score. Dine vægte kan ses nedenfor i \"Vægte\" kolonnen."
+      "intro": "Du har ansvaret for EU’s klimapolitik og vil blive bedt om at tage nogle beslutninger i 2020, i 2030 og i 2040 for at maksimere den samlede økonomiske, sociale og miljømæssige score. Dine vægte kan ses nedenfor i \"Vægte\" kolonnen."
     },
     "2020": {
       "header": "Beslutninger i 2020",
       "researchDecision": "Skal der være ekstra økonomiske incitamenter til forskning og udvikling af vedvarende / kulstoffri teknologi?",
-      "emissionsDecision": "Hvilke begræsninger er du villig til at sætte for at nå dit emissionsmål?"
+      "emissionsDecision": "Hvilke begrænsninger er du villig til at sætte for at nå dit emissionsmål?"
     },
     "2030": {
       "header": "Beslutninger i 2030",
@@ -41,7 +41,7 @@
       "intro": "Nedenunder kan du se din score."
     },
     "options": {
-      "lowReduction": "Lav reduktionshastighed - EU ETS cap",
+      "lowReduction": "Lav reduktion - EU ETS cap",
       "mediumReduction": "Medium reduktionshastighed - IPPC Pathway Zero Emissions i 2050",
       "highReduction": "Høj reduktionshastighed - Nul emissioner i 2040"
     },
@@ -69,6 +69,18 @@
     "environmental": {
       "long": "Miljø",
       "short": "Miljø"
+    },
+    "score": {
+      "long": "Pointtal",
+      "short": "Point"
+    },
+    "optimal score": {
+      "long": "Optimal Pointtal",
+      "short": "Optimal Point"
+    },
+    "weights": {
+      "long": "Vægte",
+      "short": "Vægte"
     }
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
@@ -79,7 +91,7 @@
     "at": "Østrig",
     "ie": "Irland",
     "uk": "Storbritannien",
-    "hr": "Krotien",
+    "hr": "Kroatien",
     "nl": "Holland",
     "be": "Belgien",
     "lu": "Luxembourg",
@@ -105,9 +117,28 @@
     "ch": "Schweiz "
   },
   "share": {
+    "share": "Del",
     "tryGameButton": "Slå min score!",
     "dialogTitle": "Del spillet",
     "shareDialogText": "Del følgende link:",
-    "closeDialog": "Luk"
+    "closeDialog": "Luk",
+    "header": "Kan du slå min score?",
+    "intro": "Formålet med spillet er at maksimere din score i 2050. Din score bliver udregnet som det vægtetede gennemsnit af den økonomiske, den sociale og den miljømæssige score.",
+    "myScore": "Min score var",
+    "optimalScore": "Den bedste score er",
+    "copyToClipboard": "Kopiér",
+    "tooltipCopyText": "Kopieret til udklipsholderen",
+    "facebookQuote": "Kan du slå min score?",
+    "twitterTitle": "Kan du slå min score?"
+  },
+  "map": {
+    "mwPerCapita": "MW pr. indbygger",
+    "tons": "Tons"
+  },
+  "goalSummary": {
+    "decisionsTaken": "Beslutninger taget",
+    "decisionMade": "Din beslutning",
+    "optimalDecision": "Optimal beslutning",
+    "totalScore": "Samlet score baseret på vægtene"
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react'
+import PropTypes from 'prop-types'
 import Context from '../../../../../Context/Context'
 import { Decisions } from './Decisions'
 import { Share } from '../../Share'
@@ -12,7 +13,7 @@ import {
   StyledGrid,
 } from './DecisionForm.style'
 
-export const DecisionForm = () => {
+export const DecisionForm = ({ onStart }) => {
   const [choices, setChoice] = useState({})
   const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
   const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
@@ -29,11 +30,18 @@ export const DecisionForm = () => {
     if (state.gameState === 'over') {
       //Reset weights when clicking "try again"
       dispatch({
-        type: 'resetWeights',
-        toggle: true,
+        type: 'setWeights',
+        weights: {},
       })
     }
     if (state.gameState === 'start') {
+      if (!(state.weights.eco && state.weights.soc && state.weights.env)) {
+        dispatch({
+          type: 'resetWeights',
+          toggle: true,
+        })
+      }
+      onStart()
       //Set indicator to emission limit when the game starts
       dispatch({
         name: 'emissionLimit',
@@ -121,4 +129,8 @@ export const DecisionForm = () => {
       </form>
     </StyledGrid>
   )
+}
+
+DecisionForm.propTypes = {
+  onStart: PropTypes.func.isRequired,
 }
