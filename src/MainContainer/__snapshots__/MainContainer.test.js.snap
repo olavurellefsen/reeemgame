@@ -201,7 +201,7 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-jAaTju laGRJH"
             >
-              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030, and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
+              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030 and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
             </div>
             <form>
               <div
