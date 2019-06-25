@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Fab'
-import { PlayButtonContainer, Text, ButtonGroup } from './PlayButton.style'
+import { PlayButtonContainer, ButtonGroup } from './PlayButton.style'
 import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
 
 export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
