@@ -28,11 +28,14 @@ export default function StartModal({ open, onClose, weights }) {
       aria-describedby="alert-dialog-slide-description"
     >
       <DialogTitle id="alert-dialog-slide-title">
-        {'REEEMgame intro'}
+        {'Your point of view'}
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-slide-description">
-          Focus on weights
+          Each time you start REEEMgame, you will be assigned a point of view.
+          The components of your point of view this time around are detailed
+          below. You impact each of these three components with your decisions
+          in 2020, 2030, and 2040.
         </DialogContentText>
         <Chart
           chartType="PieChart"
@@ -61,4 +64,5 @@ export default function StartModal({ open, onClose, weights }) {
 StartModal.propTypes = {
   open: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
+  weights: PropTypes.object,
 }
