@@ -34,8 +34,11 @@ export default function StartModal({ open, onClose, weights }) {
         <DialogContentText id="alert-dialog-slide-description">
           Each time you start REEEMgame, you will be assigned a point of view.
           The components of your point of view this time around are detailed
-          below. You impact each of these three components with your decisions
-          in 2020, 2030, and 2040.
+          below.
+          <br />
+          <br />
+          You impact each of these three components with your decisions in 2020,
+          2030, and 2040.
         </DialogContentText>
         <Chart
           chartType="PieChart"

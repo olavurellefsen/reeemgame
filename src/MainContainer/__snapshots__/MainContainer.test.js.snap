@@ -199,9 +199,13 @@ exports[`should render correctly 1`] = `
               Instructions
             </h1>
             <div
-              class="sc-bRBYWo cMvScP"
+              class="sc-bRBYWo bjwXdp"
             >
-              In this game, you will be assigned a point of view - expressed as a mix between economic, environmental and social preferences. Your mission is simple: maximize the score for that viewpoint by making climate policy choices in 2020, 2030, and 2040. In 2050, your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
+              In this game, you will be assigned a point of view - expressed as a mix between economic, environmental and social preferences.
+
+Your mission is simple: maximize the score for that viewpoint by making climate policy choices in 2020, 2030, and 2040.
+
+In 2050, your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
             </div>
             <form>
               <div

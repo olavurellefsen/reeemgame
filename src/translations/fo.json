@@ -26,15 +26,18 @@
     },
     "2020": {
       "header": "Avgerðir í 2020",
+      "intro": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
       "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi- / koltvíiltufríari tøkni?",
       "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum málið innan útlát?"
     },
     "2030": {
       "header": "Avgerðir í 2030",
+      "intro": "(eingin introtekstur)",
       "transmissionDecision": "Vilt tú seta í verk 10-árs netverksmenningarætlanina fyri netorku tvørtur um landamørk?"
     },
     "2040": {
-      "header": "Avgerðir í 2040"
+      "header": "Avgerðir í 2040",
+      "intro": "(eingin introtekstur)"
     },
     "2050": {
       "header": "Úrslit í 2050",
@@ -49,7 +52,6 @@
     "submitChoices": "Víðari",
     "submitChoice": "Víðari",
     "tryAgain": "Royn aftur",
-    "whichChoices": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
     "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
   },
   "score": {

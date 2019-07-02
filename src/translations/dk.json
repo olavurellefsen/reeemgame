@@ -26,19 +26,22 @@
     },
     "2020": {
       "header": "Beslutninger i 2020",
+      "intro": "Hvilke valg vil du tage for at nå dit mål?",
       "researchDecision": "Skal der være ekstra økonomiske incitamenter til forskning og udvikling af vedvarende / kulstoffri teknologi?",
       "emissionsDecision": "Hvilke begrænsninger er du villig til at sætte for at nå dit emissionsmål?"
     },
     "2030": {
       "header": "Beslutninger i 2030",
+      "intro": "(ingen introtekst)",
       "transmissionDecision": "Vil du implementere den 10-årige netværksudviklingsplan for netkapacitet på tværs af grænser?"
     },
     "2040": {
-      "header": "Beslutninger i 2040"
+      "header": "Beslutninger i 2040",
+      "intro": "(ingen introtekst)"
     },
     "2050": {
       "header": "Resultat i 2050",
-      "intro": "Nedenunder kan du se din score."
+      "intro": "Herunder kan du se din score."
     },
     "options": {
       "lowReduction": "Lav reduktion - EU ETS cap",
@@ -49,7 +52,6 @@
     "submitChoices": "Næste",
     "submitChoice": "Næste",
     "tryAgain": "Prøv igen",
-    "whichChoices": "Hvilke valg vil du tage for at nå dit mål?",
     "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
   },
   "score": {
