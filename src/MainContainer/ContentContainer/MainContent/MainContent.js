@@ -3,8 +3,11 @@ import Grid from '@material-ui/core/Grid'
 import Context from './../../../Context/Context'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
+import { ScoreContainer } from './ScoreContainer/ScoreContainer'
+import { Share } from './Share'
 import { DecisionContainer } from './DecisionContainer/DecisionContainer'
-import { GoalContainer } from './GoalContainer/GoalContainer'
+import { WeightChart } from './WeightChart/WeightChart'
+import { TryAgain } from './TryAgain/TryAgain'
 import { MapContainer } from './MapContainer/MapContainer'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import styled from 'styled-components'
@@ -57,7 +60,7 @@ export const MainContent = props => {
         lg={2}
         md={4}
         sm={12}
-        order={wide ? 1 : 3}
+        order={wide ? 3 : 3}
       >
         <IndicatorContainer />
         <EUacknowledgement />
@@ -67,22 +70,30 @@ export const MainContent = props => {
         item
         direction="column"
         justify="space-between"
-        alignItems="flex-start"
+        alignItems="center"
         lg={4}
         md={8}
         sm={12}
-        order={wide ? 2 : 1}
+        order={wide ? 1 : 1}
       >
-        <DecisionContainer
-          onOpenStartModal={onOpenStartModal}
-          weights={state.weights}
-        />
-        {state.gameState === 'over' ? (
-          <GoalContainer
-            selectedScenario={state.selectedScenario}
-            weights={state.weights}
+        {['2030', '2040', '2050'].includes(state.currentDecision) && (
+          <ScoreContainer
+            currentScore={
+              state.currentDecision === '2030'
+                ? 59
+                : state.currentDecision === '2040'
+                ? 83
+                : 98
+            }
+            currentDecision={state.currentDecision}
           />
-        ) : null}
+        )}
+        {state.gameState === 'over' && <Share />}
+        {state.gameState !== 'over' && (
+          <DecisionContainer onOpenStartModal={onOpenStartModal} />
+        )}
+        {state.gameState !== 'start' && <WeightChart weights={state.weights} />}
+        {state.gameState === 'over' && <TryAgain />}
         <StartModal
           open={startModal}
           onClose={onCloseStartModal}
@@ -101,7 +112,7 @@ export const MainContent = props => {
         alignItems="flex-start"
         lg={6}
         md={12}
-        order={wide ? 3 : 2}
+        order={wide ? 2 : 2}
       >
         <TimelineContainer />
         <MapContainer />

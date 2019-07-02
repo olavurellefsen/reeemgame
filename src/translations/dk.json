@@ -26,19 +26,22 @@
     },
     "2020": {
       "header": "Beslutninger i 2020",
+      "intro": "Hvilke valg vil du tage for at nå dit mål?",
       "researchDecision": "Skal der være ekstra økonomiske incitamenter til forskning og udvikling af vedvarende / kulstoffri teknologi?",
       "emissionsDecision": "Hvilke begrænsninger er du villig til at sætte for at nå dit emissionsmål?"
     },
     "2030": {
       "header": "Beslutninger i 2030",
+      "intro": "(ingen introtekst)",
       "transmissionDecision": "Vil du implementere den 10-årige netværksudviklingsplan for netkapacitet på tværs af grænser?"
     },
     "2040": {
-      "header": "Beslutninger i 2040"
+      "header": "Beslutninger i 2040",
+      "intro": "(ingen introtekst)"
     },
     "2050": {
       "header": "Resultat i 2050",
-      "intro": "Nedenunder kan du se din score."
+      "intro": "Herunder kan du se din score."
     },
     "options": {
       "lowReduction": "Lav reduktion - EU ETS cap",
@@ -49,8 +52,8 @@
     "submitChoices": "Næste",
     "submitChoice": "Næste",
     "tryAgain": "Prøv igen",
-    "whichChoices": "Hvilke valg vil du tage for at nå dit mål?",
-    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
+    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?",
+    "yourPOW": "Din synsvinkel i dette spil"
   },
   "score": {
     "sum": {
@@ -81,7 +84,10 @@
     "weights": {
       "long": "Vægte",
       "short": "Vægte"
-    }
+    },
+    "intro-1": "Din hidtidige score",
+    "intro-final": "Din slutscore i 2050",
+    "intro-2": "Dine beslutninger sammenlignes med de optimale beslutninger set i forhold til din allokerede synsvinkel."
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {
@@ -117,7 +123,7 @@
     "ch": "Schweiz "
   },
   "share": {
-    "share": "Del",
+    "share": "DEL",
     "tryGameButton": "Slå min score!",
     "dialogTitle": "Del spillet",
     "shareDialogText": "Del følgende link:",
@@ -132,8 +138,8 @@
     "twitterTitle": "Kan du slå min score?"
   },
   "map": {
-    "mwPerCapita": "MW pr. indbygger",
-    "tons": "Tons"
+    "mwPerCapita": "MW pr. indbygger pr. år",
+    "tons": "Tons CO2/år"
   },
   "goalSummary": {
     "decisionsTaken": "Beslutninger taget",

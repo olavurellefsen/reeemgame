@@ -26,15 +26,18 @@
     },
     "2020": {
       "header": "Avgerðir í 2020",
+      "intro": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
       "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi- / koltvíiltufríari tøkni?",
       "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum málið innan útlát?"
     },
     "2030": {
       "header": "Avgerðir í 2030",
+      "intro": "(eingin introtekstur)",
       "transmissionDecision": "Vilt tú seta í verk 10-árs netverksmenningarætlanina fyri netorku tvørtur um landamørk?"
     },
     "2040": {
-      "header": "Avgerðir í 2040"
+      "header": "Avgerðir í 2040",
+      "intro": "(eingin introtekstur)"
     },
     "2050": {
       "header": "Úrslit í 2050",
@@ -49,8 +52,8 @@
     "submitChoices": "Víðari",
     "submitChoice": "Víðari",
     "tryAgain": "Royn aftur",
-    "whichChoices": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
-    "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?"
+    "keepEmission": "Vilt tú varðveita avmarkingarnar tey næstu 10 árini ella broyta tær?",
+    "yourPOW": "Títt sjónarhorn í hesum spælinum"
   },
   "score": {
     "sum": {
@@ -81,7 +84,10 @@
     "weights": {
       "long": "Vekt",
       "short": "Vekt"
-    }
+    },
+    "intro-1": "Tíni stig higartil",
+    "intro-final": "Endaligu stigini hjá tær í 2050",
+    "intro-2": "Tínar avgerðir verða samanbornar við optimalu avgerðirnar fyri ein við tínum ásetta sjónarhorni."
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {
@@ -117,7 +123,7 @@
     "ch": "Sveis "
   },
   "share": {
-    "share": "Deil",
+    "share": "DEIL",
     "tryGameButton": "Slá míni stig!",
     "dialogTitle": "Deil spælið",
     "shareDialogText": "Avrita leinkið:",
@@ -132,8 +138,8 @@
     "twitterTitle": "Klárar tú at fáa fleiri stig enn eg?"
   },
   "map": {
-    "mwPerCapita": "MW pr. íbúgva",
-    "tons": "Tons"
+    "mwPerCapita": "MW/íbúgva/ár",
+    "tons": "Tons CO2/ár"
   },
   "goalSummary": {
     "decisionsTaken": "Tínar avgerðir",

@@ -124,7 +124,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-cIShpX jgvmtV"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-bYSBpT dcYTKv"
         order="3"
       >
         <ul
@@ -184,31 +184,35 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-cIShpX kTxrdv"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-bYSBpT csUmVR"
         order="1"
       >
         <div
-          class="sc-hSdWYo iaXeXB"
+          class="sc-jhAzac dHLFtK"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-dVhcbM fghLuF"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-kjoXOD hpTAeq"
           >
             <h1
-              class="sc-Rmtcm fnzcKl"
+              class="sc-fMiknA eazVby"
             >
-              Decide the future of Europe
+              Instructions
             </h1>
             <div
-              class="sc-bRBYWo cMvScP"
+              class="sc-dVhcbM kRehBl"
             >
-              You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030 and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column.
+              In this game, you are assigned a point of view - expressed as a mix between economic, environmental and social preferences.
+
+Your mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for that viewpoint in 2050.
+
+Your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
             </div>
             <form>
               <div
-                class="MuiGrid-item-2 sc-dVhcbM fghLuF"
+                class="MuiGrid-item-2 sc-kjoXOD hpTAeq"
               >
                 <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-hzDkRC ifqiVt"
+                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-eqIVtm eNGSVE"
                   tabindex="0"
                   type="submit"
                 >
@@ -227,17 +231,17 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-cIShpX hSPYGD"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-bYSBpT UfRxc"
         order="2"
       >
         <div
-          class="sc-bbmXgH kxQSVL"
+          class="sc-kafWEX hLYkhn"
         >
           <div
-            class="sc-hEsumM ieqihn"
+            class="sc-btzYZH uFJTt"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221"
+              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-lhVmIH cFcCQs"
               tabindex="0"
               type="button"
             >
@@ -266,62 +270,62 @@ exports[`should render correctly 1`] = `
             </button>
           </div>
           <div
-            class="sc-uJMKN jBnEeJ"
+            class="sc-cIShpX bSQEVZ"
           >
             <div
-              class="sc-gGBfsJ fErQVd"
+              class="sc-feJyhm crjmBP"
             >
               <div
-                class="sc-jnlKLf gpcFJT"
+                class="sc-iELTvK exRPvn"
                 max="2050"
                 min="2015"
               >
                 2015
               </div>
               <div
-                class="sc-jnlKLf gpcFJT"
+                class="sc-iELTvK exRPvn"
                 max="2050"
                 min="2015"
               >
                 2020
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2025
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2030
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2035
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2040
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2045
               </div>
               <div
-                class="sc-jnlKLf laOJxc"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
@@ -329,7 +333,7 @@ exports[`should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-fYxtnH iWzCtA"
+              class="sc-cmTdod kIPHjS"
             >
               <div
                 aria-disabled="false"
@@ -337,7 +341,7 @@ exports[`should render correctly 1`] = `
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-223 sc-tilXH jMVAVb"
+                class="MuiSlider-root-223 sc-jwKygS fBWxJW"
                 role="slider"
               >
                 <div
@@ -367,10 +371,10 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-fAjcbJ gSXBFL"
+          class="sc-ksYbfQ fqSvil"
         >
           <div
-            class="sc-caSCKo irZajl"
+            class="sc-hmzhuo gQXyOz"
           >
             <svg>
               europe.svg
