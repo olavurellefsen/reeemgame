@@ -52,6 +52,8 @@ export default function StartModal({ open, onClose, weights }) {
           height={'250px'}
           options={{
             chartArea: { left: '5%', top: '5%', width: '90%', height: '90%' },
+            backgroundColor: { fill: 'transparent' },
+            legend: { position: 'right', alignment: 'center' },
           }}
         />
       </DialogContent>

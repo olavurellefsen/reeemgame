@@ -52,7 +52,8 @@
     "submitChoices": "Submit Choices",
     "submitChoice": "Submit Choice",
     "tryAgain": "Try Again",
-    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?",
+    "yourPOW": "Your assigned point of view in this game"
   },
   "score": {
     "sum": {

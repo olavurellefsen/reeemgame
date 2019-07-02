@@ -57,7 +57,7 @@ export const MainContent = props => {
         lg={2}
         md={4}
         sm={12}
-        order={wide ? 1 : 3}
+        order={wide ? 3 : 3}
       >
         <IndicatorContainer />
         <EUacknowledgement />
@@ -71,7 +71,7 @@ export const MainContent = props => {
         lg={4}
         md={8}
         sm={12}
-        order={wide ? 2 : 1}
+        order={wide ? 1 : 1}
       >
         <DecisionContainer
           onOpenStartModal={onOpenStartModal}
@@ -101,7 +101,7 @@ export const MainContent = props => {
         alignItems="flex-start"
         lg={6}
         md={12}
-        order={wide ? 3 : 2}
+        order={wide ? 2 : 2}
       >
         <TimelineContainer />
         <MapContainer />

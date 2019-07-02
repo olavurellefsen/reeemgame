@@ -52,7 +52,8 @@
     "submitChoices": "Næste",
     "submitChoice": "Næste",
     "tryAgain": "Prøv igen",
-    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
+    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?",
+    "yourPOW": "Din synsvinkel i dette spil"
   },
   "score": {
     "sum": {
