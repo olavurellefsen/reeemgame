@@ -32,13 +32,8 @@ export default function StartModal({ open, onClose, weights }) {
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-slide-description">
-          Each time you start REEEMgame, you will be assigned a point of view.
-          The components of your point of view this time around are detailed
-          below.
-          <br />
-          <br />
-          You impact each of these three components with your decisions in 2020,
-          2030, and 2040.
+          The pie chart below illustrates your point of view. The largest slice
+          of the pie is your main priority.
         </DialogContentText>
         <Chart
           chartType="PieChart"
@@ -56,9 +51,19 @@ export default function StartModal({ open, onClose, weights }) {
             legend: { position: 'right', alignment: 'center' },
           }}
         />
+        <DialogContentText id="alert-dialog-slide-description">
+          You impact each of these three components with your decisions in 2020,
+          2030, and 2040. You are measured by the result in 2050 as follows:
+          <br />
+          <br />
+          - Economic: Higher Gross Domestic Product (GDP) in 2050 is better
+          <br />
+          - Social: Cheaper access to energy for everyone in 2050 is better
+          <br />- Environmental: Lower annual CO2 emissions in 2050 are better
+        </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose} color="primary">
+        <Button onClick={handleClose} color="default" size="large">
           CLOSE
         </Button>
       </DialogActions>

@@ -22,7 +22,7 @@
   "decisions": {
     "2019": {
       "header": "Instructions",
-      "intro": "In this game, you will be assigned a point of view - expressed as a mix between economic, environmental and social preferences.\n\nYour mission is simple: maximize the score for that viewpoint by making climate policy choices in 2020, 2030, and 2040.\n\nIn 2050, your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
+      "intro": "In this game, you are assigned a point of view - expressed as a mix between economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for that viewpoint in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
     },
     "2020": {
       "header": "Decisions in 2020",
@@ -31,17 +31,17 @@
       "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
     },
     "2030": {
-      "header": "Decisions in 2030",
-      "intro": "(no introtext)",
+      "header": "",
+      "intro": "You are now in 2030.",
       "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
     },
     "2040": {
-      "header": "Decisions in 2040",
-      "intro": "(no introtext)"
+      "header": "",
+      "intro": "You are now in 2040"
     },
     "2050": {
-      "header": "Results in 2050",
-      "intro": "Your final score in 2050"
+      "header": "",
+      "intro": ""
     },
     "options": {
       "lowReduction": "Low reduction rate – EU ETS cap",
@@ -51,7 +51,7 @@
     "start": "Start",
     "submitChoices": "Submit Choices",
     "submitChoice": "Submit Choice",
-    "tryAgain": "Try Again",
+    "tryAgain": "TRY AGAIN",
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?",
     "yourPOW": "Your assigned point of view in this game"
   },
@@ -84,7 +84,10 @@
     "weights": {
       "long": "Weights",
       "short": "Weights"
-    }
+    },
+    "intro-1": "Your score so far",
+    "intro-final": "Your final score in 2050",
+    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view."
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {
@@ -120,6 +123,7 @@
     "ch": "Switzerland"
   },
   "share": {
+    "share": "SHARE",
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link to let others try the game:",
@@ -130,5 +134,9 @@
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
     "tooltipCopyText": "Copied to clipboard"
+  },
+  "map": {
+    "mwPerCapita": "MW/capita/year",
+    "tons": "Tonnes CO2/year"
   }
 }

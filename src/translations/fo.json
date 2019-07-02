@@ -84,7 +84,10 @@
     "weights": {
       "long": "Vekt",
       "short": "Vekt"
-    }
+    },
+    "intro-1": "Tíni stig higartil",
+    "intro-final": "Endaligu stigini hjá tær í 2050",
+    "intro-2": "Tínar avgerðir verða samanbornar við optimalu avgerðirnar fyri ein við tínum ásetta sjónarhorni."
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {
@@ -120,7 +123,7 @@
     "ch": "Sveis "
   },
   "share": {
-    "share": "Deil",
+    "share": "DEIL",
     "tryGameButton": "Slá míni stig!",
     "dialogTitle": "Deil spælið",
     "shareDialogText": "Avrita leinkið:",
@@ -135,8 +138,8 @@
     "twitterTitle": "Klárar tú at fáa fleiri stig enn eg?"
   },
   "map": {
-    "mwPerCapita": "MW pr. íbúgva",
-    "tons": "Tons"
+    "mwPerCapita": "MW/íbúgva/ár",
+    "tons": "Tons CO2/ár"
   },
   "goalSummary": {
     "decisionsTaken": "Tínar avgerðir",

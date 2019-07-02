@@ -124,7 +124,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-kafWEX gPUIPT"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-bYSBpT dcYTKv"
         order="3"
       >
         <ul
@@ -184,35 +184,35 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-kafWEX iAMafs"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-bYSBpT csUmVR"
         order="1"
       >
         <div
-          class="sc-hSdWYo iaXeXB"
+          class="sc-jhAzac dHLFtK"
         >
           <div
-            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-eqIVtm kRufpp"
+            class="MuiGrid-container-1 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 sc-kjoXOD hpTAeq"
           >
             <h1
-              class="sc-bRBYWo haflaX"
+              class="sc-fMiknA eazVby"
             >
               Instructions
             </h1>
             <div
-              class="sc-hzDkRC hzudOW"
+              class="sc-dVhcbM kRehBl"
             >
-              In this game, you will be assigned a point of view - expressed as a mix between economic, environmental and social preferences.
+              In this game, you are assigned a point of view - expressed as a mix between economic, environmental and social preferences.
 
-Your mission is simple: maximize the score for that viewpoint by making climate policy choices in 2020, 2030, and 2040.
+Your mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for that viewpoint in 2050.
 
-In 2050, your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
+Your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
             </div>
             <form>
               <div
-                class="MuiGrid-item-2 sc-eqIVtm kRufpp"
+                class="MuiGrid-item-2 sc-kjoXOD hpTAeq"
               >
                 <button
-                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-jhAzac eHraHY"
+                  class="MuiButtonBase-root-124 MuiButton-root-98 MuiButton-text-100 MuiButton-flat-103 sc-eqIVtm eNGSVE"
                   tabindex="0"
                   type="submit"
                 >
@@ -231,17 +231,17 @@ In 2050, your solution is compared to the optimal score calculated by the Open S
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-kafWEX jurSDH"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-bYSBpT UfRxc"
         order="2"
       >
         <div
-          class="sc-gGBfsJ kNTema"
+          class="sc-kafWEX hLYkhn"
         >
           <div
-            class="sc-ktHwxA cyygue"
+            class="sc-btzYZH uFJTt"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-cIShpX cLdOCm"
+              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-lhVmIH cFcCQs"
               tabindex="0"
               type="button"
             >
@@ -270,62 +270,62 @@ In 2050, your solution is compared to the optimal score calculated by the Open S
             </button>
           </div>
           <div
-            class="sc-bbmXgH hXTBMQ"
+            class="sc-cIShpX bSQEVZ"
           >
             <div
-              class="sc-jnlKLf jkLZSn"
+              class="sc-feJyhm crjmBP"
             >
               <div
-                class="sc-fYxtnH doiwwA"
+                class="sc-iELTvK exRPvn"
                 max="2050"
                 min="2015"
               >
                 2015
               </div>
               <div
-                class="sc-fYxtnH doiwwA"
+                class="sc-iELTvK exRPvn"
                 max="2050"
                 min="2015"
               >
                 2020
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2025
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2030
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2035
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2040
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
                 2045
               </div>
               <div
-                class="sc-fYxtnH iSzvNa"
+                class="sc-iELTvK ijDtuY"
                 max="2050"
                 min="2015"
               >
@@ -333,7 +333,7 @@ In 2050, your solution is compared to the optimal score calculated by the Open S
               </div>
             </div>
             <div
-              class="sc-tilXH fxPSyv"
+              class="sc-cmTdod kIPHjS"
             >
               <div
                 aria-disabled="false"
@@ -341,7 +341,7 @@ In 2050, your solution is compared to the optimal score calculated by the Open S
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-223 sc-hEsumM epeevU"
+                class="MuiSlider-root-223 sc-jwKygS fBWxJW"
                 role="slider"
               >
                 <div
@@ -371,10 +371,10 @@ In 2050, your solution is compared to the optimal score calculated by the Open S
           </div>
         </div>
         <div
-          class="sc-caSCKo dkNPxF"
+          class="sc-ksYbfQ fqSvil"
         >
           <div
-            class="sc-gisBJw bwmGZY"
+            class="sc-hmzhuo gQXyOz"
           >
             <svg>
               europe.svg
