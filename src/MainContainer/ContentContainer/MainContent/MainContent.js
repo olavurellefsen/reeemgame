@@ -27,9 +27,6 @@ export const MainContent = props => {
   useEffect(() => {
     if (props.weights.eco && props.weights.soc && props.weights.env) {
       dispatch({
-        type: 'reset',
-      })
-      dispatch({
         type: 'setWeights',
         eco: Number(props.weights.eco),
         soc: Number(props.weights.soc),
