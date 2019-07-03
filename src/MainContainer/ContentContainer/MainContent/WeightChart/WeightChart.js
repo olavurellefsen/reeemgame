@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next'
 
 export const WeightChart = ({ weights }) => {
   const { t } = useTranslation()
-
   return (
     <Container>
       <IntroText>{t('decisions.yourPOW')}</IntroText>
