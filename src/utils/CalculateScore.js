@@ -10,7 +10,7 @@ export function calculateScore(selectedScenario, weights) {
       (100 * (env * weights.env + eco * weights.eco + soc * weights.soc)) /
         findMaxScore(weights)
     )
-    console.log('selected scenario: ', selectedScenario)
+    //console.log('selected scenario: ', selectedScenario)
   }
   if (isNaN(normalizedScore)) normalizedScore = 0
   return normalizedScore
@@ -18,7 +18,7 @@ export function calculateScore(selectedScenario, weights) {
 
 const findMaxScore = weights => {
   let maxScore = -1
-  let bestScenario = 'none'
+  //let bestScenario = 'none'
   if (Object.entries(weights).length !== 0 && weights.constructor === Object) {
     //For each possible scenario
     for (var c = 0; c <= 1; c++) {
@@ -31,13 +31,13 @@ const findMaxScore = weights => {
           let score = env * weights.env + eco * weights.eco + soc * weights.soc
           if (score > maxScore) {
             maxScore = score
-            bestScenario = checkScenario
+            //bestScenario = checkScenario
           }
         }
       }
     }
   }
   if (maxScore === 0) maxScore = -1
-  console.log('best scenario: ', bestScenario)
+  //console.log('best scenario: ', bestScenario)
   return maxScore
 }

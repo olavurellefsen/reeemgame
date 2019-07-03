@@ -64,8 +64,8 @@ const saveScore = state => {
   if (!oldScores) oldScores = []
   let d = new Date()
   let score = {
-    date: d.toDateString(),
-    weightedScores: state.weightedScores,
+    date: d.toLocaleString('de-DE'),
+    weightedScores: { sum: state.combinedScore },
     weights: state.weights,
     scenario: state.selectedScenario,
   }
