@@ -6,7 +6,7 @@ exports[`should render correctly 1`] = `
     class="sc-bdVaJa bPGLpq"
   >
     <div
-      class="sc-bwzfXH jWgwGU"
+      class="sc-bwzfXH ihWLEx"
     >
       <div
         class="MuiGrid-container-1 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 sc-bZQynM bOrPFB"
@@ -124,7 +124,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-bYSBpT dcYTKv"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-elJkPf kedHF"
         order="3"
       >
         <ul
@@ -184,7 +184,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-bYSBpT csUmVR"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-elJkPf cdgmYv"
         order="1"
       >
         <div
@@ -201,9 +201,9 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-dVhcbM kRehBl"
             >
-              In this game, you are assigned a point of view - expressed as a mix between economic, environmental and social preferences.
+              In this game, you are assigned some economic, environmental and social preferences.
 
-Your mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for that viewpoint in 2050.
+Your mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.
 
 Your solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE).
             </div>
@@ -231,7 +231,7 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-bYSBpT UfRxc"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-elJkPf cospVV"
         order="2"
       >
         <div
