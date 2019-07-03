@@ -6,7 +6,7 @@ export const EUacknowledgement = () => {
   const { t } = useTranslation()
   return (
     <Container>
-      <Flag src={`euflag.png`} alt="EU flag" />
+      <Flag src={window.location.origin + '/euflag.png'} alt="EU flag" />
       <Text>{t('euAcknowledgement')}</Text>
     </Container>
   )

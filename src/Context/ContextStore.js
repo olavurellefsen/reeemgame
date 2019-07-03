@@ -25,13 +25,14 @@ const initialState = {
   decisionCycle: ['2019', '2020', '2030', '2040', '2050'],
   maxYears: [2020, 2020, 2030, 2040, 2050],
   timeline: ['2015', '2020', '2025', '2030', '2035', '2040', '2045', '2050'],
-  selectedIndicator: 'emissionLimit',
+  selectedIndicator: null,
   selectedScenario: 'C0T0E0',
-  weights: { eco: 20, env: 30, soc: 50 },
+  weights: {},
   scores: { eco: 300, env: 500, soc: 200 },
   weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
   animationState: 'paused',
   animationYear: 2015,
+  listOfScenarioScores: [],
 }
 const getNewWeights = () => {
   var ret = {}
@@ -54,16 +55,19 @@ const getNewWeightedScores = (weights, scores) => {
   ret = { eco: wEco, env: wEnv, soc: wSoc, sum: wEco + wEnv + wSoc }
   return ret
 }
+
 const saveScore = state => {
-  let oldScores = JSON.parse(localStorage.getItem('score'))
+  let oldScores = JSON.parse(localStorage.getItem('score3'))
   if (!oldScores) oldScores = []
   let d = new Date()
   let score = {
     date: d.toDateString(),
     weightedScores: state.weightedScores,
+    weights: state.weights,
+    scenario: state.selectedScenario,
   }
   oldScores.push(score)
-  localStorage.setItem('score', JSON.stringify(oldScores))
+  localStorage.setItem('score3', JSON.stringify(oldScores))
 }
 const getCurrentYear = (state, newYear) => {
   return state.animationState === 'paused'
@@ -75,6 +79,9 @@ const reducer = createReducer(initialState, {
   forwardToNextDecision: (state, action) => {
     let nextDecision = state.decisionCycle.indexOf(state.currentDecision) + 1
     let newGameState = state.gameCycle[state.gameCycle.indexOf(state.gameState)]
+    let newScenario = state.selectedScenario
+    let newWeights = state.weights
+    let indicator = state.selectedIndicator
     if (nextDecision === 1) {
       //If game is starting
       newGameState = state.gameCycle[1]
@@ -83,21 +90,26 @@ const reducer = createReducer(initialState, {
       //If game is over
       newGameState = state.gameCycle[state.gameCycle.length - 1]
       saveScore(state)
+      indicator = 'score'
     }
     if (nextDecision >= state.decisionCycle.length) {
       //If game is starting again
       nextDecision = 0
       newGameState = state.gameCycle[0]
+      newScenario = 'C0T0E0'
+      indicator = 'emissionLimit'
     }
     const newYear = state.decisionCycle[nextDecision]
     const newMaxYear = state.maxYears[nextDecision]
-    //alert("next")
     return {
       ...state,
       currentDecision: newYear,
       currentYear: getCurrentYear(state, newYear),
       maxYear: newMaxYear,
       gameState: newGameState,
+      selectedScenario: newScenario,
+      weights: newWeights,
+      selectedIndicator: indicator,
     }
   },
   setSelectedIndicator: (state, action) => ({
@@ -136,6 +148,26 @@ const reducer = createReducer(initialState, {
       env: action.env,
       soc: action.soc,
     }),
+  }),
+  setWeights: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
+  }),
+  setStateToShared: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
+    weightedScores: getNewWeightedScores(
+      { eco: action.eco, env: action.env, soc: action.soc },
+      state.scores
+    ),
+    currentYear: state.maxYears[state.maxYears.length - 1],
+    maxYear: state.maxYears[state.maxYears.length - 1],
+    gameState: state.gameCycle[state.gameCycle.length - 1],
+    selectedScenario: action.scenario,
+  }),
+  setListOfScenarioScores: (state, action) => ({
+    ...state,
+    weights: { eco: action.eco, env: action.env, soc: action.soc },
   }),
 })
 

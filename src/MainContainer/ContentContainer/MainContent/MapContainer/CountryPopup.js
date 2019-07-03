@@ -31,14 +31,19 @@ export const CountryPopup = props => {
     sum: t('score.sum.short'),
   }
   const title =
-    state.gameState === 'over'
+    state.selectedIndicator === 'score'
       ? t('general.score')
       : t('indicator.' + selectedIndicator)
 
   let tempScenario = selectedScenario
-  //TODO Important to change when real data has been added
+  //TODO Important to change when real data has been added Very Important
   if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
     tempScenario = 'C0T0E0'
+  const unit = getUnit(selectedIndicator)
+  let unitText
+  if (unit === 'MW per capita') unitText = t('map.mwPerCapita')
+  else if (unit === 'Tons') unitText = t('map.tons')
+  else if (unit === 'Score') unitText = t('general.score')
   return (
     <Container>
       <Header>
@@ -52,7 +57,7 @@ export const CountryPopup = props => {
         </Button>
       </Header>
       <Content>
-        {!(state.gameState === 'over') && (
+        {!(state.selectedIndicator === 'score') && (
           <Chart
             chartType="ColumnChart"
             width="500px"
@@ -67,12 +72,12 @@ export const CountryPopup = props => {
             options={{
               legend: { position: 'none' },
               vAxis: {
-                title: getUnit(selectedIndicator),
+                title: unitText,
               },
             }}
           />
         )}
-        {state.gameState === 'over' && (
+        {state.selectedIndicator === 'score' && (
           <Chart
             chartType="ColumnChart"
             width="500px"

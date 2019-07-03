@@ -16,6 +16,7 @@ export const IntroText = styled.div`
   font-family: 'Roboto', sans-serif;
   padding-bottom: 20px;
   line-height: 1.6;
+  white-space: pre-wrap;
 `
 
 export const StyledButton = styled(({ ...props }) => (
