@@ -22,7 +22,7 @@
   "decisions": {
     "2019": {
       "header": "Instructions",
-      "intro": "In this game, you are assigned a point of view - expressed as a mix between economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for that viewpoint in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
+      "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
     },
     "2020": {
       "header": "Decisions in 2020",
@@ -138,5 +138,12 @@
   "map": {
     "mwPerCapita": "MW/capita/year",
     "tons": "Tonnes CO2/year"
+  },
+  "startmodal": {
+    "title": "Your point of view",
+    "intro": "The pie chart below illustrates your point of view. The largest slice of the pie is your main priority.",
+    "details": "You impact each of these three components with your decisions in 2020, 2030, and 2040. You are measured by the result in 2050 as follows:\n\n- Economic: Higher Gross Domestic Product (GDP) in 2050 is better\n- Social: Cheaper access to energy for everyone in 2050 is better\n- Environmental: Lower annual CO2 emissions in 2050 are better",
+    "group": "Group",
+    "percentage": "Percentage"
   }
 }

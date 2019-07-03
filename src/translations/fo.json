@@ -10,7 +10,7 @@
     "score": "Stigatalva"
   },
   "goal": {
-    "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið, sum sæst niðanfyri.",
+    "summary": "Málið er at fáa flest møgulig stig í 2050. Stigini verða roknað sum eitt vigað miðaltal av stigunum innan tey trý økini: búskaparliga, sosiala og umhvørvið, sum sæst niðanfyri.",
     "weight": "Vektir",
     "weightedScore": "Vektað Stig",
     "title": "Mál"
@@ -21,32 +21,32 @@
   },
   "decisions": {
     "2019": {
-      "header": "Ger av hvussu framtíðin hjá Evropa sær út",
-      "intro": "Tú hevur ábyrgdina av veðurlagspolitikkinum í Evropa og verður biðin um at taka nakrar avgerðir í 2020, 2030 og í 2040 fyri at fáa flest møgulig samlað stig innan tey trý økini: tað fíggjarliga, samfelagið og umhvørvið. Tú sært tínar vektir niðanfyri undir teiginum \"Vektir\"."
+      "header": "Vegleiðing",
+      "intro": "Í hesum spælinum fært tú álagt ávísar búskaparligar, sosialar og umhvørvisligar raðfestingar.\n\nMálið hjá tær er einfalt: við at taka veðurlagspolitiskar avgerðir í 2020, 2030 og 2040 skal tú royna at fáa hægsta stigatal fyri títt álagda sjónarhorn í 2050.\n\nLoysnin hjá tær verður samanborin við optimalu loysnina sambært OSeMBE (Open Source Energy Modelling System for Europe)."
     },
     "2020": {
       "header": "Avgerðir í 2020",
-      "intro": "Hvørjar avgerðir tekur tú fyri at náa tínum máli?",
-      "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi- / koltvíiltufríari tøkni?",
-      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum málið innan útlát?"
+      "intro": "Fyri at fáa hægst møguligt stigatal í 2050, skal tú taka nakrar veðurlagspolitiskar avgerðir.\n\nMinst til at hava títt álagda sjónarhorn í huga, tá tú tekur avgerðir.",
+      "researchDecision": "Skal eyka fíggjarlig tilstuðlan vera til gransking og menning af varandi og/ella koltvíiltufríari tøkni?",
+      "emissionsDecision": "Hvørjar avmarkingar vilt tú seta fyri at náa tínum máli innan útlát?"
     },
     "2030": {
-      "header": "Avgerðir í 2030",
-      "intro": "(eingin introtekstur)",
+      "header": "",
+      "intro": "Tú ert nú í 2030.",
       "transmissionDecision": "Vilt tú seta í verk 10-árs netverksmenningarætlanina fyri netorku tvørtur um landamørk?"
     },
     "2040": {
-      "header": "Avgerðir í 2040",
-      "intro": "(eingin introtekstur)"
+      "header": "",
+      "intro": "Tú ert nú í 2040"
     },
     "2050": {
-      "header": "Úrslit í 2050",
-      "intro": "Niðanfyri sært tú tíni stig."
+      "header": "",
+      "intro": ""
     },
     "options": {
-      "lowReduction": "Skerjing við lágari ferð - EU ETS cap",
-      "mediumReduction": "Skerjing við miðal ferð - IPPC Pathway Zero Emissions í 2050",
-      "highReduction": "Skerjing við høgari ferð - Null útlát í 2040"
+      "lowReduction": "Lítil skerjing - EU ETS cap",
+      "mediumReduction": "Miðal skerjing - IPPC Pathway Zero Emissions í 2050",
+      "highReduction": "Stór skerjing - Null útlát í 2040"
     },
     "start": "Byrja",
     "submitChoices": "Víðari",
@@ -62,15 +62,15 @@
     },
     "date": "Dagfesting",
     "economic": {
-      "long": "Fíggjarligt",
-      "short": "Fíggj."
+      "long": "Búskaparligt",
+      "short": "Búsk."
     },
     "social": {
-      "long": "Samfelagið",
-      "short": "Samf."
+      "long": "Sosialt",
+      "short": "Sos."
     },
     "environmental": {
-      "long": "Umhørvið",
+      "long": "Umhørvisliga",
       "short": "Umhv."
     },
     "score": {
@@ -78,8 +78,8 @@
       "short": "Stig"
     },
     "optimal score": {
-      "long": "Optimal Pointtal",
-      "short": "Optimal Point"
+      "long": "Optimalt stigatal",
+      "short": "Optimal stig"
     },
     "weights": {
       "long": "Vekt",
@@ -87,7 +87,7 @@
     },
     "intro-1": "Tíni stig higartil",
     "intro-final": "Endaligu stigini hjá tær í 2050",
-    "intro-2": "Tínar avgerðir verða samanbornar við optimalu avgerðirnar fyri ein við tínum ásetta sjónarhorni."
+    "intro-2": "Tíni val eru samanborin við optimalu avgerðirnar fyri ein við tínum álagda sjónarhorni."
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {
@@ -141,10 +141,11 @@
     "mwPerCapita": "MW/íbúgva/ár",
     "tons": "Tons CO2/ár"
   },
-  "goalSummary": {
-    "decisionsTaken": "Tínar avgerðir",
-    "decisionMade": "Tín avgerð",
-    "optimalDecision": "Besta avgerð",
-    "totalScore": "Samlað stig grundað á vektirnar"
+  "startmodal": {
+    "title": "Títt sjónarhorn",
+    "intro": "Lagkøkumyndin niðanfyri vísir títt álagda sjónarhorn. Størsta køkustykkið er tín hægsta raðfesting.",
+    "details": "Tú hevur høvi at ávirka úrslitið við tínum avgerðum í 2020, 2030 og 2040. Tú verður eftirmett/ur av úrslitunum í 2050 soleiðis:\n\n- Búskaparliga: hægri bruttotjóðarúrtøka (BTÚ) í 2050 er betri\n- Sosialt: bíligari orka til øll í 2050 er betri\n- Umhvørvisliga: lægri árligt útlát av CO2 í 2050 er betri",
+    "group": "Bólkur",
+    "percentage": "Prosent"
   }
 }
