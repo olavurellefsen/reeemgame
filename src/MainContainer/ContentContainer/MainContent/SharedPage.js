@@ -5,7 +5,7 @@ import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { MapContainer } from './MapContainer/MapContainer'
 import styled from 'styled-components'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
-import { createListOfScenarios } from './../../../utils/ScoreUtilities'
+//import { createListOfScenarios } from './../../../utils/ScoreUtilities'
 import { PropTypes } from 'prop-types'
 import {
   TextContainer,
@@ -15,9 +15,10 @@ import {
 } from './SharedPage.style'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import Context from './../../../Context/Context'
-
 import Button from '@material-ui/core/Button'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
+import { calculateScore } from '../../../utils/CalculateScore'
+
 const StyledGrid = styled(Grid)`
   && {
     order: ${props => props.order};
@@ -36,11 +37,11 @@ export const SharedPage = props => {
   const envWeight = props.sharedValues.env
   const scenario = props.sharedValues.scenario
 
-  const decisionRanks = createListOfScenarios(state.weights)
-  const score = decisionRanks.find(e => {
-    return e.scenario === state.selectedScenario
-  }).score
-  const optimalScore = decisionRanks[0].score
+  // const decisionRanks = createListOfScenarios(state.weights)
+  // const score = decisionRanks.find(e => {
+  //   return e.scenario === state.selectedScenario
+  // }).score
+  // const optimalScore = decisionRanks[0].score
   useEffect(() => {
     dispatch({
       type: 'setStateToShared',
@@ -91,11 +92,11 @@ export const SharedPage = props => {
           <Header>{t('share.header')}</Header>
           <IntroText>{t('share.intro')}</IntroText>
           <TextContainer>
-            {t('share.myScore') + ' ' + score.toPrecision(3)}
+            {t('share.myScore') +
+              ' ' +
+              calculateScore(state.selectedScenario, state.weights)}
           </TextContainer>
-          <TextContainer>
-            {t('share.optimalScore') + ' ' + optimalScore.toPrecision(3)}
-          </TextContainer>
+          <TextContainer>{t('share.optimalScore') + ' 100'}</TextContainer>
           <Button>
             <LinkButton to={'/' + buildURL(ecoWeight, socWeight, envWeight)}>
               {t('share.tryGameButton')}
