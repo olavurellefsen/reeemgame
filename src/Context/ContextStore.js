@@ -29,11 +29,13 @@ const initialState = {
   selectedScenario: 'C0T0E0',
   weights: {},
   scores: { eco: 300, env: 500, soc: 200 },
-  weightedScores: { eco: 60, env: 150, soc: 100, sum: 310 },
+  weightedScores: { eco: 0, env: 0, soc: 0, sum: 0 },
   animationState: 'paused',
   animationYear: 2015,
   listOfScenarioScores: [],
+  combinedScore: 0,
 }
+
 const getNewWeights = () => {
   var ret = {}
   var envTemp = Math.random()
@@ -46,6 +48,7 @@ const getNewWeights = () => {
   ret = { env: env, eco: eco, soc: soc }
   return ret
 }
+
 const getNewWeightedScores = (weights, scores) => {
   var ret = {}
 
@@ -69,11 +72,13 @@ const saveScore = state => {
   oldScores.push(score)
   localStorage.setItem('score3', JSON.stringify(oldScores))
 }
+
 const getCurrentYear = (state, newYear) => {
   return state.animationState === 'paused'
     ? parseInt(newYear)
     : state.currentYear
 }
+
 const reducer = createReducer(initialState, {
   reset: () => initialState,
   forwardToNextDecision: (state, action) => {
@@ -168,6 +173,10 @@ const reducer = createReducer(initialState, {
   setListOfScenarioScores: (state, action) => ({
     ...state,
     weights: { eco: action.eco, env: action.env, soc: action.soc },
+  }),
+  setCombinedScore: (state, action) => ({
+    ...state,
+    combinedScore: action.score,
   }),
 })
 
