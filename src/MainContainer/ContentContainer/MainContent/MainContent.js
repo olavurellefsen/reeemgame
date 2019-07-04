@@ -33,18 +33,13 @@ export const MainContent = props => {
         env: Number(props.weights.env),
       })
     }
+  }, [dispatch, props.weights.eco, props.weights.env, props.weights.soc])
+  useEffect(() => {
     dispatch({
       type: 'setCombinedScore',
       score: calculateScore(state.selectedScenario, state.weights),
     })
-  }, [
-    dispatch,
-    props.weights.eco,
-    props.weights.env,
-    props.weights.soc,
-    state.weights,
-    state.selectedScenario,
-  ])
+  }, [dispatch, state.weights, state.selectedScenario])
   const wide = useMediaQuery('(min-width:960px)')
   const [startModal, setStartModal] = useState(false)
   const onCloseStartModal = () => {
