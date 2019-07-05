@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { PropTypes } from 'prop-types'
 import {
   Container,
@@ -7,22 +7,18 @@ import {
   CurrentScoreText,
 } from './ScoreContainer.style'
 import { useTranslation } from 'react-i18next'
+import useInterval from '../../../../utils/useInterval'
 
 export const ScoreContainer = ({ currentScore, currentDecision }) => {
   const [counterScore, setCounterScore] = useState(0)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (counterScore < currentScore) {
-        setCounterScore(counter => counter + 1)
-      }
-      if (counterScore > currentScore) {
-        setCounterScore(counter => counter - 1)
-      }
-    }, 10)
-    return () => {
-      clearInterval(interval)
+  useInterval(() => {
+    if (counterScore < currentScore) {
+      setCounterScore(counterScore + 1)
     }
-  }, [counterScore, currentScore])
+    if (counterScore > currentScore) {
+      setCounterScore(counterScore - 1)
+    }
+  }, 10)
   const { t } = useTranslation()
   return (
     <Container>

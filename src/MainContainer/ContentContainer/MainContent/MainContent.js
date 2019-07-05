@@ -15,6 +15,7 @@ import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMe
 import StartModal from './StartModal/StartModal'
 import PropTypes from 'prop-types'
 import { calculateScore } from '../../../utils/CalculateScore'
+import { saveScore } from '../../../utils/SaveScore'
 
 const StyledGrid = styled(Grid)`
   && {
@@ -33,17 +34,25 @@ export const MainContent = props => {
         env: Number(props.weights.env),
       })
     }
+  }, [dispatch, props.weights.eco, props.weights.env, props.weights.soc])
+  useEffect(() => {
     dispatch({
       type: 'setCombinedScore',
       score: calculateScore(state.selectedScenario, state.weights),
     })
+    if (state.currentDecision === '2050' && !state.scoreSaved) {
+      saveScore(state.selectedScenario, state.weights)
+      dispatch({
+        type: 'setScoreSaved',
+        scoreSaved: true,
+      })
+    }
   }, [
     dispatch,
-    props.weights.eco,
-    props.weights.env,
-    props.weights.soc,
     state.weights,
     state.selectedScenario,
+    state.currentDecision,
+    state.scoreSaved,
   ])
   const wide = useMediaQuery('(min-width:960px)')
   const [startModal, setStartModal] = useState(false)

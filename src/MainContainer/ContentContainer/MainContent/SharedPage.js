@@ -9,13 +9,13 @@ import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMe
 import { PropTypes } from 'prop-types'
 import {
   TextContainer,
+  StyledButton,
   LinkButton,
   IntroText,
   Header,
 } from './SharedPage.style'
 import { TimelineContainer } from './TimelineContainer/TimelineContainer'
 import Context from './../../../Context/Context'
-import Button from '@material-ui/core/Button'
 import { IndicatorContainer } from './IndicatorContainer/IndicatorContainer'
 import { calculateScore } from '../../../utils/CalculateScore'
 
@@ -45,12 +45,11 @@ export const SharedPage = props => {
   useEffect(() => {
     dispatch({
       type: 'setStateToShared',
-      scenario: scenario,
       eco: ecoWeight,
       soc: socWeight,
       env: envWeight,
     })
-  }, [dispatch, ecoWeight, envWeight, scenario, socWeight])
+  }, [dispatch, ecoWeight, envWeight, socWeight])
   return (
     <Grid
       container
@@ -67,7 +66,7 @@ export const SharedPage = props => {
         lg={2}
         md={4}
         sm={12}
-        order={wide ? 1 : 3}
+        order={wide ? 3 : 3}
       >
         <IndicatorContainer />
         <EUacknowledgement />
@@ -81,7 +80,7 @@ export const SharedPage = props => {
         lg={4}
         md={8}
         sm={12}
-        order={wide ? 2 : 1}
+        order={wide ? 1 : 1}
       >
         <StyledGrid
           container
@@ -92,16 +91,14 @@ export const SharedPage = props => {
           <Header>{t('share.header')}</Header>
           <IntroText>{t('share.intro')}</IntroText>
           <TextContainer>
-            {t('share.myScore') +
-              ' ' +
-              calculateScore(state.selectedScenario, state.weights)}
+            {t('share.myScore') + ' ' + calculateScore(scenario, state.weights)}
           </TextContainer>
           <TextContainer>{t('share.optimalScore') + ' 100'}</TextContainer>
-          <Button>
+          <StyledButton>
             <LinkButton to={'/' + buildURL(ecoWeight, socWeight, envWeight)}>
               {t('share.tryGameButton')}
             </LinkButton>
-          </Button>
+          </StyledButton>
         </StyledGrid>
       </StyledGrid>
       <StyledGrid
@@ -112,7 +109,7 @@ export const SharedPage = props => {
         alignItems="flex-start"
         lg={6}
         md={12}
-        order={wide ? 3 : 2}
+        order={wide ? 2 : 2}
       >
         <TimelineContainer />
         <MapContainer />
