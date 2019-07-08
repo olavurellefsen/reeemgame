@@ -10,6 +10,7 @@ export const PlayButtonContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
 `
+
 export const PlayPauseButton = styled(Button)`
   width: 40px;
 `

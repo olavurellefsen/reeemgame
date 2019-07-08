@@ -4,6 +4,10 @@ import { PlayButtonContainer, PlayPauseButton } from './PlayButton.style'
 import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
 
 export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
+  const style = {
+    boxShadow: 'none',
+    margin: '2px',
+  }
   return (
     <PlayButtonContainer>
       {animationState === 'paused' ? null : (

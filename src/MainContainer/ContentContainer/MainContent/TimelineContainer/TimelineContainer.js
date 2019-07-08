@@ -15,6 +15,8 @@ export const TimelineContainer = () => {
   const [state, dispatch] = useContext(Context)
   //const [animationYear, setAnimationYear] = useState(2015)
   const [animationDelay, setAnimationDelay] = useState(null)
+  const defaultAnimationDelay = 500
+  const fastForwardDelay = 200
 
   useInterval(() => {
     tick()
@@ -25,13 +27,18 @@ export const TimelineContainer = () => {
       setAnimationDelay(null)
       dispatch({ type: 'setAnimationState', animationState: 'paused' })
     } else {
-      setAnimationDelay(300)
+      setAnimationDelay(defaultAnimationDelay)
       dispatch({ type: 'setAnimationState', animationState: 'running' })
     }
   }
   const fastForward = () => {
-    if (animationDelay === 100) setAnimationDelay(800)
-    else setAnimationDelay(animationDelay - 100)
+    if (animationDelay === defaultAnimationDelay) {
+      setAnimationDelay(fastForwardDelay)
+      dispatch({ type: 'setAnimationState', animationState: 'fast' })
+    } else {
+      setAnimationDelay(defaultAnimationDelay)
+      dispatch({ type: 'setAnimationState', animationState: 'running' })
+    }
   }
   const tick = () => {
     dispatch({ type: 'setCurrentYear', year: state.animationYear })
