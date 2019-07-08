@@ -13,6 +13,7 @@ export const RowContainer = styled.div`
   overflow: hidden; // Needed because of https://github.com/mui-org/material-ui/issues/13455
   padding: 10px;
   flex-direction: row;
+  justify-content: flex-start;
 `
 export const LabelContainer = styled.div`
   display: flex;

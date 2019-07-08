@@ -1,30 +1,16 @@
 import styled from 'styled-components'
+import Button from '@material-ui/core/Fab'
 
 export const PlayButtonContainer = styled.div`
-  padding: 5px 5px;
+  min-width: 110px;
+  max-width: 110px;
+  padding: 25px 25px 5px 5px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `
-export const Text = styled.div`
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  font-size: 8px;
-  font-weight: 800;
-  align-self: center;
+
+export const PlayPauseButton = styled(Button)`
+  width: 40px;
 `
-export const ButtonGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-`
-export const Button = styled.button`
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  border: solid thin black;
-  background-color: transparent;
-  border-radius: 50%;
-`
-export const PlayPauseButton = styled.button``

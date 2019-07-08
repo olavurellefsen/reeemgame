@@ -23,7 +23,6 @@ export const About = () => {
     default:
       file = about_en
   }
-  console.log(file)
   return (
     <Container>
       <Page markdownFile={file} />

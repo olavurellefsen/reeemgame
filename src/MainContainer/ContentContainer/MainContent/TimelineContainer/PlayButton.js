@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Fab'
-import { PlayButtonContainer, ButtonGroup } from './PlayButton.style'
+import { PropTypes } from 'prop-types'
+import { PlayButtonContainer, PlayPauseButton } from './PlayButton.style'
 import { FastForward, PlayArrow, Pause } from '@material-ui/icons'
 
 export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
@@ -11,22 +10,20 @@ export const PlayButton = ({ onStartPause, onFastForward, animationState }) => {
   }
   return (
     <PlayButtonContainer>
-      <Button style={style} onClick={onStartPause} size="small">
-        {animationState === 'paused' ? <PlayArrow /> : <Pause />}
-      </Button>
-
       {animationState === 'paused' ? null : (
-        <Button style={style} onClick={onFastForward} size="small">
-          <ButtonGroup>
-            {animationState === 'fast' ? <PlayArrow /> : <FastForward />}
-          </ButtonGroup>
-        </Button>
+        <PlayPauseButton onClick={onFastForward} size="small">
+          <FastForward />
+        </PlayPauseButton>
       )}
+      <PlayPauseButton onClick={onStartPause} size="small">
+        {animationState === 'paused' ? <PlayArrow /> : <Pause />}
+      </PlayPauseButton>
     </PlayButtonContainer>
   )
 }
+
 PlayButton.propTypes = {
-  onStartPause: PropTypes.func,
-  onFastForward: PropTypes.func,
-  animationState: PropTypes.string,
+  onStartPause: PropTypes.func.isRequired,
+  onFastForward: PropTypes.func.isRequired,
+  animationState: PropTypes.string.isRequired,
 }

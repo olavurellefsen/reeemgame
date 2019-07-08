@@ -12,7 +12,7 @@ export const Decisions = () => {
     {
       year: '2020',
       header: t('decisions.2020.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2020.intro'),
       individualDecisions: [
         {
           name: 'research',
@@ -58,7 +58,7 @@ export const Decisions = () => {
     {
       year: '2030',
       header: t('decisions.2030.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2030.intro'),
       individualDecisions: [
         {
           name: 'transmission',
@@ -104,7 +104,7 @@ export const Decisions = () => {
     {
       year: '2040',
       header: t('decisions.2040.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2040.intro'),
       individualDecisions: [
         {
           name: 'emissions3',

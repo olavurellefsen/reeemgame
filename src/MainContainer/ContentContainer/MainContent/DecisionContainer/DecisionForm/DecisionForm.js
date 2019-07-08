@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import Context from '../../../../../Context/Context'
 import { Decisions } from './Decisions'
-import { Share } from '../../Share'
 import {
   DecisionHeader,
   IntroText,
@@ -124,7 +123,6 @@ export const DecisionForm = ({ onStart }) => {
           >
             {currentDecisions.submitText}
           </StyledButton>
-          {state.gameState === 'over' && <Share />}
         </StyledGrid>
       </form>
     </StyledGrid>
