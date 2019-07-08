@@ -21,36 +21,39 @@
   },
   "decisions": {
     "2019": {
-      "header": "Bestem fremtiden for Europa",
-      "intro": "Du har ansvaret for EU’s klimapolitik og vil blive bedt om at tage nogle beslutninger i 2020, i 2030 og i 2040 for at maksimere den samlede økonomiske, sociale og miljømæssige score. Dine vægte kan ses nedenfor i \"Vægte\" kolonnen."
+      "header": "Instruktioner",
+      "intro": "I dette spil får du påtvunget økonomiske, sociale og miljømæssige præferencer.\n\nDin mission er enkel: tag klimapolitiske beslutninger i 2020, 2030 og 2040 for at maksimere scoren for dine påtvungne præferencer i 2050.\n\nDin løsning vil blive sammenlignet med den optimale score som udregnet af OSeMBE (Open Source Energy Modelling System for Europe)."
     },
     "2020": {
       "header": "Beslutninger i 2020",
+      "intro": "For at få maksimale poeng i 2050, skal du tage nogle klimapolitiske afgørelser.\n\nHusk at tage hensyn til dine påtvungne præferencer når du tager beslutninger.",
       "researchDecision": "Skal der være ekstra økonomiske incitamenter til forskning og udvikling af vedvarende / kulstoffri teknologi?",
       "emissionsDecision": "Hvilke begrænsninger er du villig til at sætte for at nå dit emissionsmål?"
     },
     "2030": {
-      "header": "Beslutninger i 2030",
+      "header": "",
+      "intro": "Du er nu i 2030.",
       "transmissionDecision": "Vil du implementere den 10-årige netværksudviklingsplan for netkapacitet på tværs af grænser?"
     },
     "2040": {
-      "header": "Beslutninger i 2040"
+      "header": "",
+      "intro": "Du er nu i 2040"
     },
     "2050": {
-      "header": "Resultat i 2050",
-      "intro": "Nedenunder kan du se din score."
+      "header": "",
+      "intro": ""
     },
     "options": {
       "lowReduction": "Lav reduktion - EU ETS cap",
-      "mediumReduction": "Medium reduktionshastighed - IPPC Pathway Zero Emissions i 2050",
-      "highReduction": "Høj reduktionshastighed - Nul emissioner i 2040"
+      "mediumReduction": "Medium reduktion - IPPC Pathway Zero Emissions i 2050",
+      "highReduction": "Høj reduktion - Nul emissioner i 2040"
     },
     "start": "Start",
     "submitChoices": "Næste",
     "submitChoice": "Næste",
     "tryAgain": "Prøv igen",
-    "whichChoices": "Hvilke valg vil du tage for at nå dit mål?",
-    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?"
+    "keepEmission": "Vil du beholde din emissionsreduktionshastighed de næste 10 år eller vil du ændre den?",
+    "yourPOW": "Din synsvinkel i dette spil"
   },
   "score": {
     "sum": {
@@ -69,7 +72,22 @@
     "environmental": {
       "long": "Miljø",
       "short": "Miljø"
-    }
+    },
+    "score": {
+      "long": "Pointtal",
+      "short": "Point"
+    },
+    "optimal score": {
+      "long": "Optimal Pointtal",
+      "short": "Optimal Point"
+    },
+    "weights": {
+      "long": "Vægte",
+      "short": "Vægte"
+    },
+    "intro-1": "Din hidtidige score",
+    "intro-final": "Din slutscore i 2050",
+    "intro-2": "Dine beslutninger sammenlignes med de optimale valg for en med dine påtvungne præferencer."
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {
@@ -105,7 +123,7 @@
     "ch": "Schweiz "
   },
   "share": {
-    "share": "Del",
+    "share": "DEL",
     "tryGameButton": "Slå min score!",
     "dialogTitle": "Del spillet",
     "shareDialogText": "Del følgende link:",
@@ -116,17 +134,18 @@
     "optimalScore": "Den bedste score er",
     "copyToClipboard": "Kopiér",
     "tooltipCopyText": "Kopieret til udklipsholderen",
-    "facebookQuote": "Kan du slå min score?",
-    "twitterTitle": "Kan du slå min score?"
+    "facebookQuote": "Kan du slå min score i REEEMgame? #klimapolitik #h2020",
+    "twitterTitle": "Kan du slå min score i REEEMgame? #klimapolitik #h2020"
   },
   "map": {
-    "mwPerCapita": "MW pr. indbygger",
-    "tons": "Tons"
+    "mwPerCapita": "MW pr. indbygger pr. år",
+    "tons": "Tons CO2/år"
   },
-  "goalSummary": {
-    "decisionsTaken": "Beslutninger taget",
-    "decisionMade": "Din beslutning",
-    "optimalDecision": "Optimal beslutning",
-    "totalScore": "Samlet score baseret på vægtene"
+  "startmodal": {
+    "title": "Din synsvinkel",
+    "intro": "Lagkagediagrammet nedenfor illustrerer din synsvinkel. Det største kagestykke er din hovedprioritet.",
+    "details": "Du påvirker disse tre komponenter med dine beslutninger i 2020, 2030 og 2040. Du bliver målt på resultaterne i 2050 som følger:\n\n- Økonomisk: højere bruttonationalprodukt (BNP) i 2050 er bedre\n- Socialt: billigere adgang til energi for alle i 2050 er bedre\n- Miljømæssigt: lavere årlig CO2 udledning i 2050 er bedre",
+    "group": "Gruppe",
+    "percentage": "Prosent"
   }
 }

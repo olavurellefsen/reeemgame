@@ -12,7 +12,7 @@ export const Decisions = () => {
     {
       year: '2020',
       header: t('decisions.2020.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2020.intro'),
       individualDecisions: [
         {
           name: 'research',
@@ -39,16 +39,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 9 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 18 },
+              scenario: { E: 4 },
             },
           ],
         },
@@ -58,7 +58,7 @@ export const Decisions = () => {
     {
       year: '2030',
       header: t('decisions.2030.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2030.intro'),
       individualDecisions: [
         {
           name: 'transmission',
@@ -85,16 +85,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 3 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 6 },
+              scenario: { E: 2 },
             },
           ],
         },
@@ -104,7 +104,7 @@ export const Decisions = () => {
     {
       year: '2040',
       header: t('decisions.2040.header'),
-      introText: t('decisions.whichChoices'),
+      introText: t('decisions.2040.intro'),
       individualDecisions: [
         {
           name: 'emissions3',
@@ -115,16 +115,16 @@ export const Decisions = () => {
               text: t('decisions.options.lowReduction'),
               scenario: { E: 0 },
             },
-            {
+            /* {
               value:
                 'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
               text: t('decisions.options.mediumReduction'),
               scenario: { E: 1 },
-            },
+            }, */
             {
               value: 'High reduction rate - Zero emissions in 2040',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 2 },
+              scenario: { E: 1 },
             },
           ],
         },

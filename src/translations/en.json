@@ -21,24 +21,27 @@
   },
   "decisions": {
     "2019": {
-      "header": "Decide the future of Europe",
-      "intro": "You are in charge of the European climate policy, and will be asked to make some choices in 2020, 2030 and 2040 in order to maximise the combined economic, social, and environmental score. Your preferences are listed below under the Weight column."
+      "header": "Instructions",
+      "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
     },
     "2020": {
       "header": "Decisions in 2020",
+      "intro": "In order to maximize your score in 2050, you are now asked for some climate policy choices.\n\nRemember that you need to take your assigned point of view into account when making your choices.",
       "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
       "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
     },
     "2030": {
-      "header": "Decisions in 2030",
-      "transmissionDecision": "'Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "header": "",
+      "intro": "You are now in 2030.",
+      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
     },
     "2040": {
-      "header": "Decisions in 2040"
+      "header": "",
+      "intro": "You are now in 2040"
     },
     "2050": {
-      "header": "Results in 2050",
-      "intro": "Below, you can see your total score."
+      "header": "",
+      "intro": ""
     },
     "options": {
       "lowReduction": "Low reduction rate – EU ETS cap",
@@ -48,9 +51,9 @@
     "start": "Start",
     "submitChoices": "Submit Choices",
     "submitChoice": "Submit Choice",
-    "tryAgain": "Try Again",
-    "whichChoices": "Which choices do you want to make in order to reach your goal?",
-    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?"
+    "tryAgain": "TRY AGAIN",
+    "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?",
+    "yourPOW": "Your assigned point of view in this game"
   },
   "score": {
     "sum": {
@@ -69,7 +72,22 @@
     "environmental": {
       "long": "Environmental",
       "short": "Env"
-    }
+    },
+    "score": {
+      "long": "Score",
+      "short": "Score"
+    },
+    "optimal score": {
+      "long": "Optimal Score",
+      "short": "Optimal Score"
+    },
+    "weights": {
+      "long": "Weights",
+      "short": "Weights"
+    },
+    "intro-1": "Your score so far",
+    "intro-final": "Your final score in 2050",
+    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view."
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {
@@ -105,7 +123,7 @@
     "ch": "Switzerland"
   },
   "share": {
-    "share": "Share",
+    "share": "SHARE",
     "tryGameButton": "Beat my Score!",
     "dialogTitle": "Share the Game",
     "shareDialogText": "Share the following link to let others try the game:",
@@ -116,17 +134,18 @@
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
     "tooltipCopyText": "Copied to clipboard",
-    "facebookQuote": "Can you beat my score?",
-    "twitterTitle": "Can you beat my score?"
+    "facebookQuote": "Can you beat my score on REEEMgame? #climatepolicy #h2020",
+    "twitterTitle": "Can you beat my score on REEEMgame? #climatepolicy #h2020"
   },
   "map": {
-    "mwPerCapita": "MW per capita",
-    "tons": "Tons"
+    "mwPerCapita": "MW/capita/year",
+    "tons": "Tonnes CO2/year"
   },
-  "goalSummary": {
-    "decisionsTaken": "Decisions taken",
-    "decisionMade": "Decision made",
-    "optimalDecision": "Optimal decision",
-    "totalScore": "Total score based on the weights"
+  "startmodal": {
+    "title": "Your point of view",
+    "intro": "The pie chart below illustrates your point of view. The largest slice of the pie is your main priority.",
+    "details": "You impact each of these three components with your decisions in 2020, 2030, and 2040. You are measured by the result in 2050 as follows:\n\n- Economic: Higher Gross Domestic Product (GDP) in 2050 is better\n- Social: Cheaper access to energy for everyone in 2050 is better\n- Environmental: Lower annual CO2 emissions in 2050 are better",
+    "group": "Group",
+    "percentage": "Percentage"
   }
 }
