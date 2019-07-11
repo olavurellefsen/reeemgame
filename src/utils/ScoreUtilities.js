@@ -1,5 +1,9 @@
+import React from 'react'
 import eunochCountries from './../data/eunochcountries.json'
 import scoreData from './../data/dummyScore.json'
+
+import gql from 'graphql-tag'
+import { Query } from 'react-apollo'
 
 function generateScenarioList() {
   let scenarios = []
@@ -10,6 +14,7 @@ function generateScenarioList() {
       }
     }
   }
+  return scenarios
 }
 export function generateScores() {
   let countries = []
@@ -25,7 +30,6 @@ export function generateScores() {
     return Math.floor(Math.random() * (max - min)) + min
   }
   const scenarios = generateScenarioList()
-
   //Create data
   let score = []
   scenarios.forEach(function(s) {
@@ -34,13 +38,16 @@ export function generateScores() {
       elmt['scenario'] = s
       elmt['country'] = c
       scoreElmts.forEach(function(e) {
-        elmt[e] = getRandomInt(1, 10)
+        if (e === 'env') {
+          elmt['env'] = 5
+        } else elmt[e] = getRandomInt(1, 10)
       })
       score.push(elmt)
     })
   })
   //Print scores
-  console.log(JSON.stringify(score))
+  //console.log(JSON.stringify(score))
+  alert(JSON.stringify(score))
 }
 
 export function createListOfScenarios(weights) {
@@ -76,3 +83,40 @@ export function createListOfScenarios(weights) {
   })
   return list
 }
+
+export const Qt = () => (
+  <Query
+    query={gql`
+      {
+        model_draft_reeem_osembe_output(
+          where: { indicator: { _eq: "CO2" }, _and: { year: { _eq: 2050 } } }
+        ) {
+          category
+          region
+          year
+          id
+          value
+          pathway
+        }
+      }
+    `}
+  >
+    {({ loading, error, data }) => {
+      if (loading) return <p>Loading...</p>
+      if (error) return <p>Error :(</p>
+      //if (loading) alert('data: ' + JSON.stringify(data))
+      if (data) {
+        generateScores()
+      }
+      return data.model_draft_reeem_osembe_output.map((movie, i) => (
+        <div key={'emm' + i} className="movie">
+          <h3>{movie.category}</h3>
+          <p>{movie.value}</p>
+          <p>{movie.year}</p>
+          <p>{movie.region}</p>
+          <p>{movie.pathway}</p>
+        </div>
+      ))
+    }}
+  </Query>
+)
