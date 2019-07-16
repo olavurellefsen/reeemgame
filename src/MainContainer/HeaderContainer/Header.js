@@ -28,6 +28,18 @@ export const Header = () => {
               <img src={logo} alt="logo" width={200} height={40} />
             </Link>
             <TextContainer>{t('header.title')}</TextContainer>
+            <div
+              style={{
+                fontFamily: 'Montserrat',
+                fontWeight: '700',
+                fontSize: '18px',
+                color: 'red',
+                padding: '10px 40px 0px 40px',
+              }}
+            >
+              DISCLAIMER: THIS IS NOT A VERIFIED VERSION. VISIT LATER FOR A
+              VALID VERSION.
+            </div>
           </TitleContainer>
         </StyledGrid>
         <StyledGrid item>
