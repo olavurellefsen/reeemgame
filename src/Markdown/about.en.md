@@ -12,6 +12,6 @@ All partners within the REEEM project have contributed to the learning simulatio
 
 REEEMgame is part of the [Stakeholder Engagement and Dissemination work package](http://www.reeem.org/index.php/work-packages/) in the REEEM project. The game is based on [OSeMBE](http://www.osemosys.org/osembe.html), which is the open source energy model base for the European Union.
 
-Visit the current version: https://game.reeem.org/
+Visit the current version: https://reeemgame.org/
 
 Source code for the REEEMgame https://github.com/ReeemProject/reeemgame

@@ -1,7 +1,7 @@
 {
   "name": "reeemgame",
   "version": "0.1.0",
-  "homepage": "https://game.reeem.org",
+  "homepage": "https://reeemgame.org",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",

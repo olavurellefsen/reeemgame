@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/ReeemProject/reeemgame.svg?branch=master)](https://travis-ci.com/ReeemProject/reeemgame)
 
-[Online version of REEEMgame](https://game.reeem.org)
+[Online version of REEEMgame](https://reemgame.org)
 
 # REEEMgame
 The purpose of this game is to learn about energy systems.
