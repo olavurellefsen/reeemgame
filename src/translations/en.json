@@ -46,7 +46,7 @@
     "options": {
       "lowReduction": "Low reduction rate – EU ETS cap",
       "mediumReduction": "Medium reduction rate - IPPC Pathway Zero Emissions in 2050",
-      "highReduction": "High reduction rate - Zero emissions in 2040"
+      "highReduction": "High reduction rate - Zero emissions in 2050"
     },
     "start": "Start",
     "submitChoices": "Submit Choices",

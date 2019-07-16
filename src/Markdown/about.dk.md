@@ -2,18 +2,15 @@
 
 ## Om REEEMgame
 
-(foreløbig kun på engelsk)
+REEEMgame er en del af [REEEM projektet](http://www.reeem.org). Spillet er udviklet til at formidle dataene bag det forenklede Open-source Engagement Model: [OSeMBE](http://www.osemosys.org/osembe.html), som er open source energimodelbase for Den Europæiske Union. Formålet med spillet er at understøtte læringsessioner med interessenter, for at give
+interessenterne en "low-threshold" forståelse af energisystem-dynamikken.
 
-REEEMgame is a learning simulation of how the future will look depending on how the player decides to act. The goal is to maximize the score in 2050, considering the social, environmental and economic dimensions decade by decade.
+REEEMgame simulerer hvordan fremtiden vil se ud, afhængigt af hvordan spilleren beslutter sig for at handle og målet er at maksimere scoren i 2050, den sociale, den miljømæssige og den økonomiske dimension taget i betragtning.
 
-The game aims to let the player interactively discover how (policy) decisions might affect the development of the European electricity sector in the transition to a low carbon system. At three points in time (2020, 2030, 2040) decisions need to be made concerning the emission reduction pathway, the investment in Renewable Energy Technologies, and the trans-border electricity transmission between European countries.
+Spillet har til formål at lade spilleren interaktivt opdage, hvordan (politiske) beslutninger kan påvirke udviklingen af ​​den europæiske el-sektor i overgangen til et lavt CO2-system. På tre punkter i tiden (2020, 2030, 2040), skal der træffes beslutninger vedrørende emissionsreduktionsvejen, investering i vedvarende energiteknologier og elektricitetsoverførsel mellem europæiske lande.
 
-REEEMgame features data about e.g. electricity demands and emission limits in Europe over time and the player can review the data in order to make good decisions.
+REEEMgame indeholder data om f.eks. elektricitetsforbrug og emissionsloft i Europa over tid, og spilleren kan se på dataene for at træffe gode beslutninger.
 
-All partners within the REEEM project have contributed to the learning simulation by providing feedback throughout the development process and the game will be updated throughout the project.
+Alle partnere inden for REEEM projektet har bidraget til spillet ved at give feedback gennem udviklingsprocessen.
 
-REEEMgame is part of the [Stakeholder Engagement and Dissemination work package](http://www.reeem.org/index.php/work-packages/) in the REEEM project. The game is based on [OSeMBE](http://www.osemosys.org/osembe.html), which is the open source energy model base for the European Union.
-
-Visit the current version: https://game.reeem.org/
-
-Source code for the REEEMgame https://github.com/ReeemProject/reeemgame
+Kildekode til REEEMgame: https://github.com/ReeemProject/reeemgame
