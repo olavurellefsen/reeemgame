@@ -1,4 +1,5 @@
 import sampleData from '../../../../data/sampledata.json'
+import oilData from '../../../../data/76_oil.json'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
@@ -40,6 +41,18 @@ const emissionLimit = (scenario, currentYear) => {
   return emissionLimitData[0]
 }
 
+const oil = (pathway, currentYear) => {
+  const data = oilData
+    .filter(item => item.year === currentYear && item.pathway === pathway)
+    .map(countryGroup =>
+      eunochCountries.map(country => ({
+        code: country.code.toLowerCase(),
+        color: convertToColor(countryGroup.value, 0, 30),
+      }))
+    )
+  return data[0]
+}
+
 const score = scenario => {
   const score = scoreData
     .filter(elmt => elmt.scenario === scenario)
@@ -58,7 +71,7 @@ export const getMapColors = (valueToShow, scenario, currentYear) => {
     return specifiedAnnualDemand(scenario, currentYear)
   }
   if (valueToShow === 'emissionLimit') {
-    return emissionLimit(scenario, currentYear)
+    return oil(scenario, currentYear)
   }
   if (valueToShow === 'score') {
     return score(scenario)
