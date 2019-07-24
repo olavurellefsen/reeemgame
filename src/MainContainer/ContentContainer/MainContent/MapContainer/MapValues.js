@@ -11,8 +11,8 @@ const maxValueEmissionLimit = 1000000
 const minScoreValue = 0
 const maxScoreValue = 10
 
-const specifiedAnnualDemand = (scenario, currentYear) =>
-  sampleData
+const specifiedAnnualDemand = (scenario, currentYear) => {
+  const data = sampleData
     .filter(
       country =>
         country.Parameter === 'SpecifiedAnnual Demand' &&
@@ -24,6 +24,8 @@ const specifiedAnnualDemand = (scenario, currentYear) =>
       value: country[currentYear],
       unit: country.Unit,
     }))
+  return data
+}
 
 const emissionLimit = (scenario, currentYear) => {
   const emissionLimitData = sampleData
@@ -44,13 +46,13 @@ const emissionLimit = (scenario, currentYear) => {
 const oil = (pathway, currentYear) => {
   const data = oilData
     .filter(item => item.year === currentYear && item.pathway === pathway)
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(30 - countryGroup.value, 0, 30),
-      }))
-    )
-  return data[0]
+    .map(item => ({
+      code: item.region.toLowerCase(),
+      color: convertToColor(30, 0, 30),
+      value: item.value,
+      unit: item.unit,
+    }))
+  return data
 }
 
 const score = scenario => {
