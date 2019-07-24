@@ -47,7 +47,7 @@ const oil = (pathway, currentYear) => {
     .map(countryGroup =>
       eunochCountries.map(country => ({
         code: country.code.toLowerCase(),
-        color: convertToColor(countryGroup.value, 0, 30),
+        color: convertToColor(30 - countryGroup.value, 0, 30),
       }))
     )
   return data[0]
