@@ -1,0 +1,196 @@
+{
+  "model_draft_reeem_osembe_output": [
+    {
+      "value": 21825.1143609242,
+      "indicator": "CO2",
+      "pathway": "C0T0E0",
+      "h_pathway": "C0T0E0"
+    },
+    {
+      "value": 21590.4758081479,
+      "indicator": "CO2",
+      "pathway": "C0T0E1",
+      "h_pathway": "C0T0E9"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T0E5",
+      "h_pathway": "C0T0E10"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T0E3",
+      "h_pathway": "C0T0E12"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T0E7",
+      "h_pathway": "C0T0E14"
+    },
+    {
+      "value": 22032.9052490462,
+      "indicator": "CO2",
+      "pathway": "C0T0E2",
+      "h_pathway": "C0T0E3"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T0E6",
+      "h_pathway": "C0T0E4"
+    },
+    {
+      "value": 22721.1449985678,
+      "indicator": "CO2",
+      "pathway": "C0T0E4",
+      "h_pathway": "C0T0E9"
+    },
+    {
+      "value": 19875.1045018087,
+      "indicator": "CO2",
+      "pathway": "C0T1E0",
+      "h_pathway": "C0T1E0"
+    },
+    {
+      "value": 12450.1427412788,
+      "indicator": "CO2",
+      "pathway": "C0T1E1",
+      "h_pathway": "C0T1E9"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T1E5",
+      "h_pathway": "C0T1E10"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T1E3",
+      "h_pathway": "C0T1E12"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T1E7",
+      "h_pathway": "C0T1E14"
+    },
+    {
+      "value": 20117.3680039633,
+      "indicator": "CO2",
+      "pathway": "C0T1E2",
+      "h_pathway": "C0T1E3"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C0T1E6",
+      "h_pathway": "C0T1E4"
+    },
+    {
+      "value": 18185.8707183372,
+      "indicator": "CO2",
+      "pathway": "C0T1E4",
+      "h_pathway": "C0T1E1"
+    },
+    {
+      "value": 26229.9342899446,
+      "indicator": "CO2",
+      "pathway": "C1T0E0",
+      "h_pathway": "C1T0E0"
+    },
+    {
+      "value": 26245.7756626508,
+      "indicator": "CO2",
+      "pathway": "C1T0E4",
+      "h_pathway": "C1T0E1"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T0E5",
+      "h_pathway": "C1T0E10"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T0E3",
+      "h_pathway": "C1T0E12"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T0E7",
+      "h_pathway": "C1T0E14"
+    },
+    {
+      "value": 27822.4978078056,
+      "indicator": "CO2",
+      "pathway": "C1T0E2",
+      "h_pathway": "C1T0E3"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T0E6",
+      "h_pathway": "C1T0E4"
+    },
+    {
+      "value": 31298.4117233205,
+      "indicator": "CO2",
+      "pathway": "C1T0E1",
+      "h_pathway": "C1T0E9"
+    },
+    {
+      "value": 25540.8900274661,
+      "indicator": "CO2",
+      "pathway": "C1T1E0",
+      "h_pathway": "C1T1E0"
+    },
+    {
+      "value": 29858.7058010867,
+      "indicator": "CO2",
+      "pathway": "C1T1E4",
+      "h_pathway": "C1T1E1"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T1E5",
+      "h_pathway": "C1T1E10"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T1E3",
+      "h_pathway": "C1T1E12"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T1E7",
+      "h_pathway": "C1T1E14"
+    },
+    {
+      "value": 26562.5271791584,
+      "indicator": "CO2",
+      "pathway": "C1T1E2",
+      "h_pathway": "C1T1E3"
+    },
+    {
+      "value": 0,
+      "indicator": "CO2",
+      "pathway": "C1T1E6",
+      "h_pathway": "C1T1E4"
+    },
+    {
+      "value": 60851.51146,
+      "indicator": "CO2",
+      "pathway": "C1T1E1",
+      "h_pathway": "C1T1E9"
+    }
+  ]
+}

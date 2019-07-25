@@ -1,0 +1,4146 @@
+[
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E3",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E10",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E0",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E1",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E14",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E4",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E9",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E12",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E14",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E0",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E1",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E3",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E4",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E9",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E10",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 4542.242048,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T1E12",
+    "nid": 71,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E14",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E1",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E3",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E14",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E3",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E10",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E10",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E12",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E9",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E4",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E1",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E0",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E4",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E12",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2549.216,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T1E9",
+    "nid": 74,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E9",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E3",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E1",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E4",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E3",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E12",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E1",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E10",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E10",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E9",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E12",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E14",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E14",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E4",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 2469.568421,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T1E0",
+    "nid": 75,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E10",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E14",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E9",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E3",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E1",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E1",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E14",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E12",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E0",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T1E4",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E3",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E9",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E10",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E4",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1895.223764,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E12",
+    "nid": 76,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E12",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E14",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E12",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E10",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E10",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E9",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E4",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E3",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E1",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T1E0",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E14",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E3",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E9",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E1",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1973.710194,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E4",
+    "nid": 79,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E4",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E3",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E12",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E14",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E4",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E1",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E10",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E10",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E3",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E9",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E0",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E14",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E12",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E0",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E1",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1507.187756,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T1E9",
+    "nid": 80,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E9",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E14",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E0",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E3",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E14",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E12",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E4",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E12",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E9",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E0",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E10",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E4",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E10",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E3",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E1",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T1E1",
+    "nid": 81,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E14",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E1",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E10",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E14",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E9",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E3",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E1",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E12",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E12",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E4",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E3",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E10",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T1E0",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E9",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E4",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 3594.792875,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E0",
+    "nid": 92,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E14",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E10",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E1",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E3",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E4",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E9",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E12",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E0",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E1",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E3",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E4",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E9",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E10",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E12",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T1E14",
+    "nid": 94,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E10",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E4",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E3",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E14",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E4",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E12",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E9",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E3",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E12",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E1",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E10",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E14",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E1",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E9",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 572.1540388,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T1E0",
+    "nid": 95,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E3",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E4",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E14",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E10",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E9",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E14",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E12",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E0",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E12",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E3",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E4",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E9",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E10",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E0",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T1E1",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E1",
+    "nid": 96,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E3",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E9",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E9",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E0",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E14",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E0",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E1",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E10",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E10",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E12",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E1",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E4",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E14",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E12",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T1E4",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E3",
+    "nid": 97,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E14",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E3",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E0",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E3",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E12",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E9",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E10",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E1",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E4",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E14",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E10",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E1",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E0",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T1E4",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E12",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E9",
+    "nid": 98,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E10",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E4",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E9",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E12",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E3",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E1",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E3",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E14",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E0",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E9",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E14",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E12",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E1",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E4",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E0",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T1E10",
+    "nid": 99,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E0",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E12",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E1",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E9",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E4",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E1",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E12",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E9",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E14",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E10",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E10",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E0",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E3",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E14",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T1E3",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E4",
+    "nid": 100,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E4",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E14",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E3",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E9",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E10",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E4",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E10",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E9",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E3",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E1",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E12",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E1",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E12",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E0",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E14",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 1950.478273,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T1E0",
+    "nid": 101,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E10",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E10",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E1",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E12",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E3",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E3",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E14",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E0",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E14",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E1",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E9",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E0",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E9",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E12",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T1E4",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 5336.179088,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E4",
+    "nid": 102,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E0",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E10",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E4",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E14",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E3",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E14",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E10",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E12",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E1",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E12",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E4",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T1E9",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E1",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E9",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E0",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 4272.741263,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E3",
+    "nid": 103,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E4",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E9",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E0",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E1",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E14",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E3",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E9",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E0",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E12",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E12",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E1",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E14",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E3",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T1E10",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E10",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E4",
+    "nid": 104,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E14",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E10",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E9",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E12",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E1",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E3",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E4",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E10",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E0",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E4",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E12",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E14",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E0",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E9",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T1E3",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E1",
+    "nid": 105,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E14",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E1",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E0",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E12",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E4",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E9",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E12",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E3",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E10",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E3",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E4",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E1",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E14",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E9",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E0",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 3199.808457,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T1E10",
+    "nid": 106,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E4",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E3",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E4",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E1",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E14",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E12",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E9",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E12",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E0",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E14",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E0",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E1",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E3",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E10",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E10",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 2088.895728,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T1E9",
+    "nid": 107,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E0",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E4",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E3",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E12",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E1",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E9",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E9",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E10",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E14",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E1",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E12",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E3",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E4",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E14",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 826.430377,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T1E10",
+    "nid": 110,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E9",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E4",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E12",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E4",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E12",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E1",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E0",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E0",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E3",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E1",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E3",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E9",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E14",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E14",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E10",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 876.293,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T1E10",
+    "nid": 111,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E3",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E10",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E9",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E9",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E14",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E14",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E3",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E12",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E1",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E12",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E1",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E4",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E4",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E0",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T1E0",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 965.913875,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E10",
+    "nid": 112,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E4",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E0",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E1",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E9",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E12",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E4",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E14",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E14",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E10",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E10",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E3",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T1E1",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E3",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E0",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E12",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 1842.206875,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E9",
+    "nid": 113,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E12",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E12",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E4",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E14",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E10",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E1",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E3",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E3",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E10",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E0",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E4",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E14",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E0",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E9",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E1",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 748.6486944,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T1E9",
+    "nid": 114,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E14",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E0",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E14",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E12",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E1",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E10",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E0",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E9",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E9",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E3",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E10",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E12",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E4",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T1E4",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E1",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 534.7490675,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E3",
+    "nid": 115,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E9",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E12",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E4",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E0",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E10",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E10",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E4",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E1",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E12",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E1",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E3",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E14",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E14",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E0",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E9",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 2016.63421,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T1E3",
+    "nid": 116,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E1",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E3",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E14",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E12",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E4",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E0",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E12",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E14",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E10",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E4",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E9",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E1",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E0",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E3",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E9",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1313.562192,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T1E10",
+    "nid": 117,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E3",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E10",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E14",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E9",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E4",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E1",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E0",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E12",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E3",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E10",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E9",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E12",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T1E14",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E1",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 1773.162066,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E4",
+    "nid": 118,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E10",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E10",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E9",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E0",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E4",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E12",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E4",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E14",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E12",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E1",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E3",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E9",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E0",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E1",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E3",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 897.666,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T1E14",
+    "nid": 125,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E1",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E3",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E4",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E0",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E9",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E12",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E14",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E0",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E10",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E1",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E12",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E3",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E4",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E9",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E14",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 722.796,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T1E10",
+    "nid": 126,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E0",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E3",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E10",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E1",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E9",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E1",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E14",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E9",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E3",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E12",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E14",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E4",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E4",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E12",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T1E0",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E10",
+    "nid": 131,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E3",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E9",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E12",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E4",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E14",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E1",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E10",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E10",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T1E0",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E14",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E12",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E9",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E0",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E4",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E3",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 1104.271667,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E1",
+    "nid": 132,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E0",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E12",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E14",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E4",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E1",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E1",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E14",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E12",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E10",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E3",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E9",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E3",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E4",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E10",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 4414.110484,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T1E9",
+    "nid": 134,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E10",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E3",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E3",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E14",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E12",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E4",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E9",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E14",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E9",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E1",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E4",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E1",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E10",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E12",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 135,
+    "year": 2050
+  },
+  {
+    "value": 1895.928512,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T1E0",
+    "nid": 135,
+    "year": 2050
+  }
+]

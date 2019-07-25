@@ -1,0 +1,330 @@
+{
+  "output": [
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E0",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E1",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E3",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E4",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E12",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E14",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E0",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E1",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E3",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E4",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E12",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T1E14",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E0",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E1",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E3",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E4",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E12",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T0E14",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E0",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E1",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E3",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E4",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E12",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E14",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Biofuel liquid",
+      "pathway": "C0T0E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Biofuel liquid",
+      "pathway": "C0T0E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C0T0E10",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Biofuel liquid",
+      "pathway": "C1T1E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Biofuel liquid",
+      "pathway": "C1T1E9",
+      "nid": 277
+    },
+    {
+      "value": 0,
+      "indicator": "Heat and Power Unit",
+      "pathway": "C1T1E9",
+      "nid": 277
+    }
+  ],
+  "input": [
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E0",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E1",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E3",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E4",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E9",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E12",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E14",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E0",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E1",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E3",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E4",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E9",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E10",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E12",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T1E14",
+      "nid": 71
+    },
+    {
+      "value": 4542.242048,
+      "indicator": "Bio fuel ICE Heat and Power unit",
+      "pathway": "C0T0E10",
+      "nid": 71
+    }
+  ]
+}

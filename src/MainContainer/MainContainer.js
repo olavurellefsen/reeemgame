@@ -2,12 +2,13 @@ import React from 'react'
 import { Container } from './MainContainer.style'
 import { Header } from './HeaderContainer/Header'
 import { ContentContainer } from './ContentContainer/ContentContainer'
-import { Qt } from '../utils/ScoreUtilities'
+import { Qt2, EcoScoreGen } from '../utils/ScoreUtilities'
 
 export const MainContainer = () => (
   <Container>
-    <Header />
-    <Qt />
-    <ContentContainer />
+    <Qt2 />
+    {/* <Header /> */}
+    {/* <EcoScoreGen /> */}
+    {/* <ContentContainer /> */}
   </Container>
 )
