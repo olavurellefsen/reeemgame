@@ -1,15 +1,15 @@
-import oil from '../../../../data/oil.json'
-import coal from '../../../../data/coal.json'
-import naturalGas from '../../../../data/naturalGas.json'
-import nuclear from '../../../../data/nuclear.json'
-import waste from '../../../../data/waste.json'
-import biomass from '../../../../data/biomass.json'
-import bioFuel from '../../../../data/bioFuel.json'
-import hydro from '../../../../data/hydro.json'
-import wind from '../../../../data/wind.json'
-import solar from '../../../../data/solar.json'
-import geothermal from '../../../../data/geothermal.json'
-import ocean from '../../../../data/ocean.json'
+import oil from '../../../../data/indicators/oil.json'
+import coal from '../../../../data/indicators/coal.json'
+import naturalGas from '../../../../data/indicators/naturalGas.json'
+import nuclear from '../../../../data/indicators/nuclear.json'
+import waste from '../../../../data/indicators/waste.json'
+import biomass from '../../../../data/indicators/biomass.json'
+import bioFuel from '../../../../data/indicators/bioFuel.json'
+import hydro from '../../../../data/indicators/hydro.json'
+import wind from '../../../../data/indicators/wind.json'
+import solar from '../../../../data/indicators/solar.json'
+import geothermal from '../../../../data/indicators/geothermal.json'
+import ocean from '../../../../data/indicators/ocean.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
 import dataInfo from './../../../../data/dataInfo'
@@ -73,24 +73,15 @@ const indicatorData = (indicator, pathway, currentYear) => {
       console.log('not valid indicator: ' + indicator)
       return []
   }
-  const data = file
-    .filter(item => item.year === currentYear && item.pathway === pathway)
-    .map(item => ({
-      code: item.region.toLowerCase(),
-      color: convertToColor(item.value, params.min, params.max),
-      value: item.value,
-      unit: params.unit,
-    }))
-  /*console.log(
-    'Data for: indicator=' +
-      indicator +
-      ' pathway=' +
-      pathway +
-      ' year=' +
-      currentYear
+  const data = file[pathway][currentYear]
+  let colorList = []
+  Object.keys(data).forEach(country =>
+    colorList.push({
+      code: country.toLowerCase(),
+      color: convertToColor(data[country], params.min, params.max),
+    })
   )
-  console.log(data)*/
-  return data
+  return colorList
 }
 
 const score = scenario => {
