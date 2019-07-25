@@ -9,7 +9,7 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 class App extends Component {
   render() {
-    //generateData()
+    generateData()
     return <MainContainer />
   }
 }
