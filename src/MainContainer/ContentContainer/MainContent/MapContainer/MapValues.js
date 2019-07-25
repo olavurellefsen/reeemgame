@@ -1,56 +1,96 @@
-import sampleData from '../../../../data/sampledata.json'
-import oilData from '../../../../data/76_oil.json'
-import eunochCountries from '../../../../data/eunochcountries.json'
+import oil from '../../../../data/oil.json'
+import coal from '../../../../data/coal.json'
+import naturalGas from '../../../../data/naturalGas.json'
+import nuclear from '../../../../data/nuclear.json'
+import waste from '../../../../data/waste.json'
+import biomass from '../../../../data/biomass.json'
+import bioFuel from '../../../../data/bioFuel.json'
+import hydro from '../../../../data/hydro.json'
+import wind from '../../../../data/wind.json'
+import solar from '../../../../data/solar.json'
+import geothermal from '../../../../data/geothermal.json'
+import ocean from '../../../../data/ocean.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
+import dataInfo from './../../../../data/dataInfo'
 
-const minValueDemand = 90
-const maxValueDemand = 400
-const minValueEmissionLimit = 0
-const maxValueEmissionLimit = 1000000
 const minScoreValue = 0
 const maxScoreValue = 10
 
-const specifiedAnnualDemand = (scenario, currentYear) =>
-  sampleData
-    .filter(
-      country =>
-        country.Parameter === 'SpecifiedAnnual Demand' &&
-        country.Scenario === scenario
-    )
-    .map(country => ({
-      code: country.Country.toLowerCase(),
-      color: convertToColor(country[currentYear], 90, 400),
-      value: country[currentYear],
-      unit: country.Unit,
-    }))
-
-const emissionLimit = (scenario, currentYear) => {
-  const emissionLimitData = sampleData
-    .filter(
-      country =>
-        country.Parameter === 'AnnualEmissionLimit' &&
-        country.Scenario === scenario
-    )
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(countryGroup[currentYear], 0, 1000000),
-      }))
-    )
-  return emissionLimitData[0]
-}
-
-const oil = (pathway, currentYear) => {
-  const data = oilData
+const indicatorData = (indicator, pathway, currentYear) => {
+  const params = getIndicatorParams(indicator)
+  var file
+  switch (indicator) {
+    case 'coal': {
+      file = coal
+      break
+    }
+    case 'oil': {
+      file = oil
+      break
+    }
+    case 'naturalGas': {
+      file = naturalGas
+      break
+    }
+    case 'nuclear': {
+      file = nuclear
+      break
+    }
+    case 'waste': {
+      file = waste
+      break
+    }
+    case 'biomass': {
+      file = biomass
+      break
+    }
+    case 'bioFuel': {
+      file = bioFuel
+      break
+    }
+    case 'hydro': {
+      file = hydro
+      break
+    }
+    case 'wind': {
+      file = wind
+      break
+    }
+    case 'solar': {
+      file = solar
+      break
+    }
+    case 'geothermal': {
+      file = geothermal
+      break
+    }
+    case 'ocean': {
+      file = ocean
+      break
+    }
+    default:
+      console.log('not valid indicator: ' + indicator)
+      return []
+  }
+  const data = file
     .filter(item => item.year === currentYear && item.pathway === pathway)
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(30 - countryGroup.value, 0, 30),
-      }))
-    )
-  return data[0]
+    .map(item => ({
+      code: item.region.toLowerCase(),
+      color: convertToColor(item.value, params.min, params.max),
+      value: item.value,
+      unit: params.unit,
+    }))
+  /*console.log(
+    'Data for: indicator=' +
+      indicator +
+      ' pathway=' +
+      pathway +
+      ' year=' +
+      currentYear
+  )
+  console.log(data)*/
+  return data
 }
 
 const score = scenario => {
@@ -67,64 +107,63 @@ const score = scenario => {
   return score
 }
 export const getMapColors = (valueToShow, scenario, currentYear) => {
-  if (valueToShow === 'electricityDemands') {
-    return specifiedAnnualDemand(scenario, currentYear)
-  }
-  if (valueToShow === 'emissionLimit') {
-    return oil(scenario, currentYear)
-  }
   if (valueToShow === 'score') {
     return score(scenario)
+  } else {
+    return indicatorData(valueToShow, scenario, currentYear)
   }
-  return []
 }
 
 export const getCountryDataForChart = (
   myCountry,
   currentYear,
   indicator,
-  scenario
+  pathway
 ) => {
-  var minValue
-  var maxValue
-  if (indicator === 'electricityDemands') {
-    indicator = 'SpecifiedAnnual Demand'
-    myCountry = myCountry.toUpperCase()
-    minValue = minValueDemand
-    maxValue = maxValueDemand
-  }
-  if (indicator === 'emissionLimit') {
-    indicator = 'AnnualEmissionLimit'
-    myCountry = 'EU28+CH+NO' //Because there is not distinct data for every country
-    minValue = minValueEmissionLimit
-    maxValue = maxValueEmissionLimit
-  }
-  const countryData = sampleData.filter(
-    country =>
-      country.Country === myCountry &&
-      country.Parameter === indicator &&
-      country.Scenario === scenario
-  )
+  const params = getIndicatorParams(indicator)
+  var dataList = [['Element', params.unit, { role: 'style' }]]
+  //const e = oil[0]
+  //console.log(e)
+  //console.log(e.year % (currentYear < 2030 ? 1 : 5) === 0)
+  oil
+    .filter(
+      item =>
+        item.region === myCountry &&
+        item.pathway === pathway &&
+        item.year <= currentYear &&
+        item.year % (currentYear < 2030 ? 1 : 5) === 0
+    )
+
+    .forEach(element => {
+      let year = [
+        element.year,
+        Number(element.value),
+        convertToColor(element.value, params.min, params.max),
+      ]
+      dataList.push(year)
+    })
+  /*
   let data = []
-  //prevent compile errors if cliked on country with no data
+  //prevent errors if clicked on country with no data
   if (countryData.length) {
-    data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
+    data = [['Element', params.unit, { role: 'style' }]]
     for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
       let year = [
         JSON.stringify(i),
         countryData[0][i],
-        convertToColor(countryData[0][i], minValue, maxValue),
+        convertToColor(countryData[0][i], params.min, params.max),
       ]
 
       data.push(year)
     }
-  }
-  return data
+  }*/
+  //console.log(dataList)
+  return dataList
 }
 export const getUnit = indicator => {
   if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
   else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  const elmt = sampleData.find(element => element.Parameter === indicator)
+  const elmt = oil.find(element => element.Parameter === indicator)
   return elmt ? elmt.Unit : 'undefined'
 }
 
@@ -162,4 +201,28 @@ export const getCountryScoreForChart = (myCountry, scenario, translation) => {
     data.push(elmt)
   }
   return data
+}
+export const getIndicatorParams = indicator => {
+  if (indicator === 'score') {
+    return {
+      unit: 'score',
+      max: 10,
+      min: 0,
+      steps: 5,
+      flipColors: true,
+    }
+  } else {
+    const data = dataInfo.filter(item => item.indicator === indicator)
+    const info = data[0]
+    if (data.length < 1) {
+      console.log('cannot find info for indicator: ' + indicator)
+      return null
+    }
+    return {
+      unit: info.unit,
+      max: info.max,
+      min: info.min,
+      steps: 10,
+    }
+  }
 }

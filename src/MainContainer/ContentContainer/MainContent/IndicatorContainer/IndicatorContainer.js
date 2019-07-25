@@ -8,7 +8,20 @@ import Context from '../../../../Context/Context'
 export const IndicatorContainer = () => {
   const [state, dispatch] = useContext(Context)
   const { t } = useTranslation()
-  const availableIndicators = ['electricityDemands', 'emissionLimit']
+  const availableIndicators = [
+    'coal',
+    'oil',
+    'naturalGas',
+    'nuclear',
+    'waste',
+    'biomass',
+    'bioFuel',
+    'hydro',
+    'wind',
+    'solar',
+    'geothermal',
+    'ocean',
+  ]
   const scoreIndicator = 'score'
   return (
     <MenuList>

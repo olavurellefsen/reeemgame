@@ -16,8 +16,18 @@
     "title": "Mál"
   },
   "indicator": {
-    "electricityDemands": "Elnýtsla",
-    "emissionLimit": "Útlátsloft"
+    "coal": "Kol",
+    "oil": "Olja",
+    "naturalGas": "Natural Gas / non renew.",
+    "nuclear": "Kjarnorka",
+    "waste": "Waste non renewable",
+    "biomass": "Biomass Solid",
+    "bioFuel": "Biofuel Liquid",
+    "hydro": "Hydro",
+    "wind": "Vindorka",
+    "solar": "Sólorka",
+    "geothermal": "Geothermal",
+    "ocean": "Ocean"
   },
   "decisions": {
     "2019": {

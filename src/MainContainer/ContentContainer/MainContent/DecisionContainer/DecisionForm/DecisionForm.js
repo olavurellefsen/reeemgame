@@ -41,11 +41,13 @@ export const DecisionForm = ({ onStart }) => {
         })
       }
       onStart()
-      //Set indicator to emission limit when the game starts
-      dispatch({
-        name: 'emissionLimit',
-        type: 'setSelectedIndicator',
-      })
+      //Set indicator to emission limit when the game starts, if no indicator has been selected
+      if (!state.selectedIndicator) {
+        dispatch({
+          name: 'coal',
+          type: 'setSelectedIndicator',
+        })
+      }
       setNewScenario({ c: 0, e: 0, t: 0 })
       setScenario({ c: 0, e: 0, t: 0 })
       dispatch({

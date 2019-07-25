@@ -2,13 +2,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
-import { getMapColors } from './MapValues'
-import eunochCountries from '../../../../data/eunochcountries.json'
+import { getMapColors, getIndicatorParams } from './MapValues'
+//import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
-import sampleData from './../../../../data/sampledata'
+//import sampleData from './../../../../data/sampledata'
+//import oilData from '../../../../data/oil.json'
 import { IndicatorInfo } from './IndicatorInfo'
 import Popover from '@material-ui/core/Popover'
 import { CountryPopup } from './CountryPopup'
+//import dataInfo from './../../../../data/dataInfo'
 
 export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -70,7 +72,7 @@ export const MapContainer = () => {
   )
 
   var lp
-  if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
+  if (state.selectedIndicator) lp = getIndicatorParams(state.selectedIndicator)
   return (
     <Container>
       <Popover
@@ -120,28 +122,8 @@ export const MapContainer = () => {
   )
 }
 
-const getLegendPara = indicator => {
-  if (indicator === 'score') {
-    return {
-      unit: 'score',
-      max: 10,
-      min: 0,
-      steps: 5,
-      flipColors: true,
-    }
-  }
-  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  return {
-    unit: sampleData.find(element => element.Parameter === indicator).Unit,
-    max: sampleData.find(element => element.Parameter === indicator).max,
-    min: sampleData.find(element => element.Parameter === indicator).min,
-    steps: sampleData.find(element => element.Parameter === indicator).steps,
-  }
-}
-
 const hasData = (country, indicator, selectedScenario, gameState) => {
-  var data
+  /* var data
   if (indicator === 'electricityDemands') {
     indicator = 'SpecifiedAnnual Demand'
     data = sampleData.find(
@@ -154,6 +136,6 @@ const hasData = (country, indicator, selectedScenario, gameState) => {
 
   if (indicator === 'emissionLimit' || indicator === 'score') {
     data = eunochCountries.find(element => element.code === country)
-  }
-  return data ? true : false
+  } */
+  return true //data ? true : false
 }
