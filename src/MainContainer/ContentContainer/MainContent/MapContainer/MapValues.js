@@ -113,7 +113,7 @@ export const getCountryDataForChart = (
 ) => {
   const params = getIndicatorParams(indicator)
   var dataList = [['Element', params.unit, { role: 'style' }]]
-  const e = oil[0]
+  //const e = oil[0]
   //console.log(e)
   //console.log(e.year % (currentYear < 2030 ? 1 : 5) === 0)
   oil
