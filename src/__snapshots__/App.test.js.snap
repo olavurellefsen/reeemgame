@@ -32,6 +32,11 @@ exports[`should render correctly 1`] = `
             >
               game
             </div>
+            <div
+              style="font-family: Montserrat; font-weight: 700; font-size: 18px; color: red; padding: 10px 40px 0px 40px;"
+            >
+              DISCLAIMER: THIS IS NOT A VERIFIED VERSION. VISIT LATER FOR A VALID VERSION.
+            </div>
           </div>
         </div>
         <div
@@ -142,7 +147,7 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
-                Electricity Demands
+                Coal
               </span>
             </div>
             <span
@@ -160,7 +165,187 @@ exports[`should render correctly 1`] = `
               <span
                 class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
               >
-                Emission Limit
+                Oil
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Natural Gas / non renew.
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Nuclear
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Waste non renewable
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Biomass Solid
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Biofuel Liquid
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Hydro
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Wind
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Solar
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Geothermal
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root-238"
+            />
+          </li>
+          <li
+            class="MuiButtonBase-root-124 MuiListItem-root-143 MuiListItem-default-146 MuiListItem-gutters-151 MuiListItem-button-152 MuiMenuItem-root-140 MuiMenuItem-gutters-141"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              class="MuiListItemText-root-155"
+            >
+              <span
+                class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+              >
+                Ocean
               </span>
             </div>
             <span
