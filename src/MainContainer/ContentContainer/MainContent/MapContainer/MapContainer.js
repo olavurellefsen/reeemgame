@@ -6,9 +6,11 @@ import { getMapColors } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
+import oilData from '../../../../data/oil.json'
 import { IndicatorInfo } from './IndicatorInfo'
 import Popover from '@material-ui/core/Popover'
 import { CountryPopup } from './CountryPopup'
+import dataInfo from './../../../../data/dataInfo'
 
 export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -129,14 +131,20 @@ const getLegendPara = indicator => {
       steps: 5,
       flipColors: true,
     }
-  }
-  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  return {
-    unit: sampleData.find(element => element.Parameter === indicator).Unit,
-    max: sampleData.find(element => element.Parameter === indicator).max,
-    min: sampleData.find(element => element.Parameter === indicator).min,
-    steps: sampleData.find(element => element.Parameter === indicator).steps,
+  } else if (indicator === 'oil') {
+    return {
+      unit: oilData[0].unit,
+      max: 30,
+      min: -0.001,
+      steps: 10,
+    }
+  } else {
+    return {
+      unit: oilData[0].unit,
+      max: 30,
+      min: -0.001,
+      steps: 10,
+    }
   }
 }
 

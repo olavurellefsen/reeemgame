@@ -1,5 +1,15 @@
-import sampleData from '../../../../data/sampledata.json'
-import oilData from '../../../../data/76_oil.json'
+import oil from '../../../../data/oil.json'
+import coal from '../../../../data/coal.json'
+import naturalGas from '../../../../data/naturalGas.json'
+import nuclear from '../../../../data/nuclear.json'
+import waste from '../../../../data/waste.json'
+import biomass from '../../../../data/biomass.json'
+import bioFuel from '../../../../data/bioFuel.json'
+import hydro from '../../../../data/hydro.json'
+import wind from '../../../../data/wind.json'
+import solar from '../../../../data/solar.json'
+import geothermal from '../../../../data/geothermal.json'
+import ocean from '../../../../data/ocean.json'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
@@ -11,44 +21,65 @@ const maxValueEmissionLimit = 1000000
 const minScoreValue = 0
 const maxScoreValue = 10
 
-const specifiedAnnualDemand = (scenario, currentYear) => {
-  const data = sampleData
-    .filter(
-      country =>
-        country.Parameter === 'SpecifiedAnnual Demand' &&
-        country.Scenario === scenario
-    )
-    .map(country => ({
-      code: country.Country.toLowerCase(),
-      color: convertToColor(country[currentYear], 90, 400),
-      value: country[currentYear],
-      unit: country.Unit,
-    }))
-  return data
-}
-
-const emissionLimit = (scenario, currentYear) => {
-  const emissionLimitData = sampleData
-    .filter(
-      country =>
-        country.Parameter === 'AnnualEmissionLimit' &&
-        country.Scenario === scenario
-    )
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(countryGroup[currentYear], 0, 1000000),
-      }))
-    )
-  return emissionLimitData[0]
-}
-
-const oil = (pathway, currentYear) => {
-  const data = oilData
+const indicatorData = (indicator, pathway, currentYear) => {
+  var file
+  switch (indicator) {
+    case 'coal': {
+      file = coal
+      break
+    }
+    case 'oil': {
+      file = oil
+      break
+    }
+    case 'naturalGas': {
+      file = naturalGas
+      break
+    }
+    case 'nuclear': {
+      file = nuclear
+      break
+    }
+    case 'waste': {
+      file = waste
+      break
+    }
+    case 'biomass': {
+      file = biomass
+      break
+    }
+    case 'bioFuel': {
+      file = bioFuel
+      break
+    }
+    case 'hydro': {
+      file = hydro
+      break
+    }
+    case 'wind': {
+      file = wind
+      break
+    }
+    case 'solar': {
+      file = solar
+      break
+    }
+    case 'geothermal': {
+      file = geothermal
+      break
+    }
+    case 'ocean': {
+      file = ocean
+      break
+    }
+    default:
+      console.log('not valid indicator')
+  }
+  const data = file
     .filter(item => item.year === currentYear && item.pathway === pathway)
     .map(item => ({
       code: item.region.toLowerCase(),
-      color: convertToColor(30, 0, 30),
+      color: convertToColor(item.value, 0, 30),
       value: item.value,
       unit: item.unit,
     }))
@@ -69,11 +100,8 @@ const score = scenario => {
   return score
 }
 export const getMapColors = (valueToShow, scenario, currentYear) => {
-  if (valueToShow === 'electricityDemands') {
-    return specifiedAnnualDemand(scenario, currentYear)
-  }
-  if (valueToShow === 'emissionLimit') {
-    return oil(scenario, currentYear)
+  if (valueToShow === 'oil') {
+    return indicatorData('oil', scenario, currentYear)
   }
   if (valueToShow === 'score') {
     return score(scenario)
@@ -101,14 +129,14 @@ export const getCountryDataForChart = (
     minValue = minValueEmissionLimit
     maxValue = maxValueEmissionLimit
   }
-  const countryData = sampleData.filter(
+  const countryData = oil.filter(
     country =>
       country.Country === myCountry &&
       country.Parameter === indicator &&
       country.Scenario === scenario
   )
   let data = []
-  //prevent compile errors if cliked on country with no data
+  //prevent errors if clicked on country with no data
   if (countryData.length) {
     data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
     for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
@@ -126,7 +154,7 @@ export const getCountryDataForChart = (
 export const getUnit = indicator => {
   if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
   else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  const elmt = sampleData.find(element => element.Parameter === indicator)
+  const elmt = oil.find(element => element.Parameter === indicator)
   return elmt ? elmt.Unit : 'undefined'
 }
 

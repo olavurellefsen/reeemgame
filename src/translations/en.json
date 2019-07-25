@@ -16,8 +16,18 @@
     "title": "Goal"
   },
   "indicator": {
-    "electricityDemands": "Electricity Demands",
-    "emissionLimit": "Emission Limit"
+    "coal": "Coal",
+    "oil": "Oil",
+    "naturalGas": "Natural Gas / non renew.",
+    "nuclear": "Nuclear",
+    "waste": "Waste non renewable",
+    "biomass": "Biomass Solid",
+    "bioFuel": "Biofuel Liquid",
+    "hydro": "Hydro",
+    "wind": "Wind",
+    "solar": "Solar",
+    "geothermal": "Geothermal",
+    "ocean": "Ocean"
   },
   "decisions": {
     "2019": {
