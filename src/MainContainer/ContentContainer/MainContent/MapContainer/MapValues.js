@@ -14,14 +14,11 @@ import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
 import dataInfo from './../../../../data/dataInfo'
 
-const minValueDemand = 90
-const maxValueDemand = 400
-const minValueEmissionLimit = 0
-const maxValueEmissionLimit = 1000000
 const minScoreValue = 0
 const maxScoreValue = 10
 
 const indicatorData = (indicator, pathway, currentYear) => {
+  const params = getIndicatorParams(indicator)
   var file
   switch (indicator) {
     case 'coal': {
@@ -80,10 +77,19 @@ const indicatorData = (indicator, pathway, currentYear) => {
     .filter(item => item.year === currentYear && item.pathway === pathway)
     .map(item => ({
       code: item.region.toLowerCase(),
-      color: convertToColor(item.value, 0, 30),
+      color: convertToColor(item.value, params.min, params.max),
       value: item.value,
-      unit: item.unit,
+      unit: params.unit,
     }))
+  /*console.log(
+    'Data for: indicator=' +
+      indicator +
+      ' pathway=' +
+      pathway +
+      ' year=' +
+      currentYear
+  )
+  console.log(data)*/
   return data
 }
 
@@ -112,43 +118,47 @@ export const getCountryDataForChart = (
   myCountry,
   currentYear,
   indicator,
-  scenario
+  pathway
 ) => {
-  var minValue
-  var maxValue
-  if (indicator === 'electricityDemands') {
-    indicator = 'SpecifiedAnnual Demand'
-    myCountry = myCountry.toUpperCase()
-    minValue = minValueDemand
-    maxValue = maxValueDemand
-  }
-  if (indicator === 'emissionLimit') {
-    indicator = 'AnnualEmissionLimit'
-    myCountry = 'EU28+CH+NO' //Because there is not distinct data for every country
-    minValue = minValueEmissionLimit
-    maxValue = maxValueEmissionLimit
-  }
-  const countryData = oil.filter(
-    country =>
-      country.Country === myCountry &&
-      country.Parameter === indicator &&
-      country.Scenario === scenario
-  )
+  const params = getIndicatorParams(indicator)
+  var dataList = [['Element', params.unit, { role: 'style' }]]
+  const e = oil[0]
+  console.log(e)
+  console.log(e.year % (currentYear < 2030 ? 1 : 5) === 0)
+  oil
+    .filter(
+      item =>
+        item.region === myCountry &&
+        item.pathway === pathway &&
+        item.year <= currentYear &&
+        item.year % (currentYear < 2030 ? 1 : 5) === 0
+    )
+
+    .forEach(element => {
+      let year = [
+        element.year,
+        Number(element.value),
+        convertToColor(element.value, params.min, params.max),
+      ]
+      dataList.push(year)
+    })
+  /*
   let data = []
   //prevent errors if clicked on country with no data
   if (countryData.length) {
-    data = [['Element', countryData[0]['Unit'], { role: 'style' }]]
+    data = [['Element', params.unit, { role: 'style' }]]
     for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
       let year = [
         JSON.stringify(i),
         countryData[0][i],
-        convertToColor(countryData[0][i], minValue, maxValue),
+        convertToColor(countryData[0][i], params.min, params.max),
       ]
 
       data.push(year)
     }
-  }
-  return data
+  }*/
+  console.log(dataList)
+  return dataList
 }
 export const getUnit = indicator => {
   if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
@@ -204,8 +214,10 @@ export const getIndicatorParams = indicator => {
   } else {
     const data = dataInfo.filter(item => item.indicator === indicator)
     const info = data[0]
-    if (data.length < 1)
+    if (data.length < 1) {
       console.log('cannot find info for indicator: ' + indicator)
+      return null
+    }
     return {
       unit: info.unit,
       max: info.max,

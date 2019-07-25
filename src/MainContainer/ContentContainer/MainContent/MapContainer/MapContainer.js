@@ -137,5 +137,5 @@ const hasData = (country, indicator, selectedScenario, gameState) => {
   if (indicator === 'emissionLimit' || indicator === 'score') {
     data = eunochCountries.find(element => element.code === country)
   }
-  return data ? true : false
+  return true //data ? true : false
 }

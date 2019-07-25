@@ -15,10 +15,12 @@ export function generateData() {
   var indicators = []
   var max = -Infinity
   var min = Infinity
-  oilData.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  oilData
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
   indicators.push({
     indicator: 'oil',
     min: min,
@@ -27,10 +29,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  coalData.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  coalData
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
   indicators.push({
     indicator: 'coal',
     min: min,
@@ -39,10 +43,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  naturalGas.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  naturalGas
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'naturalGas',
@@ -52,10 +58,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  nuclear.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  nuclear
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'nuclear',
@@ -65,10 +73,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  waste.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  waste
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'waste',
@@ -78,10 +88,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  biomass.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  biomass
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'biomass',
@@ -91,10 +103,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  bioFuel.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  bioFuel
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'bioFuel',
@@ -104,10 +118,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  hydro.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  hydro
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'hydro',
@@ -117,10 +133,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  wind.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  wind
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'wind',
@@ -130,10 +148,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  solar.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  solar
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'solar',
@@ -143,10 +163,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  geothermal.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  geothermal
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'geothermal',
@@ -156,10 +178,12 @@ export function generateData() {
   })
   max = -Infinity
   min = Infinity
-  ocean.forEach(function(e) {
-    max = Math.max(max, e.value)
-    min = Math.min(min, e.value)
-  })
+  ocean
+    .filter(item => item.region !== 'EU+CH+NO')
+    .forEach(function(e) {
+      max = Math.max(max, e.value)
+      min = Math.min(min, e.value)
+    })
 
   indicators.push({
     indicator: 'ocean',
