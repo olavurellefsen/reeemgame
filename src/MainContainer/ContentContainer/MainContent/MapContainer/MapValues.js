@@ -10,9 +10,9 @@ import wind from '../../../../data/wind.json'
 import solar from '../../../../data/solar.json'
 import geothermal from '../../../../data/geothermal.json'
 import ocean from '../../../../data/ocean.json'
-import eunochCountries from '../../../../data/eunochcountries.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
+import dataInfo from './../../../../data/dataInfo'
 
 const minValueDemand = 90
 const maxValueDemand = 400
@@ -191,4 +191,26 @@ export const getCountryScoreForChart = (myCountry, scenario, translation) => {
     data.push(elmt)
   }
   return data
+}
+export const getIndicatorParams = indicator => {
+  if (indicator === 'score') {
+    return {
+      unit: 'score',
+      max: 10,
+      min: 0,
+      steps: 5,
+      flipColors: true,
+    }
+  } else {
+    const data = dataInfo.filter(item => item.indicator === indicator)
+    const info = data[0]
+    if (data.length < 1)
+      console.log('cannot find info for indicator: ' + indicator)
+    return {
+      unit: info.unit,
+      max: info.max,
+      min: info.min,
+      steps: 10,
+    }
+  }
 }

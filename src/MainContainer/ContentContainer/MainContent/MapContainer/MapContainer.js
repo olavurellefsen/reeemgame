@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
-import { getMapColors } from './MapValues'
+import { getMapColors, getIndicatorParams } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
 import sampleData from './../../../../data/sampledata'
@@ -72,7 +72,7 @@ export const MapContainer = () => {
   )
 
   var lp
-  if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
+  if (state.selectedIndicator) lp = getIndicatorParams(state.selectedIndicator)
   return (
     <Container>
       <Popover
@@ -120,34 +120,6 @@ export const MapContainer = () => {
       </StyledEurope>
     </Container>
   )
-}
-
-const getLegendPara = indicator => {
-  if (indicator === 'score') {
-    return {
-      unit: 'score',
-      max: 10,
-      min: 0,
-      steps: 5,
-      flipColors: true,
-    }
-  } else if (indicator === 'oil') {
-    return {
-      unit: oilData[0].unit,
-      max: 30,
-      min: -0.001,
-      steps: 10,
-    }
-  } else {
-    const data = dataInfo.filter(item => item.indicator === indicator)
-    const info = data[0]
-    return {
-      unit: info.unit,
-      max: info.max,
-      min: info.min,
-      steps: 10,
-    }
-  }
 }
 
 const hasData = (country, indicator, selectedScenario, gameState) => {
