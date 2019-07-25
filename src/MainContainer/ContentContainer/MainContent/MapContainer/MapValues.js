@@ -19,6 +19,40 @@ const maxScoreValue = 10
 
 const indicatorData = (indicator, pathway, currentYear) => {
   const params = getIndicatorParams(indicator)
+  const file = getFile(indicator)
+  if (!file) return []
+  const data = file[pathway][currentYear]
+  let colorList = []
+  Object.keys(data).forEach(country =>
+    colorList.push({
+      code: country.toLowerCase(),
+      color: convertToColor(data[country], params.min, params.max),
+    })
+  )
+  return colorList
+}
+
+const score = scenario => {
+  const score = scoreData
+    .filter(elmt => elmt.scenario === scenario)
+    .map(e => ({
+      code: e.country,
+      color: convertToColor(
+        maxScoreValue - (e.env + e.eco + e.soc) / 3,
+        minScoreValue,
+        maxScoreValue
+      ),
+    }))
+  return score
+}
+export const getMapColors = (valueToShow, scenario, currentYear) => {
+  if (valueToShow === 'score') {
+    return score(scenario)
+  } else {
+    return indicatorData(valueToShow, scenario, currentYear)
+  }
+}
+const getFile = indicator => {
   var file
   switch (indicator) {
     case 'coal': {
@@ -71,91 +105,42 @@ const indicatorData = (indicator, pathway, currentYear) => {
     }
     default:
       console.log('not valid indicator: ' + indicator)
-      return []
   }
-  const data = file[pathway][currentYear]
-  let colorList = []
-  Object.keys(data).forEach(country =>
-    colorList.push({
-      code: country.toLowerCase(),
-      color: convertToColor(data[country], params.min, params.max),
-    })
-  )
-  return colorList
+  return file
 }
-
-const score = scenario => {
-  const score = scoreData
-    .filter(elmt => elmt.scenario === scenario)
-    .map(e => ({
-      code: e.country,
-      color: convertToColor(
-        maxScoreValue - (e.env + e.eco + e.soc) / 3,
-        minScoreValue,
-        maxScoreValue
-      ),
-    }))
-  return score
-}
-export const getMapColors = (valueToShow, scenario, currentYear) => {
-  if (valueToShow === 'score') {
-    return score(scenario)
-  } else {
-    return indicatorData(valueToShow, scenario, currentYear)
-  }
-}
-
 export const getCountryDataForChart = (
   myCountry,
   currentYear,
   indicator,
   pathway
 ) => {
+  const file = getFile(indicator)
   const params = getIndicatorParams(indicator)
+  const dataForPathway = file[pathway]
+
   var dataList = [['Element', params.unit, { role: 'style' }]]
-  //const e = oil[0]
-  //console.log(e)
-  //console.log(e.year % (currentYear < 2030 ? 1 : 5) === 0)
-  oil
+  if (!file) return dataList
+
+  Object.keys(dataForPathway)
     .filter(
-      item =>
-        item.region === myCountry &&
-        item.pathway === pathway &&
-        item.year <= currentYear &&
-        item.year % (currentYear < 2030 ? 1 : 5) === 0
+      year => year < currentYear && year % (currentYear < 2030 ? 1 : 5) === 0
     )
-
-    .forEach(element => {
-      let year = [
-        element.year,
-        Number(element.value),
-        convertToColor(element.value, params.min, params.max),
+    .forEach(year => {
+      let row = [
+        year,
+        Number(dataForPathway[year][myCountry.toUpperCase()]),
+        convertToColor(
+          dataForPathway[year][myCountry.toUpperCase()],
+          params.min,
+          params.max
+        ),
       ]
-      dataList.push(year)
+      dataList.push(row)
     })
-  /*
-  let data = []
-  //prevent errors if clicked on country with no data
-  if (countryData.length) {
-    data = [['Element', params.unit, { role: 'style' }]]
-    for (var i = 2015; i <= currentYear; i = i + (currentYear < 2030 ? 1 : 5)) {
-      let year = [
-        JSON.stringify(i),
-        countryData[0][i],
-        convertToColor(countryData[0][i], params.min, params.max),
-      ]
-
-      data.push(year)
-    }
-  }*/
-  //console.log(dataList)
   return dataList
 }
 export const getUnit = indicator => {
-  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  const elmt = oil.find(element => element.Parameter === indicator)
-  return elmt ? elmt.Unit : 'undefined'
+  return getIndicatorParams(indicator).unit
 }
 
 export const getCountryScoreForChart = (myCountry, scenario, translation) => {
