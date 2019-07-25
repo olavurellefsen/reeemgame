@@ -73,7 +73,8 @@ const indicatorData = (indicator, pathway, currentYear) => {
       break
     }
     default:
-      console.log('not valid indicator')
+      console.log('not valid indicator: ' + indicator)
+      return []
   }
   const data = file
     .filter(item => item.year === currentYear && item.pathway === pathway)
@@ -100,13 +101,11 @@ const score = scenario => {
   return score
 }
 export const getMapColors = (valueToShow, scenario, currentYear) => {
-  if (valueToShow === 'oil') {
-    return indicatorData('oil', scenario, currentYear)
-  }
   if (valueToShow === 'score') {
     return score(scenario)
+  } else {
+    return indicatorData(valueToShow, scenario, currentYear)
   }
-  return []
 }
 
 export const getCountryDataForChart = (

@@ -25,17 +25,20 @@ export function generateData() {
     max: max,
     unit: oilData[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   coalData.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
   })
-
   indicators.push({
     indicator: 'coal',
     min: min,
     max: max,
     unit: coalData[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   naturalGas.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -47,6 +50,8 @@ export function generateData() {
     max: max,
     unit: naturalGas[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   nuclear.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -58,6 +63,8 @@ export function generateData() {
     max: max,
     unit: nuclear[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   waste.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -69,6 +76,8 @@ export function generateData() {
     max: max,
     unit: waste[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   biomass.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -80,6 +89,8 @@ export function generateData() {
     max: max,
     unit: biomass[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   bioFuel.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -91,6 +102,8 @@ export function generateData() {
     max: max,
     unit: bioFuel[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   hydro.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -102,6 +115,8 @@ export function generateData() {
     max: max,
     unit: hydro[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   wind.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -113,6 +128,8 @@ export function generateData() {
     max: max,
     unit: wind[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   solar.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -124,6 +141,8 @@ export function generateData() {
     max: max,
     unit: solar[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   geothermal.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)
@@ -135,6 +154,8 @@ export function generateData() {
     max: max,
     unit: geothermal[0].unit,
   })
+  max = -Infinity
+  min = Infinity
   ocean.forEach(function(e) {
     max = Math.max(max, e.value)
     min = Math.min(min, e.value)

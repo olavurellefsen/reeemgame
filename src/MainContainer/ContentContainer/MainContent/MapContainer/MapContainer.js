@@ -139,10 +139,12 @@ const getLegendPara = indicator => {
       steps: 10,
     }
   } else {
+    const data = dataInfo.filter(item => item.indicator === indicator)
+    const info = data[0]
     return {
-      unit: oilData[0].unit,
-      max: 30,
-      min: -0.001,
+      unit: info.unit,
+      max: info.max,
+      min: info.min,
       steps: 10,
     }
   }
