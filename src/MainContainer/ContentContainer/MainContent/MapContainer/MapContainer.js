@@ -3,14 +3,11 @@ import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
 import { Container, StyledEurope } from './MapContainer.style'
 import { getMapColors, getIndicatorParams } from './MapValues'
-//import eunochCountries from '../../../../data/eunochcountries.json'
+import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
-//import sampleData from './../../../../data/sampledata'
-//import oilData from '../../../../data/oil.json'
 import { IndicatorInfo } from './IndicatorInfo'
 import Popover from '@material-ui/core/Popover'
 import { CountryPopup } from './CountryPopup'
-//import dataInfo from './../../../../data/dataInfo'
 
 export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -123,19 +120,7 @@ export const MapContainer = () => {
 }
 
 const hasData = (country, indicator, selectedScenario, gameState) => {
-  /* var data
-  if (indicator === 'electricityDemands') {
-    indicator = 'SpecifiedAnnual Demand'
-    data = sampleData.find(
-      element =>
-        element.Parameter === indicator &&
-        element.Country === country.toUpperCase() &&
-        element.Scenario === selectedScenario
-    )
-  }
+  let foundCountry = eunochCountries.find(element => element.code === country)
 
-  if (indicator === 'emissionLimit' || indicator === 'score') {
-    data = eunochCountries.find(element => element.code === country)
-  } */
-  return true //data ? true : false
+  return foundCountry ? true : false
 }
