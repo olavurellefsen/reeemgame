@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import {
   LegendStyle,
   LegendItemStyle,
@@ -20,8 +19,6 @@ export const Legend = ({
   size = 7,
   flipColors = false,
 }) => {
-  const { t } = useTranslation()
-
   var legendItemContent = []
   const createContent = size => {
     for (let i = 0; i < size; i++) {
