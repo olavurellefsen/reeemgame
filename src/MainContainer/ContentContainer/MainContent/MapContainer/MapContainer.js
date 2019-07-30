@@ -109,11 +109,11 @@ export const MapContainer = () => {
         />
       </Popper>
       <StyledEurope colors={mapColors}>
-        {state.selectedIndicator && (
-          <IndicatorHeader>
-            {t('indicatorHeader.' + state.selectedIndicator)}
-          </IndicatorHeader>
-        )}
+        <IndicatorHeader>
+          {state.selectedIndicator &&
+            t('indicatorHeader.' + state.selectedIndicator)}
+          &nbsp;
+        </IndicatorHeader>
         <Europe
           onClick={event => {
             if (
