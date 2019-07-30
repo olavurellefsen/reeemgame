@@ -123,7 +123,7 @@ export const getCountryDataForChart = (
 
   Object.keys(dataForPathway)
     .filter(
-      year => year < currentYear && year % (currentYear < 2030 ? 1 : 5) === 0
+      year => year <= currentYear && year % (currentYear < 2030 ? 1 : 5) === 0
     )
     .forEach(year => {
       let row = [
