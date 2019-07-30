@@ -4,6 +4,14 @@ export const Container = styled.div`
   width: 100%;
 `
 
+export const IndicatorHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+`
+
 const countryColorsCSS = countryColors =>
   countryColors.map(
     country => `
