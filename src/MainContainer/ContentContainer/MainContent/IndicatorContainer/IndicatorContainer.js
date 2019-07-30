@@ -8,7 +8,7 @@ import { Container, SubMenu } from './Indicator.style'
 
 export const IndicatorContainer = () => {
   const [state, dispatch] = useContext(Context)
-  const [electricityMenuOpen, setElectricityMenuOpen] = useState(false)
+  const [electricityMenuOpen, setElectricityMenuOpen] = useState(true)
   const { t } = useTranslation()
   const electricityIndicators = [
     'coal',
