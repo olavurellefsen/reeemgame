@@ -111,7 +111,7 @@ export const MapContainer = () => {
       <StyledEurope colors={mapColors}>
         {state.selectedIndicator && (
           <IndicatorHeader>
-            {t('indicator.' + state.selectedIndicator)}
+            {t('indicatorHeader.' + state.selectedIndicator)}
           </IndicatorHeader>
         )}
         <Europe

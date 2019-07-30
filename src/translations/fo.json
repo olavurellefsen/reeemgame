@@ -31,6 +31,21 @@
     "ocean": "Ocean",
     "score": "Stig"
   },
+  "indicatorHeader": {
+    "coal": "Electricity Generation from Coal",
+    "oil": "Electricity Generation from Oil",
+    "naturalGas": "Electricity Generation from Natural Gas / non Renew.",
+    "nuclear": "Electricity Generation from Nuclear",
+    "waste": "Electricity Generation from Waste non renewable",
+    "biomass": "Electricity Generation from Biomass Solid",
+    "bioFuel": "Electricity Generation from Biofuel Liquid",
+    "hydro": "Electricity Generation from Hydro",
+    "wind": "Electricity Generation from Wind",
+    "solar": "Electricity Generation from Solar",
+    "geothermal": "Electricity Generation from Geothermal",
+    "ocean": "Electricity Generation from Ocean",
+    "score": "Score"
+  },
   "decisions": {
     "2019": {
       "header": "Vegleiðing",
