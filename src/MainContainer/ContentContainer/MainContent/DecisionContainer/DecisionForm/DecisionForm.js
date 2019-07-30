@@ -17,6 +17,7 @@ export const DecisionForm = ({ onStart }) => {
   const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
   const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
   const [state, dispatch] = useContext(Context)
+  const [CCSAllowed, allowCCS] = useState(false)
   const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
   )[0]
@@ -32,6 +33,7 @@ export const DecisionForm = ({ onStart }) => {
         type: 'setWeights',
         weights: {},
       })
+      allowCCS(false) //reset allow CCS
     }
     if (state.gameState === 'start') {
       if (!(state.weights.eco && state.weights.soc && state.weights.env)) {
@@ -65,6 +67,15 @@ export const DecisionForm = ({ onStart }) => {
         name:
           'C' + nextScenario.c + 'T' + nextScenario.t + 'E' + nextScenario.e,
       })
+
+      //set state to indicate that CCS has been allowed (question needs to be removed)
+      if (
+        choices['ccs1'] === 'y' ||
+        choices['ccs2'] === 'y' ||
+        choices['ccs3'] === 'y'
+      ) {
+        allowCCS(true)
+      }
     }
     setChoice({})
   }
@@ -75,7 +86,12 @@ export const DecisionForm = ({ onStart }) => {
     else alert('add: ' + JSON.stringify(add))
     return newScenario
   }
-
+  //If CCS has been allowed once it cannot be banned again (hence question is filtered out)
+  const decisions = currentDecisions.individualDecisions
+    ? currentDecisions.individualDecisions.filter(decision =>
+        CCSAllowed ? decision.name !== 'ccs2' && decision.name !== 'ccs3' : true
+      )
+    : []
   return (
     <StyledGrid
       container
@@ -86,37 +102,36 @@ export const DecisionForm = ({ onStart }) => {
       <DecisionHeader>{currentDecisions.header}</DecisionHeader>
       <IntroText>{currentDecisions.introText}</IntroText>
       <form onSubmit={e => handleSubmit(e)}>
-        {currentDecisions.individualDecisions !== undefined &&
-          currentDecisions.individualDecisions.map((decision, i) => (
-            <React.Fragment key={'decision' + i}>
-              <StyledFormLabel component="legend">
-                {decision.introText}
-              </StyledFormLabel>
-              {decision.options.map((option, j) => (
-                <StyledFormControlLabel
-                  key={'option' + j}
-                  value={option.value}
-                  control={<StyledRadio />}
-                  label={option.text}
-                  id={option.value}
-                  checked={choices[decision.name] === option.value}
-                  onClick={() => {
-                    setChoice({
-                      ...choices,
-                      [decision.name]: option.value,
-                    })
-                    setNewScenario(getNewScenario(option.scenario))
-                  }}
-                />
-              ))}
-            </React.Fragment>
-          ))}
+        {decisions.map((decision, i) => (
+          <React.Fragment key={'decision' + i}>
+            <StyledFormLabel component="legend">
+              {decision.introText}
+            </StyledFormLabel>
+            {decision.options.map((option, j) => (
+              <StyledFormControlLabel
+                key={'option' + j}
+                value={option.value}
+                control={<StyledRadio />}
+                label={option.text}
+                id={option.value}
+                checked={choices[decision.name] === option.value}
+                onClick={() => {
+                  setChoice({
+                    ...choices,
+                    [decision.name]: option.value,
+                  })
+                  setNewScenario(getNewScenario(option.scenario))
+                }}
+              />
+            ))}
+          </React.Fragment>
+        ))}
         <StyledGrid item>
           <StyledButton
             type="submit"
             disabled={
-              currentDecisions.individualDecisions !== undefined &&
-              !currentDecisions.individualDecisions.every(
+              decisions.individualDecisions !== undefined &&
+              !decisions.individualDecisions.every(
                 decision => choices[decision.name] !== undefined
               )
             }

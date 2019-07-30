@@ -55,18 +55,18 @@ export const Decisions = () => {
       introText: t('decisions.2030.intro'),
       individualDecisions: [
         {
-          name: 'biomass',
-          introText: t('decisions.biomass'),
+          name: 'ccs2',
+          introText: t('decisions.ccs'),
           options: [
             {
-              value: 'Yes',
+              value: 'y',
               text: t('general.yes'),
-              scenario: { T: 0 },
+              scenario: { C: 0 },
             },
             {
               value: 'n',
               text: t('general.no'),
-              scenario: { T: 0 },
+              scenario: { C: 0 },
             },
           ],
         },
@@ -87,18 +87,18 @@ export const Decisions = () => {
           ],
         },
         {
-          name: 'ccs2',
-          introText: t('decisions.ccs'),
+          name: 'biomass',
+          introText: t('decisions.biomass'),
           options: [
             {
               value: 'y',
               text: t('general.yes'),
-              scenario: { C: 0 },
+              scenario: { T: 0 },
             },
             {
               value: 'n',
               text: t('general.no'),
-              scenario: { C: 0 },
+              scenario: { T: 0 },
             },
           ],
         },
@@ -127,22 +127,6 @@ export const Decisions = () => {
       introText: t('decisions.2040.intro'),
       individualDecisions: [
         {
-          name: 'emissions3',
-          introText: t('decisions.emissions'),
-          options: [
-            {
-              value: 'ets',
-              text: t('decisions.options.etsPace'),
-              scenario: { E: 0 },
-            },
-            {
-              value: 'faster',
-              text: t('decisions.options.fasterPace'),
-              scenario: { E: 4 },
-            },
-          ],
-        },
-        {
           name: 'ccs3',
           introText: t('decisions.ccs'),
           options: [
@@ -154,7 +138,23 @@ export const Decisions = () => {
             {
               value: 'n',
               text: t('general.no'),
-              scenario: { C: 1 },
+              scenario: { C: 0 },
+            },
+          ],
+        },
+        {
+          name: 'emissions3',
+          introText: t('decisions.emissions'),
+          options: [
+            {
+              value: 'ets',
+              text: t('decisions.options.etsPace'),
+              scenario: { E: 0 },
+            },
+            {
+              value: 'faster',
+              text: t('decisions.options.fasterPace'),
+              scenario: { E: 0 },
             },
           ],
         },
