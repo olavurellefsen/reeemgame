@@ -31,15 +31,11 @@ export const Legend = ({
     }
   }
   createContent(size)
-  let unitText
-  if (unit === 'MW per capita') unitText = t('map.mwPerCapita')
-  else if (unit === 'Tons') unitText = t('map.tons')
-  else if (unit === 'Score') unitText = t('general.score')
   return (
     <LegendStyle>
       <LegendRow>
         <LegendUnit>
-          <LegendUnitText>{unitText}</LegendUnitText>
+          <LegendUnitText>{unit}</LegendUnitText>
         </LegendUnit>
         <LegendColumn>
           {legendItemContent.map((e, i) => (
