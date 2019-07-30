@@ -28,7 +28,8 @@
     "wind": "Wind",
     "solar": "Solar",
     "geothermal": "Geothermal",
-    "ocean": "Ocean"
+    "ocean": "Ocean",
+    "score": "Score"
   },
   "decisions": {
     "2019": {

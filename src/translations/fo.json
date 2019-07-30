@@ -28,7 +28,8 @@
     "wind": "Vindorka",
     "solar": "Sólorka",
     "geothermal": "Geothermal",
-    "ocean": "Ocean"
+    "ocean": "Ocean",
+    "score": "Stig"
   },
   "decisions": {
     "2019": {
