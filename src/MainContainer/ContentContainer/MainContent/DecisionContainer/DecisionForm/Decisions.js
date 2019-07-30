@@ -17,6 +17,7 @@ export const Decisions = () => {
         {
           name: 'ccs1',
           introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
               value: 'y',
@@ -33,6 +34,7 @@ export const Decisions = () => {
         {
           name: 'emissions1',
           introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
           options: [
             {
               value: 'ets',
@@ -57,6 +59,7 @@ export const Decisions = () => {
         {
           name: 'ccs2',
           introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
               value: 'y',
@@ -73,6 +76,7 @@ export const Decisions = () => {
         {
           name: 'emissions2',
           introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
           options: [
             {
               value: 'ets',
@@ -105,6 +109,7 @@ export const Decisions = () => {
         {
           name: 'crossBorder',
           introText: t('decisions.crossBorder'),
+          info: t('decisions.info.crossBorder'),
           options: [
             {
               value: 'y',
@@ -129,6 +134,7 @@ export const Decisions = () => {
         {
           name: 'ccs3',
           introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
               value: 'y',
@@ -145,6 +151,7 @@ export const Decisions = () => {
         {
           name: 'emissions3',
           introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
           options: [
             {
               value: 'ets',

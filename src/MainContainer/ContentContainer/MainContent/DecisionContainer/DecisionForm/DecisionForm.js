@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import Context from '../../../../../Context/Context'
+import { InfoOutlined } from '@material-ui/icons'
+import Tooltip from '@material-ui/core/Tooltip'
 import { Decisions } from './Decisions'
 import {
   DecisionHeader,
@@ -10,6 +12,8 @@ import {
   StyledFormControlLabel,
   StyledFormLabel,
   StyledGrid,
+  Icon,
+  HorizontalContainer,
 } from './DecisionForm.style'
 
 export const DecisionForm = ({ onStart }) => {
@@ -104,9 +108,22 @@ export const DecisionForm = ({ onStart }) => {
       <form onSubmit={e => handleSubmit(e)}>
         {decisions.map((decision, i) => (
           <React.Fragment key={'decision' + i}>
-            <StyledFormLabel component="legend">
-              {decision.introText}
-            </StyledFormLabel>
+            <HorizontalContainer>
+              <StyledFormLabel component="legend">
+                {decision.introText}
+              </StyledFormLabel>
+              {decision.info && (
+                <Tooltip
+                  title={decision.info}
+                  placement="right-start"
+                  interactive
+                >
+                  <Icon>
+                    <InfoOutlined />
+                  </Icon>
+                </Tooltip>
+              )}
+            </HorizontalContainer>
             {decision.options.map((option, j) => (
               <StyledFormControlLabel
                 key={'option' + j}
