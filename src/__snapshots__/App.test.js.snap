@@ -102,7 +102,7 @@ exports[`should render correctly 1`] = `
                   </div>
                 </span>
                 <span
-                  class="MuiTouchRipple-root-196"
+                  class="MuiTouchRipple-root-238"
                 />
               </button>
             </div>
@@ -136,15 +136,240 @@ exports[`should render correctly 1`] = `
           class="sc-kEYyzF koCczG"
         >
           <li
-            class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+            class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiListItem-selected-150 MuiMenuItem-root-136 MuiMenuItem-selected-138 MuiMenuItem-gutters-137"
             role="menuitem"
             tabindex="-1"
           >
             Electricity generation by source
             <span
-              class="MuiTouchRipple-root-196"
+              class="MuiTouchRipple-root-238"
             />
           </li>
+          <div
+            class="sc-kkGfuU cgtcoV"
+          >
+            <ul
+              class="MuiList-root-151 MuiList-padding-152"
+              role="menu"
+            >
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Coal
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Oil
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Natural Gas / non renew.
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Nuclear
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Waste non Renewable
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Biomass Solid
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Biofuel Liquid
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Hydro
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Wind
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Solar
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Geothermal
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+              <li
+                class="MuiButtonBase-root-124 MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147 MuiListItem-button-148 MuiMenuItem-root-136 MuiMenuItem-gutters-137"
+                role="menuitem"
+                tabindex="-1"
+              >
+                <div
+                  class="MuiListItemText-root-155"
+                >
+                  <span
+                    class="MuiTypography-root-161 MuiTypography-subheading-168 MuiListItemText-primary-158"
+                  >
+                    Ocean
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root-238"
+                />
+              </li>
+            </ul>
+          </div>
           <ul
             class="MuiList-root-151 MuiList-padding-152"
             role="menu"
@@ -204,7 +429,7 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
                     Start
                   </span>
                   <span
-                    class="MuiTouchRipple-root-196"
+                    class="MuiTouchRipple-root-238"
                   />
                 </button>
               </div>
@@ -223,12 +448,12 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
             class="sc-elJkPf fgeshT"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-171 MuiFab-sizeSmall-179 sc-jtRfpW bFVtsE"
+              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-jtRfpW bFVtsE"
               tabindex="0"
               type="button"
             >
               <span
-                class="MuiFab-label-172"
+                class="MuiFab-label-214"
               >
                 <svg
                   aria-hidden="true"
@@ -247,7 +472,7 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
                 </svg>
               </span>
               <span
-                class="MuiTouchRipple-root-196"
+                class="MuiTouchRipple-root-238"
               />
             </button>
           </div>
@@ -323,28 +548,28 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-181 sc-bYSBpT dTBkYG"
+                class="MuiSlider-root-223 sc-bYSBpT dTBkYG"
                 role="slider"
               >
                 <div
-                  class="MuiSlider-container-182"
+                  class="MuiSlider-container-224"
                 >
                   <div
-                    class="MuiSlider-track-183 MuiSlider-trackBefore-184"
+                    class="MuiSlider-track-225 MuiSlider-trackBefore-226"
                     style="transform: translateY(-50%) scaleX(0.11428571428571428);"
                   />
                   <div
-                    class="MuiSlider-thumbWrapper-186"
+                    class="MuiSlider-thumbWrapper-228"
                     style="transform: translateX(11.428571428571429%);"
                   >
                     <button
-                      class="MuiButtonBase-root-124 MuiSlider-thumb-187"
+                      class="MuiButtonBase-root-124 MuiSlider-thumb-229"
                       tabindex="0"
                       type="button"
                     />
                   </div>
                   <div
-                    class="MuiSlider-track-183 MuiSlider-trackAfter-185"
+                    class="MuiSlider-track-225 MuiSlider-trackAfter-227"
                     style="transform: translateY(-50%) scaleX(0.8857142857142857);"
                   />
                 </div>
