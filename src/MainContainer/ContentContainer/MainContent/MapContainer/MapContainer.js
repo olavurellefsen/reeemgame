@@ -6,7 +6,7 @@ import { getMapColors, getIndicatorParams } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
 import { IndicatorInfo } from './IndicatorInfo'
-import Popover from '@material-ui/core/Popover'
+import Popper from '@material-ui/core/Popover'
 import { CountryPopup } from './CountryPopup'
 
 export const MapContainer = () => {
@@ -39,11 +39,13 @@ export const MapContainer = () => {
   }
 
   const { height, width } = useWindowDimensions()
+  const popupWidth = 520
+  const popupHeight = 440
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
-      left: Math.min(event.clientX, width - 520),
-      top: Math.min(event.clientY, height - 420),
+      left: Math.min(event.clientX, width - popupWidth),
+      top: Math.min(event.clientY, height - popupHeight),
     })
     setSelectedCountry(event.target.id)
   }
@@ -72,16 +74,38 @@ export const MapContainer = () => {
   if (state.selectedIndicator) lp = getIndicatorParams(state.selectedIndicator)
   return (
     <Container>
-      <Popover
+      <Popper
         id={id}
         open={open}
         anchorEl={anchorEl}
-        onClose={handleClose}
         anchorPosition={anchorPosition}
         anchorReference={'anchorPosition'}
+        style={{
+          width: popupWidth,
+          height: popupHeight,
+        }}
+        modal={null}
+        hideBackdrop={true}
+        disableBackdropClick={true}
+        disableAutoFocus={true}
+        disableEnforceFocus={true}
+        modifiers={{
+          preventOverflow: {
+            enabled: true,
+            boundariesElement: 'scrollParent',
+          },
+        }}
       >
-        <CountryPopup country={selectedCountry} onClose={handleClose} />
-      </Popover>
+        <CountryPopup
+          country={selectedCountry}
+          onClose={handleClose}
+          style={{
+            width: '600px !important',
+            height: '500px important',
+            position: 'absolute',
+          }}
+        />
+      </Popper>
       <StyledEurope colors={mapColors}>
         <Europe
           onClick={event => {
