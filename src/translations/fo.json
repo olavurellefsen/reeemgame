@@ -16,6 +16,7 @@
     "title": "Mál"
   },
   "indicator": {
+    "electricityGenerationBySource": "Electricity generation by source",
     "coal": "Kol",
     "oil": "Olja",
     "naturalGas": "Natural Gas / non renew.",

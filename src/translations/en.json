@@ -16,6 +16,7 @@
     "title": "Goal"
   },
   "indicator": {
+    "electricityGenerationBySource": "Electricity generation by source",
     "coal": "Coal",
     "oil": "Oil",
     "naturalGas": "Natural Gas / non renew.",
