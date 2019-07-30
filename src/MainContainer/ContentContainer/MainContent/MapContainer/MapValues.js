@@ -104,7 +104,7 @@ const getFile = indicator => {
       break
     }
     default:
-      console.log('not valid indicator: ' + indicator)
+    //console.log('not valid indicator: ' + indicator)
   }
   return file
 }
@@ -191,7 +191,7 @@ export const getIndicatorParams = indicator => {
     const data = dataInfo.filter(item => item.indicator === indicator)
     const info = data[0]
     if (data.length < 1) {
-      console.log('cannot find info for indicator: ' + indicator)
+      //console.log('cannot find info for indicator: ' + indicator)
       return null
     }
     return {

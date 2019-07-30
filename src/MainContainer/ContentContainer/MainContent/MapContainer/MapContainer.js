@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
-import { Container, StyledEurope } from './MapContainer.style'
+import { Container, StyledEurope, IndicatorHeader } from './MapContainer.style'
 import { getMapColors, getIndicatorParams } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
@@ -13,6 +14,7 @@ export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
+  const { t } = useTranslation()
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window
     return {
@@ -107,6 +109,11 @@ export const MapContainer = () => {
         />
       </Popper>
       <StyledEurope colors={mapColors}>
+        <IndicatorHeader>
+          {state.selectedIndicator &&
+            t('indicatorHeader.' + state.selectedIndicator)}
+          &nbsp;
+        </IndicatorHeader>
         <Europe
           onClick={event => {
             if (
