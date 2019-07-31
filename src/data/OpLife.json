@@ -1,0 +1,596 @@
+[
+  {
+    "value": 1,
+    "indicator": "Bio fuel Generation",
+    "pathway": "C0T0E0",
+    "nid": 339,
+    "year": 2043,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 20,
+    "indicator": "Bio fuel ICE Heat and Power unit",
+    "pathway": "C0T0E0",
+    "nid": 340,
+    "year": 2015,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Bio fuel Import",
+    "pathway": "C0T0E0",
+    "nid": 338,
+    "year": 2019,
+    "region": "CZ",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Biomass Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 343,
+    "year": 2047,
+    "region": "SK",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Biomass Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 344,
+    "year": 2042,
+    "region": "SK",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Biomass Extraction",
+    "pathway": "C0T0E0",
+    "nid": 342,
+    "year": 2044,
+    "region": "DE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Biomass Import",
+    "pathway": "C0T0E0",
+    "nid": 341,
+    "year": 2023,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Biomass Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 345,
+    "year": 2021,
+    "region": "EE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Coal Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 348,
+    "year": 2016,
+    "region": "PT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Coal Extraction",
+    "pathway": "C0T0E0",
+    "nid": 347,
+    "year": 2050,
+    "region": "IT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Coal Import",
+    "pathway": "C0T0E0",
+    "nid": 346,
+    "year": 2037,
+    "region": "EE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Coal Steam Turbine large",
+    "pathway": "C0T0E0",
+    "nid": 350,
+    "year": 2016,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Coal Steam Turbine small",
+    "pathway": "C0T0E0",
+    "nid": 349,
+    "year": 2034,
+    "region": "AT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Domestic Transmission and Distribution",
+    "pathway": "C0T0E0",
+    "nid": 351,
+    "year": 2017,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 40,
+    "indicator": "Geothermal Conventional",
+    "pathway": "C0T0E0",
+    "nid": 361,
+    "year": 2032,
+    "region": "PL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Geothermal Extraction",
+    "pathway": "C0T0E0",
+    "nid": 360,
+    "year": 2049,
+    "region": "CH",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "HFO Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 363,
+    "year": 2050,
+    "region": "AT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "HFO Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 364,
+    "year": 2018,
+    "region": "EE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "HFO Gas Turbine new",
+    "pathway": "C0T0E0",
+    "nid": 366,
+    "year": 2032,
+    "region": "FI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "HFO Gas Turbine old",
+    "pathway": "C0T0E0",
+    "nid": 365,
+    "year": 2045,
+    "region": "CH",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 20,
+    "indicator": "HFO ICE Heat and Power Unit large",
+    "pathway": "C0T0E0",
+    "nid": 368,
+    "year": 2033,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 20,
+    "indicator": "HFO ICE Heat and Power unit small",
+    "pathway": "C0T0E0",
+    "nid": 367,
+    "year": 2046,
+    "region": "SI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "HFO Import",
+    "pathway": "C0T0E0",
+    "nid": 362,
+    "year": 2033,
+    "region": "LV",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "HFO Steam Turbine large",
+    "pathway": "C0T0E0",
+    "nid": 370,
+    "year": 2049,
+    "region": "BE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "HFO Steam Turbine small",
+    "pathway": "C0T0E0",
+    "nid": 369,
+    "year": 2042,
+    "region": "SE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Dam >100MW",
+    "pathway": "C0T0E0",
+    "nid": 374,
+    "year": 2050,
+    "region": "SI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Dam 10-100MW",
+    "pathway": "C0T0E0",
+    "nid": 373,
+    "year": 2016,
+    "region": "FR",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Dam <10MW",
+    "pathway": "C0T0E0",
+    "nid": 372,
+    "year": 2050,
+    "region": "GR",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Pumped Storage >100MW",
+    "pathway": "C0T0E0",
+    "nid": 376,
+    "year": 2049,
+    "region": "HU",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Pumped Storage 10-100MW",
+    "pathway": "C0T0E0",
+    "nid": 375,
+    "year": 2050,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 80,
+    "indicator": "Hydro Run of river",
+    "pathway": "C0T0E0",
+    "nid": 371,
+    "year": 2015,
+    "region": "IE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Natural Gas Combined Cycle",
+    "pathway": "C0T0E0",
+    "nid": 379,
+    "year": 2015,
+    "region": "ES",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Natural Gas Combined Heat and Power new",
+    "pathway": "C0T0E0",
+    "nid": 381,
+    "year": 2032,
+    "region": "FI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Natural Gas Combined Heat and Power old",
+    "pathway": "C0T0E0",
+    "nid": 380,
+    "year": 2049,
+    "region": "CY",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Natural Gas Extraction",
+    "pathway": "C0T0E0",
+    "nid": 378,
+    "year": 2050,
+    "region": "DE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 5,
+    "indicator": "Natural Gas Fuel Cell",
+    "pathway": "C0T0E0",
+    "nid": 382,
+    "year": 2017,
+    "region": "BG",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Natural Gas Gas Turbine new",
+    "pathway": "C0T0E0",
+    "nid": 384,
+    "year": 2033,
+    "region": "BG",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Natural Gas Gas Turbine old",
+    "pathway": "C0T0E0",
+    "nid": 383,
+    "year": 2049,
+    "region": "CZ",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 20,
+    "indicator": "Natural Gas ICE Heat and Power Unit large",
+    "pathway": "C0T0E0",
+    "nid": 386,
+    "year": 2044,
+    "region": "DE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 20,
+    "indicator": "Natural Gas ICE Heat and Power unit small",
+    "pathway": "C0T0E0",
+    "nid": 385,
+    "year": 2016,
+    "region": "DK",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Natural Gas Import",
+    "pathway": "C0T0E0",
+    "nid": 377,
+    "year": 2016,
+    "region": "SE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Natural Gas Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 387,
+    "year": 2032,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 50,
+    "indicator": "Nuclear Generation 2",
+    "pathway": "C0T0E0",
+    "nid": 388,
+    "year": 2026,
+    "region": "BE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 60,
+    "indicator": "Nuclear Generation 3",
+    "pathway": "C0T0E0",
+    "nid": 389,
+    "year": 2048,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Ocean Wave",
+    "pathway": "C0T0E0",
+    "nid": 390,
+    "year": 2035,
+    "region": "ES",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Oil Extraction",
+    "pathway": "C0T0E0",
+    "nid": 392,
+    "year": 2023,
+    "region": "FI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Oil Import",
+    "pathway": "C0T0E0",
+    "nid": 391,
+    "year": 2017,
+    "region": "AT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Oil Refinery",
+    "pathway": "C0T0E0",
+    "nid": 393,
+    "year": 2033,
+    "region": "HR",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Solar Distributed solar PV <=0.1MW",
+    "pathway": "C0T0E0",
+    "nid": 394,
+    "year": 2016,
+    "region": "IE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Solar Utility solar PV >0.1MW",
+    "pathway": "C0T0E0",
+    "nid": 395,
+    "year": 2023,
+    "region": "DK",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 1",
+    "pathway": "C0T0E0",
+    "nid": 352,
+    "year": 2023,
+    "region": "DE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 2",
+    "pathway": "C0T0E0",
+    "nid": 353,
+    "year": 2050,
+    "region": "BE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 3",
+    "pathway": "C0T0E0",
+    "nid": 354,
+    "year": 2024,
+    "region": "FR",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 4",
+    "pathway": "C0T0E0",
+    "nid": 355,
+    "year": 2050,
+    "region": "DE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 5",
+    "pathway": "C0T0E0",
+    "nid": 356,
+    "year": 2016,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 6",
+    "pathway": "C0T0E0",
+    "nid": 357,
+    "year": 2020,
+    "region": "LT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Trans-border transmission with neighbour 7",
+    "pathway": "C0T0E0",
+    "nid": 358,
+    "year": 2016,
+    "region": "NO",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Uranium Import",
+    "pathway": "C0T0E0",
+    "nid": 396,
+    "year": 2017,
+    "region": "SE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Waste Combined Heat and Power",
+    "pathway": "C0T0E0",
+    "nid": 403,
+    "year": 2043,
+    "region": "FI",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 1,
+    "indicator": "Waste Extraction",
+    "pathway": "C0T0E0",
+    "nid": 402,
+    "year": 2050,
+    "region": "PL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 30,
+    "indicator": "Waste Steam Turbine",
+    "pathway": "C0T0E0",
+    "nid": 404,
+    "year": 2016,
+    "region": "GR",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Wind Offshore Current",
+    "pathway": "C0T0E0",
+    "nid": 397,
+    "year": 2050,
+    "region": "NL",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Wind Offshore Long-term",
+    "pathway": "C0T0E0",
+    "nid": 399,
+    "year": 2017,
+    "region": "IE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Wind Offshore Near-term",
+    "pathway": "C0T0E0",
+    "nid": 398,
+    "year": 2050,
+    "region": "IE",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Wind Onshore Current",
+    "pathway": "C0T0E0",
+    "nid": 400,
+    "year": 2015,
+    "region": "LT",
+    "category": "OperationalLife"
+  },
+  {
+    "value": 25,
+    "indicator": "Wind Onshore Near-term",
+    "pathway": "C0T0E0",
+    "nid": 401,
+    "year": 2015,
+    "region": "BE",
+    "category": "OperationalLife"
+  }
+]

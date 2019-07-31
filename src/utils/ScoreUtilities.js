@@ -5,9 +5,16 @@ import Edata from './../data/envData.json'
 import CapitalCost from './../data/Capitalcost.json'
 import newCapacity from './../data/newCap'
 import pathwayconvert from './../data/pathwayConvert'
+import IDMatch from './../data/CapitalCostNewCapacityIDMatch'
+import OpLife from './../data/OpLife'
+import AVOC_IDMatch from './../data/FixedCostInstalledCapMatchIDs'
+import FixedCost from './../data/FixedCost'
+import InstalledCap from './../data/InstallCapAnd'
 
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
+
+const DiscountRate = 0.05
 
 function generateScenarioList() {
   let scenarios = []
@@ -37,15 +44,15 @@ export function generateScores(envData) {
   //Create data
   let score = []
   var envMax = 0
-  var envMin = 10000000000
-  alert(JSON.stringify(envData))
+  var envMin = 1000000000
+  var ecoMin = 1000000000
+  var ecoMax = -1000000000
   envData.model_draft_reeem_osembe_output.forEach(e => {
-    //alert("minMax: " + JSON.stringify(e))
     if (e && e.value < envMin) envMin = e.value
     if (e && e.value > envMax) envMax = e.value
   })
 
-  alert('min: ' + JSON.stringify(envMin) + '  max: ' + JSON.stringify(envMax))
+  //alert('min: ' + JSON.stringify(envMin) + '  max: ' + JSON.stringify(envMax))
   scenarios.forEach(function(s) {
     //countries.forEach(function(c) {
     let elmt = {}
@@ -55,60 +62,55 @@ export function generateScores(envData) {
     scoreElmts.forEach(function(e) {
       if (e === 'env') {
         var v = envData.model_draft_reeem_osembe_output.find(elem => {
-          //alert("s: " + JSON.stringify(s) + "   p: " + elem.pathway)
           return elem.pathway === s
         })
-        //alert("ubd: " + s + " v: " + JSON.stringify(v))
         elmt['env'] = Math.round(((v.value - envMin) / (envMax - envMin)) * 100)
       } else if (e === 'eco') {
-        var tr = [[71, 277], [74, 273], [75, 274], [76, 275]]
         var sum = 0
         var outPar = 0
         var inPar = 0
         var pathw = pathwayconvert.find(path => {
           return path[0] === s
         })
-        tr.forEach(e => {
-          //alert('s: ' + s)
+        IDMatch.forEach(nid => {
           outPar = newCapacity.find(a => {
-            //return a.nid === e[1] && s === a.pathway
-            return a.nid === e[1] && s === pathw[1]
+            return a.nid === nid[1] && a.pathway === pathw[1]
           })
           inPar = CapitalCost.find(a => {
-            //return a.nid === e[0] && s === a.pathway
-            return a.nid === e[0] && s === pathw[1]
+            return a.nid === nid[0] && a.pathway === pathw[1]
           })
           if (outPar !== undefined && inPar !== undefined) {
             sum += outPar.value * inPar.value
           } else {
-            alert('s: ' + pathw[0] + '  p: ' + pathw[1])
+            //alert('s: ' + pathw[0] + '  p: ' + pathw[1] + '  not found')
           }
-          alert(
-            'Sum: ' +
-              sum +
-              ' in: ' +
-              JSON.stringify(inPar) +
-              ' out: ' +
-              JSON.stringify(outPar) +
-              's: ' +
-              pathw[0] +
-              '  p: ' +
-              pathw[1]
-          )
         })
         elmt['eco'] = sum
-        alert('s: ' + pathw[0] + '  p: ' + pathw[1] + '  sum: ' + sum)
-      } else elmt[e] = getRandomInt(1, 10)
+        if (sum > ecoMax) ecoMax = sum
+        if (sum < ecoMin) ecoMin = sum
+      } else {
+        //var CRF = CapitalRecoveryFactorByTech()
+        //var CI = CapitalInvestmentByTech('C0T0E0')
+        //var AIC = AnnualizedInvestmentCost(OpLife, CI, CRF)
+        //alert('tmp: ' + JSON.stringify(CI))
+        elmt[e] = getRandomInt(1, 10)
+      }
     })
-    //alert(JSON.stringify(elmt))
     score.push(elmt)
   })
-  //}
-  //)
+  var CRF = CapitalRecoveryFactorByTech()
+  var CI = CapitalInvestmentByTech('C0T0E0')
+  var AIC = AnnualizedInvestmentCost(OpLife, CI, CRF)
+  var AVOC = AnnualFixedOperatingCost('C0T0E0')
+  alert('AVOC: ' + AVOC)
+  //alert('ecoMax: ' + ecoMax + '  ecoMin: ' + ecoMin)
+  var normScore = score.map(score => {
+    var normEco = Math.round(((score.eco - ecoMin) / (ecoMax - envMin)) * 100)
+    return { env: score.env, eco: normEco, soc: score.soc }
+  })
   //Print scores
-  console.log(JSON.stringify(score))
-  alert('scores: ' + JSON.stringify(score))
-  //alert(JSON.stringify(t))
+  console.log(JSON.stringify(normScore))
+  alert('scores: ' + JSON.stringify(normScore))
 }
 
 export function createListOfScenarios(weights) {
@@ -168,7 +170,6 @@ export const Qt = () => (
     {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>
       if (error) return <p>Error :(</p>
-      //if (loading) alert('data: ' + JSON.stringify(data))
       if (data) {
         generateScores(data)
       }
@@ -186,7 +187,7 @@ export const Qt = () => (
 )
 
 export const Qt2 = () => {
-  alert('Edara: ' + JSON.stringify(Edata))
+  //('Edara: ' + JSON.stringify(Edata))
   generateScores(Edata)
 
   return Edata.model_draft_reeem_osembe_output.map((movie, i) => (
@@ -223,7 +224,6 @@ export const QtecoNewCap = () => (
     {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>
       if (error) return <p>Error :(</p>
-      //if (loading) alert('data: ' + JSON.stringify(data))
       if (data) {
         generateScores(data)
       }
@@ -261,9 +261,128 @@ export const EcoScoreGen = () => (
     `}
   >
     {({ loading, error, data }) => {
-      //alert('newCap: ' + JSON.stringify(newCapacity))
-
       return <div>Helllo</div>
     }}
   </Query>
 )
+
+//CRF
+const CapitalRecoveryFactorByTech = () => {
+  var ret = {}
+  OpLife.forEach(e => {
+    var retElem = {}
+    retElem.indicator = e.indicator
+    retElem.CRF =
+      (DiscountRate * Math.pow(1 + DiscountRate, e.value)) /
+      (Math.pow(1 + DiscountRate, e.value) - 1)
+    //ret.push(retElem)
+    ret[e.indicator] = retElem.CRF
+  })
+  //alert('CRF: ' + JSON.stringify(ret))
+  return ret
+}
+
+//CI
+const CapitalInvestmentByTech = pathway => {
+  var ret = {}
+  var pathw = pathwayconvert.find(path => {
+    return path[0] === pathway
+  })
+  OpLife.forEach(o => {
+    ret[o.indicator] = {}
+  })
+  //alert('p: ' + JSON.stringify(pathw))
+  IDMatch.forEach(nid => {
+    for (let y = 2015; y <= 2050; y++) {
+      var retElement = {}
+      var outPar
+      var inPar
+      outPar = newCapacity.find(a => {
+        return a.nid === nid[1] && a.pathway === pathw[1] && a.year === y
+      })
+      inPar = CapitalCost.find(a => {
+        if (a.nid === nid[0] && a.pathway === pathw[1] && a.year === y) {
+        }
+        return a.nid === nid[0] && a.pathway === pathw[1] && a.year === y
+      })
+      if (outPar !== undefined && inPar !== undefined)
+        retElement.indicator = inPar.indicator
+      if (outPar !== undefined && inPar !== undefined) {
+        retElement.CI = outPar.value * inPar.value
+        ret[inPar.indicator][y] = retElement.CI
+      }
+      //alert('ret: ' + JSON.stringify(ret))
+      //ret.push(retElement)
+    }
+  })
+  //alert('CI: ' + JSON.stringify(ret))
+  console.log('CI: ' + JSON.stringify(ret))
+  return ret
+}
+
+//AIC
+const AnnualizedInvestmentCost = (opLife, CI, CRF) => {
+  var ret
+  var startYear
+  var sum = 0
+  opLife.forEach(o => {
+    //alert('o: ' + JSON.stringify(o))
+    if (2050 - o.value < 2015) startYear = 2015
+    else startYear = 2050 - o.value
+
+    if (Object.keys(CI[o.indicator]).length) {
+      for (let y = startYear; y < 2050; y++) {
+        //alert('CI: ' + CI[o.indicator][y] + '  CRF: ' + CRF[o.indicator])
+        sum += CI[o.indicator][y] * CRF[o.indicator]
+        if (sum === undefined) alert('y: ' + y + '  Indicator: ' + o.indicator)
+      }
+    }
+  })
+  return sum
+}
+
+//AFOC
+const AnnualFixedOperatingCost = pathway => {
+  var sum = 1
+  var outPar
+  var inPar
+  var pathw = pathwayconvert.find(path => {
+    return path[0] === pathway
+  })
+  AVOC_IDMatch.forEach(nid => {
+    outPar = InstalledCap.find(a => {
+      return a.nid === nid[0] && a.pathway === pathw[1]
+    })
+    inPar = FixedCost.find(a => {
+      /* alert(
+        'a: ' +
+          JSON.stringify(a) +
+          '  nid[1]: ' +
+          nid[1] +
+          '  pathw: ' +
+          pathw[1]
+      ) */
+      return a.nid === nid[1]
+    })
+    alert(
+      'outPar: ' + JSON.stringify(outPar) + '   inPar: ' + JSON.stringify(inPar)
+    )
+    if (outPar !== undefined && inPar !== undefined) {
+      sum += outPar.value * inPar.value
+    } else {
+      alert('missed nid: ' + JSON.stringify(nid))
+    }
+  })
+  return sum
+}
+
+//AVOC
+const AnnualVariableOperatingCost = () => {}
+
+//DP
+const DomesticProductionOFElectricity = () => {}
+
+//LCoDE
+const LevelizedCostOfDomesticElectrity = () => {}
+
+const LevelizedCostOfElectricity = () => {}
