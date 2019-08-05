@@ -1,0 +1,7682 @@
+[
+  {
+    "value": -6.01658488342763,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -6.4132430252524,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2503032980327,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6018322333587,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -62.3554436280368,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 310.318555621558,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3360921150122,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.2762641849729,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.195560455827,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587622,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -147.680147169037,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.14769951865008,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 18.135774427882,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -14.6551502340699,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376757,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 220.30207317932,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.53447501517172,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2049182775416,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 4.00315284109315,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -21.3690418745869,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 34.4493698781913,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -24.9008753011856,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.91871589237887,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.0685209092433,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -58.228756086191,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 19.9144714500397,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.01658488342765,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -6.41902784053243,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2503032980327,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6005711529981,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -61.8803799124079,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 305.403156957971,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3243016842423,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.2762641849729,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.1381936260087,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587621,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -148.556338335576,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.14769951865006,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 18.1357744278827,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -14.65515023407,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376757,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 220.326033706178,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.53447501517172,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2049182775431,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 4.00315284109325,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -21.3594248030533,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 39.056354344469,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -24.9008753011852,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.91871589237859,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.0652398021613,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -58.2287560861912,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 20.546101728654,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.01658488342764,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -5.86137966868506,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2503032980328,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6007200034575,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -62.3834911223209,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 310.663623939659,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3360921150122,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.276264184973,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.1673446511189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -148.502466682519,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.14769951865011,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 18.1313949096205,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -14.6551502340699,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376757,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 220.323205547449,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.53447501517179,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2049182775428,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 4.00315284109317,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -21.3690418745873,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 34.3212672525535,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -24.9008753011851,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.9230954106406,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.0685209092433,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -58.2287560861912,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 19.9455490060352,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.36238201621628,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -8.40654972414332,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -17.2205720053787,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.4948358292051,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -72.7192481672772,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 295.254669075642,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3653545162726,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.0857080608669,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -41.5274380891228,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587623,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -165.198896154761,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 7.06829251820739,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.078540041842,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.0327139676576,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 28.6656104777011,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 243.595047024515,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.64326087265392,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1633179290281,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 4.08492310771696,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": -0.201791803587841,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -23.3935983744463,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 56.3375186865655,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -25.3585983901474,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.03486052838149,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.105737981039,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -60.3091277689664,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -0.489112333755328,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 22.137519807548,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.01658488342756,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -5.86074433421886,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2503032980326,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.5543853751712,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -63.4722684345597,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 299.54266282946,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3243016842423,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.276264184973,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.3024744274505,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -147.040205028589,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.14769951865009,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 15.9655549300882,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -14.1476060494934,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376759,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 214.421818039806,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.55184223806362,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2198850807228,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 3.98578561820135,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.81586083668895,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -9.71272714618755,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.196862190395,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -24.9008753011852,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.92309541064037,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.0652398021612,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -56.9183558159841,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0.347895524748936,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 20.3283451133432,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -7.15283789563393,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -8.688168,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.4170661037792,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.8259983592186,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -62.0730782399469,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 293.590087174272,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3375663158022,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.1755555840716,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.3429708236299,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -162.656480101262,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 2.38527305806108,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.078540041842,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.3206305951553,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.360016,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 241.186767567241,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.64326087265395,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1196321514394,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 3.99507558451242,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": -0.20179180358784,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -19.342648301058,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 52.6777360256911,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -24.7433266200276,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.0980049250428,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -60.6114239467481,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -0.489112333755392,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 20.108047714497,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.63231754549045,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -6.14211070552512,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.3511730183626,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.7260757851261,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -70.3475254792284,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 267.724228789739,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 53.9786511029887,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.1174072159123,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -42.1486286334106,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -176.924387100856,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 3.282193018804,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.2834014756149,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -17.5072654422234,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.2767286379899,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 241.912106669431,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 2.74878313993063,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2070077098369,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 3.94770168539495,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 10.7600256554903,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 65.9922006795613,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -25.0584239823431,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 3.19772177214356,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -63.9780572712181,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -57.803273805535,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -0.489112333755414,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 18.3742135914751,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.7460753691491,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -25.3603158642351,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -15.5943618546175,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.6612519892243,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -80.3352726581245,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 389.359702819086,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.4177425149189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 18.0242618121694,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -76.8951757313383,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1331855069675,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -237.136160741614,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.0210193335073,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.51735678633191,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -3.77353816007193,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.6482439803835,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 343.699590187405,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.9458525047141,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2780091691093,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.7238886503156,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.44528096973136,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 14.5398420415494,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 48.0545568,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.687953547819,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.38071837290537,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -127.115567764107,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -63.9861027070331,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 62.9215544482998,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.65148458527222,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -24.6046903611539,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -15.4552214433729,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.3096589320875,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -62.1693740271557,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 361.295611271514,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.4177425149189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 19.341350151837,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -76.5059311497242,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1940212897981,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -257.27225393418,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.9000662731793,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 1.73099158496425,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -4.97269301076861,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.2279922008566,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 371.513405116982,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.94532608470166,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2880733229296,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.885623536212418,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.50919253577673,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 16.7654572211681,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 48.0545568,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.6879535478189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.36847410394235,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -128.332283420721,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -66.2886261511894,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 63.9537329964922,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.54867980640089,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -25.3247374688203,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.1271272073635,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.7113129360246,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -76.2041906544081,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 389.973050106203,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746052,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 18.0242618121692,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -76.8951757313383,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1331855069674,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -235.7800179776,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.8023179802033,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.51735678396574,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -3.89489546301237,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.6364602013887,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 337.412450240933,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.9458525047141,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2780091691091,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.723888650315551,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.44527455055405,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 13.8909163590174,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 48.0545568,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.687953547819,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.13049552595834,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -127.115567764107,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -64.3912211886289,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 62.979583889478,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.68872670398491,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -27.2296399516891,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -19.3250395302607,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.3621351795611,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -66.7834794453039,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": -0.760615852552391,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 339.427285224846,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 31.9622989703034,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 19.1801416859526,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -78.3757691547193,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1940212897981,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -270.399187341391,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.9347814468696,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.0515551141106,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -2.52541200824368,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.2647944777011,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 403.158061305583,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.90912530247732,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2296399516891,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.07018971321288,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 17.7624975852759,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 64.8927719247778,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -27.0202469622606,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -128.332283420721,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -78.5707943489077,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -1.22177509763846,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 60.8557388095904,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.4687086377621,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -24.8079127325605,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.4518260946605,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.5247606274839,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -76.9320392168264,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 391.854763924859,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.4177425149189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 17.9158079914831,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -76.7821263477222,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1280197348261,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -239.494450302673,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.8341721914251,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 1.93897898428802,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -3.45771099291229,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.7418522915439,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 343.081619901378,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -8.04505970658389,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2880733229388,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.614377298445749,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.44528096973133,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 14.3263866929697,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 48.0545568,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.6879535478192,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 2.17164134415259,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -127.01225232128,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -67.238267053061,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.7980954152755,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.47296112976655,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -27.2173621472291,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -18.1770906155442,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.6667520294189,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -60.2955573209677,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 340.29901198007,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 31.8271956266275,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 20.0705473223937,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -78.4204326075095,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.2458655686703,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -265.716914298101,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.8773840011338,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.0515551141106,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -8.03842844634521,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.9592,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 381.103886785217,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.73482266598343,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2173621472291,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.84028282691555,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 2.34563852745199,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 21.7591120524422,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 62.2495491325886,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -27.0202469622606,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -129.369168998165,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -63.8425426677654,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -1.53203812600183,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 59.8178397840392,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.4522566253156,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -27.217362147229,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.966552010348,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.5307682109455,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -74.659117157818,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 359.797811430369,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 31.421885595599,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 21.7324989272192,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -79.5931381744463,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.3576241605997,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -251.281992410917,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.816857070874,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 16.9534449515004,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -8.38133033857389,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.9592,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 364.032758365096,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.5265562103175,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.217362147229,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.587087640747533,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 2.24383340819626,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 11.9483434569259,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 72.0201552676578,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -27.0202469622609,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -131.604340836754,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -62.0319372200546,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -0.98738141957742,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 59.8178397840389,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.21915219890944,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -27.2455963436383,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -27.5820559189779,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.3873252554964,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -63.7934185775811,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 349.121134200708,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746052,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 16.4652122280033,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -81.3965077096207,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.0343924317497,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -265.56672634772,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.4272278875122,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 20.2565353447212,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -9.06500776554159,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.8759126379899,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 402.219718529865,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.95604443383899,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2455963436383,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -1.031715566161,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0.343094312691901,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 15.93688011868,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 68.2840666285517,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -27.5100890611851,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -125.139706259753,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -75.3816084168495,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": -1.34681086954105,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 59.339292086098,
+    "indicator": "Total net Imports",
+    "pathway": "C0T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.60094090318803,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -0.193476570262977,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.7274609317949,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6018221751404,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -51.9050958118876,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 259.044086541271,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.4437530165289,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.0542570007667,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.5728415849644,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -121.623433979277,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.28138612015951,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 3.07888862873395,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -18.6424393785619,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376757,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 211.769046892128,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.07161818614114,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2194492996382,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.68801685433012,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.7587392280714,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -32.9337273269262,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.0749568,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.4418394933776,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 15.4097574341838,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.17618181076,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.6175474746036,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.8600894996401,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 24.0888652427137,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.60094090318803,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -0.471771589453135,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.8717927439007,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6018221751404,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -52.4192874458954,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 258.955002432334,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.4715412169991,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.0542570007669,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.5728415849645,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -120.348038977619,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.28860271076477,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.30695028963347,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -17.8705010394611,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376756,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 211.912037397513,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.45373299013634,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2194492996397,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.30590205033478,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.7191011057126,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -33.1707722899164,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.0749568,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.4418394933774,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 14.4159938718738,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.1839148667562,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.8678210605731,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.8600894996406,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 25.1898308084584,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.60094090318798,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -0.381234867602672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.8334532797265,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.6099382940723,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -52.0152043828763,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 259.022729540376,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.4715412169992,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.0542570007669,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.6849514518033,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -119.008513919977,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 8.2939333917228,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.7890305532922,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -18.3002164084233,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376759,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 211.693090208943,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.45373299013634,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2194492996397,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.3059020503347,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.70153569278205,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -32.809523599276,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.0749568,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.3297296265386,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 13.6627692979472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.1839148667561,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.7513687729582,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.8600894996403,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 23.7120761341795,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.37045822454981,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -1.24324141461253,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2210147203459,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.7570596825966,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -50.7202985646942,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 256.553343381769,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.5296276797189,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 11.8003421116802,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.2604575326907,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587621,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -121.082976424807,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 7.67317746855518,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.8362353447212,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -16.2920508071671,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.9989458614029,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 256.413782536157,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 5.56582678723664,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1913744205277,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 1.4477231423211,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -39.3876853639634,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 10.8645244895038,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.7542235456512,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -1.74980317523669,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.229153259743,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.6957390085442,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.1183490720611,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 23.4649294701855,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.39311873399327,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -0.348532031517297,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.6892022814942,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -22.638058482357,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -49.2873727212221,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 260.118257471511,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.4437530165286,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 12.053599806478,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.6849514518049,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8419553753001,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -120.35192016639,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 7.89875701435917,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.5902714588992,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -16.1634912545078,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 25.8879167376757,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 203.674792392438,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.13428973983186,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2194492996397,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.61285860915096,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.71487073687056,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -35.8048964760583,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.0749568,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.329729626537,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 21.692868942068,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.1623461415209,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.1897885974184,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 17.999647132461,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 23.6218306316099,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.26350526609296,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -1.36061451456117,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -15.0605261577644,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.3289599803818,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -47.9689816772481,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 251.505457614638,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.5296276797187,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 11.7547310686103,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.5728415849645,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.842647158762,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -129.006075504032,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 7.09850041750816,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.8362353447212,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.10311597973,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.360016,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 265.244828737088,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.50494110947872,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1630111473086,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.5542198631489,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": -0.100441565085337,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -34.6237705116687,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 2.64163755340137,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.4418394933774,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -2.76420383363426,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.229153259743,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.3144957443452,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.0124988942909,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 25.6268396839534,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -6.04064549980181,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -1.24737170554545,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -14.9968746324253,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.2960909276521,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -49.6159461218723,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 253.446599701211,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.473015417789,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 11.7778072610992,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -48.1820553449643,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587621,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -130.109152482566,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 7.09850041750835,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.8362353447212,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.4164931639313,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.360016,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 265.869340738976,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 4.50494110947873,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1630111473086,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 2.53114367066003,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": -0.100441565085368,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -33.9763050951019,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 5.31032929349062,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -19.8326257333776,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -2.82785535897356,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.2133988825554,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.3144957443453,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.1008503803388,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 22.3919818168538,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.95473541781088,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -1.85048465818338,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -15.9005354445137,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -21.6468350481881,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -51.2118701386328,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 253.111909354111,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 54.3801286025482,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 11.7431933208701,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -45.5728415849646,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 71.8426471587622,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -120.366412045991,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 5.32194265090589,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 14.274926114918,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.3013146372544,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.2767286379897,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 239.869678513711,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": 5.54798149372136,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2063412237072,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 1.52271722664634,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -33.455691690504,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -325.5366672,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 21.1346879602687,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -22.4418394933772,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -64.2141852325394,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -53.2179351530206,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.0867536507518,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 25.3517118360686,
+    "indicator": "Total net Imports",
+    "pathway": "C1T0E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.3977760762191,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -20.535703126147,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -15.5211139756371,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -23.1849718918379,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -49.6316394924589,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 260.249105157125,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 33.2765158033914,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 17.2449571867713,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -87.6123101085305,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.0754316401059,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -122.885524276926,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.9043824956613,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.15369971167104,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -7.84139264312942,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.4871007376757,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 301.555525506579,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.55002142842643,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2780091691089,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.991899427504198,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.2584985622392,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 16.1864113680755,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 47.6087176559306,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -25.7577825620511,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 6.87229244901642,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -125.960490426877,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -51.829416,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.348239172165,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.680702020228,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E0",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.60484773718875,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -20.2654537854573,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2887892381504,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -24.7853647253081,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -44.5365514634724,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 313.020128982761,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746052,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 17.2449571867715,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -87.1185044208245,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.075431640106,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -126.72152635872,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.7630305809968,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 1.715088921129,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -11.0613360180916,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.4871007376757,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 252.551427476099,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.55051136432643,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2485113438332,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.982100709504262,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.25849425581657,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 14.7754953350755,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 47.5994088738307,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.687953547819,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 12.7891058114915,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -125.960490426877,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -51.829416,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.3394231324609,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 60.4525395430864,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E1",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.87686018897795,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -20.5573024137795,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.5823019207401,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -23.1207255791429,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -41.3699511867839,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 260.278489064135,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746053,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 17.2449571867715,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -87.6123101085296,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.0754316401059,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -124.277400325809,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 12.8009642586589,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 2.15369971167103,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -7.88031887988106,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 26.4871007376757,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 294.45118323205,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.55002142842643,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2485113438336,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.991899427504188,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 6.25849856223949,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 17.2905588155556,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 47.6087176559306,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -25.7577825620513,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 8.83573993598521,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -125.960490426877,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -51.829416,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.3482391721651,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.2119871571198,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E3",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.55727905547775,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -23.4680008879952,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -22.6149363045001,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.2409744029032,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -47.7038027525039,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 254.285860478755,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746052,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 17.6163946123017,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -92.6452999704348,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1674596273556,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -172.115960359907,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.2563158469719,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.6312551141106,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -15.1930757794784,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 28.6809766792696,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 410.742967960761,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.52655621031752,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.192331190229,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.0841094574675509,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.39399673811598,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 3.38463116308361,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 28.1580533587885,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.687953547819,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -3.78970776734725,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -127.801050171872,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.5584747829495,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.6519182001403,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.7523185064858,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E4",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.4528282682848,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -23.5450001747462,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -17.6847421437544,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -20.2334957923722,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -47.1356501583021,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 251.471858291874,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.5522491746052,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 18.1210661987079,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -92.3591703939058,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1940212897982,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -139.339704677563,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.3593197673657,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.6312551141106,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -14.458070490814,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.9592,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 388.594233253205,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.52655621031752,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.1923311902291,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.0841094574675738,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 11.5239666195548,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 3.80319420623342,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 16.4286904728093,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.687953547819,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -14.3594515762734,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -128.332283420721,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.1957798309099,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 19.0561731087653,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.9867846559921,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.3384836036332,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -24.1179126971154,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -16.2691108734518,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.008910572261,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -44.0953439031624,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 252.436170423504,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 32.4177425149189,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 18.1210661987077,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -93.0347865915785,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.1940212897981,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -141.725251711402,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.3593197673657,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 10.6312551141106,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -12.6860644289626,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 29.9592,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 414.547321891179,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.52655621031751,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.192331190229,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -0.0841094574675645,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 9.58898686786369,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": -0.432743844660072,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 9.5207836489668,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.6879535478188,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -30.201594485089,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -128.332283420721,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -52.1957798309098,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 18.0634130229007,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 61.1848204490057,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E12",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -4.61422575104163,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": -22.8259426672439,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -25.2801025159071,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -19.56656377877,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -45.3976940447243,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 280.877025548555,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 33.2765158033914,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 16.4652122280032,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -92.3566496809598,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 72.0343924317497,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -184.906034242261,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 13.3793289496107,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 11.8924293086401,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -17.8993800675007,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": 27.8759126379899,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 402.234424586218,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -7.74130032382825,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.2634781470113,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -1.24645967617175,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 0.34309431269193,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 4.56973108341193,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -367.4795472,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 22.1063288724057,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.7014827555327,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": -1.20646292355097,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -125.139706259753,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -53.1221398464393,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 20.0382962953758,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 63.1275215286299,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E14",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": 41.1962821923463,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": 21.2534542845766,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -1.20569569640219,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -25.4458506614154,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -56.2636805639973,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 116.956921746031,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 50.4621164874074,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 14.5107632185677,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -43.6488216082576,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 1.00666134346083,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": 14.3881782716058,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": -1.09899638495798,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -9.87063920768085,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": -0.159327645720041,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 73.7398562517325,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -5.39810685780424,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 24.4175294112558,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": -8.09240219586531,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.63875706393956,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 18.5897890240764,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -303.093608588484,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 33.1318010764988,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -23.8710396648351,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": 3.46330288412037,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -55.2061296559863,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 9.46054436235063,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 105.138341113437,
+    "indicator": "Total net Imports",
+    "pathway": "C0T0E10",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  },
+  {
+    "value": -5.1441526712753,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "AT"
+  },
+  {
+    "value": 5.18506084837777,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BE"
+  },
+  {
+    "value": -8.03634669427385,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "BG"
+  },
+  {
+    "value": -26.5441989601431,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CH"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CY"
+  },
+  {
+    "value": -21.7438357321302,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "CZ"
+  },
+  {
+    "value": 37.9505627302692,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DE"
+  },
+  {
+    "value": 31.511997632965,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "DK"
+  },
+  {
+    "value": 2.06689478055483,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "EE"
+  },
+  {
+    "value": -93.1862145049735,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "ES"
+  },
+  {
+    "value": 16.2958591396934,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FI"
+  },
+  {
+    "value": -65.2024929737682,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "FR"
+  },
+  {
+    "value": 5.15641040445278,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "GR"
+  },
+  {
+    "value": 0.533039236884937,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HR"
+  },
+  {
+    "value": -5.95004986783809,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "HU"
+  },
+  {
+    "value": -2.67216177150496,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IE"
+  },
+  {
+    "value": 121.619480133634,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "IT"
+  },
+  {
+    "value": -9.07411825356128,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LT"
+  },
+  {
+    "value": 27.5173425859166,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LU"
+  },
+  {
+    "value": 0,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "LV"
+  },
+  {
+    "value": 5.9202313087835,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "MT"
+  },
+  {
+    "value": 126.294518084252,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NL"
+  },
+  {
+    "value": -352.640401835818,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "NO"
+  },
+  {
+    "value": 46.0817032010717,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PL"
+  },
+  {
+    "value": -26.2805784163134,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "PT"
+  },
+  {
+    "value": 6.98584118930573,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "RO"
+  },
+  {
+    "value": -69.7556426308689,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SE"
+  },
+  {
+    "value": -49.818099401915,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SI"
+  },
+  {
+    "value": 23.7166893310585,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "SK"
+  },
+  {
+    "value": 279.212663107164,
+    "indicator": "Total net Imports",
+    "pathway": "C1T1E9",
+    "nid": 210,
+    "year": 2050,
+    "region": "UK"
+  }
+]

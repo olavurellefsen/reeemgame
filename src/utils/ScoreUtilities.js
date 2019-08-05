@@ -7,9 +7,18 @@ import newCapacity from './../data/newCap'
 import pathwayconvert from './../data/pathwayConvert'
 import IDMatch from './../data/CapitalCostNewCapacityIDMatch'
 import OpLife from './../data/OpLife'
-import AVOC_IDMatch from './../data/FixedCostInstalledCapMatchIDs'
+import AFOC_IDMatch from './../data/FixedCostInstalledCapMatchIDs'
 import FixedCost from './../data/FixedCost'
-import InstalledCap from './../data/InstallCapAnd'
+import InstalledCap from './../data/InstalledCapByRegion'
+import Countries from './../data/eunochcountries'
+import AVOC_IDMatch from './../data/ElecPropVarCostFuelInputMatchIDs'
+import VariableCost from './../data/VariableCost'
+import ElectricityProd from './../data/ElectricityProd'
+import FuelInputPower from './../data/FuelInputPower'
+
+import SpecifiedAnnualDemand from './../data/SpecifiedAnnualDemand'
+import NetImports from './../data/NetImports'
+import ElectricityExchange from './../data/ElectricityExchange'
 
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
@@ -101,9 +110,10 @@ export function generateScores(envData) {
   var CRF = CapitalRecoveryFactorByTech()
   var CI = CapitalInvestmentByTech('C0T0E0')
   var AIC = AnnualizedInvestmentCost(OpLife, CI, CRF)
-  var AVOC = AnnualFixedOperatingCost('C0T0E0')
-  alert('AVOC: ' + AVOC)
-  //alert('ecoMax: ' + ecoMax + '  ecoMin: ' + ecoMin)
+  var AFOC = AnnualFixedOperatingCost('C0T0E0')
+  var AVOC = AnnualVariableOperatingCost('C0T0E0')
+  var DP = DomesticProductionOFElectricity('C0T0E0')
+  var LCodE = LevelizedCostOfDomesticElectrity(AIC, AFOC, AVOC, DP)
   var normScore = score.map(score => {
     var normEco = Math.round(((score.eco - ecoMin) / (ecoMax - envMin)) * 100)
     return { env: score.env, eco: normEco, soc: score.soc }
@@ -279,6 +289,7 @@ const CapitalRecoveryFactorByTech = () => {
     ret[e.indicator] = retElem.CRF
   })
   //alert('CRF: ' + JSON.stringify(ret))
+  console.log('CRF: ' + JSON.stringify(ret))
   return ret
 }
 
@@ -343,46 +354,158 @@ const AnnualizedInvestmentCost = (opLife, CI, CRF) => {
 
 //AFOC
 const AnnualFixedOperatingCost = pathway => {
-  var sum = 1
+  var ret = {}
   var outPar
   var inPar
+  var allSum = 0
   var pathw = pathwayconvert.find(path => {
     return path[0] === pathway
   })
-  AVOC_IDMatch.forEach(nid => {
-    outPar = InstalledCap.find(a => {
-      return a.nid === nid[0] && a.pathway === pathw[1]
-    })
-    inPar = FixedCost.find(a => {
+
+  Countries.forEach(c => {
+    var sum = 0
+    AFOC_IDMatch.forEach(nid => {
+      outPar = InstalledCap.find(a => {
+        return (
+          a.nid === nid[0] && a.pathway === pathw[1] && a.region === c.codeCap
+        )
+      })
+      inPar = FixedCost.find(a => {
+        if (c.codeCap !== 'EU+CH+NO')
+          return (
+            a.nid === nid[1] && a.region === c.codeCap && a.pathway === pathw[1]
+          )
+        else {
+          return a.nid === nid[1] && a.region === 'AT' && a.pathway === pathw[1]
+        }
+      })
       /* alert(
-        'a: ' +
-          JSON.stringify(a) +
-          '  nid[1]: ' +
-          nid[1] +
-          '  pathw: ' +
-          pathw[1]
-      ) */
-      return a.nid === nid[1]
+            'outPar: ' + JSON.stringify(outPar) + '   inPar: ' + JSON.stringify(inPar)
+          ) */
+      if (outPar !== undefined && inPar !== undefined) {
+        //alert("c: " + c.codeCap + "   fixed: " + inPar.nid + " " + inPar.value + "  inst: " + outPar.nid + ' ' + outPar.value + "   add: " + outPar.value * inPar.value)
+        sum += outPar.value * inPar.value
+        if (outPar.region !== 'EU+CH+NO') allSum += outPar.value * inPar.value
+      } else {
+        //alert('missed nid: ' + JSON.stringify(nid))
+      }
     })
-    alert(
-      'outPar: ' + JSON.stringify(outPar) + '   inPar: ' + JSON.stringify(inPar)
-    )
-    if (outPar !== undefined && inPar !== undefined) {
-      sum += outPar.value * inPar.value
-    } else {
-      alert('missed nid: ' + JSON.stringify(nid))
-    }
+    ret[c.codeCap] = sum
+    //alert('ret: ' + JSON.stringify(ret) + '   sum: ' + allSum)
   })
-  return sum
+  //alert("AFOC: " + JSON.stringify(ret) + "  Allsum: " + allSum)
+  console.log(JSON.stringify(ret) + '  Allsum: ' + allSum)
+  return ret
 }
 
 //AVOC
-const AnnualVariableOperatingCost = () => {}
+const AnnualVariableOperatingCost = pathway => {
+  var ret = {}
+  var ElecProd
+  var VarCost
+  var FuelInput
+  var allSum = 0
+  var pathw = pathwayconvert.find(path => {
+    return path[0] === pathway
+  })
+
+  Countries.forEach(c => {
+    var sum = 0
+    AVOC_IDMatch.forEach(nid => {
+      ElecProd = ElectricityProd.find(a => {
+        return (
+          a.nid === nid[0] && a.pathway === pathw[1] && a.region === c.codeCap
+        )
+      })
+      VarCost = VariableCost.find(a => {
+        if (c.codeCap !== 'EU+CH+NO')
+          return (
+            a.nid === nid[1] && a.region === c.codeCap && a.pathway === pathw[1]
+          )
+        else {
+          return a.nid === nid[1] && a.region === 'AT' && a.pathway === pathw[1]
+        }
+      })
+      FuelInput = FuelInputPower.find(a => {
+        return (
+          a.nid === nid[2] && a.pathway === pathw[1] && a.region === c.codeCap
+        )
+      })
+      /* alert(
+            'outPar: ' + JSON.stringify(outPar) + '   inPar: ' + JSON.stringify(inPar)
+          ) */
+      if (
+        ElecProd !== undefined &&
+        VarCost !== undefined &&
+        FuelInput !== undefined
+      ) {
+        //alert("c: " + c.codeCap + "   fixed: " + inPar.nid + " " + inPar.value + "  inst: " + outPar.nid + ' ' + outPar.value + "   add: " + outPar.value * inPar.value)
+        sum +=
+          ElecProd.value * VarCost.value * 277.778 +
+          FuelInput.value * VarCost.value
+        if (ElecProd.region !== 'EU+CH+NO')
+          allSum +=
+            ElecProd.value * VarCost.value * 277.778 +
+            FuelInput.value * VarCost.value
+      } else {
+        //alert('missed nid: ' + JSON.stringify(nid))
+      }
+    })
+    ret[c.codeCap] = sum
+    //alert('ret: ' + JSON.stringify(ret) + '   sum: ' + allSum)
+  })
+  //alert("AVOC: " + JSON.stringify(ret) + "  Allsum: " + allSum)
+  console.log(JSON.stringify(ret) + '  Allsum: ' + allSum)
+  return ret
+}
 
 //DP
-const DomesticProductionOFElectricity = () => {}
+const DomesticProductionOFElectricity = pathway => {
+  var ret = {}
+  var SpecDemand
+  var NetImp
+
+  var pathw = pathwayconvert.find(path => {
+    return path[0] === pathway
+  })
+
+  Countries.forEach(c => {
+    var dp = 0
+    SpecDemand = SpecifiedAnnualDemand.find(a => {
+      if (c.codeCap !== 'EU+CH+NO')
+        return a.pathway === pathw[1] && a.region === c.codeCap
+      else return a.pathway === pathw[1] && a.region === 'AT'
+    })
+    NetImp = NetImports.find(a => {
+      return a.pathway === pathw[1] && a.region === c.codeCap
+    })
+    if (SpecDemand !== undefined && NetImp !== undefined) {
+      if (NetImp.value > 0) dp = SpecDemand.value - NetImp.value * 0.95
+      else dp = SpecDemand.value - NetImp.value
+    }
+    ret[c.codeCap] = dp
+  })
+
+  //alert("DP: " + JSON.stringify(ret))
+  console.log('DP: ' + JSON.stringify(ret))
+  return ret
+}
 
 //LCoDE
-const LevelizedCostOfDomesticElectrity = () => {}
+const LevelizedCostOfDomesticElectrity = (AIC, FC, VC, DP) => {
+  //alert('AIC: ' + JSON.stringify( AIC))
+  //alert('FC: ' + FC['EU+CH+NO'])
+  //alert('VC: ' + VC['EU+CH+NO'])
+  alert('DP: ' + JSON.stringify(DP))
+  alert(
+    'LCodE: ' +
+      (AIC + FC['EU+CH+NO'] + VC['EU+CH+NO']) / (DP['EU+CH+NO'] * 277.778)
+  )
+  console.log(
+    'LCodE: ' +
+      (AIC + FC['EU+CH+NO'] + VC['EU+CH+NO']) / (DP['EU+CH+NO'] * 277.778)
+  )
+  return (AIC + FC['EU+CH+NO'] + FC['EU+CH+NO']) / (DP['EU+CH+NO'] * 277.778)
+}
 
 const LevelizedCostOfElectricity = () => {}
