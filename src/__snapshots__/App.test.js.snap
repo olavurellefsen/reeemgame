@@ -32,6 +32,11 @@ exports[`should render correctly 1`] = `
             >
               game
             </div>
+            <div
+              style="font-family: Montserrat; font-weight: 700; font-size: 18px; color: red; padding: 10px 40px 0px 40px;"
+            >
+              DISCLAIMER: THIS IS NOT A VERIFIED VERSION. VISIT LATER FOR A VALID VERSION.
+            </div>
           </div>
         </div>
         <div
@@ -124,7 +129,7 @@ exports[`should render correctly 1`] = `
       class="MuiGrid-container-1 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20"
     >
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-elJkPf kedHF"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-4-61 MuiGrid-grid-lg-2-73 sc-kTUwUJ NvzJG"
         order="3"
       >
         <ul
@@ -184,7 +189,7 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-elJkPf cdgmYv"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-center-9 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-8-65 MuiGrid-grid-lg-4-75 sc-kTUwUJ kacDmJ"
         order="1"
       >
         <div
@@ -231,17 +236,17 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
         </div>
       </div>
       <div
-        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-elJkPf cospVV"
+        class="MuiGrid-container-1 MuiGrid-item-2 MuiGrid-direction-xs-column-4 MuiGrid-align-items-xs-flex-start-10 MuiGrid-justify-xs-space-between-20 MuiGrid-grid-md-12-69 MuiGrid-grid-lg-6-77 sc-kTUwUJ dkeHVS"
         order="2"
       >
         <div
-          class="sc-kafWEX hLYkhn"
+          class="sc-iELTvK igYVpi"
         >
           <div
-            class="sc-btzYZH uFJTt"
+            class="sc-bYSBpT jUVsDW"
           >
             <button
-              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-lhVmIH cFcCQs"
+              class="MuiButtonBase-root-124 MuiFab-root-213 MuiFab-sizeSmall-221 sc-elJkPf fjYwbI"
               tabindex="0"
               type="button"
             >
@@ -270,62 +275,62 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
             </button>
           </div>
           <div
-            class="sc-cIShpX bSQEVZ"
+            class="sc-feJyhm eaaUJt"
           >
             <div
-              class="sc-feJyhm crjmBP"
+              class="sc-cmTdod fFUqwJ"
             >
               <div
-                class="sc-iELTvK exRPvn"
+                class="sc-jwKygS dFlCdc"
                 max="2050"
                 min="2015"
               >
                 2015
               </div>
               <div
-                class="sc-iELTvK exRPvn"
+                class="sc-jwKygS dFlCdc"
                 max="2050"
                 min="2015"
               >
                 2020
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
                 2025
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
                 2030
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
                 2035
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
                 2040
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
                 2045
               </div>
               <div
-                class="sc-iELTvK ijDtuY"
+                class="sc-jwKygS bikMnA"
                 max="2050"
                 min="2015"
               >
@@ -333,7 +338,7 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
               </div>
             </div>
             <div
-              class="sc-cmTdod kIPHjS"
+              class="sc-btzYZH gcFTCo"
             >
               <div
                 aria-disabled="false"
@@ -341,7 +346,7 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
                 aria-valuemax="2050"
                 aria-valuemin="2015"
                 aria-valuenow="2019"
-                class="MuiSlider-root-223 sc-jwKygS fBWxJW"
+                class="MuiSlider-root-223 sc-lhVmIH iBkPsG"
                 role="slider"
               >
                 <div
@@ -371,10 +376,10 @@ Your solution is compared to the optimal score calculated by the Open Source Ene
           </div>
         </div>
         <div
-          class="sc-ksYbfQ fqSvil"
+          class="sc-frDJqD gZykYN"
         >
           <div
-            class="sc-hmzhuo gQXyOz"
+            class="sc-kvZOFW ljaOhf"
           >
             <svg>
               europe.svg
