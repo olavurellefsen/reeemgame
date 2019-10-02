@@ -1,19 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Context from '../../../../Context/Context'
 import { ReactComponent as Europe } from './Map/europe.svg'
-import { Container, StyledEurope } from './MapContainer.style'
-import { getMapColors } from './MapValues'
+import { Container, StyledEurope, IndicatorHeader } from './MapContainer.style'
+import { getMapColors, getIndicatorParams } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
-import sampleData from './../../../../data/sampledata'
 import { IndicatorInfo } from './IndicatorInfo'
-import Popover from '@material-ui/core/Popover'
+import Popper from '@material-ui/core/Popover'
 import { CountryPopup } from './CountryPopup'
 
 export const MapContainer = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [anchorPosition, setAnchorPosition] = React.useState(null)
   const [selectedCountry, setSelectedCountry] = React.useState(null)
+  const { t } = useTranslation()
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window
     return {
@@ -40,11 +41,13 @@ export const MapContainer = () => {
   }
 
   const { height, width } = useWindowDimensions()
+  const popupWidth = 520
+  const popupHeight = 440
   function handleClick(event) {
     setAnchorEl(event.currentTarget)
     setAnchorPosition({
-      left: Math.min(event.clientX, width - 520),
-      top: Math.min(event.clientY, height - 420),
+      left: Math.min(event.clientX, width - popupWidth),
+      top: Math.min(event.clientY, height - popupHeight),
     })
     setSelectedCountry(event.target.id)
   }
@@ -70,20 +73,47 @@ export const MapContainer = () => {
   )
 
   var lp
-  if (state.selectedIndicator) lp = getLegendPara(state.selectedIndicator)
+  if (state.selectedIndicator) lp = getIndicatorParams(state.selectedIndicator)
   return (
     <Container>
-      <Popover
+      <Popper
         id={id}
         open={open}
         anchorEl={anchorEl}
-        onClose={handleClose}
         anchorPosition={anchorPosition}
         anchorReference={'anchorPosition'}
+        style={{
+          width: popupWidth,
+          height: popupHeight,
+        }}
+        modal={null}
+        hideBackdrop={true}
+        disableBackdropClick={true}
+        disableAutoFocus={true}
+        disableEnforceFocus={true}
+        modifiers={{
+          preventOverflow: {
+            enabled: true,
+            boundariesElement: 'scrollParent',
+          },
+        }}
       >
-        <CountryPopup country={selectedCountry} onClose={handleClose} />
-      </Popover>
+        <CountryPopup
+          country={selectedCountry}
+          onClose={handleClose}
+          style={{
+            width: '600px !important',
+            height: '500px important',
+            position: 'absolute',
+          }}
+        />
+      </Popper>
       <StyledEurope colors={mapColors}>
+        <IndicatorHeader>
+          {state.selectedIndicator &&
+            t('indicatorHeader.' + state.selectedIndicator)}
+          &nbsp;
+        </IndicatorHeader>
         <Europe
           onClick={event => {
             if (
@@ -120,40 +150,8 @@ export const MapContainer = () => {
   )
 }
 
-const getLegendPara = indicator => {
-  if (indicator === 'score') {
-    return {
-      unit: 'score',
-      max: 10,
-      min: 0,
-      steps: 5,
-      flipColors: true,
-    }
-  }
-  if (indicator === 'electricityDemands') indicator = 'SpecifiedAnnual Demand'
-  else if (indicator === 'emissionLimit') indicator = 'AnnualEmissionLimit'
-  return {
-    unit: sampleData.find(element => element.Parameter === indicator).Unit,
-    max: sampleData.find(element => element.Parameter === indicator).max,
-    min: sampleData.find(element => element.Parameter === indicator).min,
-    steps: sampleData.find(element => element.Parameter === indicator).steps,
-  }
-}
-
 const hasData = (country, indicator, selectedScenario, gameState) => {
-  var data
-  if (indicator === 'electricityDemands') {
-    indicator = 'SpecifiedAnnual Demand'
-    data = sampleData.find(
-      element =>
-        element.Parameter === indicator &&
-        element.Country === country.toUpperCase() &&
-        element.Scenario === selectedScenario
-    )
-  }
+  let foundCountry = eunochCountries.find(element => element.code === country)
 
-  if (indicator === 'emissionLimit' || indicator === 'score') {
-    data = eunochCountries.find(element => element.code === country)
-  }
-  return data ? true : false
+  return foundCountry ? true : false
 }

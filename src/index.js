@@ -1,10 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ApolloProvider } from 'react-apollo'
 import ContextStore from './Context/ContextStore'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
-import client from './reeemApolloClient'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import theme from './theme'
 import JssProvider from 'react-jss/lib/JssProvider'
@@ -24,13 +22,11 @@ ReactDOM.render(
   <JssProvider jss={jss} generateClassName={generateClassName}>
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <ApolloProvider client={client}>
-        <ContextStore>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </ContextStore>
-      </ApolloProvider>
+      <ContextStore>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ContextStore>
     </MuiThemeProvider>
   </JssProvider>,
   document.getElementById('root')

@@ -1,18 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { render } from 'react-testing-library'
-import { ApolloProvider } from 'react-apollo'
 import ContextStore from '../Context/ContextStore'
-import client from '../reeemApolloClient'
 import { BrowserRouter } from 'react-router-dom'
 import '../i18n'
 
 const AllTheProviders = ({ children }) => (
-  <ApolloProvider client={client}>
-    <ContextStore>
-      <BrowserRouter>{children}</BrowserRouter>
-    </ContextStore>
-  </ApolloProvider>
+  <ContextStore>
+    <BrowserRouter>{children}</BrowserRouter>
+  </ContextStore>
 )
 
 const customRender = (ui, options) =>
