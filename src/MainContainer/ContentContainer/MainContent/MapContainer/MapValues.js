@@ -25,22 +25,6 @@ const specifiedAnnualDemand = (scenario, currentYear) =>
       unit: country.Unit,
     }))
 
-const emissionLimit = (scenario, currentYear) => {
-  const emissionLimitData = sampleData
-    .filter(
-      country =>
-        country.Parameter === 'AnnualEmissionLimit' &&
-        country.Scenario === scenario
-    )
-    .map(countryGroup =>
-      eunochCountries.map(country => ({
-        code: country.code.toLowerCase(),
-        color: convertToColor(countryGroup[currentYear], 0, 1000000),
-      }))
-    )
-  return emissionLimitData[0]
-}
-
 const oil = (pathway, currentYear) => {
   const data = oilData
     .filter(item => item.year === currentYear && item.pathway === pathway)
