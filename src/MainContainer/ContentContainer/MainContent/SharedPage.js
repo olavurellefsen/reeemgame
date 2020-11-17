@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { MapContainer } from './MapContainer/MapContainer'
 import styled from 'styled-components'
-import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 //import { createListOfScenarios } from './../../../utils/ScoreUtilities'
 import { PropTypes } from 'prop-types'
 import {
