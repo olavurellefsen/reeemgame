@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { useState } from 'react'
 import { PropTypes } from 'prop-types'
 import { Container, IntroText } from './DecisionContainer.style'
