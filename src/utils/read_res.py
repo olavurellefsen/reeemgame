@@ -28,11 +28,24 @@ def build_names(dic,i):
         if bool(dic_t):
             dic = dic_t
     return dic,i
-# %%
+#%% Function to read needed results parameter
+def read_res(path,param):
+    path_param = os.path.join(path,param) + '.csv'
+    df = pd.read_csv(path_param)
+    return df
+#%% Read pop-projections
+df_pop = pd.read_excel('results/pop_projection_NEWAGE.xlsx','MaGe Factors',header=12)
+df_pop = df_pop[df_pop['variable']=='Population']
+df_pop['id'] = df_pop.index
+df_pop = pd.wide_to_long(df_pop,["y"],i="id",j="year")
+df_pop.rename(columns={"y":"year"},inplace=True)
+df_pop = df_pop.drop(columns=["unit","variable"])
+df_pop = df_pop[df_pop["year"]>2014]
+#%%
 dic_scen = {}
 i = 0
 dic_scen = {0: 'results'}
 while i < 2:
     dic_scen, i = build_names(dic_scen,i)
-
+dic_scen_res = {}
 # %%
