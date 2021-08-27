@@ -34,18 +34,42 @@ def read_res(path,param):
     df = pd.read_csv(path_param)
     return df
 #%% Read pop-projections
-df_pop = pd.read_excel('results/pop_projection_NEWAGE.xlsx','MaGe Factors',header=12)
-df_pop = df_pop[df_pop['variable']=='Population']
-df_pop['id'] = df_pop.index
-df_pop = pd.wide_to_long(df_pop,["y"],i="id",j="year")
-df_pop.rename(columns={"y":"year"},inplace=True)
-df_pop = df_pop.drop(columns=["unit","variable"])
-df_pop = df_pop[df_pop["year"]>2014]
+def read_pop(path,sheet,header):
+    """ Function that reads in population data from excel file.
+    """
+    df_pop = pd.read_excel(path,sheet,header=header)
+    df_pop = df_pop[df_pop['variable']=='Population']
+    df_pop['id'] = df_pop.index
+    df_pop = pd.wide_to_long(df_pop,["y"],i="id",j="year")
+    df_pop.rename(columns={"name":"country","y":"value"},inplace=True)
+    df_pop['value'] = df_pop["value"]*1000
+    df_pop = df_pop.drop(columns=["unit","code_wb","variable"])
+    df_pop = df_pop.reset_index(level=["year"])
+    df_pop = df_pop[df_pop["year"]>=2015]
+    df_pop = df_pop.reset_index(drop=True)
+    return df_pop
+#%% Filter population data
+def filter_pop(df,countries):
+    """Function to filter a dataframe with population data down to the countries that are in the model.
+    """
+    mask = df.country.isin(countries['country'])
+    df = df[mask]
+
+    return pd.merge(df,countries,on='country')
+#%% Convert country codes from ISO3 to ISO2
+def iso2_to_3(df,codes):
+
+    return df
 #%%
-dic_scen = {}
-i = 0
-dic_scen = {0: 'results'}
-while i < 2:
-    dic_scen, i = build_names(dic_scen,i)
-dic_scen_res = {}
+if __name__ == "__main__":
+    dic_scen = {}
+    i = 0
+    dic_scen = {0: 'results'}
+    while i < 2:
+        dic_scen, i = build_names(dic_scen,i)
+    dic_scen_res = {}
+    df_pop = read_pop('results/pop_projection_NEWAGE.xlsx','MaGe Factors',12)
+    osembe_countries = pd.read_csv('osembe_countries.csv')
+    df_pop = filter_pop(df_pop,osembe_countries)
+
 # %%
