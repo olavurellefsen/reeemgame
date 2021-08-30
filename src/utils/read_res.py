@@ -1,6 +1,7 @@
 "Script to determine the path of the scenario results of OSeMBE for the REEEMgame."
 #%% Import of needed packages
 import os
+from typing import List
 import pandas as pd
 #%% Get directory names from folder
 def get_dirs(path):
@@ -48,6 +49,13 @@ def read_pop(path,sheet,header):
     df_pop = df_pop[df_pop["year"]>=2015]
     df_pop = df_pop.reset_index(drop=True)
     return df_pop
+
+def read_emissions(path: str,param: str, emission: List) -> pd.DataFrame:
+    """ Read and filter emissions by: country, year, emission
+    """
+    df = read_res(path,param)
+    
+    return df
 #%% Filter population data
 def filter_pop(df,countries):
     """Function to filter a dataframe with population data down to the countries that are in the model.
