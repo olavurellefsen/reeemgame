@@ -50,8 +50,9 @@ def read_pop(path,sheet,header):
     df_pop = df_pop[df_pop["year"]>=2015]
     df_pop = df_pop.reset_index(drop=True)
     return df_pop
+
 #%% Function to read Emission results
-def read_emissions(path: str,param: str, emission: List) -> pd.DataFrame:
+def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
     """ Read and filter emissions by: country, year, emission
     """
     # path = os.path.join("tests","fixtures") #for testing
@@ -66,6 +67,19 @@ def read_emissions(path: str,param: str, emission: List) -> pd.DataFrame:
             for y in df_e["YEAR"].unique():
                 df_f = df_f.append({"REGION": r, "EMISSION": e, "YEAR": y,"VALUE": df_e.loc[(df_e["REGION"]==r)&(df_e["YEAR"]==y),["VALUE"]].sum(axis=0).VALUE}, ignore_index=True)
     df_f = df_f[df_f.VALUE != 0]
+
+    return df_f
+
+#%% Function to read installed capacities
+def read_capacities(path: str, param: str) -> pd.DataFrame:
+
+    return
+#%% Function to read New Capacity
+def read_new_capacity(path: str, param: str) -> pd.DataFrame:
+    """ Read and filter new installed capacity by: country, year, technology.
+    """
+    df = read_res(path,param)
+    df['REGION'] = df['TECHNOLOGY'].str[:2]
     return df
 #%% Filter population data
 def filter_pop(df,countries):

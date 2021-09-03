@@ -1,7 +1,9 @@
+from sys import path
 import pandas as pd
 import os
 from .read_res import read_emissions
 from .read_res import read_new_capacity
+from .read_res import read_capacities
 
 class TestEmissions:
 
@@ -14,9 +16,9 @@ class TestEmissions:
         actual = read_emissions(path,param,emissions)
 
         data = [
-            ["AT", "C02", 2015, 7805.105844030894],
-            ["AT", "C02", 2016, 11469.9749262577646],
-            ["AT", "C02", 2017, 11413.582905337837],
+            ["AT", "CO2", 2015, 7805.105844030894],
+            ["AT", "CO2", 2016, 11469.9749262577646],
+            ["AT", "CO2", 2017, 11413.582905337837],
             ["AT", "CO2", 2018, 11173.6668148631454],
             ["AT", "CO2", 2019, 11538.3227509132378],
             ["AT", "CO2", 2020, 10524.8772486844563],
@@ -34,7 +36,7 @@ class TestInvestment:
 
     def test_read_new_capacity(self):
 
-        path = os.path.join("test","fixtures")
+        path = os.path.join("tests","fixtures")
         param = "NewCapacity"
 
         actual = read_new_capacity(path, param)
@@ -48,5 +50,27 @@ class TestInvestment:
         expected = pd.DataFrame(data=data, columns=["REGION", "TECHNOLOGY", "YEAR", "VALUE"])
 
         index = ["REGION","TECHNOLOGY", "YEAR"]
+
+        pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
+
+class TestCapacity:
+
+    def test_read_capacities(self):
+
+        path = os.path.join("tests", "fixtures")
+        param = "TotalCapacityAnnual"
+
+        actual = read_capacities(path, param)
+
+        data = [
+            ["AT", "ATBFHPFH1", 2021, 0.02941],
+            ["AT", "ATBFHPFH1", 2022, 0.02941],
+            ["BE", "BEBMSTPH3", 2025, 1.397521389405559],
+            ["BE", "BEBMSTPH3", 2026, 1.413453627963394],
+        ]
+
+        expected = pd.DataFrame(data=data, columns=["REGION","TECHNOLOGY","YEAR","VALUE"])
+
+        index = ["REGION", "TECHNOLOGY", "YEAR"]
 
         pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
