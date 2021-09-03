@@ -1,6 +1,7 @@
 "Script to determine the path of the scenario results of OSeMBE for the REEEMgame."
 #%% Import of needed packages
 import os
+import sys
 from typing import List
 import pandas as pd
 #%% Get directory names from folder
@@ -75,16 +76,27 @@ def filter_pop(df,countries):
 
     return pd.merge(df,countries,on='country')
 #%% Convert country codes from ISO3 to ISO2
-def iso2_to_3(df,codes):
-
-    return df
-#%%
-if __name__ == "__main__":
+def main(param):
+    param = ['AnnualTechnologyEmission','AnnualTechnologyEmissions']
     dic_scen = {}
     i = 0
     dic_scen = {0: 'results'}
     while i < 2:
         dic_scen, i = build_names(dic_scen,i)
+    
+    res_files = next(os.walk(dic_scen[list(dic_scen.keys())[0]]), (None,None,[]))[2]
+
+    for p in param:
+        f = p + '.csv'
+        if f not in res_files:
+            print(p+" is not a results parameter.")
+    return
+#%%
+if __name__ == "__main__":
+
+
+        
+    
     dic_scen_res = {}
     df_pop = read_pop('results/pop_projection_NEWAGE.xlsx','MaGe Factors',12)
     osembe_countries = pd.read_csv('osembe_countries.csv')
