@@ -2,7 +2,7 @@ from sys import path
 import pandas as pd
 import os
 from .read_res import read_emissions
-from .read_res import read_new_capacity
+#from .read_res import read_new_capacity
 from .read_res import read_capacities
 
 class TestEmissions:
@@ -34,12 +34,12 @@ class TestEmissions:
 
 class TestInvestment:
 
-    def test_read_new_capacity(self):
+    def test_read_capacities(self):
 
         path = os.path.join("tests","fixtures")
         param = "NewCapacity"
 
-        actual = read_new_capacity(path, param)
+        actual = read_capacities(path, param)
 
         data = [
             ["AT", "ATBMSTPH3", 2024, 0.1467612125435456],

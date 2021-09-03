@@ -71,12 +71,15 @@ def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
     return df_f
 
 #%% Function to read installed capacities
-def read_capacities(path: str, param: str) -> pd.DataFrame:
-
-    return
+# def read_installed_capacities(path: str, param: str) -> pd.DataFrame:
+#     """ Read and filter the total capacity annual by: country, technology, year.
+#     """
+#     df = read_res(path, param)
+#     df["REGION"] = df["TECHNOLOGY"].str(:2)
+#     return
 #%% Function to read New Capacity
-def read_new_capacity(path: str, param: str) -> pd.DataFrame:
-    """ Read and filter new installed capacity by: country, year, technology.
+def read_capacities(path: str, param: str) -> pd.DataFrame:
+    """ Read and filter new installed capacity by: country, technology, year.
     """
     df = read_res(path,param)
     df['REGION'] = df['TECHNOLOGY'].str[:2]
