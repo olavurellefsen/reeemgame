@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 from .read_res import read_emissions
+from .read_res import read_new_capacity
 
 class TestEmissions:
 
@@ -23,16 +24,29 @@ class TestEmissions:
             ["BE", "CO2", 2016, 2351.7454582610985],
         ]
 
-        excepted = pd.DataFrame(data=data, columns=['REGION','EMISSION','YEAR','VALUE'])
+        expected = pd.DataFrame(data=data, columns=['REGION','EMISSION','YEAR','VALUE'])
 
         index = ['REGION', 'EMISSION', 'YEAR']
 
-        pd.testing.assert_frame_equal(actual.set_index(index), excepted.set_index(index), check_index_type=False)
+        pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
 
+class TestInvestment:
 
+    def test_read_new_capacity(self):
 
+        path = os.path.join("test","fixtures")
+        param = "NewCapacity"
 
+        actual = read_new_capacity(path, param)
 
+        data = [
+            ["AT", "ATBMSTPH3", 2024, 0.1467612125435456],
+            ["AT", "ATSOUTPH2", 2040, 0.16646506444839623],
+            ["BE", "BEGOCVPH2", 2048, 0.0005842773120016587],
+        ]
 
+        expected = pd.DataFrame(data=data, columns=["REGION", "TECHNOLOGY", "YEAR", "VALUE"])
 
+        index = ["REGION","TECHNOLOGY", "YEAR"]
 
+        pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
