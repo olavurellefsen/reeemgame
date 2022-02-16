@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from .read_res import read_emissions
 #from .read_res import read_new_capacity
-from .read_res import read_capacities
+from .read_res import read_investment
 
 class TestEmissions:
 
@@ -37,40 +37,18 @@ class TestInvestment:
     def test_read_capacities(self):
 
         path = os.path.join("tests","fixtures")
-        param = "NewCapacity"
+        param = "CapitalInvestment"
 
-        actual = read_capacities(path, param)
+        actual = read_investment(path, param)
 
         data = [
-            ["AT", "ATBMSTPH3", 2024, 0.1467612125435456],
-            ["AT", "ATSOUTPH2", 2040, 0.16646506444839623],
-            ["BE", "BEGOCVPH2", 2048, 0.0005842773120016587],
+            ["AT", "ATBMSTPH3", 2024, 293.8012674283712],
+            ["AT", "ATSOUTPH2", 2040, 95.01720186610046],
+            ["BE", "BEGOCVPH2", 2048, 1.756727118084987],
         ]
 
         expected = pd.DataFrame(data=data, columns=["REGION", "TECHNOLOGY", "YEAR", "VALUE"])
 
         index = ["REGION","TECHNOLOGY", "YEAR"]
-
-        pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
-
-class TestCapacity:
-
-    def test_read_capacities(self):
-
-        path = os.path.join("tests", "fixtures")
-        param = "TotalCapacityAnnual"
-
-        actual = read_capacities(path, param)
-
-        data = [
-            ["AT", "ATBFHPFH1", 2021, 0.02941],
-            ["AT", "ATBFHPFH1", 2022, 0.02941],
-            ["BE", "BEBMSTPH3", 2025, 1.397521389405559],
-            ["BE", "BEBMSTPH3", 2026, 1.413453627963394],
-        ]
-
-        expected = pd.DataFrame(data=data, columns=["REGION","TECHNOLOGY","YEAR","VALUE"])
-
-        index = ["REGION", "TECHNOLOGY", "YEAR"]
 
         pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)

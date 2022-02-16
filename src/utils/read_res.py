@@ -77,8 +77,8 @@ def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
 #     df = read_res(path, param)
 #     df["REGION"] = df["TECHNOLOGY"].str(:2)
 #     return
-#%% Function to read New Capacity
-def read_capacities(path: str, param: str) -> pd.DataFrame:
+#%% Function to read CapitalInvestment (3-dimensional parameter)
+def read_investment(path: str, param: str) -> pd.DataFrame:
     """ Read and filter new installed capacity by: country, technology, year.
     """
     df = read_res(path,param)
