@@ -1,35 +1,10 @@
 "Script to determine the path of the scenario results of OSeMBE for the REEEMgame."
 #%% Import of needed packages
+from distutils.command.config import config
 import os
 import sys
-from typing import List
+from typing import List, Dict
 import pandas as pd
-#%% Get directory names from folder
-def get_dirs(path):
-    dirs = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
-    return dirs
-#%% Function to go through directories and build scenario names and paths
-def build_names(dic,i):
-    if i == 0:
-        p = dic[i]
-        dirs = get_dirs(p)
-        dic = {}
-        for f in dirs:
-            dic[f] = os.path.join(p,f)
-        i+=1
-    else:
-        dic_t = {}
-        for s in dic:
-            dirs = get_dirs(dic[s])
-            if 'res' in dirs:
-                i+=1
-                dic[s] = os.path.join(dic[s],'res')
-            else:
-                for d in dirs:
-                    dic_t[s+'|'+d] = os.path.join(dic[s],d)
-        if bool(dic_t):
-            dic = dic_t
-    return dic,i
 #%% Function to read needed results parameter
 def read_res(path,param):
     path_param = os.path.join(path,param) + '.csv'
@@ -84,6 +59,70 @@ def read_investment(path: str, param: str) -> pd.DataFrame:
     df = read_res(path,param)
     df['REGION'] = df['TECHNOLOGY'].str[:2]
     return df
+
+#%%
+def read_net_imp(path: str):
+    """Function to read ProductionByTechnologyAnnual and filter electricity exchanged between countries
+    """
+
+    tech = '(?=^.{2}(EL))^((?!00).)*$'
+    parameters = ['ProductionByTechnologyAnnual','UseByTechnology']
+    results = {}
+    for p in parameters:
+        results[p] = read_res(path, p)
+    
+    countries = pd.Series(dtype='object')
+    years = pd.Series()
+    for p in results:
+        df = results[p]
+        df_f = pd.DataFrame(columns=df.columns)
+        mask = df['TECHNOLOGY'].str.contains(tech)
+        df_f = df[mask]
+
+        df_f['REGION'] = df_f['FUEL'].str[:2]
+        df_f = df_f.drop(columns='FUEL')
+        df_f = df_f.groupby(by=['REGION', 'YEAR']).sum()
+        df_f = df_f.reset_index(level=['REGION', 'YEAR'])
+
+        countries = countries.append(df_f.loc[:,'REGION'])
+        years = years.append(df_f.loc[:,'YEAR'])
+        results[p] = df_f
+    
+    countries = countries.unique()
+    years = years.unique()
+    exports = results['UseByTechnology']
+    imports = results['ProductionByTechnologyAnnual']
+
+    df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    for country in countries:
+        for year in years:
+            if not exports[(exports['REGION']==country)&(exports['YEAR']==year)].empty:
+                if not imports[(imports['REGION']==country)&(imports['YEAR']==year)].empty:
+                    value = imports[(imports['REGION']==country)&(imports['YEAR']==year)].iloc[0]['VALUE'] - exports[(exports['REGION']==country)&(exports['YEAR']==year)].iloc[0]['VALUE']
+                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+                else:
+                    value = -exports[(exports['REGION']==country)&(exports['YEAR']==year)].iloc[0]['VALUE']
+                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+            else:
+                if not imports[(imports['REGION']==country)&(imports['YEAR']==year)].empty:
+                    value = imports[(imports['REGION']==country)&(imports['YEAR']==year)].iloc[0]['VALUE']
+                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+
+    return df
+
+#%%
+def filter_op_cost(param, path):
+    """Function to read filter and sum to annual values per country.
+    """
+
+    df = read_res(path, param)
+    df['REGION'] = df['TECHNOLOGY'].str[:2]
+    df = df.drop(columns='TECHNOLOGY')
+    df = df.groupby(by=['REGION', 'YEAR']).sum()
+    df = df.reset_index(level=['REGION','YEAR'])
+
+    return df
+
 #%% Filter population data
 def filter_pop(df,countries):
     """Function to filter a dataframe with population data down to the countries that are in the model.
@@ -92,27 +131,26 @@ def filter_pop(df,countries):
     df = df[mask]
 
     return pd.merge(df,countries,on='country')
-#%% Convert country codes from ISO3 to ISO2
-def main(param):
-    param = ['AnnualTechnologyEmission','AnnualTechnologyEmissions']
-    dic_scen = {}
-    i = 0
-    dic_scen = {0: 'results'}
-    while i < 2:
-        dic_scen, i = build_names(dic_scen,i)
-    
-    res_files = next(os.walk(dic_scen[list(dic_scen.keys())[0]]), (None,None,[]))[2]
+#%% 
+def main(config: Dict, res_path: str) -> Dict:
 
-    for p in param:
-        f = p + '.csv'
-        if f not in res_files:
-            print(p+" is not a results parameter.")
-    return
+    scen_res = {}
+    for param in config:
+        if param['function'] == 'read_emissions':
+            scen_res[param['parameter']] = read_emissions(res_path,param['parameter'],['CO2'])
+        if param['function'] == 'read_investment':
+            scen_res[param['parameter']] = read_investment(res_path,param['parameter'])
+        if param['function'] == 'read_net_imp':
+            scen_res[param['parameter']] = read_net_imp(res_path)
+        if param['function'] == 'filter_op_cost':
+            scen_res[param['parameter']] = filter_op_cost(param['parameter'],res_path)
+        else:
+            print("Function does not exist.")
+            exit(1)
+
+    return scen_res
 #%%
 if __name__ == "__main__":
-
-
-        
     
     dic_scen_res = {}
     df_pop = read_pop('results/pop_projection_NEWAGE.xlsx','MaGe Factors',12)

@@ -1,0 +1,11 @@
+results:
+- parameter: 'AnnualTechnologyEmission'
+  function: 'read_emissions'
+- parameter: 'CapitalInvestment'
+  function: 'read_investment'
+- parameter: 'ProductionByTechnologyAnnual'
+  function: 'read_net_imp'
+- parameter: 'AnnualFixedOperatingCost'
+  function: 'filter_op_cost'
+- parameter: 'AnnualVariableOperatingCost'
+  function: 'filter_op_cost'

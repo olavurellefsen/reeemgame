@@ -4,6 +4,7 @@ import os
 from .read_res import read_emissions
 #from .read_res import read_new_capacity
 from .read_res import read_investment
+from .read_res import read_el_ex
 
 class TestEmissions:
 
@@ -52,3 +53,24 @@ class TestInvestment:
         index = ["REGION","TECHNOLOGY", "YEAR"]
 
         pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
+#
+#class TestProduction:
+#
+#    def test_read_el_ex(self):
+#
+#        path = os.path.join("tests","fixtures")
+#
+#        actual = read_el_ex(path)
+#
+#        data = [
+#            ["AT", "ATBMSTPH3", 2024, 293.8012674283712],
+#            ["AT", "ATSOUTPH2", 2040, 95.01720186610046],
+#            ["BE", "BEGOCVPH2", 2048, 1.756727118084987],
+#        ]
+#
+#        expected = pd.DataFrame(data=data, columns=["REGION", "TECHNOLOGY", "YEAR", "VALUE"])
+#
+#        index = ["REGION","TECHNOLOGY", "YEAR"]
+#
+#        pd.testing.assert_frame_equal(actual.set_index(index), expected.set_index(index), check_index_type=False)
+#
