@@ -10,21 +10,6 @@ def read_res(path,param):
     path_param = os.path.join(path,param) + '.csv'
     df = pd.read_csv(path_param)
     return df
-#%% Read pop-projections
-def read_pop(path,sheet,header):
-    """ Function that reads in population data from excel file.
-    """
-    df_pop = pd.read_excel(path,sheet,header=header)
-    df_pop = df_pop[df_pop['variable']=='Population']
-    df_pop['id'] = df_pop.index
-    df_pop = pd.wide_to_long(df_pop,["y"],i="id",j="year")
-    df_pop.rename(columns={"name":"country","y":"value"},inplace=True)
-    df_pop['value'] = df_pop["value"]*1000
-    df_pop = df_pop.drop(columns=["unit","code_wb","variable"])
-    df_pop = df_pop.reset_index(level=["year"])
-    df_pop = df_pop[df_pop["year"]>=2015]
-    df_pop = df_pop.reset_index(drop=True)
-    return df_pop
 
 #%% Function to read Emission results
 def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
@@ -45,13 +30,6 @@ def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
 
     return df_f
 
-#%% Function to read installed capacities
-# def read_installed_capacities(path: str, param: str) -> pd.DataFrame:
-#     """ Read and filter the total capacity annual by: country, technology, year.
-#     """
-#     df = read_res(path, param)
-#     df["REGION"] = df["TECHNOLOGY"].str(:2)
-#     return
 #%% Function to read CapitalInvestment (3-dimensional parameter)
 def read_investment(path: str, param: str) -> pd.DataFrame:
     """ Read and filter new installed capacity by: country, technology, year.
@@ -123,14 +101,6 @@ def filter_op_cost(param, path):
 
     return df
 
-#%% Filter population data
-def filter_pop(df,countries):
-    """Function to filter a dataframe with population data down to the countries that are in the model.
-    """
-    mask = df.country.isin(countries['country'])
-    df = df[mask]
-
-    return pd.merge(df,countries,on='country')
 #%% 
 def main(config: List, res_path: str) -> Dict:
 
@@ -153,8 +123,5 @@ def main(config: List, res_path: str) -> Dict:
 if __name__ == "__main__":
     
     dic_scen_res = {}
-    df_pop = read_pop('results/pop_projection_NEWAGE.xlsx','MaGe Factors',12)
-    osembe_countries = pd.read_csv('osembe_countries.csv')
-    df_pop = filter_pop(df_pop,osembe_countries)
 
 # %%

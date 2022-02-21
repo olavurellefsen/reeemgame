@@ -3,6 +3,7 @@
 import os
 import pandas as pd
 import read_inp as ri
+import read_other as ro
 import read_res as rr
 import sys
 from typing import List, Dict
@@ -77,7 +78,8 @@ def main(path_conf: str, path_res: str, path_dp: str):
 
     data = {}
     data['inputs'] = ri.main(config['inputs'],path_dp)
-    
+    data['others'] = ro.main()
+
     for s in scens:
         data['results'] = rr.main(config['results'], scens[s])
 

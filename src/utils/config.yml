@@ -5,6 +5,9 @@ inputs:
   function: 'read_ol'
 - parameter: 'SpecifiedAnnualDemand'
   function: 'read_sad'
+others:
+- parameter: 'Population'
+  function: 
 results:
 - parameter: 'AnnualTechnologyEmission'
   function: 'read_emissions'
