@@ -132,17 +132,17 @@ def filter_pop(df,countries):
 
     return pd.merge(df,countries,on='country')
 #%% 
-def main(config: Dict, res_path: str) -> Dict:
+def main(config: List, res_path: str) -> Dict:
 
     scen_res = {}
     for param in config:
         if param['function'] == 'read_emissions':
             scen_res[param['parameter']] = read_emissions(res_path,param['parameter'],['CO2'])
-        if param['function'] == 'read_investment':
+        elif param['function'] == 'read_investment':
             scen_res[param['parameter']] = read_investment(res_path,param['parameter'])
-        if param['function'] == 'read_net_imp':
+        elif param['function'] == 'read_net_imp':
             scen_res[param['parameter']] = read_net_imp(res_path)
-        if param['function'] == 'filter_op_cost':
+        elif param['function'] == 'filter_op_cost':
             scen_res[param['parameter']] = filter_op_cost(param['parameter'],res_path)
         else:
             print("Function does not exist.")

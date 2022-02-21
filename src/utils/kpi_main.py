@@ -2,6 +2,7 @@
 """
 import os
 import pandas as pd
+import read_inp as ri
 import read_res as rr
 import sys
 from typing import List, Dict
@@ -67,15 +68,18 @@ def check_config(conf: Dict, scens: Dict):
             exit(1)
     return
 #%%
-def main(path_conf: str, path_res: str):
+def main(path_conf: str, path_res: str, path_dp: str):
 
     config = load_config(path_conf)
     scens = get_scens(path_res)
 
     check_config(config, scens)
 
+    data = {}
+    data['inputs'] = ri.main(config['inputs'],path_dp)
+    
     for s in scens:
-        results = rr.main(config['results'], scens[s])
+        data['results'] = rr.main(config['results'], scens[s])
 
     return
 

@@ -1,3 +1,10 @@
+inputs:
+- parameter: 'DiscountRate'
+  function: 'read_dr'
+- parameter: 'OperationalLife'
+  function: 'read_ol'
+- parameter: 'SpecifiedAnnualDemand'
+  function: 'read_sad'
 results:
 - parameter: 'AnnualTechnologyEmission'
   function: 'read_emissions'
