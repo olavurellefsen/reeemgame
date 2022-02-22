@@ -7,7 +7,10 @@ inputs:
   function: 'read_sad'
 others:
 - parameter: 'Population'
-  function: 
+  function: 'read_pop'
+  path: 'other_data/pop_projection_NEWAGE.xlsx'
+  sheet: 'MaGe Factors'
+  header: 12
 results:
 - parameter: 'AnnualTechnologyEmission'
   function: 'read_emissions'

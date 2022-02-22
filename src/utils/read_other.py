@@ -1,11 +1,16 @@
 """Script to read and filter data not related to OSeMBE needed in the REEEMgame.
 """
 import pandas as pd
+from typing import List, Dict
 
 #%%
-def read_pop(path,sheet,header):
+def read_pop(config: Dict,countries: pd.DataFrame)-> Dict:
     """ Function that reads in population data from excel file.
     """
+    path = config['path']
+    sheet = config['sheet']
+    header = config['header']
+
     df_pop = pd.read_excel(path,sheet,header=header)
     df_pop = df_pop[df_pop['variable']=='Population']
     df_pop['id'] = df_pop.index
@@ -16,6 +21,9 @@ def read_pop(path,sheet,header):
     df_pop = df_pop.reset_index(level=["year"])
     df_pop = df_pop[df_pop["year"]>=2015]
     df_pop = df_pop.reset_index(drop=True)
+
+    df_pop = filter_pop(df_pop, countries)
+
     return df_pop
 
 #%%
@@ -28,10 +36,15 @@ def filter_pop(df,countries):
     return pd.merge(df,countries,on='country')
 
 #%%
-def main():
+def main(config: List) -> Dict:
+    osembe_countries = pd.read_csv('other_data/osembe_countries.csv')
     others_dic = {}
 
-    df_pop = read_pop('other_data/pop_projection_NEWAGE.xlsx','MaGe Factors',12)
-    osembe_countries = pd.read_csv('other_data/osembe_countries.csv')
-    df_pop = filter_pop(df_pop,osembe_countries)
+    for p in config:
+        if p['function'] == 'read_pop':
+            others_dic[p['parameter']] = read_pop(p, osembe_countries)
+        else:
+            print('The provided function does not exist.')
+            exit(1)
+    
     return others_dic

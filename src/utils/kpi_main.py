@@ -78,7 +78,7 @@ def main(path_conf: str, path_res: str, path_dp: str):
 
     data = {}
     data['inputs'] = ri.main(config['inputs'],path_dp)
-    data['others'] = ro.main()
+    data['others'] = ro.main(config['others'])
 
     for s in scens:
         data['results'] = rr.main(config['results'], scens[s])
