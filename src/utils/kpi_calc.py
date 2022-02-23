@@ -39,8 +39,25 @@ def calc_aic(ci: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, years: pd.Ser
             df = pd.concat([df, pd.DataFrame([[r,y,aic]], columns=['REGION','YEAR','VALUE'])])
     return df
 #%%
+def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame:
+    """Function to calculate the domestic electricity production.
+    """
+    df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    for c in sad['REGION'].unique():
+        for y in years:
+            value = 0
+            if c in ni['REGION']:
+                if ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] > 0 :
+                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)] * 0.95
+                else:
+                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]
+            else:
+                value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0]
+            df = pd.concat([df, pd.DataFrame([[c,y,value]], columns=['REGION','YEAR','VALUE'])])
+    return df
+#%%
 def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd.DataFrame:
-    """Function to calculate the CO2 intensity per citizen in each modelled country for each year.
+    """Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
     """
     countries = pop['iso2'].unique()
     ate_df = pd.DataFrame(index=countries,columns=years)
@@ -75,6 +92,7 @@ def main(data: Dict)->Dict:
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
+    indi['DP'] = calc_dp(data['inputs']['SpecifiedAnnualDemand'],data['results']['NetElImports'], years)
 
     kpis['CO2 intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
     return kpis
