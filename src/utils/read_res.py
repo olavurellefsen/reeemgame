@@ -96,6 +96,7 @@ def filter_op_cost(param, path):
     df = read_res(path, param)
     df['REGION'] = df['TECHNOLOGY'].str[:2]
     df = df.drop(columns='TECHNOLOGY')
+    df = df[df['YEAR']<2051]
     df = df.groupby(by=['REGION', 'YEAR']).sum()
     df = df.reset_index(level=['REGION','YEAR'])
 
@@ -111,7 +112,7 @@ def main(config: List, res_path: str) -> Dict:
         elif param['function'] == 'read_investment':
             scen_res[param['parameter']] = read_investment(res_path,param['parameter'])
         elif param['function'] == 'read_net_imp':
-            scen_res[param['parameter']] = read_net_imp(res_path)
+            scen_res['NetElImports'] = read_net_imp(res_path)
         elif param['function'] == 'filter_op_cost':
             scen_res[param['parameter']] = filter_op_cost(param['parameter'],res_path)
         else:

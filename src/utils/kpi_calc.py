@@ -56,6 +56,28 @@ def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame
             df = pd.concat([df, pd.DataFrame([[c,y,value]], columns=['REGION','YEAR','VALUE'])])
     return df
 #%%
+def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd.DataFrame, years: pd.Series)->pd.DataFrame:
+    """Function to calculate the Levelised Cost of Domestic Electicity.
+    """
+    df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    aic = aic.sort_values(by=['REGION', 'YEAR'])
+    afoc = afoc.sort_values(by=['REGION', 'YEAR'])
+    avoc = avoc.sort_values(by=['REGION', 'YEAR'])
+    dp = dp.sort_values(by=['REGION', 'YEAR'])
+
+    aic_array = aic['VALUE'].to_numpy()
+    afoc_array = afoc['VALUE'].to_numpy()
+    avoc_array = avoc['VALUE'].to_numpy()
+    dp_array = dp['VALUE'].to_numpy()
+
+    lcode_array = (aic_array + afoc_array + avoc_array) / (dp_array * 277.778)
+
+    df['REGION'] = aic['REGION']
+    df['YEAR'] = years
+    df['VALUE'] = lcode_array
+
+    return df
+#%%
 def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd.DataFrame:
     """Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
     """
@@ -93,6 +115,7 @@ def main(data: Dict)->Dict:
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
     indi['DP'] = calc_dp(data['inputs']['SpecifiedAnnualDemand'],data['results']['NetElImports'], years)
+    indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'], years)
 
     kpis['CO2 intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
     return kpis
