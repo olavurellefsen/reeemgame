@@ -83,7 +83,7 @@ def main(path_conf: str, path_res: str, path_dp: str):
     for s in scens:
         data['results'] = rr.main(config['results'], scens[s])
 
-    return
+    return data
 
 #%% 
 if __name__ == "__main__":
