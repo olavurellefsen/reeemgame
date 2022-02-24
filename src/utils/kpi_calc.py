@@ -104,6 +104,26 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd
 
     return co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
 #%%
+def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
+    """Function to calculate the discounted capital investment per citizen, country, and year.
+    """
+    aic = aic.sort_values(by=['REGION','YEAR'])
+    pop = pop.sort_values(by=['iso2','year'])
+
+    y_y0 = np.arange(years.max()+1-years.min())
+    aic_array = aic.to_numpy()
+    dr = dr['VALUE'].iloc[0]
+    pop_array = pop['value'].to_numpy()
+
+    dipc = (aic_array / (1+dr)**y_y0) / pop_array
+
+    df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    df['REGION'] = aic['REGION']
+    df['YEAR'] = years
+    df['VALUE'] = dipc
+
+    return df
+#%%
 def main(data: Dict)->Dict:
     kpis = {}
     indi = {}
@@ -118,4 +138,5 @@ def main(data: Dict)->Dict:
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'], years)
 
     kpis['CO2 intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
+    kpis['Discounted Investment per citizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], data['others']['Population'], years)
     return kpis
