@@ -1,6 +1,7 @@
 "Script to determine the path of the scenario results of OSeMBE for the REEEMgame."
 #%% Import of needed packages
 from distutils.command.config import config
+import numpy as np
 import os
 import sys
 from typing import List, Dict
@@ -85,6 +86,63 @@ def read_net_imp(path: str):
                 if not imports[(imports['REGION']==country)&(imports['YEAR']==year)].empty:
                     value = imports[(imports['REGION']==country)&(imports['YEAR']==year)].iloc[0]['VALUE']
                     df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+
+    return df
+#%%
+def read_net_imp_det(path: str)-> pd.DataFrame:
+
+    tech = '(?=^.{2}(EL))^((?!00).)*$'
+    parameters = ['ProductionByTechnologyAnnual','UseByTechnology']
+    results = {}
+    for p in parameters:
+        results[p] = read_res(path, p)
+    
+    for p in results:
+        if p == 'UseByTechnology':
+            i = 'FROM'
+            j = 'TO'
+        else:
+            i = 'TO'
+            j = 'FROM'
+        df = results[p]
+        df_f = pd.DataFrame(columns=df.columns)
+        mask = df['TECHNOLOGY'].str.contains(tech)
+        df_f = df[mask]
+
+        df_f[i] = df_f['FUEL'].str[:2]
+        df_f = df_f.drop(columns='FUEL')
+
+        mask = df_f['TECHNOLOGY'].str[:2] == df_f[i]
+        df_1 = df_f[mask]
+        df_2 = df_f[~mask]
+        df_1[j] = df_1['TECHNOLOGY'].str[4:6]
+        df_2[j] = df_2['TECHNOLOGY'].str[:2]
+        df_f = pd.concat([df_1,df_2])
+        df_f = df_f.groupby(by=['FROM','TO','YEAR']).sum().reset_index(level=['FROM','TO','YEAR'])
+
+        results[p] = df_f
+
+    countries = pd.Series(np.append(results['ProductionByTechnologyAnnual']['TO'].unique(),results['ProductionByTechnologyAnnual']['FROM'].unique())).unique()
+    years = pd.Series(results['ProductionByTechnologyAnnual'][results['ProductionByTechnologyAnnual']['YEAR']<2051]['YEAR'].unique())
+    df = pd.DataFrame(columns=['TO','FROM','YEAR','VALUE'])
+
+    for c in countries:
+        for y in years:
+            df_i = results['ProductionByTechnologyAnnual']
+            df_e = results['UseByTechnology']
+            df_i = df_i[(df_i['TO']==c)&(df_i['YEAR']==y)]
+            df_e = df_e[(df_e['FROM']==c)&(df_e['YEAR']==y)]
+            n = pd.Series(np.append(df_i['FROM'].unique(),df_e['TO'].unique())).unique()
+            for r in n:
+                if not df_i[df_i['FROM']==r].empty:
+                    if not df_e[df_e['TO']==r].empty:
+                        value = df_i.iloc[0,3] - df_e.iloc[0,3]
+                    else:
+                        value = df_i.iloc[0,3]
+                else:
+                    if not df_e[df_e['TO']==r].empty:
+                        value = - df_e.iloc[0,3]
+                df = df.append({'TO': c, 'FROM': r, 'YEAR': y, 'VALUE': value}, ignore_index=True)
 
     return df
 
