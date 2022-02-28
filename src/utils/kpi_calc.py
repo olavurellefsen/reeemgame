@@ -170,6 +170,7 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         lcode_array = lcode_c['VALUE'].to_numpy()
 
         lcoe = (dp_array/sad_array) * lcode_array + lcoe_import_array
+        lcoe *= 3.6 # Conversion from MEUR/PJ to EUR/kWh
 
         df['VALUE'] = lcoe
         df['YEAR'] = years
