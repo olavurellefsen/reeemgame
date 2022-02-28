@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict
 
-import kpi_main as km #for development
+#import kpi_main as km #for development
 
 #%%
 def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
@@ -56,7 +56,7 @@ def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame
             df = pd.concat([df, pd.DataFrame([[c,y,value]], columns=['REGION','YEAR','VALUE'])])
     return df
 #%%
-def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd.DataFrame, years: pd.Series)->pd.DataFrame:
+def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd.DataFrame)->pd.DataFrame:
     """Function to calculate the Levelised Cost of Domestic Electicity.
     """
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
@@ -73,7 +73,7 @@ def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd
     lcode_array = (aic_array + afoc_array + avoc_array) / (dp_array * 277.778)
 
     df['REGION'] = aic['REGION']
-    df['YEAR'] = years
+    df['YEAR'] = aic['YEAR']
     df['VALUE'] = lcode_array
 
     return df
@@ -96,7 +96,7 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd
     ate_array = ate_df.to_numpy()
     pop_array = pop_df.to_numpy()
 
-    co2_intensity_array = ate_array*1000/pop_array
+    co2_intensity_array = ate_array*1000/pop_array # Converting emissions from ktCO2 to tCO2
 
     co2_intensity = pd.DataFrame(data=co2_intensity_array, columns=years, index=countries)
     co2_intensity = co2_intensity.stack()
@@ -111,18 +111,74 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     pop = pop.sort_values(by=['iso2','year'])
 
     y_y0 = np.arange(years.max()+1-years.min())
-    aic_array = aic.to_numpy()
+    y_y0xr = y_y0
+    for r in range(len(aic['REGION'].unique())-1):
+        y_y0xr = np.append(y_y0xr, y_y0)
+    aic_array = aic['VALUE'].to_numpy()
     dr = dr['VALUE'].iloc[0]
     pop_array = pop['value'].to_numpy()
 
-    dipc = (aic_array / (1+dr)**y_y0) / pop_array
+    dipc = (aic_array / (1+dr)**y_y0xr) / pop_array
+    dipc = dipc * 10**6 # Converting MEUR to EUR
 
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
     df['REGION'] = aic['REGION']
-    df['YEAR'] = years
+    df['YEAR'] = aic['YEAR']
     df['VALUE'] = dipc
 
     return df
+
+#%%
+def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame)->pd.DataFrame:
+    """Function to calculate the Levelised Cost of Electricity (LCOE) per country and year.
+    """
+    countries = pd.Series(sad['REGION'].unique())
+    years = pd.Series(sad[sad['YEAR']<2051]['YEAR'].unique())
+    sad = sad[sad['YEAR']<2051]
+    sad = sad.sort_values(by=['REGION', 'YEAR'])
+    dp = dp.sort_values(by=['REGION','YEAR'])
+    lcode = lcode.sort_values(by=['REGION','YEAR'])
+
+    df_lcoe = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+
+    for c in countries:
+        df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+        df_i_raw = neipc[neipc['TO']==c]
+        df_i = pd.DataFrame(columns=['YEAR','VALUE'])
+        
+        for y in years:
+            lcoe_imp_y = 0
+            if not df_i_raw[df_i_raw['YEAR']==y].empty:
+                net_imp_y = df_i_raw[df_i_raw['YEAR']==y]
+                for n in net_imp_y['FROM']:
+                    imp_y_n = net_imp_y[net_imp_y['FROM']==n]['VALUE'].iloc[0]
+                    sad_n = sad[(sad['REGION']==n)&(sad['YEAR']==y)]['VALUE'].iloc[0]
+                    lcode_n = lcode[(lcode['REGION']==n)&(lcode['YEAR']==y)]['VALUE'].iloc[0]
+                    if imp_y_n>0:
+                        lcoe_imp_y = lcoe_imp_y + (imp_y_n / sad_n) * lcode_n
+            
+            df_i = df_i.append({'YEAR': y, 'VALUE': lcoe_imp_y}, ignore_index=True)
+        
+        df_i = df_i.sort_values(by=['YEAR'])
+
+        lcoe_import_array = df_i['VALUE'].to_numpy()
+        dp_c = dp[dp['REGION']==c]
+        dp_array = dp_c['VALUE'].to_numpy()
+        sad_c = sad[sad['REGION']==c]
+        sad_array = sad_c['VALUE'].to_numpy()
+        lcode_c = lcode[lcode['REGION']==c]
+        lcode_array = lcode_c['VALUE'].to_numpy()
+
+        lcoe = (dp_array/sad_array) * lcode_array + lcoe_import_array
+
+        df['VALUE'] = lcoe
+        df['YEAR'] = years
+        df['REGION'] = c
+
+        df_lcoe = pd.concat([df_lcoe, df])
+
+    return df_lcoe
+
 #%%
 def main(data: Dict)->Dict:
     kpis = {}
@@ -130,13 +186,14 @@ def main(data: Dict)->Dict:
 
     years = pd.Series(pd.date_range('2015', freq='Y', periods=36)).dt.year
 
-    data = km.main('config.yml', 'results', 'input_data/data') #for development
+    #data = km.main('config.yml', 'results', 'input_data/data') #for development
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
     indi['DP'] = calc_dp(data['inputs']['SpecifiedAnnualDemand'],data['results']['NetElImports'], years)
-    indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'], years)
+    indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
-    kpis['CO2 intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
-    kpis['Discounted Investment per citizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], data['others']['Population'], years)
+    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
+    kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], data['others']['Population'], years)
+    kpis['LCOE'] = calc_lcoe(indi['DP'], data['inputs']['SpecifiedAnnualDemand'], indi['LCODE'], data['results']['NetElImportsPerCountry'])
     return kpis

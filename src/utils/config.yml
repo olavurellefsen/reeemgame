@@ -18,6 +18,8 @@ results:
   function: 'read_investment'
 - parameter: 'ProductionByTechnologyAnnual'
   function: 'read_net_imp'
+- parameter: 'ProductionByTechnologyAnnual'
+  function: 'read_net_imp_det'
 - parameter: 'AnnualFixedOperatingCost'
   function: 'filter_op_cost'
 - parameter: 'AnnualVariableOperatingCost'
