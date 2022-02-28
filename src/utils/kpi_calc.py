@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict
 
-#import kpi_main as km #for development
+import kpi_main as km #for development
 
 #%%
 def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
@@ -97,12 +97,21 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd
     pop_array = pop_df.to_numpy()
 
     co2_intensity_array = ate_array*1000/pop_array # Converting emissions from ktCO2 to tCO2
+    total_pop = np.sum(pop_array, axis=0)
+    pop_shares = pop_array / total_pop
+    eu_plus_3_intensity_array = np.sum(co2_intensity_array * pop_shares, axis=0)
+    eu_plus_3_intensity = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    eu_plus_3_intensity['YEAR'] = years
+    eu_plus_3_intensity['VALUE'] = eu_plus_3_intensity_array
+    eu_plus_3_intensity['REGION'] = 'EU+CH+NO+UK'
 
     co2_intensity = pd.DataFrame(data=co2_intensity_array, columns=years, index=countries)
     co2_intensity = co2_intensity.stack()
     co2_intensity = co2_intensity.reset_index()
 
-    return co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
+    co2_intensity = co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
+
+    return co2_intensity.append(eu_plus_3_intensity, ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
     """Function to calculate the discounted capital investment per citizen, country, and year.
@@ -187,7 +196,7 @@ def main(data: Dict)->Dict:
 
     years = pd.Series(pd.date_range('2015', freq='Y', periods=36)).dt.year
 
-    #data = km.main('config.yml', 'results', 'input_data/data') #for development
+    data = km.main('config.yml', 'results', 'input_data/data') #for development
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
