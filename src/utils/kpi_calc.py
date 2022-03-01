@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict
 
-import kpi_main as km #for development
+#import kpi_main as km #for development
 
 #%%
 def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
@@ -135,7 +135,19 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     df['YEAR'] = aic['YEAR']
     df['VALUE'] = dipc
 
-    return df
+    aic_eu_plus_3 = aic.groupby('YEAR').sum()
+    aic_eu_plus_3_array = aic_eu_plus_3['VALUE'].to_numpy()
+    pop_eu_plus_3 = pop.groupby('year').sum()
+    pop_eu_plus_3_array = pop_eu_plus_3['value'].to_numpy()
+    dipc_eu_plus_3 = (aic_eu_plus_3_array / (1+dr)**y_y0) / pop_eu_plus_3_array
+    dipc_eu_plus_3 *= 10**6
+
+    df_eu = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    df_eu['YEAR'] = years
+    df_eu['VALUE'] = dipc_eu_plus_3
+    df_eu['REGION'] = 'EU+CH+NO+UK'
+
+    return df.append(df_eu, ignore_index=True)
 
 #%%
 def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame)->pd.DataFrame:
@@ -186,8 +198,24 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         df['REGION'] = c
 
         df_lcoe = pd.concat([df_lcoe, df])
+    
+    annual_sad_model = sad.groupby(by='YEAR').sum()
+    annual_sad_model_array = annual_sad_model['VALUE'].to_numpy()
+    annual_sad_model_xr = annual_sad_model_array
+    for c in range(len(countries)-1):
+        annual_sad_model_xr = np.append(annual_sad_model_xr, annual_sad_model_array)
+    demand_share = sad['VALUE'].to_numpy() / annual_sad_model_xr
+    lcoe_array = df_lcoe['VALUE'].to_numpy()
+    lcoe_shares = lcoe_array * demand_share
+    df = pd.DataFrame(columns=['YEAR','VALUE'])
+    df['YEAR'] = sad['YEAR']
+    df['VALUE'] = lcoe_shares
+    df['VALUE'] = pd.to_numeric(df['VALUE'])
+    df = df.groupby('YEAR').sum()
+    df = df.reset_index()
+    df['REGION'] = 'EU+CH+NO+UK'
 
-    return df_lcoe
+    return df_lcoe.append(df, ignore_index=True)
 
 #%%
 def main(data: Dict)->Dict:
@@ -196,7 +224,7 @@ def main(data: Dict)->Dict:
 
     years = pd.Series(pd.date_range('2015', freq='Y', periods=36)).dt.year
 
-    data = km.main('config.yml', 'results', 'input_data/data') #for development
+    #data = km.main('config.yml', 'results', 'input_data/data') #for development
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)

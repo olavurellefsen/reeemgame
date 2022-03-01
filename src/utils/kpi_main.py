@@ -87,7 +87,7 @@ def main(path_conf: str, path_res: str, path_dp: str):
 
         kpis[s] = kc.main(data)
 
-    return
+    return 
 
 #%% 
 if __name__ == "__main__":
