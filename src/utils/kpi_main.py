@@ -82,10 +82,25 @@ def main(path_conf: str, path_res: str, path_dp: str):
     data['others'] = ro.main(config['others'])
 
     kpis = {}
+    indicators = ['CO2Intensity', 'DiscountedInvestmentPerCitizen', 'LCOE']
+    kpis_csv = {}
+    for i in indicators:
+        kpis_csv[i] = pd.DataFrame()
+    
     for s in scens:
         data['results'] = rr.main(config['results'], scens[s])
 
         kpis[s] = kc.main(data)
+        for i in indicators:
+            kpis_csv[i][s] = kpis[s][i][kpis[s][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+    
+    years = kpis[s]['CO2Intensity']['YEAR']
+    region = kpis[s]['CO2Intensity']['REGION']
+    for i in indicators:
+        kpis_csv[i]['YEAR'] = years
+        kpis_csv[i]['REGION'] = region
+        path = os.path.join(path_res, i+'.csv')
+        kpis_csv[i].to_csv(path, index=False)
 
     return 
 
