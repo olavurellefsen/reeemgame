@@ -1,5 +1,6 @@
 """This script coordinates the calculation of KPIs for the REEEMgame using OSeMBE results, inputs and other data. 
 """
+from ast import arg
 import kpi_calc as kc
 import os
 import pandas as pd
@@ -70,7 +71,7 @@ def check_config(conf: Dict, scens: Dict):
             exit(1)
     return
 #%%
-def main(path_conf: str, path_res: str, path_dp: str):
+def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
 
     config = load_config(path_conf)
     scens = get_scens(path_res)
@@ -79,7 +80,7 @@ def main(path_conf: str, path_res: str, path_dp: str):
 
     data = {}
     data['inputs'] = ri.main(config['inputs'],path_dp)
-    data['others'] = ro.main(config['others'])
+    data['others'] = ro.main(config['others'], first_y)
 
     kpis = {}
     indicators = ['CO2Intensity', 'DiscountedInvestmentPerCitizen', 'LCOE']
@@ -88,7 +89,7 @@ def main(path_conf: str, path_res: str, path_dp: str):
         kpis_csv[i] = pd.DataFrame()
     
     for s in scens:
-        data['results'] = rr.main(config['results'], scens[s])
+        data['results'] = rr.main(config['results'], scens[s], last_y)
 
         kpis[s] = kc.main(data)
         for i in indicators:
@@ -108,11 +109,13 @@ def main(path_conf: str, path_res: str, path_dp: str):
 if __name__ == "__main__":
     
     args = sys.argv[1:]
-    if len(args)!= 3:
+    if len(args)!= 5:
         print("Use this script as follows: 'python kpi_main.py <configuration path> <results path> <path to data folder of datapackage>'")
 
     config_path = args[0]
     res_path = args[1]
     dp_path = args[2]
+    year_0 = args[3]
+    year_n = args[4]
 
-    main(config_path, res_path, dp_path)
+    main(config_path, res_path, dp_path, year_0, year_n)

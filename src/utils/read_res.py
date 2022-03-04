@@ -89,7 +89,7 @@ def read_net_imp(path: str):
 
     return df
 #%%
-def read_net_imp_det(path: str)-> pd.DataFrame:
+def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
 
     tech = '(?=^.{2}(EL))^((?!00).)*$'
     parameters = ['ProductionByTechnologyAnnual','UseByTechnology']
@@ -123,7 +123,7 @@ def read_net_imp_det(path: str)-> pd.DataFrame:
         results[p] = df_f
 
     countries = pd.Series(np.append(results['ProductionByTechnologyAnnual']['TO'].unique(),results['ProductionByTechnologyAnnual']['FROM'].unique())).unique()
-    years = pd.Series(results['ProductionByTechnologyAnnual'][results['ProductionByTechnologyAnnual']['YEAR']<2051]['YEAR'].unique())
+    years = pd.Series(results['ProductionByTechnologyAnnual'][results['ProductionByTechnologyAnnual']['YEAR']<(year_n+1)]['YEAR'].unique())
     df = pd.DataFrame(columns=['TO','FROM','YEAR','VALUE'])
 
     for c in countries:
@@ -147,21 +147,21 @@ def read_net_imp_det(path: str)-> pd.DataFrame:
     return df
 
 #%%
-def filter_op_cost(param, path):
+def filter_op_cost(param, path, year_n: int) -> pd.pd.DataFrame:
     """Function to read filter and sum to annual values per country.
     """
 
     df = read_res(path, param)
     df['REGION'] = df['TECHNOLOGY'].str[:2]
     df = df.drop(columns='TECHNOLOGY')
-    df = df[df['YEAR']<2051]
+    df = df[df['YEAR']<(year_n+1)]
     df = df.groupby(by=['REGION', 'YEAR']).sum()
     df = df.reset_index(level=['REGION','YEAR'])
 
     return df
 
 #%% 
-def main(config: List, res_path: str) -> Dict:
+def main(config: List, res_path: str, y_n: int) -> Dict:
 
     scen_res = {}
     for param in config:
@@ -172,9 +172,9 @@ def main(config: List, res_path: str) -> Dict:
         elif param['function'] == 'read_net_imp':
             scen_res['NetElImports'] = read_net_imp(res_path)
         elif param['function'] == 'read_net_imp_det':
-            scen_res['NetElImportsPerCountry'] = read_net_imp_det(res_path)
+            scen_res['NetElImportsPerCountry'] = read_net_imp_det(res_path, y_n)
         elif param['function'] == 'filter_op_cost':
-            scen_res[param['parameter']] = filter_op_cost(param['parameter'],res_path)
+            scen_res[param['parameter']] = filter_op_cost(param['parameter'], res_path, y_n)
         else:
             print("Function does not exist.")
             exit(1)

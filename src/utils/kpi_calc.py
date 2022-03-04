@@ -78,17 +78,17 @@ def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd
 
     return df
 #%%
-def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd.DataFrame:
+def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year_n:int)-> pd.DataFrame:
     """Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
     """
     countries = pop['iso2'].unique()
     ate_df = pd.DataFrame(index=countries,columns=years)
     pop_df = pd.DataFrame(index=countries, columns=years)
     for r in range(len(ate)):
-        if ate.iloc[r]['YEAR']<2051:
+        if ate.iloc[r]['YEAR']<(year_n+1):
             ate_df[ate.iloc[r]['YEAR']][ate.iloc[r]['REGION']] = ate.iloc[r]['VALUE']
     for r in range(len(pop)):
-        if pop.iloc[r]['year']<2051:
+        if pop.iloc[r]['year']<(year_n+1):
             pop_df[pop.iloc[r]['year']][pop.iloc[r]['iso2']] = pop.iloc[r]['value']
 
     ate_df = ate_df.fillna(0)
@@ -150,12 +150,12 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     return df.append(df_eu, ignore_index=True)
 
 #%%
-def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame)->pd.DataFrame:
+def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame, y_n: int)->pd.DataFrame:
     """Function to calculate the Levelised Cost of Electricity (LCOE) per country and year.
     """
     countries = pd.Series(sad['REGION'].unique())
-    years = pd.Series(sad[sad['YEAR']<2051]['YEAR'].unique())
-    sad = sad[sad['YEAR']<2051]
+    years = pd.Series(sad[sad['YEAR']<(y_n+1)]['YEAR'].unique())
+    sad = sad[sad['YEAR']<(y_n + 1)]
     sad = sad.sort_values(by=['REGION', 'YEAR'])
     dp = dp.sort_values(by=['REGION','YEAR'])
     lcode = lcode.sort_values(by=['REGION','YEAR'])
@@ -218,11 +218,12 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
     return df_lcoe.append(df, ignore_index=True)
 
 #%%
-def main(data: Dict)->Dict:
+def main(data: Dict, y_0: int, y_n: int)->Dict:
     kpis = {}
     indi = {}
 
-    years = pd.Series(pd.date_range('2015', freq='Y', periods=36)).dt.year
+    analysis_period = y_n - y_0 + 1
+    years = pd.Series(pd.date_range(y_0, freq='Y', periods=analysis_period)).dt.year
 
     #data = km.main('config.yml', 'results', 'input_data/data') #for development
 
@@ -231,7 +232,7 @@ def main(data: Dict)->Dict:
     indi['DP'] = calc_dp(data['inputs']['SpecifiedAnnualDemand'],data['results']['NetElImports'], years)
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
-    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years)
+    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years, y_n)
     kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], data['others']['Population'], years)
-    kpis['LCOE'] = calc_lcoe(indi['DP'], data['inputs']['SpecifiedAnnualDemand'], indi['LCODE'], data['results']['NetElImportsPerCountry'])
+    kpis['LCOE'] = calc_lcoe(indi['DP'], data['inputs']['SpecifiedAnnualDemand'], indi['LCODE'], data['results']['NetElImportsPerCountry'], y_n)
     return kpis
