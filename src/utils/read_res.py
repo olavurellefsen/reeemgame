@@ -147,7 +147,7 @@ def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
     return df
 
 #%%
-def filter_op_cost(param, path, year_n: int) -> pd.pd.DataFrame:
+def filter_op_cost(param, path, year_n: int) -> pd.DataFrame:
     """Function to read filter and sum to annual values per country.
     """
 
