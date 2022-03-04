@@ -108,8 +108,11 @@ def main(path_conf: str, path_res: str, path_dp: str):
 if __name__ == "__main__":
     
     args = sys.argv[1:]
+    if len(args)!= 3:
+        print("Use this script as follows: 'python kpi_main.py <configuration path> <results path> <path to data folder of datapackage>'")
 
     config_path = args[0]
     res_path = args[1]
+    dp_path = args[2]
 
-    main(config_path, res_path)
+    main(config_path, res_path, dp_path)
