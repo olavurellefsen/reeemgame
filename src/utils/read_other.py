@@ -4,7 +4,7 @@ import pandas as pd
 from typing import List, Dict
 
 #%%
-def read_pop(config: Dict,countries: pd.DataFrame, year_0: int)-> Dict:
+def read_pop(config: Dict,countries: pd.DataFrame, year_0: int, year_n: int)-> Dict:
     """ Function that reads in population data from excel file.
     """
     path = config['path']
@@ -19,7 +19,7 @@ def read_pop(config: Dict,countries: pd.DataFrame, year_0: int)-> Dict:
     df_pop['value'] = df_pop["value"]*1000
     df_pop = df_pop.drop(columns=["unit","code_wb","variable"])
     df_pop = df_pop.reset_index(level=["year"])
-    df_pop = df_pop[df_pop["year"]>=year_0]
+    df_pop = df_pop[(df_pop["year"]>=int(year_0))&(df_pop["year"]<(int(year_n)+1))]
     df_pop = df_pop.reset_index(drop=True)
 
     df_pop = filter_pop(df_pop, countries)
@@ -36,13 +36,13 @@ def filter_pop(df,countries):
     return pd.merge(df,countries,on='country')
 
 #%%
-def main(config: List, y_0: int) -> Dict:
+def main(config: List, y_0: int, y_n: int) -> Dict:
     osembe_countries = pd.read_csv('other_data/osembe_countries.csv')
     others_dic = {}
 
     for p in config:
         if p['function'] == 'read_pop':
-            others_dic[p['parameter']] = read_pop(p, osembe_countries, y_0)
+            others_dic[p['parameter']] = read_pop(p, osembe_countries, y_0, y_n)
         else:
             print('The provided function does not exist.')
             exit(1)

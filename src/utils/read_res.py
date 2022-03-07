@@ -123,7 +123,7 @@ def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
         results[p] = df_f
 
     countries = pd.Series(np.append(results['ProductionByTechnologyAnnual']['TO'].unique(),results['ProductionByTechnologyAnnual']['FROM'].unique())).unique()
-    years = pd.Series(results['ProductionByTechnologyAnnual'][results['ProductionByTechnologyAnnual']['YEAR']<(year_n+1)]['YEAR'].unique())
+    years = pd.Series(results['ProductionByTechnologyAnnual'][results['ProductionByTechnologyAnnual']['YEAR']<(int(year_n)+1)]['YEAR'].unique())
     df = pd.DataFrame(columns=['TO','FROM','YEAR','VALUE'])
 
     for c in countries:
@@ -154,7 +154,7 @@ def filter_op_cost(param, path, year_n: int) -> pd.DataFrame:
     df = read_res(path, param)
     df['REGION'] = df['TECHNOLOGY'].str[:2]
     df = df.drop(columns='TECHNOLOGY')
-    df = df[df['YEAR']<(year_n+1)]
+    df = df[df['YEAR']<(int(year_n)+1)]
     df = df.groupby(by=['REGION', 'YEAR']).sum()
     df = df.reset_index(level=['REGION','YEAR'])
 

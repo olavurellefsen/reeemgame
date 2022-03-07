@@ -62,25 +62,33 @@ def load_config(filepath: str) -> Dict:
 #%% Check that results parameter in config exist
 def check_config(conf: Dict, scens: Dict):
 
-    res_files = next(os.walk(scens[list(scens.keys())[0]]), (None,None,[]))[2]
+    scens_complete = dict(scens)
 
-    for p in conf['results']:
-        f = p['parameter'] + '.csv'
-        if f not in res_files:
-            print("p not in results")
-            exit(1)
-    return
+    for s in scens:
+        res_files = next(os.walk(scens[s]), (None,None,[]))[2]
+
+        for p in conf['results']:
+            f = p['parameter'] + '.csv'
+            if f not in res_files:
+                print("%s does not have %s in results" % (s, p))
+                if s in scens_complete:
+                    del scens_complete[s]
+    return scens_complete
 #%%
 def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
 
     config = load_config(path_conf)
     scens = get_scens(path_res)
+    print('Identified the following scenarios:')
+    print(scens.keys())
 
-    check_config(config, scens)
+    scens = check_config(config, scens)
 
     data = {}
     data['inputs'] = ri.main(config['inputs'],path_dp)
-    data['others'] = ro.main(config['others'], first_y)
+    print("Read input data.")
+    data['others'] = ro.main(config['others'], first_y, last_y)
+    print("Read other data.")
 
     kpis = {}
     indicators = ['CO2Intensity', 'DiscountedInvestmentPerCitizen', 'LCOE']
@@ -89,11 +97,17 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         kpis_csv[i] = pd.DataFrame()
     
     for s in scens:
+        print("Scenario: %s" % (s))
         data['results'] = rr.main(config['results'], scens[s], last_y)
+        print("Read results for scenario %s" % (s))
 
-        kpis[s] = kc.main(data)
+        kpis[s] = kc.main(data, first_y, last_y)
+        print("Calculated KPIs for scenario %s" % (s))
         for i in indicators:
-            kpis_csv[i][s] = kpis[s][i][kpis[s][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+            df = pd.DataFrame()
+            df[s] = kpis[s][i][kpis[s][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+            kpis_csv[i] = pd.concat([kpis_csv[i],df], axis=1)
+        print("Added EU KPIs to kpis_csv for %s" % (s))
     
     years = kpis[s]['CO2Intensity']['YEAR']
     region = kpis[s]['CO2Intensity']['REGION']

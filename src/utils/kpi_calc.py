@@ -85,10 +85,10 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
     ate_df = pd.DataFrame(index=countries,columns=years)
     pop_df = pd.DataFrame(index=countries, columns=years)
     for r in range(len(ate)):
-        if ate.iloc[r]['YEAR']<(year_n+1):
+        if ate.iloc[r]['YEAR']<(int(year_n)+1):
             ate_df[ate.iloc[r]['YEAR']][ate.iloc[r]['REGION']] = ate.iloc[r]['VALUE']
     for r in range(len(pop)):
-        if pop.iloc[r]['year']<(year_n+1):
+        if pop.iloc[r]['year']<(int(year_n)+1):
             pop_df[pop.iloc[r]['year']][pop.iloc[r]['iso2']] = pop.iloc[r]['value']
 
     ate_df = ate_df.fillna(0)
@@ -154,8 +154,8 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
     """Function to calculate the Levelised Cost of Electricity (LCOE) per country and year.
     """
     countries = pd.Series(sad['REGION'].unique())
-    years = pd.Series(sad[sad['YEAR']<(y_n+1)]['YEAR'].unique())
-    sad = sad[sad['YEAR']<(y_n + 1)]
+    years = pd.Series(sad[sad['YEAR']<(int(y_n)+1)]['YEAR'].unique())
+    sad = sad[sad['YEAR']<(int(y_n) + 1)]
     sad = sad.sort_values(by=['REGION', 'YEAR'])
     dp = dp.sort_values(by=['REGION','YEAR'])
     lcode = lcode.sort_values(by=['REGION','YEAR'])
@@ -222,7 +222,7 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     kpis = {}
     indi = {}
 
-    analysis_period = y_n - y_0 + 1
+    analysis_period = int(y_n) - int(y_0) + 1
     years = pd.Series(pd.date_range(y_0, freq='Y', periods=analysis_period)).dt.year
 
     #data = km.main('config.yml', 'results', 'input_data/data') #for development
