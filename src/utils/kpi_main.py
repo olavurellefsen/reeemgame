@@ -7,6 +7,7 @@ import pandas as pd
 import read_inp as ri
 import read_other as ro
 import read_res as rr
+import scen_names as sn
 import sys
 from typing import List, Dict
 from yaml import load, SafeLoader
@@ -81,6 +82,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
     scens = get_scens(path_res)
     print('Identified the following scenarios:')
     print(scens.keys())
+    scen_names = sn.main()
 
     scens = check_config(config, scens)
 
@@ -97,20 +99,21 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         kpis_csv[i] = pd.DataFrame()
     
     for s in scens:
+        scen = scen_names[scen_names['scen_names_long']==s]['scen_names_short'].iloc[0]
         print("Scenario: %s" % (s))
         data['results'] = rr.main(config['results'], scens[s], last_y)
         print("Read results for scenario %s" % (s))
 
-        kpis[s] = kc.main(data, first_y, last_y)
+        kpis[scen] = kc.main(data, first_y, last_y)
         print("Calculated KPIs for scenario %s" % (s))
         for i in indicators:
             df = pd.DataFrame()
-            df[s] = kpis[s][i][kpis[s][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+            df[scen] = kpis[scen][i][kpis[scen][i]['REGION']=='EU+CH+NO+UK']['VALUE']
             kpis_csv[i] = pd.concat([kpis_csv[i],df], axis=1)
         print("Added EU KPIs to kpis_csv for %s" % (s))
     
-    years = kpis[s]['CO2Intensity']['YEAR']
-    region = kpis[s]['CO2Intensity']['REGION']
+    years = kpis[scen]['CO2Intensity']['YEAR']
+    region = kpis[scen]['CO2Intensity']['REGION']
     for i in indicators:
         kpis_csv[i]['YEAR'] = years
         kpis_csv[i]['REGION'] = region
