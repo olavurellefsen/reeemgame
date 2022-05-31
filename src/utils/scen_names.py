@@ -61,3 +61,7 @@ def main():
         dic_short['T'] += 1
 
     return pd.DataFrame(list(zip(scen_names_long, scen_names_short)), columns=['scen_names_long', 'scen_names_short'])
+
+if __name__ == "__main__":
+    df = main()
+    df.to_csv('scen_names.csv')
