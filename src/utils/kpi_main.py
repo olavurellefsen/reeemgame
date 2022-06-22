@@ -10,6 +10,7 @@ import read_res as rr
 import scen_names as sn
 import sys
 from typing import List, Dict
+import write_kpis.py as wk
 from yaml import load, SafeLoader
 
 #%% Get directory names from folder
@@ -117,10 +118,10 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
     for i in indicators:
         kpis_csv[i]['YEAR'] = years
         kpis_csv[i]['REGION'] = region
-        path = os.path.join(path_res, i+'.csv')
-        kpis_csv[i].to_csv(path, index=False)
+        #path = os.path.join(path_res, i+'.csv')
+        #kpis_csv[i].to_csv(path, index=False)
 
-    return 
+    return wk.main(kpis_csv)
 
 #%% 
 if __name__ == "__main__":
