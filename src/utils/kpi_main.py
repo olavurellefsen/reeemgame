@@ -10,7 +10,7 @@ import read_res as rr
 import scen_names as sn
 import sys
 from typing import List, Dict
-import write_kpis.py as wk
+import write_kpis as wk
 from yaml import load, SafeLoader
 
 #%% Get directory names from folder
