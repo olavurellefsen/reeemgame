@@ -20,7 +20,7 @@ def normalise_scores(df: pd.DataFrame) -> pd.DataFrame:
     max_value = df.iloc[0].max()
     score_array = df.iloc[0].to_numpy()
 
-    score_norm = (score_array / max_value) * 100
+    score_norm = 100 - (score_array / max_value) * 100
 
     df_norm_score['SCENARIO'] = list(df)
     df_norm_score['VALUE'] = score_norm
