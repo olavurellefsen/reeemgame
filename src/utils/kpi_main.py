@@ -11,6 +11,7 @@ import scen_names as sn
 import sys
 from typing import List, Dict
 import write_kpis as wk
+import write_scores as ws
 from yaml import load, SafeLoader
 
 #%% Get directory names from folder
@@ -121,6 +122,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         #path = os.path.join(path_res, i+'.csv')
         #kpis_csv[i].to_csv(path, index=False)
 
+    ws.main(kpis_csv)
     return wk.main(kpis_csv)
 
 #%% 
