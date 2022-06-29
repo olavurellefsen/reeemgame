@@ -9,33 +9,35 @@ from typing import Dict
 #kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220506/results/DiscountedInvestmentPerCitizen_10th.csv')
 #kpis['LCOE'] = pd.read_csv('results/220506/results/LCOE_10th.csv')
 
-def filter_kpis(data: pd.DataFrame) -> pd.DataFrame:
-    data = data[data['REGION']!='EU+CH+NO+UK']
-    years = data['YEAR'].unique() # this could be removed if years are taken from MultiIndex in function format_kpis
-    regions = data['REGION'].unique() # this could be removed if countries are taken from MultiIndex in function format_kpis
-    data = data.set_index(['REGION','YEAR'])
-    return data, years, regions
+#def filter_kpis(data: pd.DataFrame) -> pd.DataFrame:
+#    data = data[data['REGION']!='EU+CH+NO+UK']
+#    years = data['YEAR'].unique() # this could be removed if years are taken from MultiIndex in function format_kpis
+#    regions = data['REGION'].unique() # this could be removed if countries are taken from MultiIndex in function format_kpis
+#    data = data.set_index(['REGION','YEAR'])
+#    return data, years, regions
 
-def format_kpis(df: pd.DataFrame, years, regions) -> Dict:
-    kpi_dic = {}
-    for s in list(df):
+def format_kpis(kpis: Dict, kpi: str) -> Dict:
+    kpi_dic_json = {}
+    countries = pd.Series(kpis[list(kpis.keys())[0]]['LCOE']['REGION'].unique())
+    countries = countries[countries!='EU+CH+NO+UK']
+    for s in kpis:
         dic_of_years = {}
-        for y in years:
+        for y in kpis[s][kpi]['YEAR'].unique():
             country_value_dic = {}
-            for c in regions:
-                country_value_dic[c] = df.loc[(c,y),s]
+            for c in countries:
+                country_value_dic[c] = kpis[s][kpi][(kpis[s][kpi]['YEAR']==y)&(kpis[s][kpi]['REGION']==c)]['VALUE']
             dic_of_years[int(y)] = country_value_dic
-        kpi_dic[s] = dic_of_years
+        kpi_dic_json[s] = dic_of_years
 
-    return kpi_dic
+    return kpi_dic_json
 
 def main(kpis: Dict):
 
     kpis_in_dics = {}
 
     for kpi in kpis:
-        kpis[kpi], years, regions = filter_kpis(kpis[kpi])
-        kpis_in_dics[kpi] = format_kpis(kpis[kpi], years, regions)
+
+        kpis_in_dics[kpi] = format_kpis(kpis, kpi)
 
         with open('../data/indicators/%s.json' % kpi, 'w') as outfile:
             json.dump(kpis_in_dics[kpi], outfile)

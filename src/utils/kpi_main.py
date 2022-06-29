@@ -123,7 +123,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         #kpis_csv[i].to_csv(path, index=False)
 
     ws.main(kpis_csv)
-    return wk.main(kpis_csv)
+    return wk.main(kpis)
 
 #%% 
 if __name__ == "__main__":
