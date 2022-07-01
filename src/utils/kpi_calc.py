@@ -222,6 +222,16 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     kpis = {}
     indi = {}
 
+    max_years = []
+    result_variables = ['CapitalInvestment', 'AnnualFixedOperatingCost', 'AnnualVariableOperatingCost', 'AnnualTechnologyEmission']
+
+    for v in result_variables:
+        max_years.append(data['results'][v]['YEAR'].max())
+    max_year = max(max_years)
+
+    if max_year < y_n:
+        y_n = max_year
+
     analysis_period = int(y_n) - int(y_0) + 1
     years = pd.Series(pd.date_range(y_0, freq='Y', periods=analysis_period)).dt.year
 
