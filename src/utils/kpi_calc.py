@@ -221,6 +221,8 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
 def main(data: Dict, y_0: int, y_n: int)->Dict:
     kpis = {}
     indi = {}
+    population = data['others']['Population'].copy(deep=True)
+    sad = data['inputs']['SpecifiedAnnualDemand'].copy(deep=True)
 
     max_years = []
     result_variables = ['CapitalInvestment', 'AnnualFixedOperatingCost', 'AnnualVariableOperatingCost', 'AnnualTechnologyEmission']
@@ -229,20 +231,22 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
         max_years.append(data['results'][v]['YEAR'].max())
     max_year = max(max_years)
 
-    if max_year < y_n:
+    if int(max_year) < int(y_n):
         y_n = max_year
+        population = population[population['year']<=y_n]
+        sad = sad[sad['YEAR']<=y_n]
 
     analysis_period = int(y_n) - int(y_0) + 1
-    years = pd.Series(pd.date_range(y_0, freq='Y', periods=analysis_period)).dt.year
+    years = pd.Series(pd.date_range(str(y_0), freq='Y', periods=analysis_period)).dt.year
 
     #data = km.main('config.yml', 'results', 'input_data/data') #for development
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
-    indi['DP'] = calc_dp(data['inputs']['SpecifiedAnnualDemand'],data['results']['NetElImports'], years)
+    indi['DP'] = calc_dp(sad,data['results']['NetElImports'], years)
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
-    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], data['others']['Population'], years, y_n)
-    kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], data['others']['Population'], years)
-    kpis['LCOE'] = calc_lcoe(indi['DP'], data['inputs']['SpecifiedAnnualDemand'], indi['LCODE'], data['results']['NetElImportsPerCountry'], y_n)
+    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], population, years, y_n)
+    kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], population, years)
+    kpis['LCOE'] = calc_lcoe(indi['DP'], sad, indi['LCODE'], data['results']['NetElImportsPerCountry'], y_n)
     return kpis
