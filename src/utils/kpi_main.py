@@ -111,6 +111,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         for i in indicators:
             df = pd.DataFrame()
             df[scen] = kpis[scen][i][kpis[scen][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+            df = df.reset_index(drop=True)
             kpis_csv[i] = pd.concat([kpis_csv[i],df], axis=1)
         print("Added EU KPIs to kpis_csv for %s" % (s))
     
@@ -119,11 +120,11 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
     for i in indicators:
         kpis_csv[i]['YEAR'] = years
         kpis_csv[i]['REGION'] = region
-        #path = os.path.join(path_res, i+'.csv')
-        #kpis_csv[i].to_csv(path, index=False)
+        path = os.path.join(path_res, i+'.csv')
+        kpis_csv[i].to_csv(path, index=False)
 
-    ws.main(kpis_csv)
-    return wk.main(kpis)
+    #ws.main(kpis_csv)
+    return #wk.main(kpis)
 
 #%% 
 if __name__ == "__main__":
