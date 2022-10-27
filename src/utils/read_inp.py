@@ -22,13 +22,14 @@ def read_ol(param: str, path: str) -> pd.DataFrame:
     df['REGION'] = df['TECHNOLOGY'].str[:2]
     return df
 #%%
-def read_sad(param: str, path: str) -> pd.DataFrame:
+def read_sad(param: str, path: str, y_start: int, y_last: int) -> pd.DataFrame:
     df = rr.read_res(path, param)
     df['REGION'] = df['FUEL'].str[:2]
     df['FUEL'] = df['FUEL'].str[2:]
+    df = df[(df['YEAR']>=int(y_start))&(df['YEAR']<=int(y_last))]
     return df
 #%%
-def main(config: List, inp_path: str) -> Dict:
+def main(config: List, inp_path: str, y_0: int, y_n: int) -> Dict:
     
     scen_inp = {}
 
@@ -38,7 +39,7 @@ def main(config: List, inp_path: str) -> Dict:
         elif param['function'] == 'read_ol':
             scen_inp[param['parameter']] = read_ol(param['parameter'], inp_path)
         elif param['function'] == 'read_sad':
-            scen_inp[param['parameter']] = read_sad(param['parameter'], inp_path)
+            scen_inp[param['parameter']] = read_sad(param['parameter'], inp_path, y_0, y_n)
         else:
             print('Function does not exist.')
             exit(1)

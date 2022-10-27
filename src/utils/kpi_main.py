@@ -89,7 +89,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
     scens = check_config(config, scens)
 
     data = {}
-    data['inputs'] = ri.main(config['inputs'],path_dp)
+    data['inputs'] = ri.main(config['inputs'],path_dp, first_y, last_y)
     print("Read input data.")
     data['others'] = ro.main(config['others'], first_y, last_y)
     print("Read other data.")
@@ -116,15 +116,15 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         print("Added EU KPIs to kpis_csv for %s" % (s))
     
     years = kpis[scen]['CO2Intensity']['YEAR']
-    region = kpis[scen]['CO2Intensity']['REGION']
+
     for i in indicators:
         kpis_csv[i]['YEAR'] = years
-        kpis_csv[i]['REGION'] = region
-        #path = os.path.join(path_res, i+'.csv')
-        #kpis_csv[i].to_csv(path, index=False)
+        kpis_csv[i]['REGION'] = 'EU+CH+NO+UK'
+        path = os.path.join(path_res, i+'.csv')
+        kpis_csv[i].to_csv(path, index=False)
 
-    ws.main(kpis_csv)
-    return wk.main(kpis)
+    #ws.main(kpis_csv)
+    return #wk.main(kpis)
 
 #%% 
 if __name__ == "__main__":
