@@ -131,7 +131,7 @@ if __name__ == "__main__":
     
     args = sys.argv[1:]
     if len(args)!= 5:
-        print("Use this script as follows: 'python kpi_main.py <configuration path> <results path> <path to data folder of datapackage>'")
+        print("Use this script as follows: 'python kpi_main.py <configuration path> <results path> <path to data folder of datapackage>' <year 0> <year n>")
 
     config_path = args[0]
     res_path = args[1]
