@@ -7,7 +7,7 @@ import { getMapColors, getIndicatorParams } from './MapValues'
 import eunochCountries from '../../../../data/eunochcountries.json'
 import { Legend } from './legend'
 import { IndicatorInfo } from './IndicatorInfo'
-import Popper from '@material-ui/core/Popover'
+import Popper from '@mui/material/Popover'
 import { CountryPopup } from './CountryPopup'
 
 export const MapContainer = () => {

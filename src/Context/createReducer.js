@@ -1,4 +1,4 @@
-export default (initialState, handlers) => {
+const reducer = (initialState, handlers) => {
   return function reducer(state = initialState, action) {
     if (handlers.hasOwnProperty(action.type)) {
       return handlers[action.type](state, action)
@@ -7,3 +7,5 @@ export default (initialState, handlers) => {
     }
   }
 }
+
+export default reducer

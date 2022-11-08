@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Slider from '@material-ui/lab/Slider'
+import {Slider} from '@mui/material'
 
 export const Container = styled.div`
   display: flex;

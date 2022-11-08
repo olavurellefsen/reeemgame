@@ -14,11 +14,11 @@ import {
   DialogContentContainer,
   SocialMediaBtn,
 } from './Share.style'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogContent from '@mui/material/DialogContent'
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share'
-import { Link } from '@material-ui/icons'
+import { Link } from '@mui/icons-material'
 import { PropTypes } from 'prop-types'
 import {
   FacebookShareButton,
