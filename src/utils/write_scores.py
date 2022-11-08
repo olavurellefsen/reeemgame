@@ -4,10 +4,10 @@ import pandas as pd
 from typing import Dict
 
 # for development
-kpis = {}
-kpis['CO2Intensity'] = pd.read_csv('results/220506/results/CO2Intensity_10th.csv')
-kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220506/results/DiscountedInvestmentPerCitizen_10th.csv')
-kpis['LCOE'] = pd.read_csv('results/220506/results/LCOE_10th.csv')
+# kpis = {}
+# kpis['CO2Intensity'] = pd.read_csv('results/220506/results/CO2Intensity_10th.csv')
+# kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220506/results/DiscountedInvestmentPerCitizen_10th.csv')
+#kpis['LCOE'] = pd.read_csv('results/220506/results/LCOE_10th.csv')
 
 def filter_kpis(data: pd.DataFrame) -> pd.DataFrame:
     data = data[data['YEAR']==2050]
