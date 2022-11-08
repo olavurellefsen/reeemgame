@@ -1,6 +1,6 @@
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme } from '@mui/material/styles'
 
-export default createMuiTheme({
+export default createTheme({
   typography: {
     useNextVariants: true,
   },

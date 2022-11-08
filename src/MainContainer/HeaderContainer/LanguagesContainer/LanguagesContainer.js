@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import Button from '@material-ui/core/Button'
+import Button from '@mui/material/Button'
 import { useTranslation } from 'react-i18next'
 import { Container, Icon, Menu, TextContainer } from './Languages.style'
-import Grow from '@material-ui/core/Grow'
-import Popper from '@material-ui/core/Popper'
-import MenuItem from '@material-ui/core/MenuItem'
-import MenuList from '@material-ui/core/MenuList'
-import ClickAwayListener from '@material-ui/core/ClickAwayListener'
-import { Public, ExpandLess, ExpandMore } from '@material-ui/icons'
+import Grow from '@mui/material/Grow'
+import Popper from '@mui/material/Popper'
+import MenuItem from '@mui/material/MenuItem'
+import MenuList from '@mui/material/MenuList'
+import ClickAwayListener from '@mui/material/ClickAwayListener'
+import { Public, ExpandLess, ExpandMore } from '@mui/icons-material'
 
 export const Languages = () => {
   const [open, setOpen] = useState(false)
@@ -70,7 +70,7 @@ export const Languages = () => {
   return (
     <Container>
       <Button
-        buttonRef={anchorEl}
+        ref={anchorEl}
         aria-owns={open ? 'menu-list-grow' : undefined}
         aria-haspopup="true"
         onClick={toggleMenu}

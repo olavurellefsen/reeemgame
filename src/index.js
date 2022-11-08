@@ -1,33 +1,27 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import ContextStore from './Context/ContextStore'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import { ThemeProvider } from '@mui/material/styles'
 import theme from './theme'
-import JssProvider from 'react-jss/lib/JssProvider'
-import { create } from 'jss'
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import CssBaseline from '@mui/material/CssBaseline'
 import './i18n'
+import reportWebVitals from "./reportWebVitals";
 
-const generateClassName = createGenerateClassName()
-const jss = create({
-  ...jssPreset(),
-  // Define a custom insertion for injecting the JSS styles in the DOM
-  insertionPoint: document.getElementById('jss-insertion-point'),
-})
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.render(
-  <JssProvider jss={jss} generateClassName={generateClassName}>
-    <MuiThemeProvider theme={theme}>
+root.render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <ContextStore>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </ContextStore>
-    </MuiThemeProvider>
-  </JssProvider>,
-  document.getElementById('root')
-)
+    </ThemeProvider>
+  </React.StrictMode>
+);
+
+reportWebVitals();

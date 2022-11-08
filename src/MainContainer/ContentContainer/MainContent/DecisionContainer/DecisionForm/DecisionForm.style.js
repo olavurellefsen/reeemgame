@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Button from '@material-ui/core/Button'
-import Radio from '@material-ui/core/Radio'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormLabel from '@material-ui/core/FormLabel'
-import Grid from '@material-ui/core/Grid'
+import Button from '@mui/material/Button'
+import Radio from '@mui/material/Radio'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import FormLabel from '@mui/material/FormLabel'
+import Grid from '@mui/material/Grid'
 
 export const DecisionHeader = styled.h1`
   font-family: 'Roboto', sans-serif;

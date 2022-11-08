@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import MenuList from '@material-ui/core/MenuList'
-import MenuItem from '@material-ui/core/MenuItem'
-import ListItemText from '@material-ui/core/ListItemText'
+import MenuList from '@mui/material/MenuList'
+import MenuItem from '@mui/material/MenuItem'
+import ListItemText from '@mui/material/ListItemText'
 import Context from '../../../../Context/Context'
 import { Container, SubMenu } from './Indicator.style'
 
