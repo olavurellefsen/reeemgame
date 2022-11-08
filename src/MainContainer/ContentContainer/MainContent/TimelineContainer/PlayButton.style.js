@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Button from '@material-ui/core/Fab'
+import Button from '@mui/material/Fab'
 
 export const PlayButtonContainer = styled.div`
   min-width: 110px;

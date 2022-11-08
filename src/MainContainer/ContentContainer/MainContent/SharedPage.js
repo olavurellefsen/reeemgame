@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react'
-import Grid from '@material-ui/core/Grid'
+import Grid from '@mui/material/Grid'
 import { useTranslation } from 'react-i18next'
 import { EUacknowledgement } from './EUacknowledgement/EUacknowledgement'
 import { MapContainer } from './MapContainer/MapContainer'
 import styled from 'styled-components'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+import useMediaQuery from '@mui/material/useMediaQuery'
 //import { createListOfScenarios } from './../../../utils/ScoreUtilities'
 import { PropTypes } from 'prop-types'
 import {

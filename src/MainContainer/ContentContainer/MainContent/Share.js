@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Context from './../../../Context/Context'
 import {
   Container,
@@ -16,13 +15,13 @@ import {
   LinkContainer,
   CopyToClipboardBtn,
 } from './Share.style'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogContent from '@mui/material/DialogContent'
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share'
-import { Link } from '@material-ui/icons'
-import Tooltip from '@material-ui/core/Tooltip'
-import ClickAwayListener from '@material-ui/core/ClickAwayListener'
+import { Link } from '@mui/icons-material'
+import Tooltip from '@mui/material/Tooltip'
+import ClickAwayListener from '@mui/material/ClickAwayListener'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -51,9 +50,6 @@ export const Share = () => {
     setTooltipOpen(false)
   }
 
-  function showTooltip() {
-    setTooltipOpen(true)
-  }
   const buildURL = () => {
     return (
       window.location.origin +
@@ -132,15 +128,15 @@ export const Share = () => {
                     placement="top"
                     open={tooltipOpen}
                   >
-                    <CopyToClipboard
+                    {/* <CopyToClipboard
                       text={buildURL()}
                       onCopy={() => showTooltip()}
                       onClose={handleTooltipClose}
-                    >
+                    > */}
                       <CopyToClipboardBtn color="black">
                         {t('share.copyToClipboard')}
                       </CopyToClipboardBtn>
-                    </CopyToClipboard>
+                    {/* </CopyToClipboard> */}
                   </Tooltip>
                 </LinkContainer>
               </DialogContent>

@@ -16,7 +16,7 @@ import {
   Icon,
   Button,
 } from './CountryPopup.style'
-import { Close } from '@material-ui/icons'
+import { Close } from '@mui/icons-material'
 
 export const CountryPopup = props => {
   const { t } = useTranslation()
