@@ -1,54 +1,84 @@
 import json
 from os import environ
 import pandas as pd
-from typing import Dict
+from typing import Dict, Optional
 
 # for development
-# kpis = {}
-# kpis['CO2Intensity'] = pd.read_csv('results/220506/results/CO2Intensity_10th.csv')
-# kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220506/results/DiscountedInvestmentPerCitizen_10th.csv')
-#kpis['LCOE'] = pd.read_csv('results/220506/results/LCOE_10th.csv')
+kpis = {}
+kpis['CO2Intensity'] = pd.read_csv('results/220617/results/CO2Intensity_10th.csv')
+kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220617/results/DiscountedInvestmentPerCitizen_10th.csv')
+kpis['LCOE'] = pd.read_csv('results/220617/results/LCOE_10th.csv')
 
-def filter_kpis(data: pd.DataFrame) -> pd.DataFrame:
+def filter_kpis(data: pd.DataFrame, region: Optional[str]=None) -> pd.DataFrame:
     data = data[data['YEAR']==2050]
-    data = data[data['REGION']=='EU+CH+NO+UK']
-    return data.drop(['REGION', 'YEAR'], axis=1)
+    if region:
+        data = data[data['REGION']=='EU+CH+NO+UK']
+        #data = data.drop(['REGION'], axis=1)
+    else:
+        data = data[data['REGION']!='EU+CH+NO+UK']
+    return data.drop(['YEAR'], axis=1)
 
-def normalise_scores(df: pd.DataFrame) -> pd.DataFrame:
-    
-    df_norm_score = pd.DataFrame(columns=['SCENARIO','VALUE'])
-    max_value = df.iloc[0].max()
-    score_array = df.iloc[0].to_numpy()
+def normalise_scores(df: pd.DataFrame, reg: Optional[str]=None) -> pd.DataFrame:
 
-    score_norm = 100 - (score_array / max_value) * 100
+    df = df.set_index('REGION')
 
-    df_norm_score['SCENARIO'] = list(df)
-    df_norm_score['VALUE'] = score_norm
+    if reg:
+        max_value = df.max()
 
-    return df_norm_score
+    else:
+        max_value = max(df.max())
+        
+    df = 100 - (df/max_value)*100
 
-def main(kpis: Dict):
+    return df
+
+def main(kpis: Dict, path: str, reg: Optional[str]=None):
 
     for kpi in kpis:
-        kpis[kpi] = filter_kpis(kpis[kpi])
+        if reg:
+            kpis[kpi] = filter_kpis(kpis[kpi], reg)
+        else:
+            kpis[kpi] = filter_kpis(kpis[kpi])
         kpis[kpi] = normalise_scores(kpis[kpi])
 
     rawScores = []
 
-    for s in kpis['CO2Intensity']['SCENARIO'].unique():
-        env = kpis['CO2Intensity'][kpis['CO2Intensity']['SCENARIO']==s].iloc[0,1]
-        eco = kpis['DiscountedInvestmentPerCitizen'][kpis['DiscountedInvestmentPerCitizen']['SCENARIO']==s].iloc[0,1]
-        soc = kpis['LCOE'][kpis['LCOE']['SCENARIO']==s].iloc[0,1]
-        rawScores.append(
-            {
-                "scenario": s,
-                "env": env,
-                "eco": eco,
-                "soc": soc
-            }
-        )
+    if reg:
+        scenarios = list(kpis['CO2Intensity'].index)
+    else:
+        scenarios = list(kpis['CO2Intensity'])
 
-    with open('../data/rawScores.json', 'w') as outfile:
+    if reg:
+        for s in scenarios:
+            env = kpis['CO2Intensity'].loc[reg, s]
+            eco = kpis['DiscountedInvestmentPerCitizen'].loc[reg, s]
+            soc = kpis['LCOE'].loc[reg, s]
+            rawScores.append(
+                {
+                    "scenario": s,
+                    "env": env,
+                    "eco": eco,
+                    "soc": soc
+                }
+            )
+    else:
+        countries = kpis['CO2Intensity'].index
+        for c in countries:
+            for s in scenarios:
+                env = kpis['CO2Intensity'].loc[c, s]
+                eco = kpis['DiscountedInvestmentPerCitizen'].loc[c, s]
+                soc = kpis['LCOE'].loc[c, s]
+                rawScores.append(
+                    {
+                        "scenario": s,
+                        "country": c,
+                        "env": env,
+                        "eco": eco,
+                        "soc": soc
+                    }
+                )
+
+    with open(path, 'w') as outfile:
         json.dump(rawScores, outfile)
 
     return
