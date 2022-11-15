@@ -4,19 +4,18 @@ import pandas as pd
 from typing import Dict, Optional
 
 # for development
-kpis = {}
-kpis['CO2Intensity'] = pd.read_csv('results/220617/results/CO2Intensity_10th.csv')
-kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220617/results/DiscountedInvestmentPerCitizen_10th.csv')
-kpis['LCOE'] = pd.read_csv('results/220617/results/LCOE_10th.csv')
+# kpis = {}
+# kpis['CO2Intensity'] = pd.read_csv('results/220617/results/CO2Intensity_10th.csv')
+# kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220617/results/DiscountedInvestmentPerCitizen_10th.csv')
+# kpis['LCOE'] = pd.read_csv('results/220617/results/LCOE_10th.csv')
 
 def filter_kpis(data: pd.DataFrame, region: Optional[str]=None) -> pd.DataFrame:
-    data = data[data['YEAR']==2050]
     if region:
         data = data[data['REGION']=='EU+CH+NO+UK']
         #data = data.drop(['REGION'], axis=1)
     else:
         data = data[data['REGION']!='EU+CH+NO+UK']
-    return data.drop(['YEAR'], axis=1)
+    return data
 
 def normalise_scores(df: pd.DataFrame, reg: Optional[str]=None) -> pd.DataFrame:
 

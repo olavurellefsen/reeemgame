@@ -110,22 +110,23 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         print("Calculated KPIs for scenario %s" % (s))
         for i in indicators:
             df = pd.DataFrame()
-            df[scen] = kpis[scen][i][kpis[scen][i]['REGION']=='EU+CH+NO+UK']['VALUE']
+            df[scen] = kpis[scen][i][kpis[scen][i]['YEAR']==2050]['VALUE']
             df = df.reset_index(drop=True)
             kpis_csv[i] = pd.concat([kpis_csv[i],df], axis=1)
-        print("Added EU KPIs to kpis_csv for %s" % (s))
+        
+        print("Added KPIs to kpis_csv for %s" % (s))
     
-    years = kpis[scen]['CO2Intensity']['YEAR']
+    #years = kpis[scen]['CO2Intensity']['YEAR']
 
     for i in indicators:
-        kpis_csv[i]['YEAR'] = years
-        kpis_csv[i]['REGION'] = 'EU+CH+NO+UK'
-        path = os.path.join(path_res, i+'.csv')
-        kpis_csv[i].to_csv(path, index=False)
+        # kpis_csv[i]['YEAR'] = years
+        kpis_csv[i]['REGION'] = kpis[scen][i][kpis[scen][i]['YEAR']==2050]['REGION']
+        # path = os.path.join(path_res, i+'.csv')
+        # kpis_csv[i].to_csv(path, index=False)
 
     ws.main(kpis_csv, '../data/scenarioScore.json', 'EU+CH+NO+UK') # Writing out scores for the entire modelled region
     ws.main(kpis_csv, '../data/score.json') # Writing out scores per country
-    return #wk.main(kpis)
+    return wk.main(kpis) # Writing out KPIs
 
 #%% 
 if __name__ == "__main__":
