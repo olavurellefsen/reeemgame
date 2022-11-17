@@ -111,7 +111,7 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
 
     co2_intensity = co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
 
-    return co2_intensity.append(eu_plus_3_intensity, ignore_index=True)
+    return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
     """Function to calculate the discounted capital investment per citizen, country, and year.
@@ -147,7 +147,7 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     df_eu['VALUE'] = dipc_eu_plus_3
     df_eu['REGION'] = 'EU+CH+NO+UK'
 
-    return df.append(df_eu, ignore_index=True)
+    return pd.concat([df, df_eu], ignore_index=True)
 
 #%%
 def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame, y_n: int)->pd.DataFrame:
@@ -178,7 +178,8 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
                     if imp_y_n>0:
                         lcoe_imp_y = lcoe_imp_y + (imp_y_n / sad_n) * lcode_n
             
-            df_i = df_i.append({'YEAR': y, 'VALUE': lcoe_imp_y}, ignore_index=True)
+            new_row = pd.Series({'YEAR': y, 'VALUE': lcoe_imp_y})
+            df_i = pd.concat([df_i, new_row.to_frame().T], ignore_index=True)
         
         df_i = df_i.sort_values(by=['YEAR'])
 
@@ -215,7 +216,7 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
     df = df.reset_index()
     df['REGION'] = 'EU+CH+NO+UK'
 
-    return df_lcoe.append(df, ignore_index=True)
+    return pd.concat([df_lcoe, df], ignore_index=True)
 
 #%%
 def main(data: Dict, y_0: int, y_n: int)->Dict:

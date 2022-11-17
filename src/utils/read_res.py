@@ -26,7 +26,8 @@ def read_emissions(path: str, param: str, emission: List) -> pd.DataFrame:
         df_e = df[df["EMISSION"]==e]
         for r in df_e["REGION"].unique():
             for y in df_e["YEAR"].unique():
-                df_f = df_f.append({"REGION": r, "EMISSION": e, "YEAR": y,"VALUE": df_e.loc[(df_e["REGION"]==r)&(df_e["YEAR"]==y),["VALUE"]].sum(axis=0).VALUE}, ignore_index=True)
+                new_row = pd.Series({"REGION": r, "EMISSION": e, "YEAR": y,"VALUE": df_e.loc[(df_e["REGION"]==r)&(df_e["YEAR"]==y),["VALUE"]].sum(axis=0).VALUE})
+                df_f = pd.concat([df_f, new_row.to_frame().T], ignore_index=True)
     df_f = df_f[df_f.VALUE != 0]
 
     return df_f
@@ -63,8 +64,8 @@ def read_net_imp(path: str):
         df_f = df_f.groupby(by=['REGION', 'YEAR']).sum()
         df_f = df_f.reset_index(level=['REGION', 'YEAR'])
 
-        countries = countries.append(df_f.loc[:,'REGION'])
-        years = years.append(df_f.loc[:,'YEAR'])
+        countries = pd.concat([countries, df_f.loc[:,'REGION']], ignore_index=True)
+        years = pd.concat([years, df_f.loc[:,'YEAR']], ignore_index=True)
         results[p] = df_f
     
     countries = countries.unique()
@@ -78,14 +79,17 @@ def read_net_imp(path: str):
             if not exports[(exports['REGION']==country)&(exports['YEAR']==year)].empty:
                 if not imports[(imports['REGION']==country)&(imports['YEAR']==year)].empty:
                     value = imports[(imports['REGION']==country)&(imports['YEAR']==year)].iloc[0]['VALUE'] - exports[(exports['REGION']==country)&(exports['YEAR']==year)].iloc[0]['VALUE']
-                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+                    new_row = pd.Series({'REGION': country, 'YEAR': year, 'VALUE': value})
+                    df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
                 else:
                     value = -exports[(exports['REGION']==country)&(exports['YEAR']==year)].iloc[0]['VALUE']
-                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+                    new_row = pd.Series({'REGION': country, 'YEAR': year, 'VALUE': value})
+                    df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
             else:
                 if not imports[(imports['REGION']==country)&(imports['YEAR']==year)].empty:
                     value = imports[(imports['REGION']==country)&(imports['YEAR']==year)].iloc[0]['VALUE']
-                    df = df.append({'REGION': country, 'YEAR': year, 'VALUE': value}, ignore_index=True)
+                    new_row = pd.Series({'REGION': country, 'YEAR': year, 'VALUE': value})
+                    df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
 
     return df
 #%%
@@ -142,7 +146,8 @@ def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
                 else:
                     if not df_e[df_e['TO']==r].empty:
                         value = - df_e.iloc[0,3]
-                df = df.append({'TO': c, 'FROM': r, 'YEAR': y, 'VALUE': value}, ignore_index=True)
+                new_row = pd.Series({'TO': c, 'FROM': r, 'YEAR': y, 'VALUE': value})
+                df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
 
     return df
 
