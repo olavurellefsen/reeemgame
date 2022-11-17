@@ -9,31 +9,22 @@ from typing import Dict, Optional
 # kpis['DiscountedInvestmentPerCitizen'] = pd.read_csv('results/220617/results/DiscountedInvestmentPerCitizen_10th.csv')
 # kpis['LCOE'] = pd.read_csv('results/220617/results/LCOE_10th.csv')
 
-def filter_kpis(data: pd.DataFrame, region: Optional[str]=None) -> pd.DataFrame:
-    if region:
-        data = data[data['REGION']=='EU+CH+NO+UK']
-        #data = data.drop(['REGION'], axis=1)
-    else:
-        data = data[data['REGION']!='EU+CH+NO+UK']
-    return data
-
-def normalise_scores(df: pd.DataFrame, reg: Optional[str]=None) -> pd.DataFrame:
+def normalise_scores(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.set_index('REGION')
 
     max_value = max(df.max())
+    min_value = min(df.min())
+    kpi_range = max_value-min_value
         
-    df = 100 - (df/max_value)*100
+    df = 100 - ((df-min_value)/kpi_range)*100
 
     return df
 
 def main(kpis: Dict, path: str, reg: Optional[str]=None):
 
     for kpi in kpis:
-        # if reg:
-        #     kpis[kpi] = filter_kpis(kpis[kpi], reg)
-        # else:
-        #     kpis[kpi] = filter_kpis(kpis[kpi])
+        
         kpis[kpi] = normalise_scores(kpis[kpi])
 
     rawScores = []
