@@ -21,11 +21,7 @@ def normalise_scores(df: pd.DataFrame, reg: Optional[str]=None) -> pd.DataFrame:
 
     df = df.set_index('REGION')
 
-    if reg:
-        max_value = df.max()
-
-    else:
-        max_value = max(df.max())
+    max_value = max(df.max())
         
     df = 100 - (df/max_value)*100
 
@@ -34,18 +30,15 @@ def normalise_scores(df: pd.DataFrame, reg: Optional[str]=None) -> pd.DataFrame:
 def main(kpis: Dict, path: str, reg: Optional[str]=None):
 
     for kpi in kpis:
-        if reg:
-            kpis[kpi] = filter_kpis(kpis[kpi], reg)
-        else:
-            kpis[kpi] = filter_kpis(kpis[kpi])
+        # if reg:
+        #     kpis[kpi] = filter_kpis(kpis[kpi], reg)
+        # else:
+        #     kpis[kpi] = filter_kpis(kpis[kpi])
         kpis[kpi] = normalise_scores(kpis[kpi])
 
     rawScores = []
 
-    if reg:
-        scenarios = list(kpis['CO2Intensity'].index)
-    else:
-        scenarios = list(kpis['CO2Intensity'])
+    scenarios = list(kpis['CO2Intensity'])
 
     if reg:
         for s in scenarios:
