@@ -120,7 +120,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
 
     for i in indicators:
         # kpis_csv[i]['YEAR'] = years
-        kpis_csv[i]['REGION'] = kpis[scen][i][kpis[scen][i]['YEAR']==2050]['REGION']
+        kpis_csv[i] = pd.concat([kpis_csv[i],kpis[scen][i][kpis[scen][i]['YEAR']==2050]['REGION'].reset_index(drop=True)],axis=1)
         # path = os.path.join(path_res, i+'.csv')
         # kpis_csv[i].to_csv(path, index=False)
 
