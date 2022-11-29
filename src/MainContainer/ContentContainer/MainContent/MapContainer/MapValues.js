@@ -1,15 +1,6 @@
-import oil from '../../../../data/indicators/oil.json'
-import coal from '../../../../data/indicators/coal.json'
-import naturalGas from '../../../../data/indicators/naturalGas.json'
-import nuclear from '../../../../data/indicators/nuclear.json'
-import waste from '../../../../data/indicators/waste.json'
-import biomass from '../../../../data/indicators/biomass.json'
-import bioFuel from '../../../../data/indicators/bioFuel.json'
-import hydro from '../../../../data/indicators/hydro.json'
-import wind from '../../../../data/indicators/wind.json'
-import solar from '../../../../data/indicators/solar.json'
-import geothermal from '../../../../data/indicators/geothermal.json'
-import ocean from '../../../../data/indicators/ocean.json'
+import co2Intensity from '../../../../data/indicators/CO2Intensity.json'
+import discountedInvestment from '../../../../data/indicators/DiscountedInvestmentPerCitizen.json'
+import lcoe from '../../../../data/indicators/LCOE.json'
 import scoreData from '../../../../data/dummyScore.json'
 import { convertToColor } from './convertToColor'
 import dataInfo from './../../../../data/dataInfo'
@@ -55,52 +46,16 @@ export const getMapColors = (valueToShow, scenario, currentYear) => {
 const getFile = indicator => {
   var file
   switch (indicator) {
-    case 'coal': {
-      file = coal
+    case 'co2Intensity': {
+      file = co2Intensity
       break
     }
-    case 'oil': {
-      file = oil
+    case 'discountedInvestment': {
+      file = discountedInvestment
       break
     }
-    case 'naturalGas': {
-      file = naturalGas
-      break
-    }
-    case 'nuclear': {
-      file = nuclear
-      break
-    }
-    case 'waste': {
-      file = waste
-      break
-    }
-    case 'biomass': {
-      file = biomass
-      break
-    }
-    case 'bioFuel': {
-      file = bioFuel
-      break
-    }
-    case 'hydro': {
-      file = hydro
-      break
-    }
-    case 'wind': {
-      file = wind
-      break
-    }
-    case 'solar': {
-      file = solar
-      break
-    }
-    case 'geothermal': {
-      file = geothermal
-      break
-    }
-    case 'ocean': {
-      file = ocean
+    case 'lcoe': {
+      file = lcoe
       break
     }
     default:
