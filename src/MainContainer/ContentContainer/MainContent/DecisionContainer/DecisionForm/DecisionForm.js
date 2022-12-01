@@ -14,8 +14,8 @@ import {
 
 export const DecisionForm = ({ onStart }) => {
   const [choices, setChoice] = useState({})
-  const [scenario, setScenario] = useState({ c: 0, e: 0, t: 0 })
-  const [newScenario, setNewScenario] = useState({ c: 0, e: 0, t: 0 })
+  const [scenario, setScenario] = useState({ t: 0, e: 0, c: 0, b: 0 })
+  const [newScenario, setNewScenario] = useState({ t: 0, e: 0, c: 0, b: 0 })
   const [state, dispatch] = useContext(Context)
   const currentDecisions = Decisions().filter(
     decision => decision.year === state.currentDecision
@@ -44,36 +44,38 @@ export const DecisionForm = ({ onStart }) => {
       //Set indicator to emission limit when the game starts, if no indicator has been selected
       if (!state.selectedIndicator) {
         dispatch({
-          name: 'coal',
+          name: 'co2Intensity',
           type: 'setSelectedIndicator',
         })
       }
-      setNewScenario({ c: 0, e: 0, t: 0 })
-      setScenario({ c: 0, e: 0, t: 0 })
+      setNewScenario({ t: 0, e: 0, c: 0, b: 0 })
+      setScenario({ t: 0, e: 0, c: 0, b: 0 })
       dispatch({
         type: 'setSelectedScenario',
-        name: 'C0T0E0',
+        name: 'T0E0C0B0',
       })
     } else {
       let nextScenario = {}
-      nextScenario.c = newScenario.c + scenario.c
       nextScenario.t = newScenario.t + scenario.t
       nextScenario.e = newScenario.e + scenario.e
+      nextScenario.c = newScenario.c + scenario.c
+      nextScenario.b = newScenario.b + scenario.b
 
       setScenario(nextScenario)
-      setNewScenario({ c: 0, e: 0, t: 0 })
+      setNewScenario({ t: 0, e: 0, c: 0, b: 0 })
       dispatch({
         type: 'setSelectedScenario',
         name:
-          'C' + nextScenario.c + 'T' + nextScenario.t + 'E' + nextScenario.e,
+          'T' + newScenario.t + 'E' + nextScenario.e + 'C' + nextScenario.c + 'B' + nextScenario.b,
       })
     }
     setChoice({})
   }
   const getNewScenario = add => {
-    if (add.C || add.C === 0) newScenario.c = add.C
+    if (add.T || add.T === 0) newScenario.t = add.T
     else if (add.E || add.E === 0) newScenario.e = add.E
-    else if (add.T || add.T === 0) newScenario.t = add.T
+    else if (add.C || add.C === 0) newScenario.c = add.C
+    else if (add.B || add.B === 0) newScenario.b = add.B
     else alert('add: ' + JSON.stringify(add))
     return newScenario
   }

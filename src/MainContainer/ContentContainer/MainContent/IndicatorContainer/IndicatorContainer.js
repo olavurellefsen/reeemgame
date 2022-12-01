@@ -10,19 +10,10 @@ export const IndicatorContainer = () => {
   const [state, dispatch] = useContext(Context)
   const [electricityMenuOpen, setElectricityMenuOpen] = useState(true)
   const { t } = useTranslation()
-  const electricityIndicators = [
-    'coal',
-    'oil',
-    'naturalGas',
-    'nuclear',
-    'waste',
-    'biomass',
-    'bioFuel',
-    'hydro',
-    'wind',
-    'solar',
-    'geothermal',
-    'ocean',
+  const keyPerformanceIndicators = [
+    'co2Intensity',
+    'discountedInvestment',
+    'lcoe',
   ]
   const scoreIndicator = 'score'
   return (
@@ -33,12 +24,12 @@ export const IndicatorContainer = () => {
         }}
         selected={electricityMenuOpen}
       >
-        {t('indicator.electricityGenerationBySource')}
+        {t('indicator.keyPerformanceIndicators')}
       </MenuItem>
       {electricityMenuOpen && (
         <SubMenu>
           <MenuList>
-            {electricityIndicators.map(function(indicator, i) {
+            {keyPerformanceIndicators.map(function(indicator, i) {
               var indicatorTitle = t('indicator.' + indicator)
               return (
                 <MenuItem

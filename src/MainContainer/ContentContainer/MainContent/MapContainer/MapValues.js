@@ -6,7 +6,7 @@ import { convertToColor } from './convertToColor'
 import dataInfo from './../../../../data/dataInfo'
 
 const minScoreValue = 0
-const maxScoreValue = 10
+const maxScoreValue = 100
 
 const indicatorData = (indicator, pathway, currentYear) => {
   const params = getIndicatorParams(indicator)
@@ -137,7 +137,7 @@ export const getIndicatorParams = indicator => {
   if (indicator === 'score') {
     return {
       unit: 'score',
-      max: 10,
+      max: 100,
       min: 0,
       steps: 5,
       flipColors: true,

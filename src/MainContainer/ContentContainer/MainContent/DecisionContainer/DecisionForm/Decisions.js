@@ -15,18 +15,34 @@ export const Decisions = () => {
       introText: t('decisions.2020.intro'),
       individualDecisions: [
         {
-          name: 'research',
-          introText: t('decisions.2020.researchDecision'),
+          name: 'transmission',
+          introText: t('decisions.2020.transmissionDecision'),
           options: [
             {
               value: 'Yes',
               text: t('general.yes'),
-              scenario: { C: 0 },
+              scenario: { T: 1 },
             },
             {
               value: 'No',
               text: t('general.no'),
+              scenario: { T: 0 },
+            },
+          ],
+        },
+        {
+          name: 'ccs1',
+          introText: t('decisions.2020.ccsDecision'),
+          options: [
+            {
+              value: 'Yes',
+              text: t('general.yes'),
               scenario: { C: 1 },
+            },
+            {
+              value: 'No',
+              text: t('general.no'),
+              scenario: { C: 0 },
             },
           ],
         },
