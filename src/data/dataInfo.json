@@ -7,14 +7,14 @@
   },
   {
     "indicator": "discountedInvestment",
-    "min": 1.8,
-    "max": 80,
+    "min": 0,
+    "max": 237.0928,
     "unit": "EUR/Citizen"
   },
   {
     "indicator": "lcoe",
-    "min": 0.1,
-    "max": 0.9,
+    "min": 0.07206,
+    "max": 5.620147,
     "unit": "EUR/kWh"
   }
 ]
