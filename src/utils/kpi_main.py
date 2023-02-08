@@ -1,4 +1,22 @@
-"""This script coordinates the calculation of KPIs for the REEEMgame using OSeMBE results, inputs and other data. 
+"""
+This script coordinates the calculation of KPIs for the REEEMgame using OSeMBE results, OSeMBE inputs and other data. 
+Usage:
+    python kpi_main.py <config> <results> <data>' <year 0> <year n>
+
+Args:
+    config file (str): Path to yml configuration file that contains information on whic model input parameter, results variables, and other data needs to be read in for calculating the KPIs.
+    results (str): Path to directory that contains OSeMBE results in csv format.
+    data (str): Path to data folder of OSeMBE datapackage.
+    year 0 (int): first year of interest.
+    year n (int): last year of interest.
+
+Returns:
+    scenarioScore (json): Scenario scores for the entire modelled region (EU+CH+NO+UK).
+    score (json): Scores per modelled country.
+    KPIs (csv): The Key Performance Indicators for the modelled region per year.
+
+Author:
+    Hauke Henke - 2023-02-07
 """
 from ast import arg
 import kpi_calc as kc
@@ -14,12 +32,30 @@ import write_kpis as wk
 import write_scores as ws
 from yaml import load, SafeLoader
 
-#%% Get directory names from folder
+#%%
 def get_dirs(path):
+    """
+    Get directory names from folder.
+    Args:
+        path (str): path to directory in which to read in subdirectories
+
+    Returns:
+        List: directories in indicated directory
+    """
     dirs = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
     return dirs
-#%% Function to go through directories and build scenario names and paths
+#%%
 def build_names(dic,i):
+    """
+    Function to go through the identified directories and build scenario names and paths.
+    Args:
+        dic (Dictionary): Paths to results and scenario names
+        i (int): number used to end process 
+
+    Returns:
+        dic (Dictionary): Paths to results and scenario names
+        i (int): process control number
+    """
     if i == 0:
         p = dic[i]
         dirs = get_dirs(p)
@@ -44,6 +80,13 @@ def build_names(dic,i):
 
 #%%
 def get_scens(path: str):
+    """
+    Function to get names of scenarios and paths to scenario results in indicated results directory.
+    Args:
+        path (str): Path to folder containing results.
+    Returns:
+        Dictionary: Scenario names and paths to scenario results.
+    """
     dic_scen = {}
     i = 0
     dic_scen = {0: path}
@@ -52,19 +95,28 @@ def get_scens(path: str):
     return dic_scen
 #%% Load configuration
 def load_config(filepath: str) -> Dict:
-    """Reads the configuration file
+    """
+    Reads the configuration file
+    Args:
+        filepath (str): The path to the config file
 
-    Arguments
-    ---------
-    filepath : str
-        The path to the config file
+    Returns:
+        Dictionary: Information on what input parameter, results variables, and other data to read in and what functions to use.
     """
     with open(filepath, 'r') as configfile:
         config = load(configfile, Loader=SafeLoader)
     return config
-#%% Check that results parameter in config exist
+#%%
 def check_config(conf: Dict, scens: Dict):
-
+    """
+    Check that results parameter in configuration file exist.
+    Args:
+        conf (Dictionary): Information on what input parameter, results variables, and other data to read in and what functions to use.
+        scens (Dictionary): Scenario names and paths to results.
+        
+    Returns:
+        Dictionary: Scenarios with reuqired results.
+    """
     scens_complete = dict(scens)
 
     for s in scens:
@@ -123,8 +175,8 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         kpis_csv[i] = pd.concat([kpis_csv[i],kpis[scen][i][kpis[scen][i]['YEAR']==2050]['REGION'].reset_index(drop=True)],axis=1)
         kpis_c[i] = kpis_csv[i][kpis_csv[i]['REGION']!='EU+CH+NO+UK']
         kpis_r[i] = kpis_csv[i][kpis_csv[i]['REGION']=='EU+CH+NO+UK']
-        # path = os.path.join(path_res, i+'.csv')
-        # kpis_csv[i].to_csv(path, index=False)
+        path = os.path.join(path_res, i+'.csv')
+        kpis_csv[i].to_csv(path, index=False)
 
     ws.main(kpis_r, '../data/scenarioScore.json', 'EU+CH+NO+UK') # Writing out scores for the entire modelled region
     ws.main(kpis_c, '../data/score.json') # Writing out scores per country

@@ -94,6 +94,15 @@ def read_net_imp(path: str):
     return df
 #%%
 def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
+    """
+    Read the net electricity imports per connected country from results.
+    Args:
+        path (str): Directory with the model results.
+        year_n (int): Last year of interest.
+
+    Returns:
+        DataFrame: DataFrame with four columns providing information from where ('FROM') to where ('TO') how much electricity ('VALUE') and when ('YEAR') has been transmitted.
+    """
 
     tech = '(?=^.{2}(EL))^((?!00).)*$'
     parameters = ['ProductionByTechnologyAnnual','UseByTechnology']
