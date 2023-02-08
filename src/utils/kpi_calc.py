@@ -9,7 +9,14 @@ from typing import List, Dict
 
 #%%
 def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
-    """Function to calculate the Present value Annuity.
+    """
+    Function to calculate the Present value Annuity.
+    Args:
+        dr (DataFrame): Discount Rate
+        ol (DataFrame): Operational Life
+
+    Returns:
+        DataFrame: Present value Annuity per technology and country.
     """
     dr = dr['VALUE'].iloc[0]
 
@@ -23,7 +30,16 @@ def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
 
 #%%
 def calc_aic(ci: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, years: pd.Series)->pd.DataFrame:
-    """Function to calculate the Annualised Investment Cost.
+    """
+    Function to calculate the Annualised Investment Cost.
+    Args:
+        ci (DataFrame): Capital Investment
+        pa (DataFrame): Present value Annuity
+        ol (DataFrame): Operational Life
+        years (Series): Years of interest
+
+    Returns:
+        DataFrame: Annualised Investment Cost per country and year.
     """
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
 
@@ -40,7 +56,15 @@ def calc_aic(ci: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, years: pd.Ser
     return df
 #%%
 def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame:
-    """Function to calculate the domestic electricity production.
+    """
+    Function to calculate the domestic electricity production.
+    Args:
+        sad (DataFrame): Specified Annual Demand
+        ni (DataFrame): Net electricity Imports
+        years (Series): Years of interest
+
+    Returns:
+        DataFrame: Domestic electricity Production per country and year.
     """
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
     for c in sad['REGION'].unique():
@@ -57,7 +81,16 @@ def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame
     return df
 #%%
 def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd.DataFrame)->pd.DataFrame:
-    """Function to calculate the Levelised Cost of Domestic Electicity.
+    """
+    Calculate the Levelised Cost of Domestic Electicity.
+    Args:
+        aic (DataFrame): Annualised Investment Cost.
+        afoc (DataFrame): Annualised Fixed Operating Cost.
+        avoc (DataFrame): Annualised Variable Operating Cost.
+        dp (DataFrame): Domestic Production.
+
+    Returns:
+        DataFrame: Levelised Cost of domestically produced electricity in MEUR/PJ.
     """
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
     aic = aic.sort_values(by=['REGION', 'YEAR'])
@@ -79,7 +112,16 @@ def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd
     return df
 #%%
 def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year_n:int)-> pd.DataFrame:
-    """Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
+    """
+    Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
+    Args:
+        ate (DataFrame): Annual Technology Emission
+        pop (DataFrame): Population per country and year.
+        years (Series): Years of interest.
+        year_n (int): Last year of interest.
+
+    Returns:
+        DataFrame: CO2 intensity of power generation by country and year.
     """
     countries = pop['iso2'].unique()
     ate_df = pd.DataFrame(index=countries,columns=years)
@@ -114,7 +156,16 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
     return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
-    """Function to calculate the discounted capital investment per citizen, country, and year.
+    """
+    Function to calculate the discounted capital investment per citizen, country, and year.
+    Args:
+        aic (DataFrame): Annual Investment Cost
+        dr (DataFrame): Discount Rate
+        pop (DataFrame): Population per country and year
+        years (Series):  Years of interest
+
+    Returns:
+        DataFrame: Investment per citizen per country and for the EU+CH+NO+UK, and per year.
     """
     aic = aic.sort_values(by=['REGION','YEAR'])
     pop = pop.sort_values(by=['iso2','year'])
@@ -151,7 +202,17 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
 
 #%%
 def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: pd.DataFrame, y_n: int)->pd.DataFrame:
-    """Function to calculate the Levelised Cost of Electricity (LCOE) per country and year.
+    """
+    Function to calculate the Levelised Cost of Electricity (LCOE) per country and year.
+    Args:
+        dp (DataFrame): Domestic production of electricity per year and country.
+        sad (DataFrame): The Specified Annual Demand, from model input.
+        lcode (DataFrame): The Levelised Cost of domestic electricity per country and year.
+        neipc (DataFrame): The Net-Electricity Imports Per Country and connected-country.
+        y_n (int): Last year of interest.
+
+    Returns:
+        DataFrame: The LCOE per country and year, and for the entire modelled region (EU+CH+NO+UK).
     """
     countries = pd.Series(sad['REGION'].unique())
     years = pd.Series(sad[sad['YEAR']<(int(y_n)+1)]['YEAR'].unique())
@@ -169,14 +230,18 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         
         for y in years:
             lcoe_imp_y = 0
+            sad_cy = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0]
+            lcode_cy = lcode[(lcode['REGION']==c)&(lcode['YEAR']==y)]['VALUE'].iloc[0]
             if not df_i_raw[df_i_raw['YEAR']==y].empty:
                 net_imp_y = df_i_raw[df_i_raw['YEAR']==y]
                 for n in net_imp_y['FROM']:
                     imp_y_n = net_imp_y[net_imp_y['FROM']==n]['VALUE'].iloc[0]
-                    sad_n = sad[(sad['REGION']==n)&(sad['YEAR']==y)]['VALUE'].iloc[0]
+                    
                     lcode_n = lcode[(lcode['REGION']==n)&(lcode['YEAR']==y)]['VALUE'].iloc[0]
                     if imp_y_n>0:
-                        lcoe_imp_y = lcoe_imp_y + (imp_y_n / sad_n) * lcode_n
+                        lcoe_imp_y = lcoe_imp_y + (imp_y_n / (sad_cy/0.95)) * lcode_n
+                    elif imp_y_n<0:
+                        lcoe_imp_y = lcoe_imp_y + (imp_y_n / (sad_cy/0.95)) * lcode_cy
             
             new_row = pd.Series({'YEAR': y, 'VALUE': lcoe_imp_y})
             df_i = pd.concat([df_i, new_row.to_frame().T], ignore_index=True)
@@ -191,7 +256,7 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         lcode_c = lcode[lcode['REGION']==c]
         lcode_array = lcode_c['VALUE'].to_numpy()
 
-        lcoe = (dp_array/sad_array) * lcode_array + lcoe_import_array
+        lcoe = (dp_array/(sad_array/0.95)) * lcode_array + lcoe_import_array
         lcoe *= 3.6 # Conversion from MEUR/PJ to EUR/kWh
 
         df['VALUE'] = lcoe
@@ -220,6 +285,18 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
 
 #%%
 def main(data: Dict, y_0: int, y_n: int)->Dict:
+    """
+    Main function for calculating the three indicators CO2 Intensity, Discounted Investment Per Citizen, and the Levelised Cost of Electricity (LCOE).
+    Args:
+        data (Dict): A dictionary containing three dictionaries called 'inputs', 'results', and 'others'. 
+            Where 'inputs' contains DataFrames of model inputs like operational life, discount rate, and specified annual demand.
+            'results' contains DataFrames for the model outputs 'CapitalInvestment', 'AnnualFixedOperatingCost', 'AnnualVariableOperatingCost', and 'AnnualTechnologyEmission'.
+        y_0 (int): First year of interest.
+        y_n (int): Last year of interest.
+
+    Returns:
+        Dict: Containing three DataFrames, one for each indicator.
+    """
     kpis = {}
     indi = {}
     population = data['others']['Population'].copy(deep=True)
