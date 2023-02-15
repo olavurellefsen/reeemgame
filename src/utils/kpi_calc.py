@@ -27,15 +27,36 @@ def calc_PA(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
     df = pd.DataFrame(data=d)
 
     return df
+#%%
+def calc_crf(dr: pd.DataFrame, ol: pd.DataFrame) ->pd.DataFrame:
+    """
+    Function to calculate the Capital Recovery Factor.
+    Args:
+        dr (DataFrame): Discount Rate
+        ol (DataFrame): Operational Life
+
+    Returns:
+        DataFrame: Capital Recpvery Factor per technology and country.
+    """
+    dr = dr['VALUE'].iloc[0]
+
+    ol_array = ol['VALUE'].to_numpy()
+    crf = (1-(1+dr)**(-1))/(1-(1+dr)**((-1)*ol_array))
+
+    d = {'REGION': ol['REGION'], 'TECHNOLOGY': ol['TECHNOLOGY'], 'VALUE': crf}
+    df = pd.DataFrame(data=d)
+
+    return df
 
 #%%
-def calc_aic(ci: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, years: pd.Series)->pd.DataFrame:
+def calc_aic(cc: pd.DataFrame, ci: pd.DataFrame, crf: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, rc: pd.DataFrame, years: pd.Series)->pd.DataFrame:
     """
     Function to calculate the Annualised Investment Cost.
     Args:
         ci (DataFrame): Capital Investment
         pa (DataFrame): Present value Annuity
         ol (DataFrame): Operational Life
+        rc (DataFrame): Residual Capacity,
         years (Series): Years of interest
 
     Returns:
@@ -46,12 +67,16 @@ def calc_aic(ci: pd.DataFrame, pa: pd.DataFrame, ol: pd.DataFrame, years: pd.Ser
     for r in ci['REGION'].unique():
         for y in years:
             df_w = ci[(ci['REGION']==r)&(ci['YEAR']<=y)]
+            df_rc_temp = rc[(rc['REGION']==r)&(rc['YEAR']==y)]
             aic = 0
             for t in df_w['TECHNOLOGY'].unique():
                 o_l = ol[ol['TECHNOLOGY']==t]['VALUE'].iloc[0]
                 latest_ci = df_w[(df_w['TECHNOLOGY']==t)&(df_w['YEAR']<=y)&(df_w['YEAR']>(y-o_l))]['VALUE'].to_numpy()
                 latest_ci = latest_ci / pa[pa['TECHNOLOGY']==t]['VALUE'].iloc[0]
                 aic += latest_ci.sum()
+            for t in df_rc_temp['TECHNOLOGY'].unique():
+                aic_rc = df_rc_temp[(df_rc_temp['TECHNOLOGY']==t)&(df_rc_temp['YEAR']==y)]['VALUE'].iloc[0] * cc[(cc['REGION']==r)&(cc['TECHNOLOGY']==t)&(cc['YEAR']==2015)]['VALUE'].iloc[0] * crf[crf['TECHNOLOGY']==t]['VALUE'].iloc[0]
+                aic += aic_rc
             df = pd.concat([df, pd.DataFrame([[r,y,aic]], columns=['REGION','YEAR','VALUE'])])
     return df
 #%%
@@ -320,7 +345,8 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     #data = km.main('config.yml', 'results', 'input_data/data') #for development
 
     indi['PA'] = calc_PA(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
-    indi['AIC'] = calc_aic(data['results']['CapitalInvestment'],indi['PA'],data['inputs']['OperationalLife'],years)
+    indi['CRF'] = calc_crf(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
+    indi['AIC'] = calc_aic(data['inputs']['CapitalCost'],data['results']['CapitalInvestment'],indi['CRF'],indi['PA'],data['inputs']['OperationalLife'], data['inputs']['ResidualCapacity'],years)
     indi['DP'] = calc_dp(sad,data['results']['NetElImports'], years)
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 

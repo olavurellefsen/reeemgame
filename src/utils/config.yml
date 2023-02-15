@@ -1,7 +1,11 @@
 inputs:
+- parameter: 'CapitalCost'
+  function: 'read_ol'
 - parameter: 'DiscountRate'
   function: 'read_dr'
 - parameter: 'OperationalLife'
+  function: 'read_ol'
+- parameter: 'ResidualCapacity'
   function: 'read_ol'
 - parameter: 'SpecifiedAnnualDemand'
   function: 'read_sad'
