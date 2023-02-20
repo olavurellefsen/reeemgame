@@ -75,8 +75,9 @@ def calc_aic(cc: pd.DataFrame, ci: pd.DataFrame, crf: pd.DataFrame, pa: pd.DataF
                 latest_ci = latest_ci / pa[pa['TECHNOLOGY']==t]['VALUE'].iloc[0]
                 aic += latest_ci.sum()
             for t in df_rc_temp['TECHNOLOGY'].unique():
-                aic_rc = df_rc_temp[(df_rc_temp['TECHNOLOGY']==t)&(df_rc_temp['YEAR']==y)]['VALUE'].iloc[0] * cc[(cc['REGION']==r)&(cc['TECHNOLOGY']==t)&(cc['YEAR']==2015)]['VALUE'].iloc[0] * crf[crf['TECHNOLOGY']==t]['VALUE'].iloc[0]
-                aic += aic_rc
+                if t in cc['TECHNOLOGY'].unique():
+                    aic_rc = df_rc_temp[(df_rc_temp['TECHNOLOGY']==t)&(df_rc_temp['YEAR']==y)]['VALUE'].iloc[0] * cc[(cc['REGION']==r)&(cc['TECHNOLOGY']==t)&(cc['YEAR']==2015)]['VALUE'].iloc[0] * crf[crf['TECHNOLOGY']==t]['VALUE'].iloc[0]
+                    aic += aic_rc
             df = pd.concat([df, pd.DataFrame([[r,y,aic]], columns=['REGION','YEAR','VALUE'])])
     return df
 #%%
