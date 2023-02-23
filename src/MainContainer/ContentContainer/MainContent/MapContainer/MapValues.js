@@ -1,7 +1,7 @@
 import co2Intensity from '../../../../data/indicators/CO2Intensity.json'
 import discountedInvestment from '../../../../data/indicators/DiscountedInvestmentPerCitizen.json'
 import lcoe from '../../../../data/indicators/LCOE.json'
-import scoreData from '../../../../data/dummyScore.json'
+import scoreData from '../../../../data/score.json'
 import { convertToColor } from './convertToColor'
 import dataInfo from './../../../../data/dataInfo'
 
