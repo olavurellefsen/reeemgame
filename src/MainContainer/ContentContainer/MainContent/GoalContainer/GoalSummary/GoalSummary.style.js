@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import Grid from '@material-ui/core/Grid'
-import Table from '@material-ui/core/Table'
-import TableBody from '@material-ui/core/TableBody'
-import TableCell from '@material-ui/core/TableCell'
-import TableHead from '@material-ui/core/TableHead'
-import TableRow from '@material-ui/core/TableRow'
+import Grid from '@mui/material/Grid'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableHead from '@mui/material/TableHead'
+import TableRow from '@mui/material/TableRow'
 
 export const GoalHeader = styled.h1`
   font-family: 'Roboto', sans-serif;

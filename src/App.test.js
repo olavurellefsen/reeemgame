@@ -1,9 +1,8 @@
-import React from 'react'
-import { render, cleanup } from 'test-utils'
-import App from './App'
-afterEach(cleanup)
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-it('should render correctly', () => {
-  const { container } = render(<App />)
-  expect(container).toMatchSnapshot()
-})
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});

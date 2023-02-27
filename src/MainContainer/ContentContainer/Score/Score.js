@@ -8,7 +8,7 @@ import {
   StyledTableHead,
   StyledTableRow,
 } from './Score.style'
-import Popover from '@material-ui/core/Popover'
+import Popover from '@mui/material/Popover'
 import Chart from 'react-google-charts'
 import { GoalSummary } from '../MainContent/GoalContainer/GoalSummary/GoalSummary'
 

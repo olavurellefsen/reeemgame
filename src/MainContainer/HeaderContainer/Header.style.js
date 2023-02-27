@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Grid from '@material-ui/core/Grid'
+import Grid from '@mui/material/Grid'
 
 export const HeaderStyle = styled.div`
   background-image: linear-gradient(gray, black);
