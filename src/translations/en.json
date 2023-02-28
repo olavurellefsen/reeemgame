@@ -30,7 +30,7 @@
   },
   "decisions": {
     "2019": {
-      "header": "Instructions (develop branch",
+      "header": "Instructions",
       "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
     },
     "2020": {
