@@ -66,7 +66,7 @@ export const DecisionForm = ({ onStart }) => {
       dispatch({
         type: 'setSelectedScenario',
         name:
-          'T' + newScenario.t + 'E' + nextScenario.e + 'C' + nextScenario.c + 'B' + nextScenario.b,
+          'T' + nextScenario.t + 'E' + nextScenario.e + 'C' + nextScenario.c + 'B' + nextScenario.b,
       })
     }
     setChoice({})
