@@ -59,12 +59,12 @@ export const Decisions = () => {
               value:
                 'Medium reduction rate – net-Zero power sector in 2045',
               text: t('decisions.options.mediumReduction'),
-              scenario: { E: 3 },
+              scenario: { E: 1 },
             },
             {
               value: 'High reduction rate – net-Zero power sector in 2035',
               text: t('decisions.options.highReduction'),
-              scenario: { E: 6 },
+              scenario: { E: 2 },
             },
           ],
         },
