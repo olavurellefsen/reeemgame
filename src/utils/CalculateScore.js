@@ -26,7 +26,6 @@ const findMaxScore = weights => {
         for (var c = 0; c <= 7; c++) {
           for (var b = 0; b <= 3; b++) {
             const checkScenario = 'T' + t + 'E' + e + 'C' + c + 'B' + b
-            console.log(checkScenario)
             let { env, eco, soc } = scenarioScore.filter(
               scenario => scenario.scenario === checkScenario
             )[0]
