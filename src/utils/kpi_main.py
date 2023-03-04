@@ -176,10 +176,10 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
         kpis_c[i] = kpis_csv[i][kpis_csv[i]['REGION']!='EU+CH+NO+UK']
         kpis_r[i] = kpis_csv[i][kpis_csv[i]['REGION']=='EU+CH+NO+UK']
         path = os.path.join(path_res, i+'.csv')
-        # kpis_csv[i].to_csv(path, index=False)
+        kpis_csv[i].to_csv(path, index=False)
 
-    # ws.main(kpis_r, '../data/scenarioScore.json', 'EU+CH+NO+UK') # Writing out scores for the entire modelled region
-    # ws.main(kpis_c, '../data/score.json') # Writing out scores per country
+    ws.main(kpis_r, '../data/scenarioScore.json', 'EU+CH+NO+UK') # Writing out scores for the entire modelled region
+    ws.main(kpis_c, '../data/score.json') # Writing out scores per country
     return wk.main(kpis) # Writing out KPIs
 
 #%% 

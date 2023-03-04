@@ -92,16 +92,12 @@ def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame
     Returns:
         DataFrame: Domestic electricity Production per country and year.
     """
-    print('Net-Imports SI: ', ni[ni['REGION']=='SI'])
     df = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
     for c in sad['REGION'].unique():
         for y in years:
             value = 0
-            if c in ni['REGION']:
-                if ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] > 0 :
-                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] * 0.95
-                else:
-                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0]
+            if ni[ni['REGION']==c]['YEAR'].isin([y]).any():
+                value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] * 0.95
             else:
                 value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0]
             df = pd.concat([df, pd.DataFrame([[c,y,value]], columns=['REGION','YEAR','VALUE'])])
@@ -180,6 +176,9 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
 
     co2_intensity = co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
 
+    co2_intensity['VALUE'] = pd.to_numeric(co2_intensity['VALUE'])
+    co2_intensity['VALUE'] = round(co2_intensity['VALUE'], 1)
+
     return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
@@ -212,6 +211,7 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     df['REGION'] = aic['REGION']
     df['YEAR'] = aic['YEAR']
     df['VALUE'] = dipc
+    df['VALUE'] = round(df['VALUE'])
 
     aic_eu_plus_3 = aic.groupby('YEAR').sum()
     aic_eu_plus_3_array = aic_eu_plus_3['VALUE'].to_numpy()
@@ -262,9 +262,6 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
             if not df_i_raw[df_i_raw['YEAR']==y].empty:
                 net_imp_y = df_i_raw[df_i_raw['YEAR']==y]
 
-                if (y == 2050)&(c=='SI'):
-                    print('Imports SI 2050: ', net_imp_y)
-                    print('Specified Annual Demand, SI, 2050', sad_cy)
                 for n in net_imp_y['FROM']:
                     imp_y_n = net_imp_y[net_imp_y['FROM']==n]['VALUE'].iloc[0]
                     
@@ -287,15 +284,12 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         lcode_c = lcode[lcode['REGION']==c]
         lcode_array = lcode_c['VALUE'].to_numpy()
 
-        if c == 'SI':
-            # print('Import LCOE HU: ', df_i)
-            # print('Domestic LCOE HU: ', lcode_c)
-            print('Domestic El production SI: ', dp_c)
-
-        lcoe = (dp_array/(sad_array/0.95)) * lcode_array + lcoe_import_array
-        lcoe *= 3.6 # Conversion from MEUR/PJ to EUR/kWh
+        lcoe = (dp_array/sad_array) * lcode_array + lcoe_import_array
+        lcoe *= 360 # Conversion from MEUR/PJ to ct/kWh
 
         df['VALUE'] = lcoe
+        df['VALUE'] = pd.to_numeric(df['VALUE'])
+        df['VALUE'] = round(df['VALUE'], 1)
         df['YEAR'] = years
         df['REGION'] = c
 
@@ -359,7 +353,6 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     indi['CRF'] = calc_crf(data['inputs']['DiscountRate'], data['inputs']['OperationalLife'])
     indi['AIC'] = calc_aic(data['inputs']['CapitalCost'],data['results']['CapitalInvestment'],indi['CRF'],indi['PA'],data['inputs']['OperationalLife'], data['inputs']['ResidualCapacity'],years)
     indi['DP'] = calc_dp(sad,data['results']['NetElImports'], years)
-    print('Net-El-Imports SI: ', data['results']['NetElImports'][data['results']['NetElImports']['REGION']=='SI'])
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
     kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], population, years, y_n)
