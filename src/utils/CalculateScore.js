@@ -21,17 +21,19 @@ const findMaxScore = weights => {
   //let bestScenario = 'none'
   if (Object.entries(weights).length !== 0 && weights.constructor === Object) {
     //For each possible scenario
-    for (var c = 0; c <= 1; c++) {
-      for (var t = 0; t <= 1; t++) {
-        for (var e = 0; e <= 7; e++) {
-          const checkScenario = 'C' + c + 'T' + t + 'E' + e
-          let { env, eco, soc } = scenarioScore.filter(
-            scenario => scenario.scenario === checkScenario
-          )[0]
-          let score = env * weights.env + eco * weights.eco + soc * weights.soc
-          if (score > maxScore) {
-            maxScore = score
-            //bestScenario = checkScenario
+    for (var t = 0; t <=1; t++) {
+      for (var e = 0; e <= 26; e++) {
+        for (var c = 0; c <= 7; c++) {
+          for (var b = 0; b <= 3; b++) {
+            const checkScenario = 'T' + t + 'E' + e + 'C' + c + 'B' + b
+            let { env, eco, soc } = scenarioScore.filter(
+              scenario => scenario.scenario === checkScenario
+            )[0]
+            let score = env * weights.env + eco * weights.eco + soc * weights.soc
+            if (score > maxScore) {
+              maxScore = score
+              //bestScenario = checkScenario
+            }
           }
         }
       }

@@ -16,70 +16,55 @@
     "title": "Goal"
   },
   "indicator": {
-    "electricityGenerationBySource": "Electricity generation by source",
-    "coal": "Coal",
-    "oil": "Oil",
-    "naturalGas": "Natural Gas / non renew.",
-    "nuclear": "Nuclear",
-    "waste": "Waste non Renewable",
-    "biomass": "Biomass Solid",
-    "bioFuel": "Biofuel Liquid",
-    "hydro": "Hydro",
-    "wind": "Wind",
-    "solar": "Solar",
-    "geothermal": "Geothermal",
-    "ocean": "Ocean",
+    "keyPerformanceIndicators": "Key Performance Indicators",
+    "co2Intensity": "CO2 Intensity",
+    "discountedInvestment": "Discounted Investment",
+    "lcoe": "Levelised Cost of Electricity",
     "score": "Score"
   },
   "indicatorHeader": {
-    "coal": "Electricity Generation from Coal",
-    "oil": "Electricity Generation from Oil",
-    "naturalGas": "Electricity Generation from Natural Gas / non Renew.",
-    "nuclear": "Electricity Generation from Nuclear",
-    "waste": "Electricity Generation from Waste non renewable",
-    "biomass": "Electricity Generation from Biomass Solid",
-    "bioFuel": "Electricity Generation from Biofuel Liquid",
-    "hydro": "Electricity Generation from Hydro",
-    "wind": "Electricity Generation from Wind",
-    "solar": "Electricity Generation from Solar",
-    "geothermal": "Electricity Generation from Geothermal",
-    "ocean": "Electricity Generation from Ocean",
+    "co2Intensity": "CO2 Intensity per Citizen",
+    "discountedInvestment": "The discounted Investment per Citizen",
+    "lcoe": "The Levelised Cost of Electricity (LCOE)",
     "score": "Score"
   },
   "decisions": {
     "2019": {
-      "header": "Instructions (develop branch)",
+      "header": "Instructions",
       "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
     },
     "2020": {
       "header": "Decisions in 2020",
       "intro": "In order to maximize your score in 2050, you are now asked for some climate policy choices.\n\nRemember that you need to take your assigned point of view into account when making your choices.",
-      "researchDecision": "Should there be extra financial incentives for research and development of renewable/carbon free technologies?",
+      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?",
+      "ccsDecision": "Do you want to allow Carbon Capture and Storage (CCS)?",
       "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
     },
     "2030": {
       "header": "",
       "intro": "You are now in 2030.",
-      "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?"
+      "biomassDecision": "Do you want to implement a ban on biomass imports for power generation to the EU?"
     },
     "2040": {
       "header": "",
-      "intro": "You are now in 2040"
+      "intro": "You are now in 2040",
+      "biomassDecision": "Do you want to keep/implement a ban on biomass imports for power generation to the EU?"
     },
     "2050": {
       "header": "",
       "intro": ""
     },
     "options": {
-      "lowReduction": "Low reduction rate – EU ETS cap",
-      "mediumReduction": "Medium reduction rate - IPPC Pathway Zero Emissions in 2050",
-      "highReduction": "High reduction rate - Zero emissions in 2050"
+      "lowReduction": "Low reduction rate – as currently in EU ETS",
+      "mediumReduction": "Medium reduction rate – net-Zero power sector in 2045",
+      "highReduction": "High reduction rate – net-Zero power sector in 2035"
     },
     "start": "Start",
     "submitChoices": "Submit Choices",
     "submitChoice": "Submit Choice",
     "tryAgain": "TRY AGAIN",
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?",
+    "keepCCS": "Do you want to keep your CCS permit/ban for the next 10 years or change it?",
     "yourPOW": "Your assigned point of view in this game"
   },
   "score": {

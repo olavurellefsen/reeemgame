@@ -64,8 +64,8 @@ export const MapContainer = () => {
   let tempScenario = state.selectedScenario
 
   //TODO Important to change when real data has been added
-  if (tempScenario !== 'C0T0E0' && tempScenario !== 'C0T0E1')
-    tempScenario = 'C0T0E0'
+  //if (tempScenario !== 'T0E0C0B0' && tempScenario !== 'T0E0C0B1')
+    // tempScenario = 'T0E0C0B0'
   const mapColors = getMapColors(
     state.selectedIndicator,
     tempScenario,
