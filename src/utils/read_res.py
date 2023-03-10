@@ -149,12 +149,12 @@ def read_net_imp_det(path: str, year_n: int)-> pd.DataFrame:
             for r in n:
                 if not df_i[df_i['FROM']==r].empty:
                     if not df_e[df_e['TO']==r].empty:
-                        value = df_i.iloc[0,3] - df_e.iloc[0,3]
+                        value = df_i[df_i['FROM']==r].iloc[0,3] - df_e[df_e['TO']==r].iloc[0,3]
                     else:
-                        value = df_i.iloc[0,3]
+                        value = df_i[df_i['FROM']==r].iloc[0,3]
                 else:
                     if not df_e[df_e['TO']==r].empty:
-                        value = - df_e.iloc[0,3]
+                        value = - df_e[df_e['TO']==r].iloc[0,3]
                 new_row = pd.Series({'TO': c, 'FROM': r, 'YEAR': y, 'VALUE': value})
                 df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
 

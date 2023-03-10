@@ -96,11 +96,8 @@ def calc_dp(sad: pd.DataFrame, ni: pd.DataFrame, years: pd.Series)->pd.DataFrame
     for c in sad['REGION'].unique():
         for y in years:
             value = 0
-            if c in ni['REGION']:
-                if ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] > 0 :
-                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)] * 0.95
-                else:
-                    value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]
+            if ni[ni['REGION']==c]['YEAR'].isin([y]).any():
+                value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0] - ni[(ni['REGION']==c)&(ni['YEAR']==y)]['VALUE'].iloc[0] * 0.95
             else:
                 value = sad[(sad['REGION']==c)&(sad['YEAR']==y)]['VALUE'].iloc[0]
             df = pd.concat([df, pd.DataFrame([[c,y,value]], columns=['REGION','YEAR','VALUE'])])
@@ -179,6 +176,9 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
 
     co2_intensity = co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
 
+    co2_intensity['VALUE'] = pd.to_numeric(co2_intensity['VALUE'])
+    co2_intensity['VALUE'] = round(co2_intensity['VALUE'], 1)
+
     return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
@@ -211,6 +211,7 @@ def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, y
     df['REGION'] = aic['REGION']
     df['YEAR'] = aic['YEAR']
     df['VALUE'] = dipc
+    df['VALUE'] = round(df['VALUE'])
 
     aic_eu_plus_3 = aic.groupby('YEAR').sum()
     aic_eu_plus_3_array = aic_eu_plus_3['VALUE'].to_numpy()
@@ -260,6 +261,7 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
             lcode_cy = lcode[(lcode['REGION']==c)&(lcode['YEAR']==y)]['VALUE'].iloc[0]
             if not df_i_raw[df_i_raw['YEAR']==y].empty:
                 net_imp_y = df_i_raw[df_i_raw['YEAR']==y]
+
                 for n in net_imp_y['FROM']:
                     imp_y_n = net_imp_y[net_imp_y['FROM']==n]['VALUE'].iloc[0]
                     
@@ -282,10 +284,12 @@ def calc_lcoe(dp: pd.DataFrame, sad: pd.DataFrame, lcode: pd.DataFrame, neipc: p
         lcode_c = lcode[lcode['REGION']==c]
         lcode_array = lcode_c['VALUE'].to_numpy()
 
-        lcoe = (dp_array/(sad_array/0.95)) * lcode_array + lcoe_import_array
-        lcoe *= 3.6 # Conversion from MEUR/PJ to EUR/kWh
+        lcoe = (dp_array/sad_array) * lcode_array + lcoe_import_array
+        lcoe *= 360 # Conversion from MEUR/PJ to ct/kWh
 
         df['VALUE'] = lcoe
+        df['VALUE'] = pd.to_numeric(df['VALUE'])
+        df['VALUE'] = round(df['VALUE'], 1)
         df['YEAR'] = years
         df['REGION'] = c
 
