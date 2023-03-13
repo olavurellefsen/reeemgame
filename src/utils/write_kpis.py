@@ -30,8 +30,7 @@ def main(kpis: Dict):
 
         kpis_in_dics[kpi] = format_kpis(kpis, kpi)
         
-        # with open('../data/indicators/%s.json' % kpi, 'w') as outfile:
-        with open('results/test/%s.json' % kpi, 'w') as outfile:
+        with open('../data/indicators/%s.json' % kpi, 'w') as outfile:
             json.dump(kpis_in_dics[kpi], outfile)
 
     return
