@@ -1,59 +1,20 @@
 [
   {
-    "indicator": "oil",
-    "min": -2.43445902335618e-12,
-    "max": 14.4096445802847,
-    "unit": "PJ"
+    "indicator": "co2Intensity",
+    "min": -2.608796973512408,
+    "max": 10.03399680000012,
+    "unit": "tCO2/Citizen"
   },
   {
-    "indicator": "coal",
-    "min": -1.31720848557558e-11,
-    "max": 850.846806684,
-    "unit": "PJ"
+    "indicator": "discountedInvestment",
+    "min": 19,
+    "max": 911,
+    "unit": "EUR/Citizen"
   },
   {
-    "indicator": "naturalGas",
-    "min": -2.90991598262735e-13,
-    "max": 629.693370819813,
-    "unit": "PJ"
-  },
-  {
-    "indicator": "nuclear",
-    "min": -9.8804373131145e-14,
-    "max": 1745.22999168,
-    "unit": "PJ"
-  },
-  {
-    "indicator": "waste",
-    "min": -1.56747674040503e-13,
-    "max": 157.623408924584,
-    "unit": "PJ"
-  },
-  {
-    "indicator": "biomass",
-    "min": -1.24344850006217e-12,
-    "max": 418.370494789837,
-    "unit": "PJ"
-  },
-  {
-    "indicator": "bioFuel",
-    "min": -6.30850013894069e-14,
-    "max": 2.56963403444388e-15,
-    "unit": "PJ"
-  },
-  { "indicator": "hydro", "min": 0, "max": 457.847158606472, "unit": "PJ" },
-  { "indicator": "wind", "min": 0, "max": 864.779127469598, "unit": "PJ" },
-  { "indicator": "solar", "min": 0, "max": 423.159876, "unit": "PJ" },
-  {
-    "indicator": "geothermal",
-    "min": 0,
-    "max": 74.0080120685182,
-    "unit": "PJ"
-  },
-  {
-    "indicator": "ocean",
-    "min": -1.64078309336446e-12,
-    "max": 6.74103981778772,
-    "unit": "PJ"
+    "indicator": "lcoe",
+    "min": -1.2968,
+    "max": 0.675,
+    "unit": "EUR/kWh"
   }
 ]

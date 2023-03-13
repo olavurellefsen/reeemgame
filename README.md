@@ -7,7 +7,7 @@ The purpose of this game is to learn about energy systems.
 
 Participants learn how different decisions affect the energy systems and the outcomes for other stakeholders.
 
-The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](http://www.osemosys.org/osembe.html), which is the open source energy model base for the European Union.
+The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](https://doi.org/10.1016/j.energy.2021.121973), which is the open source energy model base for the European Union.
 
 The REEEM project is a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
 
