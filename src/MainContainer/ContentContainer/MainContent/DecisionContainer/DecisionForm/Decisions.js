@@ -83,12 +83,12 @@ export const Decisions = () => {
             {
               value: 'Yes',
               text: t('general.yes'),
-              scenario: { B: 1 },
+              scenario: { B: 0 },
             },
             {
               value: 'No',
               text: t('general.no'),
-              scenario: { B: 0 },
+              scenario: { B: 1 },
             },
           ],
         },
@@ -145,12 +145,12 @@ export const Decisions = () => {
             {
               value: 'Yes',
               text: t('general.yes'),
-              scenario: { B: 2 },
+              scenario: { B: 0 },
             },
             {
               value: 'No',
               text: t('general.no'),
-              scenario: { B: 0 },
+              scenario: { B: 2 },
             },
           ],
         },
