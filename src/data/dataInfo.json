@@ -1,20 +1,20 @@
 [
   {
     "indicator": "co2Intensity",
-    "min": -2.608796973512408,
-    "max": 10.03399680000012,
+    "min": -2.6,
+    "max": 10.0,
     "unit": "tCO2/Citizen"
   },
   {
     "indicator": "discountedInvestment",
     "min": 19,
-    "max": 911,
+    "max": 910,
     "unit": "EUR/Citizen"
   },
   {
     "indicator": "lcoe",
-    "min": -1.2968,
-    "max": 0.675,
-    "unit": "EUR/kWh"
+    "min": 16.5,
+    "max": 71.1,
+    "unit": "ct/kWh"
   }
 ]
