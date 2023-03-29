@@ -64,7 +64,7 @@
     "submitChoice": "Submit Choice",
     "tryAgain": "TRY AGAIN",
     "keepEmission": "Do you want to keep your emission reduction rate for the next 10 years or change it?",
-    "keepCCS": "Do you want to keep your CCS permit/ban for the next 10 years or change it?",
+    "keepCCS": "Should Carbon Capture and Storage (CCS) be/remain allowed for the next 10 years?",
     "yourPOW": "Your assigned point of view in this game"
   },
   "score": {
