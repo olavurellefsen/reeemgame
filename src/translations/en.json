@@ -31,14 +31,14 @@
   "decisions": {
     "2019": {
       "header": "Instructions",
-      "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source Energy Modelling System for Europe (OSeMBE)."
+      "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source energy Model Base for Europe (OSeMBE)."
     },
     "2020": {
       "header": "Decisions in 2020",
       "intro": "In order to maximize your score in 2050, you are now asked for some climate policy choices.\n\nRemember that you need to take your assigned point of view into account when making your choices.",
       "transmissionDecision": "Do you want to implement the 10-year network development plan on transboundary grid capacity?",
       "ccsDecision": "Do you want to allow Carbon Capture and Storage (CCS)?",
-      "emissionsDecision": "Which restrictions are you willing to set in order to reach your emission target?"
+      "emissionsDecision": "Which restrictions are you willing to set in order to reduce your emissions?"
     },
     "2030": {
       "header": "",
@@ -156,7 +156,7 @@
   "startmodal": {
     "title": "Your point of view",
     "intro": "The pie chart below illustrates your point of view. The largest slice of the pie is your main priority.",
-    "details": "You impact each of these three components with your decisions in 2020, 2030, and 2040. You are measured by the result in 2050 as follows:\n\n- Economic: Higher Gross Domestic Product (GDP) in 2050 is better\n- Social: Cheaper access to energy for everyone in 2050 is better\n- Environmental: Lower annual CO2 emissions in 2050 are better",
+    "details": "You impact each of these three components with your decisions in 2020, 2030, and 2040. You are measured by the result in 2050 as follows:\n\n- Economic: Lower investment cost per capita in 2050 are better\n- Social: Cheaper access to electricity for everyone in 2050 is better\n- Environmental: Lower annual CO2 emissions in 2050 are better",
     "group": "Group",
     "percentage": "Percentage"
   }
