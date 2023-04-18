@@ -15,9 +15,9 @@ export const About = () => {
     case 'en':
       file = about_en
       break
-      case 'de':
-        file = about_de
-        break
+    case 'de':
+      file = about_de
+      break
     case 'dk':
       file = about_dk
       break
