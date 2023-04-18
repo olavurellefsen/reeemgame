@@ -36,7 +36,7 @@
       "2020": {
         "header": "Entscheidungen in 2020",
         "intro": "Um Ihre Punktzahl im Jahr 2050 zu maximieren, werden Sie nun aufgefordert, einige klimapolitische Entscheidungen zu treffen.\n\nDenken Sie daran, dass Sie bei Ihren Entscheidungen das Ihnen zugewiesenen Präferenzprofil berücksichtigen müssen.",
-        "transmissionDecision": "Wollen Sie den 10-Jahres-Netzentwicklungsplan für grenzüberschreitende Netzkapazitäten umsetzen?",
+        "transmissionDecision": "Wollen Sie den im 10-Jahres-Netzentwicklungsplan anvisierten Ausbau von grenzüberschreitenden Netzkapazitäten umsetzen?",
         "ccsDecision": "Wollen Sie die Abscheidung und Speicherung von Kohlendioxid (CCS) zulassen??",
         "emissionsDecision": "Welche Beschränkungen sind Sie bereit, sich aufzuerlegen, um Ihre Emissionen zu reduzieren?"
       },
@@ -55,7 +55,7 @@
         "intro": ""
       },
       "options": {
-        "lowReduction": "Niedrige Reduktionsrate - wie derzeit im EU-EHS",
+        "lowReduction": "Niedrige Reduktionsrate - wie derzeit im EU-ETS",
         "mediumReduction": "Mittlere Reduktionsrate - Net-Zero-Stromsektor im Jahr 2045",
         "highReduction": "Hohe Reduktionsrate - Net-Zero-Stromsektor im Jahr 2035"
       },
