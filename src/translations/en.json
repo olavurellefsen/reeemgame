@@ -5,7 +5,7 @@
     "score": "Score"
   },
   "header": {
-    "title": "game",
+    "title": "Decisions Game",
     "about": "About",
     "score": "Score"
   },
@@ -146,8 +146,8 @@
     "optimalScore": "The optimal score is",
     "copyToClipboard": "Copy",
     "tooltipCopyText": "Copied to clipboard",
-    "facebookQuote": "Can you beat my score on REEEMgame? #climatepolicy #h2020",
-    "twitterTitle": "Can you beat my score on REEEMgame? #climatepolicy #h2020"
+    "facebookQuote": "Can you beat my score on the Power Decisions Game? #climatepolicy #h2020",
+    "twitterTitle": "Can you beat my score on the Power Decisions Game? #climatepolicy #h2020"
   },
   "map": {
     "mwPerCapita": "MW/capita/year",

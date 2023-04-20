@@ -2,16 +2,16 @@
 
 [![Build Status](https://travis-ci.com/ReeemProject/reeemgame.svg?branch=master)](https://travis-ci.com/ReeemProject/reeemgame)
 
-[Online version of REEEMgame](https://game.reeem.org)
+[Online version of Power Decisions Game](https://game.reeem.org)
 
-# REEEMgame
+# Power Decisions Game
 The purpose of this game is to learn about power system.
 
 Participants learn how different decisions affect the power systems and the outcomes for other stakeholders.
 
 The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](https://doi.org/10.1016/j.energy.2021.121973), which is the open source energy model base for the European Union.
 
-The REEEM project was a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
+The REEEM project was a EU funded project which aimed to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
 
 ![Screenshot](reeemGame_screenshot.PNG)
 
