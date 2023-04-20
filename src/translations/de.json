@@ -1,0 +1,164 @@
+{
+    "general": {
+      "yes": "Ja",
+      "no": "Nein",
+      "score": "Punkte"
+    },
+    "header": {
+      "title": "Spiel",
+      "about": "Über",
+      "score": "Punkte"
+    },
+    "goal": {
+      "summary": "Ihr Ziel ist es, die Punktzahl im Jahr 2050 zu maximieren. Ihre Punktzahl errechnet sich aus dem gewichteten Durchschnitt der wirtschaftlichen, sozialen und ökologischen Punktzahlen, die Sie unten sehen können.",
+      "weight": "Gewicht",
+      "weightedScore": "Gewichtete Punktzahl",
+      "title": "Ziel"
+    },
+    "indicator": {
+      "keyPerformanceIndicators": "Leistungsindikatoren",
+      "co2Intensity": "CO2-Intensität",
+      "discountedInvestment": "Diskontierte Investitione",
+      "lcoe": "Stromkosten",
+      "score": "Punktzahl"
+    },
+    "indicatorHeader": {
+      "co2Intensity": "CO2-Intensität pro Einwohner",
+      "discountedInvestment": "The diskontierte Investitionen pro Einwohner",
+      "lcoe": "Die Stromkosten",
+      "score": "Punkte"
+    },
+    "decisions": {
+      "2019": {
+        "header": "Anleitung",
+        "intro": "In diesem Spiel wird Ihnen ein wirtschaftlich-ökologisch-soziales Präferenzprofil zugewiesen.\n\n Ihre Aufgabe ist einfach: Treffen Sie klimapolitische Entscheidungen in den Jahren 2020, 2030 und 2040, um die Punktzahl für den Ihnen zugewiesenen Standpunkt im Jahr 2050 zu maximieren. Ihre Lösung wird mit der optimalen Punktzahl verglichen, die vom Open Source energy Model Base for Europe (OSeMBE) berechnet wurde."
+      },
+      "2020": {
+        "header": "Entscheidungen in 2020",
+        "intro": "Um Ihre Punktzahl im Jahr 2050 zu maximieren, werden Sie nun aufgefordert, einige klimapolitische Entscheidungen zu treffen.\n\nDenken Sie daran, dass Sie bei Ihren Entscheidungen das Ihnen zugewiesenen Präferenzprofil berücksichtigen müssen.",
+        "transmissionDecision": "Wollen Sie den im 10-Jahres-Netzentwicklungsplan anvisierten Ausbau von grenzüberschreitenden Netzkapazitäten umsetzen?",
+        "ccsDecision": "Wollen Sie die Abscheidung und Speicherung von Kohlendioxid (CCS) zulassen??",
+        "emissionsDecision": "Welche Beschränkungen sind Sie bereit, sich aufzuerlegen, um Ihre Emissionen zu reduzieren?"
+      },
+      "2030": {
+        "header": "",
+        "intro": "Sie sind jetzt in 2030.",
+        "biomassDecision": "Wollen Sie ein Verbot der Einfuhr von Biomasse zur Stromerzeugung in die EU einführen?"
+      },
+      "2040": {
+        "header": "",
+        "intro": "Sie sind jetzt in 2040",
+        "biomassDecision": "Wollen Sie ein Verbot der Einfuhr von Biomasse zur Stromerzeugung in die EU beibehalten/einführen?"
+      },
+      "2050": {
+        "header": "",
+        "intro": ""
+      },
+      "options": {
+        "lowReduction": "Niedrige Reduktionsrate - wie derzeit im EU-ETS",
+        "mediumReduction": "Mittlere Reduktionsrate - Net-Zero-Stromsektor im Jahr 2045",
+        "highReduction": "Hohe Reduktionsrate - Net-Zero-Stromsektor im Jahr 2035"
+      },
+      "start": "Start",
+      "submitChoices": "Auswahl bestätigen",
+      "submitChoice": "Auswahl bestätigen",
+      "tryAgain": "NOCHMAL VERSUCHEN",
+      "keepEmission": "Wollen Sie Ihre Emissionsreduktionsrate für die nächsten 10 Jahre beibehalten oder ändern?",
+      "keepCCS": "Sollte die Abscheidung und Speicherung von Kohlendioxid (CCS) in den nächsten 10 Jahren erlaubt sein/bleiben?",
+      "yourPOW": "Ihr zugewiesenes Präferenzprofil in dieser Runde"
+    },
+    "score": {
+      "sum": {
+        "long": "Summe",
+        "short": "Summe"
+      },
+      "date": "Datum",
+      "economic": {
+        "long": "Wirtschaftlich",
+        "short": "Wir"
+      },
+      "social": {
+        "long": "Sozial",
+        "short": "Soz"
+      },
+      "environmental": {
+        "long": "Umwelt",
+        "short": "Umw"
+      },
+      "score": {
+        "long": "Punktzahl",
+        "short": "Punkte"
+      },
+      "optimal score": {
+        "long": "Optimale Punktzahl",
+        "short": "Optimale Punkte"
+      },
+      "weights": {
+        "long": "Gewichtung",
+        "short": "Wichtung"
+      },
+      "intro-1": "Ihr aktueller Puktestand",
+      "intro-final": "Ihre finale Punktzahl in 2050",
+      "intro-2": "Ihre Entscheidungen werden an den optimalen Entscheidungen für das Ihnen zugewiesene Präferenzprofil gemessen."
+    },
+    "euAcknowledgement": "Dieses Projekt wurde von der Europäischen Union im Rahmen des Forschungs- und Innovationsprogramms Horizon 2020 unter dem Grant Agreement Nr. 691739 gefördert.",
+    "countries": {
+      "se": "Schweden",
+      "dk": "Dänemark",
+      "de": "Deutschland",
+      "at": "Österreich",
+      "ie": "Irland",
+      "uk": "Vereinigtes Königreich",
+      "hr": "Kroatien",
+      "nl": "Niederlande",
+      "be": "Belgien",
+      "lu": "Luxemburg",
+      "fi": "Finnland",
+      "ee": "Estland",
+      "lv": "Letland",
+      "lt": "Litauen",
+      "fr": "Frankreich",
+      "es": "Spanien",
+      "pt": "Portugal",
+      "it": "Italien",
+      "mt": "Malta",
+      "gr": "Griechenland",
+      "si": "Slovenien",
+      "pl": "Polen",
+      "hu": "Ungarn",
+      "cz": "Tschechien",
+      "sk": "Slowakei",
+      "ro": "Rumänien",
+      "bg": "Bulgarien",
+      "cy": "Cypern",
+      "no": "Norwegen",
+      "ch": "Schweiz"
+    },
+    "share": {
+      "share": "TEILEN",
+      "tryGameButton": "Schlage mein Ergebnis!",
+      "dialogTitle": "Teile das Spiel",
+      "shareDialogText": "Teile den folgenden Link um andere das Spiel probieren zu lassen:",
+      "closeDialog": "Schließen",
+      "header": "Können Sie mein Ergebnis schlagen?",
+      "intro": "Ziel des Spiels ist es, die Punktzahl im Jahr 2050 zu maximieren. Die Punktzahl wird als gewichteter Durchschnitt der wirtschaftlichen, sozialen und ökologischen Punktzahlen berechnet.",
+      "myScore": "Meine Punktzahl war",
+      "optimalScore": "Die optimale Punktzahl ist",
+      "copyToClipboard": "Kopieren",
+      "tooltipCopyText": "In die Zwischenablage kopiert",
+      "facebookQuote": "Kannst du meine Punktzahl im REEEMgame schlagen? #climatepolicy #h2020",
+      "twitterTitle": "Kannst du meine Punktzahl im REEEMgame schlagen? #climatepolicy #h2020"
+    },
+    "map": {
+      "mwPerCapita": "MW/Einwohner/Jahr",
+      "tons": "Tonnen CO2/Jahr"
+    },
+    "startmodal": {
+      "title": "Ihr Präferenzprofil",
+      "intro": "Das nachstehende Tortendiagramm veranschaulicht Ihr Präferenzprofil. Das größte Stück des Kuchens ist Ihre Hauptpriorität.",
+      "details": "Mit Ihren Entscheidungen in den Jahren 2020, 2030 und 2040 beeinflussen Sie jede dieser drei Komponenten. Sie werden an dem Ergebnis im Jahr 2050 wie folgt gemessen:\n\n- Wirtschaftlich: Niedrigere Investitionskosten pro Kopf im Jahr 2050 sind besser\n- Sozial: Günstigerer Zugang zu Strom für alle im Jahr 2050 ist besser\n- Ökologisch: Geringere jährliche CO2-Emissionen im Jahr 2050 sind besser",
+      "group": "Gruppe",
+      "percentage": "Prozent"
+    }
+  }
+  

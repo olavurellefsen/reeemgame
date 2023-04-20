@@ -1,15 +1,17 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 [![Build Status](https://travis-ci.com/ReeemProject/reeemgame.svg?branch=master)](https://travis-ci.com/ReeemProject/reeemgame)
 
 [Online version of REEEMgame](https://game.reeem.org)
 
 # REEEMgame
-The purpose of this game is to learn about energy systems.
+The purpose of this game is to learn about power system.
 
-Participants learn how different decisions affect the energy systems and the outcomes for other stakeholders.
+Participants learn how different decisions affect the power systems and the outcomes for other stakeholders.
 
 The game has been created as part of the [REEEM project](http://www.reeem.org/) and is based on [OSeMBE](https://doi.org/10.1016/j.energy.2021.121973), which is the open source energy model base for the European Union.
 
-The REEEM project is a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
+The REEEM project was a EU funded project which aims to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
 
 ![Screenshot](reeemGame_screenshot.PNG)
 
