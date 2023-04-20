@@ -21,6 +21,9 @@ export const Languages = () => {
         case 'en':
           i18n.changeLanguage('en')
           break
+        case 'de':
+          i18n.changeLanguage('de')
+          break
         case 'dk':
           i18n.changeLanguage('dk')
           break
@@ -37,6 +40,9 @@ export const Languages = () => {
   switch (currentLanguage) {
     case 'en':
       lanugageTitle = 'English'
+      break
+    case 'de':
+      lanugageTitle = 'Deutsch'
       break
     case 'dk':
       lanugageTitle = 'Dansk'
@@ -104,6 +110,14 @@ export const Languages = () => {
                       onClick={e => changeLanguage(e, 'en')}
                     >
                       <TextContainer>English</TextContainer>
+                    </MenuItem>
+                  )}
+                  {currentLanguage !== 'de' && (
+                    <MenuItem
+                      key={'foMenuItem'}
+                      onClick={e => changeLanguage(e, 'de')}
+                    >
+                      <TextContainer>Deutsch</TextContainer>
                     </MenuItem>
                   )}
                   {currentLanguage !== 'fo' && (

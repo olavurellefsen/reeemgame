@@ -1,6 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import common_en from './translations/en.json'
+import common_de from './translations/de.json'
 import common_dk from './translations/dk.json'
 import common_fo from './translations/fo.json'
 
@@ -8,6 +9,9 @@ import common_fo from './translations/fo.json'
 const resources = {
   en: {
     translation: common_en,
+  },
+  de: {
+    translation: common_de,
   },
   dk: {
     translation: common_dk,
