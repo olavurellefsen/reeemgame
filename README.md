@@ -13,7 +13,7 @@ The game has been created as part of the [REEEM project](http://www.reeem.org/) 
 
 The REEEM project was a EU funded project which aimed to gain a better understanding of how energy strategies can help the transition to a low-carbon EU energy society.
 
-![Screenshot](reeemGame_screenshot.PNG)
+![Screenshot](powerDecisionsGame_screenshot.PNG)
 
 ## How to play
 The game is a simulation of how the future will look depending on how participants decide to act. 
