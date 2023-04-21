@@ -9,7 +9,7 @@ import {
   StyledGrid,
   Divider,
 } from './Header.style'
-import logo from './REEEMlogo.transparent.1.svg'
+import logo from './PDGlogo.transparent.1-optimized.svg'
 import { Languages } from './LanguagesContainer/LanguagesContainer'
 
 export const Header = () => {
