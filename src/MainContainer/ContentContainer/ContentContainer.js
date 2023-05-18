@@ -5,24 +5,23 @@ import { About } from './About/About'
 import { MainContent } from './MainContent/MainContent'
 import { SharedPage } from './MainContent/SharedPage'
 
-const queryString = require('query-string')
-
 export const ContentContainer = () => {
   const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
 
   return(
-  <Routes>
-    <Route
-      exact={true}
-      path={`/`}
-      element={<MainContent weights={queryString.parse(location.search)} />}
-    />
-    <Route path={`/score`} element={<Score />} />
-    <Route path={`/about`} element={<About />} />
-    <Route
-      path={`/shared`}
-      element={<SharedPage sharedValues={queryString.parse(location.search)} />}
-    />
-  </Routes>
-)
+    <Routes>
+      <Route
+        exact={true}
+        path={`/`}
+        element={<MainContent weights={Object.fromEntries(searchParams.entries())} />}
+      />
+      <Route path={`/score`} element={<Score />} />
+      <Route path={`/about`} element={<About />} />
+      <Route
+        path={`/shared`}
+        element={<SharedPage sharedValues={Object.fromEntries(searchParams.entries())} />}
+      />
+    </Routes>
+  )
 }
