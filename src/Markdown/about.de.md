@@ -10,7 +10,7 @@ Das Power Decisions Game enthält Daten über z.B. Strombedarf und Emissionsgren
 
 Alle Partner innerhalb des REEEM-Projekts haben zur Lernsimulation beigetragen, indem sie während des gesamten Entwicklungsprozesses Feedback gegeben haben.
 
-The Power Decisions Game war Teil des [Arbeitspakets Stakeholder Engagement and Dissemination] (http://www.reeem.org/index.php/work-packages/) im REEEM-Projekt. Das Spiel basiert auf [OSeMBE](https://doi.org/10.1016/j.energy.2021.121973), der Open-Source energy model base for the European Union.
+The Power Decisions Game war Teil des [Arbeitspakets Stakeholder Engagement and Dissemination](http://www.reeem.org/index.php/work-packages/) im REEEM-Projekt. Das Spiel basiert auf [OSeMBE](https://doi.org/10.1016/j.energy.2021.121973), der Open-Source energy model base for the European Union.
 
 Besuchen Sie die aktuelle Version: https://powerdecisionsgame.com/
 
