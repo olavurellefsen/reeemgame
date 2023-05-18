@@ -15,8 +15,8 @@ export const TryAgain = () => {
     if (state.gameState === 'over') {
       //Reset weights when clicking "try again"
       dispatch({
-        type: 'setWeights',
-        weights: {},
+        type: 'resetWeights',
+        toggle: true,
       })
     }
   }
