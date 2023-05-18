@@ -114,7 +114,7 @@ export const Languages = () => {
                   )}
                   {currentLanguage !== 'de' && (
                     <MenuItem
-                      key={'foMenuItem'}
+                      key={'deMenuItem'}
                       onClick={e => changeLanguage(e, 'de')}
                     >
                       <TextContainer>Deutsch</TextContainer>
