@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import rehypeSanitize from 'rehype-sanitize'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -20,10 +22,9 @@ export const Page = p => {
         setContent(text)
       })
   })
-
   return (
     <Container>
-      <ReactMarkdown source={content} escapeHtml={false} />
+      <ReactMarkdown children={content} rehypePlugins={[rehypeRaw, rehypeSanitize]} />
     </Container>
   )
 }
