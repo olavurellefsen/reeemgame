@@ -49,7 +49,7 @@
   "decisions": {
     "2019": {
       "header": "Instruktioner",
-      "intro": "I dette spil får du påtvunget økonomiske, sociale og miljømæssige præferencer.\n\nDin mission er enkel: tag klimapolitiske beslutninger i 2020, 2030 og 2040 for at maksimere scoren for dine påtvungne præferencer i 2050.\n\nDin løsning vil blive sammenlignet med den optimale score som udregnet af [OSeMBE (Open Source Energy Modelling System for Europe)](https://doi.org/10.1016/j.energy.2021.121973)."
+      "intro": "I dette spil får du påtvunget økonomiske, sociale og miljømæssige præferencer.\n\nDin mission er enkel: tag klimapolitiske beslutninger i 2020, 2030 og 2040 for at maksimere scoren for dine påtvungne præferencer i 2050.\n\nDin løsning vil blive sammenlignet med den optimale score som udregnet af OSeMBE (Open Source Energy Modelling System for Europe)."
     },
     "2020": {
       "header": "Beslutninger i 2020",
