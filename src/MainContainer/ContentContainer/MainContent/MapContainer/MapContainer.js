@@ -130,7 +130,7 @@ export const MapContainer = () => {
             }
           }}
         />
-        {state.selectedIndicator ? (
+        {state.selectedIndicator && lp ? (
           <Legend
             maxValue={lp.max}
             minValue={lp.min}
