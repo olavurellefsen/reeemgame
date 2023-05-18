@@ -31,7 +31,7 @@
     "decisions": {
       "2019": {
         "header": "Anleitung",
-        "intro": "In diesem Spiel wird Ihnen ein wirtschaftlich-ökologisch-soziales Präferenzprofil zugewiesen.\n\n Ihre Aufgabe ist einfach: Treffen Sie klimapolitische Entscheidungen in den Jahren 2020, 2030 und 2040, um die Punktzahl für den Ihnen zugewiesenen Standpunkt im Jahr 2050 zu maximieren. Ihre Lösung wird mit der optimalen Punktzahl verglichen, die vom Open Source energy Model Base for Europe (OSeMBE) berechnet wurde."
+        "intro": "In diesem Spiel wird Ihnen ein wirtschaftlich-ökologisch-soziales Präferenzprofil zugewiesen.\n\n Ihre Aufgabe ist einfach: Treffen Sie klimapolitische Entscheidungen in den Jahren 2020, 2030 und 2040, um die Punktzahl für den Ihnen zugewiesenen Standpunkt im Jahr 2050 zu maximieren. Ihre Lösung wird mit der optimalen Punktzahl verglichen, die vom [Open Source energy Model Base for Europe (OSeMBE)](https://doi.org/10.1016/j.energy.2021.121973) berechnet wurde."
       },
       "2020": {
         "header": "Entscheidungen in 2020",
