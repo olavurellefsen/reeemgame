@@ -180,6 +180,55 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year
     co2_intensity['VALUE'] = round(co2_intensity['VALUE'], 1)
 
     return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
+
+def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
+    """
+    Function to return the accumulated CO2 emissions per citizen for each country and for the EU+CH+NO+UK
+    
+    Args:
+        ate: pd.DataFrame
+            Annual Technology Emissions of CO2
+        pop: pd.DataFrame
+            Popultaion data for each country and year
+            
+    Returns:
+        df: pd.DataFrame
+            Accumulated CO2 emissions from 2021 til 2050
+    """
+
+    pop = pop[(pop['year']>2020) & (pop['year']<2051)]
+    ate = ate[(ate['YEAR']>2020) & (ate['YEAR']<2051)]
+
+    ate['VALUE'] = ate['VALUE'] * 10**3  # Conversion of CO2 emissions from kt to t.
+
+    countries_all = pd.Series(pop['iso2'].unique())
+
+    years = pop['year'].unique()
+    years.sort()
+    df = pd.DataFrame(columns=['REGION', 'YEAR', 'VALUE'])
+
+    for y in years:
+        df_y = ate[ate['YEAR'].isin(list(range(2021, y+1)))]
+        df_y = df_y.groupby(['REGION'])['VALUE'].sum().reset_index()
+        co2_europe = df_y['VALUE'].sum()
+        df_y = pd.concat([df_y, pd.DataFrame([['EU+CH+NO+UK', co2_europe]], columns=['REGION', 'VALUE'])], ignore_index=True)
+        df_y['YEAR'] = y
+        pop_y = pop[(pop['year']==y) & pop['iso2'].isin(df_y['REGION'].unique())].sort_values(by=['iso2']).reset_index(drop=True)
+        pop_europe = pd.DataFrame([[y, 'Europe', pop[pop['year']==y]['value'].sum(), 'EU+CH+NO+UK']], columns=['year', 'country', 'value', 'iso2'])
+        pop_y = pd.concat([pop_y, pop_europe], ignore_index=True)
+        df_y['VALUE'] = df_y['VALUE'] / pop_y['value']
+
+        if not countries_all[~countries_all.isin(df_y['REGION'])].empty:
+            df_0 = pd.DataFrame()
+            df_0['REGION'] = countries_all[~countries_all.isin(df_y['REGION'])]
+            df_0 = df_0.reset_index(drop=True)
+            df_0['YEAR'] = y
+            df_0['VALUE'] = 0
+            df_y = pd.concat([df_y, df_0], ignore_index=True)
+            
+        df = pd.concat([df, df_y], ignore_index=True)
+
+    return df
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
     """
@@ -356,6 +405,7 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
     kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], population, years, y_n)
+    kpis['AccumulatedCO2'] = calc_accumulated_CO2(data['results']['AnnualTechnologyEmission'], population)
     kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], population, years)
     kpis['LCOE'] = calc_lcoe(indi['DP'], sad, indi['LCODE'], data['results']['NetElImportsPerCountry'], y_n)
     return kpis
