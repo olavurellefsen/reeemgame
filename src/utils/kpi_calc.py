@@ -145,30 +145,8 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd
     Returns:
         DataFrame: CO2 intensity of power generation by country and year.
     """
-# #%%
-#     import pandas as pd
-#     import kpi_main as km
-#     import read_other as ro
-#     import read_res as rr
-
-#     conf = km.load_config('config.yml')
-#     ate = rr.read_emissions('results/test/results/T0E0C0/B0E0C0/B0E0C0/res', 'AnnualTechnologyEmission', ['CO2'])
-#     pop = ro.main(conf['others'], 2020, 2050)
-#     pop = pop['Population']
-#     years = pd.Series(range(2020, 2050))
-#     year_n = 2050
 
     countries = pop['iso2'].unique()
-    # ate_df = pd.DataFrame(index=countries,columns=years)
-    # pop_df = pd.DataFrame(index=countries, columns=years)
-    # for r in range(len(ate)):
-    #     if ate.iloc[r]['YEAR']<(int(year_n)+1):
-    #         ate_df[ate.iloc[r]['YEAR']][ate.iloc[r]['REGION']] = ate.iloc[r]['VALUE']
-    # for r in range(len(pop)):
-    #     if pop.iloc[r]['year']<(int(year_n)+1):
-    #         pop_df[pop.iloc[r]['year']][pop.iloc[r]['iso2']] = pop.iloc[r]['value']
-
-    # ate_df = ate_df.fillna(0)
 
     index_complete = pd.MultiIndex.from_product([countries, years], names=['REGION', 'YEAR'])
     ate = ate[ate['YEAR'].isin(years)]
@@ -212,7 +190,7 @@ def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd
     
     co2_intensity['VALUE'] = pd.to_numeric(co2_intensity['VALUE'])
     co2_intensity['VALUE'] = round(co2_intensity['VALUE'], 1)
-#%%
+
     return co2_intensity
 
 def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
