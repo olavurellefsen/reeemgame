@@ -114,7 +114,11 @@
     },
     "intro-1": "Tíni stig higartil",
     "intro-final": "Endaligu stigini hjá tær í 2050",
-    "intro-2": "Tíni val eru samanborin við optimalu avgerðirnar fyri ein við tínum álagda sjónarhorni."
+    "intro-2": "Tíni val eru samanborin við optimalu avgerðirnar fyri ein við tínum álagda sjónarhorni.",
+    "transmission": "Vilt netverksmenningarætlanina",
+    "ccs": "Kulstofopsamling og opbevaring",
+    "emission": "Hvørjar avmarkingar",
+    "biomass" : "Bann við innflutningi á lífmassa"
   },
   "euAcknowledgement": "Hendan verkætlanin er stuðlað av Horizon 2020 granskingar- og nýskapananarskránni hjá ES undir stuðulsavtalu nr. 691739.",
   "countries": {

@@ -101,7 +101,11 @@
     },
     "intro-1": "Your score so far",
     "intro-final": "Your final score in 2050",
-    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view."
+    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view.",
+    "transmission": "Network expansion",
+    "ccs": "Carbon Capture and Storage",
+    "emission": "CO2 reduction",
+    "biomass" : "Ban Biomass Imports"
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {
