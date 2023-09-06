@@ -1,8 +1,8 @@
 [
   {
     "indicator": "accumulatedCo2",
-    "min": 193.4,
-    "max": -43.3,
+    "max": 193.4,
+    "min": -43.3,
     "unit": "tCO2/Citizen"
   },
   {
