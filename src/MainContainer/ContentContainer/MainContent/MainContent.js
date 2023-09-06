@@ -42,7 +42,7 @@ export const MainContent = props => {
     })
     console.log(state.selectedScenario)
     if (state.currentDecision === '2050' && !state.scoreSaved) {
-      saveScore(state.selectedScenario, state.weights)
+      saveScore(state.selectedScenario, state.weights, state.choices)
       dispatch({
         type: 'setScoreSaved',
         scoreSaved: true,
