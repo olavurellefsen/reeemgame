@@ -6,12 +6,6 @@
     "unit": "tCO2/Citizen"
   },
   {
-    "indicator": "co2Intensity",
-    "min": -2.6,
-    "max": 10.0,
-    "unit": "tCO2/Citizen"
-  },
-  {
     "indicator": "discountedInvestment",
     "min": 19,
     "max": 910,

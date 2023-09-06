@@ -1,5 +1,5 @@
 import accumulatedCo2 from '../../../../data/indicators/AccumulatedCO2.json'
-import co2Intensity from '../../../../data/indicators/CO2Intensity.json'
+// import co2Intensity from '../../../../data/indicators/CO2Intensity.json'
 import discountedInvestment from '../../../../data/indicators/DiscountedInvestmentPerCitizen.json'
 import lcoe from '../../../../data/indicators/LCOE.json'
 import scoreData from '../../../../data/score.json'
@@ -50,10 +50,10 @@ const getFile = indicator => {
     case 'accumulatedCo2': {
       file = accumulatedCo2
     }
-    case 'co2Intensity': {
-      file = co2Intensity
-      break
-    }
+    // case 'co2Intensity': {
+    //   file = co2Intensity
+    //   break
+    // }
     case 'discountedInvestment': {
       file = discountedInvestment
       break
