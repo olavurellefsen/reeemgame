@@ -222,12 +222,9 @@ def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
     for y in years:
         df_y = ate[ate['YEAR'].isin(list(range(2021, y+1)))]
         df_y = df_y.groupby(['REGION'])['VALUE'].sum().reset_index()
-        co2_europe = df_y['VALUE'].sum()
-        df_y = pd.concat([df_y, pd.DataFrame([['EU+CH+NO+UK', co2_europe]], columns=['REGION', 'VALUE'])], ignore_index=True)
-        df_y['YEAR'] = y
+        accuco2_euro_value = df_y['VALUE'].sum()
+
         pop_y = pop[(pop['year']==y) & pop['iso2'].isin(df_y['REGION'].unique())].sort_values(by=['iso2']).reset_index(drop=True)
-        pop_europe = pd.DataFrame([[y, 'Europe', pop[pop['year']==y]['value'].sum(), 'EU+CH+NO+UK']], columns=['year', 'country', 'value', 'iso2'])
-        pop_y = pd.concat([pop_y, pop_europe], ignore_index=True)
         df_y['VALUE'] = df_y['VALUE'] / pop_y['value']
 
         if not countries_all[~countries_all.isin(df_y['REGION'])].empty:
@@ -237,6 +234,12 @@ def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
             df_0['YEAR'] = y
             df_0['VALUE'] = 0
             df_y = pd.concat([df_y, df_0], ignore_index=True)
+            df_y = df_y.sort_values(by=['REGION'], ignore_index=True)
+
+        accuco2_euro_pp_value =  accuco2_euro_value / pop[pop['year']==y]['value'].sum()
+        accuco2_euro_pp_row = pd.DataFrame([['EU+CH+NO+UK', accuco2_euro_pp_value]], columns=['REGION', 'VALUE'])
+        df_y = pd.concat([df_y, accuco2_euro_pp_row], ignore_index=True)
+        df_y['YEAR'] = y
             
         df = pd.concat([df, df_y], ignore_index=True)
         
