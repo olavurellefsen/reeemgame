@@ -1,3 +1,4 @@
+import accumulatedCo2 from '../../../../data/indicators/AccumulatedCO2.json'
 import co2Intensity from '../../../../data/indicators/CO2Intensity.json'
 import discountedInvestment from '../../../../data/indicators/DiscountedInvestmentPerCitizen.json'
 import lcoe from '../../../../data/indicators/LCOE.json'
@@ -46,6 +47,9 @@ export const getMapColors = (valueToShow, scenario, currentYear) => {
 const getFile = indicator => {
   var file
   switch (indicator) {
+    case 'accumulatedCo2': {
+      file = accumulatedCo2
+    }
     case 'co2Intensity': {
       file = co2Intensity
       break
