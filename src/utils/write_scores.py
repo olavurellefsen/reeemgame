@@ -29,11 +29,11 @@ def main(kpis: Dict, path: str, reg: Optional[str]=None):
 
     rawScores = []
 
-    scenarios = list(kpis['AccumulatedCO2'])
+    scenarios = list(kpis['CO2Intensity'])
 
     if reg:
         for s in scenarios:
-            env = kpis['AccumulatedCO2'].loc[reg, s]
+            env = kpis['CO2Intensity'].loc[reg, s]
             eco = kpis['DiscountedInvestmentPerCitizen'].loc[reg, s]
             soc = kpis['LCOE'].loc[reg, s]
             rawScores.append(
@@ -45,10 +45,10 @@ def main(kpis: Dict, path: str, reg: Optional[str]=None):
                 }
             )
     else:
-        countries = kpis['AccumulatedCO2'].index
+        countries = kpis['CO2Intensity'].index
         for c in countries:
             for s in scenarios:
-                env = kpis['AccumulatedCO2'].loc[c, s]
+                env = kpis['CO2Intensity'].loc[c, s]
                 eco = kpis['DiscountedInvestmentPerCitizen'].loc[c, s]
                 soc = kpis['LCOE'].loc[c, s]
                 rawScores.append(
