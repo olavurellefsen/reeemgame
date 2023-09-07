@@ -8,9 +8,12 @@ export function calculateScore(selectedScenario, weights) {
     )[0]
     if (scenario) {
       let { env, eco, soc } = scenario
+      let maxScore = findMaxScore(weights)
+      let minScore = findMinScore(weights)
+      let diffScore = maxScore === minScore ? 1 : maxScore - minScore
       normalizedScore = Math.round(
         (((env * weights.env + eco * weights.eco + soc * weights.soc)-findMinScore(weights)) /
-        (findMaxScore(weights) - findMinScore(weights))) * 100
+        diffScore) * 100
       )
     } else {
       console.log(`No scenario found for ${selectedScenario}`)
@@ -47,8 +50,6 @@ const findMaxScore = weights => {
       }
     }
   }
-  if (maxScore === 0) maxScore = -1
-  //console.log('best scenario: ', bestScenario)
   return maxScore
 }
 
@@ -79,7 +80,5 @@ const findMinScore = weights => {
       }
     }
   }
-  if (minScore === 100) minScore = -1
-  //console.log('best scenario: ', bestScenario)
   return minScore
 }
