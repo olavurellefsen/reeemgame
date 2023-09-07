@@ -44,7 +44,7 @@ export const DecisionForm = ({ onStart }) => {
       //Set indicator to emission limit when the game starts, if no indicator has been selected
       if (!state.selectedIndicator) {
         dispatch({
-          name: 'co2Intensity',
+          name: 'accumulatedCo2',
           type: 'setSelectedIndicator',
         })
       }
