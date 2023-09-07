@@ -11,8 +11,7 @@ export const IndicatorContainer = () => {
   const [electricityMenuOpen, setElectricityMenuOpen] = useState(true)
   const { t } = useTranslation()
   const keyPerformanceIndicators = [
-    'accumulatedCo2',
-    // 'co2Intensity',
+    'co2Intensity',
     'discountedInvestment',
     'lcoe',
   ]

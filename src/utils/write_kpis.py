@@ -5,9 +5,7 @@ from typing import Dict
 
 #%% 
 def format_kpis(kpis: Dict, kpi: str) -> Dict:
-    """
-    Function to bring KPI data into dictionaries by Scenario, Year, and Country.
-    """
+    """Function to bring KPI data into dictionaries by Scenario, Year, and Country."""
     kpi_dic_json = {}
     countries = pd.Series(kpis[list(kpis.keys())[0]]['LCOE']['REGION'].unique())
     countries = countries[countries!='EU+CH+NO+UK']
@@ -24,10 +22,7 @@ def format_kpis(kpis: Dict, kpi: str) -> Dict:
 
 #%%
 def main(kpis: Dict):
-    """
-    Main function to bring data of all KPIs provided into dictionary format and
-    to write out to json files.
-    """
+    """Main function to bring data of all KPIs provided into dictionary format and to write out to json files."""
 
     kpis_in_dics = {}
 

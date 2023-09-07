@@ -134,119 +134,52 @@ def calc_lcode(aic: pd.DataFrame, afoc: pd.DataFrame, avoc: pd.DataFrame, dp: pd
 
     return df
 #%%
-def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)-> pd.DataFrame:
+def calc_CO2_intens(ate: pd.DataFrame, pop: pd.DataFrame, years: pd.Series, year_n:int)-> pd.DataFrame:
     """
     Function to calculate the KPI CO2 intensity per citizen in each modelled country for each year.
     Args:
         ate (DataFrame): Annual Technology Emission
         pop (DataFrame): Population per country and year.
         years (Series): Years of interest.
+        year_n (int): Last year of interest.
 
     Returns:
         DataFrame: CO2 intensity of power generation by country and year.
     """
-
     countries = pop['iso2'].unique()
+    ate_df = pd.DataFrame(index=countries,columns=years)
+    pop_df = pd.DataFrame(index=countries, columns=years)
+    for r in range(len(ate)):
+        if ate.iloc[r]['YEAR']<(int(year_n)+1):
+            ate_df[ate.iloc[r]['YEAR']][ate.iloc[r]['REGION']] = ate.iloc[r]['VALUE']
+    for r in range(len(pop)):
+        if pop.iloc[r]['year']<(int(year_n)+1):
+            pop_df[pop.iloc[r]['year']][pop.iloc[r]['iso2']] = pop.iloc[r]['value']
 
-    index_complete = pd.MultiIndex.from_product([countries, years], names=['REGION', 'YEAR'])
-    ate = ate[ate['YEAR'].isin(years)]
-    ate = ate.drop(['EMISSION'], axis=1)
-    ate = ate.set_index(['REGION', 'YEAR'])
-    ate = ate.reindex(index_complete)
-    ate = ate.fillna(0)
+    ate_df = ate_df.fillna(0)
 
-    pop = pop.drop(['country'], axis=1)
-    pop = pop.set_index(['iso2', 'year'])
-    pop = pop.reindex(index_complete)
-
-    ate_array = ate.to_numpy()
-    pop_array = pop.to_numpy()
-
-    pop = pop.reset_index()
+    ate_array = ate_df.to_numpy()
+    pop_array = pop_df.to_numpy()
 
     co2_intensity_array = ate_array*1000/pop_array # Converting emissions from ktCO2 to tCO2
-    co2_intensity = pd.DataFrame(data=co2_intensity_array, columns=['VALUE'], index=index_complete)
-
-    total_pop = pop.groupby('YEAR').sum()
-    total_pop_array = total_pop.to_numpy()
-    pop_wide = pop.reset_index().pivot(index='YEAR', columns='REGION', values='value')
-    pop_wide_array = pop_wide.to_numpy()
-
-    pop_shares_array = pop_wide_array / total_pop_array
-    pop_shares = pd.DataFrame(data=pop_shares_array, index=pop_wide.index, columns=pop_wide.columns)
-    pop_shares = pop_shares.stack().reset_index().sort_values(by=['REGION', 'YEAR'], ignore_index=True)
-    pop_shares = pop_shares.set_index(['REGION', 'YEAR'])
-    pop_shares_array = pop_shares.to_numpy()
-
-    intensity_shares_array = co2_intensity_array * pop_shares_array
-    intensity_shares = pd.DataFrame(data=intensity_shares_array, index=index_complete, columns=['VALUE'])
-
-    eu_plus_3_intensity = intensity_shares.groupby(['YEAR']).sum()
-    eu_plus_3_intensity = eu_plus_3_intensity.reset_index()
+    total_pop = np.sum(pop_array, axis=0)
+    pop_shares = pop_array / total_pop
+    eu_plus_3_intensity_array = np.sum(co2_intensity_array * pop_shares, axis=0)
+    eu_plus_3_intensity = pd.DataFrame(columns=['REGION','YEAR','VALUE'])
+    eu_plus_3_intensity['YEAR'] = years
+    eu_plus_3_intensity['VALUE'] = eu_plus_3_intensity_array
     eu_plus_3_intensity['REGION'] = 'EU+CH+NO+UK'
 
+    co2_intensity = pd.DataFrame(data=co2_intensity_array, columns=years, index=countries)
+    co2_intensity = co2_intensity.stack()
     co2_intensity = co2_intensity.reset_index()
-    co2_intensity = pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
-    
+
+    co2_intensity = co2_intensity.set_axis(['REGION', 'YEAR', 'VALUE'], axis='columns')
+
     co2_intensity['VALUE'] = pd.to_numeric(co2_intensity['VALUE'])
     co2_intensity['VALUE'] = round(co2_intensity['VALUE'], 1)
 
-    return co2_intensity
-
-def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
-    """
-    Function to return the accumulated CO2 emissions per citizen for each country and for the EU+CH+NO+UK
-    
-    Args:
-        ate: pd.DataFrame
-            Annual Technology Emissions of CO2
-        pop: pd.DataFrame
-            Popultaion data for each country and year
-            
-    Returns:
-        df: pd.DataFrame
-            Accumulated CO2 emissions from 2021 til 2050
-    """
-
-    pop = pop[(pop['year']>2020) & (pop['year']<2051)]
-    ate = ate[(ate['YEAR']>2020) & (ate['YEAR']<2051)]
-
-    ate['VALUE'] = ate['VALUE'] * 10**3  # Conversion of CO2 emissions from kt to t.
-
-    countries_all = pd.Series(pop['iso2'].unique())
-
-    years = pop['year'].unique()
-    years.sort()
-    df = pd.DataFrame(columns=['REGION', 'YEAR', 'VALUE'])
-
-    for y in years:
-        df_y = ate[ate['YEAR'].isin(list(range(2021, y+1)))]
-        df_y = df_y.groupby(['REGION'])['VALUE'].sum().reset_index()
-        accuco2_euro_value = df_y['VALUE'].sum()
-
-        pop_y = pop[(pop['year']==y) & pop['iso2'].isin(df_y['REGION'].unique())].sort_values(by=['iso2']).reset_index(drop=True)
-        df_y['VALUE'] = df_y['VALUE'] / pop_y['value']
-
-        if not countries_all[~countries_all.isin(df_y['REGION'])].empty:
-            df_0 = pd.DataFrame()
-            df_0['REGION'] = countries_all[~countries_all.isin(df_y['REGION'])]
-            df_0 = df_0.reset_index(drop=True)
-            df_0['YEAR'] = y
-            df_0['VALUE'] = 0
-            df_y = pd.concat([df_y, df_0], ignore_index=True)
-            df_y = df_y.sort_values(by=['REGION'], ignore_index=True)
-
-        accuco2_euro_pp_value =  accuco2_euro_value / pop[pop['year']==y]['value'].sum()
-        accuco2_euro_pp_row = pd.DataFrame([['EU+CH+NO+UK', accuco2_euro_pp_value]], columns=['REGION', 'VALUE'])
-        df_y = pd.concat([df_y, accuco2_euro_pp_row], ignore_index=True)
-        df_y['YEAR'] = y
-            
-        df = pd.concat([df, df_y], ignore_index=True)
-        
-        df['VALUE'] = pd.to_numeric(df['VALUE'])
-        df['VALUE'] = round(df['VALUE'], 1)
-
-    return df
+    return pd.concat([co2_intensity, eu_plus_3_intensity], ignore_index=True)
 #%%
 def invest_per_citizen(aic: pd.DataFrame, dr: pd.DataFrame, pop: pd.DataFrame, years: pd.Series)->pd.DataFrame:
     """
@@ -422,8 +355,7 @@ def main(data: Dict, y_0: int, y_n: int)->Dict:
     indi['DP'] = calc_dp(sad,data['results']['NetElImports'], years)
     indi['LCODE'] = calc_lcode(indi['AIC'], data['results']['AnnualFixedOperatingCost'], data['results']['AnnualVariableOperatingCost'],indi['DP'])
 
-    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], population, years)
-    kpis['AccumulatedCO2'] = calc_accumulated_CO2(data['results']['AnnualTechnologyEmission'], population)
+    kpis['CO2Intensity'] = calc_CO2_intens(data['results']['AnnualTechnologyEmission'], population, years, y_n)
     kpis['DiscountedInvestmentPerCitizen'] = invest_per_citizen(indi['AIC'], data['inputs']['DiscountRate'], population, years)
     kpis['LCOE'] = calc_lcoe(indi['DP'], sad, indi['LCODE'], data['results']['NetElImportsPerCountry'], y_n)
     return kpis
