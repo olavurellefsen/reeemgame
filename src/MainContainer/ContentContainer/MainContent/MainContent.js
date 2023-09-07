@@ -54,6 +54,7 @@ export const MainContent = props => {
     state.selectedScenario,
     state.currentDecision,
     state.scoreSaved,
+    state.choices,
   ])
   const wide = useMediaQuery('(min-width:960px)')
   const [startModal, setStartModal] = useState(false)
