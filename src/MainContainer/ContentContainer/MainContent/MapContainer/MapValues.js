@@ -49,6 +49,7 @@ const getFile = indicator => {
   switch (indicator) {
     case 'accumulatedCo2': {
       file = accumulatedCo2
+      break
     }
     // case 'co2Intensity': {
     //   file = co2Intensity
