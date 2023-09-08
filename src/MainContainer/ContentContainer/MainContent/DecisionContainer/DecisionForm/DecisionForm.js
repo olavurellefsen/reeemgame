@@ -44,7 +44,7 @@ export const DecisionForm = ({ onStart }) => {
       //Set indicator to emission limit when the game starts, if no indicator has been selected
       if (!state.selectedIndicator) {
         dispatch({
-          name: 'accumulatedCo2',
+          name: 'co2Intensity',
           type: 'setSelectedIndicator',
         })
       }
@@ -68,6 +68,9 @@ export const DecisionForm = ({ onStart }) => {
         name:
           'T' + nextScenario.t + 'E' + nextScenario.e + 'C' + nextScenario.c + 'B' + nextScenario.b,
       })
+       // save the choices of the current decision year in the state so it can be persisted in local storage later
+       state.choices = state.choices || {}
+       state.choices[state.currentDecision] = choices
     }
     setChoice({})
   }

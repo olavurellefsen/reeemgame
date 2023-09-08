@@ -17,14 +17,12 @@
     },
     "indicator": {
       "keyPerformanceIndicators": "Leistungsindikatoren",
-      "accumulatedCo2": "Angesammeltes CO2",
       "co2Intensity": "CO2-Intensität",
       "discountedInvestment": "Diskontierte Investitione",
       "lcoe": "Stromkosten",
       "score": "Punktzahl"
     },
     "indicatorHeader": {
-      "accumulatedCo2": "Angesammelte CO2 Emissionen",
       "co2Intensity": "CO2-Intensität pro Einwohner",
       "discountedInvestment": "The diskontierte Investitionen pro Einwohner",
       "lcoe": "Die Stromkosten",
@@ -101,7 +99,11 @@
       },
       "intro-1": "Ihr aktueller Puktestand",
       "intro-final": "Ihre finale Punktzahl in 2050",
-      "intro-2": "Ihre Entscheidungen werden an den optimalen Entscheidungen für das Ihnen zugewiesene Präferenzprofil gemessen."
+      "intro-2": "Ihre Entscheidungen werden an den optimalen Entscheidungen für das Ihnen zugewiesene Präferenzprofil gemessen.",
+      "transmission": "Netzentwicklungsplan umsetzen",
+      "ccs": "Kohlendioxid Speicherung",
+      "emission": "CO2 Reduktion",
+      "biomass" : "Biomasse Verbot"
     },
     "euAcknowledgement": "Dieses Projekt wurde von der Europäischen Union im Rahmen des Forschungs- und Innovationsprogramms Horizon 2020 unter dem Grant Agreement Nr. 691739 gefördert.",
     "countries": {
