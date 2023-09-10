@@ -147,7 +147,7 @@ def main(path_conf: str, path_res: str, path_dp: str, first_y: int, last_y):
     print("Read other data.")
 
     kpis = {}
-    indicators = ['CO2Intensity', 'DiscountedInvestmentPerCitizen', 'LCOE']
+    indicators = ['AccumulatedCO2', 'CO2Intensity', 'DiscountedInvestmentPerCitizen', 'LCOE']
     kpis_csv = {}
     for i in indicators:
         kpis_csv[i] = pd.DataFrame()

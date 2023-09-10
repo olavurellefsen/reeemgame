@@ -17,12 +17,14 @@
   },
   "indicator": {
     "keyPerformanceIndicators": "Key Performance Indicators",
+    "accumulatedCo2": "Accumulated CO2",
     "co2Intensity": "CO2 Intensity",
     "discountedInvestment": "Discounted Investment",
     "lcoe": "Levelised Cost of Electricity",
     "score": "Score"
   },
   "indicatorHeader": {
+    "accumulatedCo2": "Accumulated CO2 emissions",
     "co2Intensity": "CO2 Intensity per Citizen",
     "discountedInvestment": "The discounted Investment per Citizen",
     "lcoe": "The Levelised Cost of Electricity (LCOE)",
@@ -99,11 +101,7 @@
     },
     "intro-1": "Your score so far",
     "intro-final": "Your final score in 2050",
-    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view.",
-    "transmission": "Network expansion",
-    "ccs": "Carbon Capture and Storage",
-    "emission": "CO2 reduction",
-    "biomass" : "Ban Biomass Imports"
+    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view."
   },
   "euAcknowledgement": "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691739.",
   "countries": {

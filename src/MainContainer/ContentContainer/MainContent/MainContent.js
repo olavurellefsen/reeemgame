@@ -42,7 +42,7 @@ export const MainContent = props => {
     })
     console.log(state.selectedScenario)
     if (state.currentDecision === '2050' && !state.scoreSaved) {
-      saveScore(state.selectedScenario, state.weights, state.choices)
+      saveScore(state.selectedScenario, state.weights)
       dispatch({
         type: 'setScoreSaved',
         scoreSaved: true,
@@ -54,7 +54,6 @@ export const MainContent = props => {
     state.selectedScenario,
     state.currentDecision,
     state.scoreSaved,
-    state.choices,
   ])
   const wide = useMediaQuery('(min-width:960px)')
   const [startModal, setStartModal] = useState(false)
