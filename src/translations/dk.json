@@ -114,11 +114,7 @@
     },
     "intro-1": "Din hidtidige score",
     "intro-final": "Din slutscore i 2050",
-    "intro-2": "Dine beslutninger sammenlignes med de optimale valg for en med dine påtvungne præferencer.",
-    "transmission": "Implementere den netværksudviklingsplan",
-    "ccs": "Kulstofopsamling og opbevaring",
-    "emission": "Begrænsninger dit emissionsmål",
-    "biomass" : "Forbud mod import af biomasse"
+    "intro-2": "Dine beslutninger sammenlignes med de optimale valg for en med dine påtvungne præferencer."
   },
   "euAcknowledgement": "Dette projekt har modtaget støtte fra EU's Horizon 2020 forsknings- og innovationsprogram under tilskudsaftale nr. 691739.",
   "countries": {
