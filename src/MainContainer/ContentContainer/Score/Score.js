@@ -64,8 +64,31 @@ export const Score = () => {
           <StyledTableHead>
             <StyledTableRow index={10}>
               <StyledTableCell>{t('score.date')}</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell>2020</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell>2030</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell>2040</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
               <StyledTableCell>{t('score.score.long')}</StyledTableCell>
               <StyledTableCell>{t('score.weights.long')}</StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow index={10}>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell>{t('score.transmission')}</StyledTableCell>
+              <StyledTableCell>{t('score.ccs')}</StyledTableCell>
+              <StyledTableCell>{t('score.emission')}</StyledTableCell>
+              <StyledTableCell>{t('score.biomass')}</StyledTableCell>
+              <StyledTableCell>{t('score.ccs')}</StyledTableCell>
+              <StyledTableCell>{t('score.emission')}</StyledTableCell>
+              <StyledTableCell>{t('score.biomass')}</StyledTableCell>
+              <StyledTableCell>{t('score.ccs')}</StyledTableCell>
+              <StyledTableCell>{t('score.emission')}</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell></StyledTableCell>
             </StyledTableRow>
           </StyledTableHead>
           <StyledTableBody>
@@ -79,6 +102,33 @@ export const Score = () => {
                     }}
                   >
                     <StyledTableCell>{s.date}</StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2020"].transmission ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>                       
+                      {s.choices !== undefined ? ( s.choices["2020"].ccs1 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>                       
+                      {s.choices !== undefined ? ( s.choices["2020"].emissions1 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2030"].biomass1 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2030"].ccs2 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2030"].emissions2 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2040"].biomass2 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2040"].ccs3 ) : "" }
+                    </StyledTableCell>
+                    <StyledTableCell>
+                      {s.choices !== undefined ? ( s.choices["2040"].emissions3 ) : "" }
+                    </StyledTableCell>
                     <StyledTableCell>{s.weightedScores.sum}</StyledTableCell>
                     <StyledTableCell>
                       <div style={{ height: '50px', width: '80px' }}>
