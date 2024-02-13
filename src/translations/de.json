@@ -17,12 +17,14 @@
     },
     "indicator": {
       "keyPerformanceIndicators": "Leistungsindikatoren",
+      "accumulatedCo2": "Angesammeltes CO2",
       "co2Intensity": "CO2-Intensität",
       "discountedInvestment": "Diskontierte Investitione",
       "lcoe": "Stromkosten",
       "score": "Punktzahl"
     },
     "indicatorHeader": {
+      "accumulatedCo2": "Angesammelte CO2 Emissionen",
       "co2Intensity": "CO2-Intensität pro Einwohner",
       "discountedInvestment": "The diskontierte Investitionen pro Einwohner",
       "lcoe": "Die Stromkosten",
