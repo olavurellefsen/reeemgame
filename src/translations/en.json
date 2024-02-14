@@ -33,7 +33,7 @@
   "decisions": {
     "2019": {
       "header": "Instructions",
-      "intro": "In this game, you are assigned some economic, environmental and social preferences.\n\nYour mission is simple: make climate policy choices in 2020, 2030, and 2040 to maximize the score for your assigned point of view in 2050.\n\nYour solution is compared to the optimal score calculated by the Open Source energy Model Base for Europe (OSeMBE)."
+      "intro": "Ever wondered how to balance economic, social and environmental interests?\n\nIn this game, you can explore how preferences on the three dimensions of sustainability - economy, socitey, and environment - affect what future power system design is perceived as optimal.\n\nFor a start you get assigned a Point Of View (POV) that indicates you how to weigh the three dimensions of sustainbility when making decisions on the future European power system design throughout the game.\n\nThe goal is to maximise your score in the year 2050. The score is based on the three indicators that you see on the right hand side of the window and which each relate to one of the three dimensions of sustainability.\n\nOne can quickly play multiple rounds of the game. At the end of each round you can access the 'Sore'-board and see how your POV, decisions, and score compare across rounds.\n\nThe indicators and score are calculated based a large number of scenarios from the Open Source energy Model Base for Europe (OSeMBE), an open-source energy system optimisation model. You can find the model's documentation here. And you can read more about this game in the 'About' section."
     },
     "2020": {
       "header": "Decisions in 2020",
@@ -101,7 +101,7 @@
     },
     "intro-1": "Your score so far",
     "intro-final": "Your final score in 2050",
-    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view.",
+    "intro-2": "Your decisions are measured against the optimal decisions for your assigned point of view.\nCheck out how this round compares to your previous rounds in the score board by clicking above on 'Score'.",
     "transmission": "Network expansion",
     "ccs": "Carbon Capture and Storage",
     "emission": "CO2 reduction",
