@@ -28,7 +28,7 @@ export const ScoreContainer = ({ currentScore, currentDecision }) => {
           <ScoreText>
             <CurrentScoreText>{counterScore}</CurrentScoreText> / 100
           </ScoreText>
-          <IntroText>{t('score.intro-2')}</IntroText>
+          <IntroText>{t('score.intro-3')}</IntroText>
         </>
       )}
       {currentDecision !== '2050' && (
