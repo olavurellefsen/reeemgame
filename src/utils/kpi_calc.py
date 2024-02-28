@@ -208,8 +208,8 @@ def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
             Accumulated CO2 emissions from 2021 til 2050
     """
 
-    pop = pop[(pop['year']>2020) & (pop['year']<2051)]
-    ate = ate[(ate['YEAR']>2020) & (ate['YEAR']<2051)]
+    pop = pop[(pop['year']>2014) & (pop['year']<2051)]
+    ate = ate[(ate['YEAR']>2014) & (ate['YEAR']<2051)]
 
     ate['VALUE'] = ate['VALUE'] * 10**3  # Conversion of CO2 emissions from kt to t.
 
@@ -220,7 +220,7 @@ def calc_accumulated_CO2(ate: pd.DataFrame, pop: pd.DataFrame)-> pd.DataFrame:
     df = pd.DataFrame(columns=['REGION', 'YEAR', 'VALUE'])
 
     for y in years:
-        df_y = ate[ate['YEAR'].isin(list(range(2021, y+1)))]
+        df_y = ate[ate['YEAR'].isin(list(range(2015, y+1)))]
         df_y = df_y.groupby(['REGION'])['VALUE'].sum().reset_index()
         accuco2_euro_value = df_y['VALUE'].sum()
 

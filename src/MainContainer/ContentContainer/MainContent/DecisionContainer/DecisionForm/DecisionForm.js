@@ -68,6 +68,9 @@ export const DecisionForm = ({ onStart }) => {
         name:
           'T' + nextScenario.t + 'E' + nextScenario.e + 'C' + nextScenario.c + 'B' + nextScenario.b,
       })
+       // save the choices of the current decision year in the state so it can be persisted in local storage later
+       state.choices = state.choices || {}
+       state.choices[state.currentDecision] = choices
     }
     setChoice({})
   }
